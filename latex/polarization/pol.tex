@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\begin{document}
+\title{Understanding Stoke's parameters}
+\author{A Slosar}
+\maketitle
+\section{Four numbers}
+
+The right way to think about polarization states is to think of the
+system as being fully described by two complex numbers at any one
+point in time. For incoherent light these complex numbers ``flicker'',
+but they have well defined averages and cross averages that give the
+Stokes parameters.
+
+Let's take the two numbers to be the electric field in the $\hat{x}$
+and $\hat{y}$ directions:
+\begin{eqnarray}
+  E_x &=& X = a + ib \\
+  E_x &=& Y = c + id 
+\end{eqnarray}
+The 45 degree rotated states are simply given by 
+\begin{eqnarray}
+  A &=& \frac{1}{\sqrt{2}} \left(X+Y\right)\\
+  B &=& \frac{1}{\sqrt{2}} \left(X-Y\right)
+\end{eqnarray}
+and the left and right cirular polarisations by 
+\begin{eqnarray}
+  L &=& \frac{1}{\sqrt{2}} \left(X+iY\right)\\
+  R &=& \frac{1}{\sqrt{2}} \left(X-iY\right)
+\end{eqnarray}
+
+The Stokes parameters are defined to be
+\begin{eqnarray}
+  U&=&\left<|X^2| + |Y^2| \right> \\
+  Q&=&\left<|X^2| - |Y^2| \right> \\
+  U&=&\left<|A^2| - |B^2| \right>\\
+  V&=&\left<|L^2| - |R^2|\right> 
+\end{eqnarray}
+In any one description, we have four numbers, although the correct way
+to think about this is that at the level $X$ and $Y$ (or equivalently
+$A$,$B$ or $L$,$R$) these are really electric fields with some phases,
+while Stokes parameters are time averages.
+
+\section{Given $X$ and $Y$}
+A simple complex algebra tells us
+
+\begin{eqnarray}
+  \left<X X^*\right> &=& U+Q\\
+  \left<Y Y^*\right> &=& U-Q\\
+  \left<X Y^*\right> &=& U-iV\\
+\end{eqnarray}
+
+\section{Given $L$ and $R$}
+A simple complex algebra tells us
+
+\begin{eqnarray}
+  \left<L L^*\right> &=& I+V\\
+  \left<R R^*\right> &=& I-V\\
+  \left<L R^*\right> &=& Q+iU\\
+\end{eqnarray}
+
+
+\end{document}
