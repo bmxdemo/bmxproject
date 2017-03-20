@@ -1,4 +1,4 @@
-# 18 December 2016: PhotoModeler Precision (Residuals from fitting a scale factor)
+## 18 December 2016: PhotoModeler Precision (Residuals from fitting a scale factor)
 
 In order to test how precisely PhotoModeler can generate a point cloud from a set of photos, we decided to cross-reference two sets of three photos point-by-point.  Each point is created by hand in the software using the sub-pixel function.  Each array of exported (x,y,z) points are of equal length and correspond to the same physical locations on the proto-petal.  These two data sets that are exported by the software differ by some position-dependent scaling factor, so Chris and I have written a python script that accounts for this via optimization.   Figure 1 shows a plot of the chi squared residuals sqrt[(x1-x2)^2 + (y1-y2)^2 + (z1-z2)^2] versus the "x-axis", where x1, y1, z1 refer to the first data array and x2, y2, z2 refer to the second data array.  
 
