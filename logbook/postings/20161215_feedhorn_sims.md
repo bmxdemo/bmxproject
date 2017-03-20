@@ -1,4 +1,4 @@
-## Dec 15, 2016: Simulation of OMT + pyramidal feed horn
+## Dec 15, 2016: Pyramidal feedhorn design and simulations
 
 Starting from the OMT + transition design from [this posting](https://github.com/bmxdemo/bmxproject/issues/10#issuecomment-267434363), I simply tacked on a square pyramidal horn to the HFSS model. The dimension at the back is the dimension of the transition aperture, and the dimension at the entrance aperture is 46.5". The flare angle is 30 degrees (15 degree half angle), making the overall height of the horn 69.4". 
 
