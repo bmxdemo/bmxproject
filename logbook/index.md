@@ -1,5 +1,7 @@
 ## BMX Logbook
 
+Please post links reverse chronologically.
+
 * [Photomodeler repeatability](postings/20161218_photomodeler_repeatability.md) - Dec 18, 2016 (EJA)
 * [Pyramidal feedhorn design and simulations](postings/20161215_feedhorn_sims.md) - Dec 15, 2016 (CDS)
 * [Final new modified VLA OMT design](postings/20161215_final_OMT_design.md) - Dec 15, 2016 (CDS)
