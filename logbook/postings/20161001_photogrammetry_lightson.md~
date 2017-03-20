@@ -1,0 +1,17 @@
+We have decided to try the Photogrammetry process with the lights turned on (without the reflective tape), while we sort out some issues with the reflective tape process, to make sure that everything is working properly.  This model uses a new set of photos that I took on 29 September 2016 since the dish has been slightly modified from the last set of photos I took with the lights on.
+
+Here is a screenshot of the model for the tie points (the sparse point cloud):
+
+![screen shot 2016-10-01 at 12 38 34 pm](https://cloud.githubusercontent.com/assets/17692591/19015518/15283058-87d4-11e6-9257-6697f076be96.png)
+
+Here is the corresponding exported xyz points:
+
+[Visual_v2_tie_points.txt.zip](https://github.com/bmxdemo/bmxproject/files/504484/Visual_v2_tie_points.txt.zip)
+
+Here is a screenshot for the model of the dense point cloud:
+
+![screen shot 2016-10-01 at 12 38 46 pm](https://cloud.githubusercontent.com/assets/17692591/19015519/19fc01a4-87d4-11e6-86fe-b102e219bdce.png)
+
+and those corresponding xyz points which are located in my Google Drive:
+
+https://drive.google.com/file/d/0BxSWxTxFUD23bWJmNllNaTd1alE/view?usp=sharing
