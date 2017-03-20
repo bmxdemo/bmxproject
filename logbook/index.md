@@ -1,6 +1,6 @@
 ## BMX Logbook
 
-Please post links reverse chronologically as relative links. Writeups should go in the "postings/" folder and adhere to the yyyymmdd_name convention.
+Please post links reverse chronologically as relative links. Write ups should go in the "postings/" folder and adhere to the yyyymmdd_name convention.
 
 * [Photomodeler repeatability](postings/20161218_photomodeler_repeatability.md) - Dec 18, 2016 (EJA)
 * [Pyramidal feedhorn design and simulations](postings/20161215_feedhorn_sims.md) - Dec 15, 2016 (CDS)
