@@ -1,6 +1,6 @@
 ## Dec 15, 2016 - modified VLA + transition design
 
-Following the [previous posting](20161215_final_OMT_design.md), I detail the modifications made to the VLA OMT + transition design to make it work for BMX. The solidmodel can be found here:
+Following the [previous posting](20161215_VLA_OMT_sims.md), I detail the modifications made to the VLA OMT + transition design to make it work for BMX. The solidmodel can be found here:
 Full OMT model, including assemblies: [directory](http://www.cosmo.bnl.gov/www/bmx/drawings/OMT_20161215), [zip](http://www.cosmo.bnl.gov/www/bmx/drawings/OMT_20161215.zip)
 Only parts (to give to the shop): [directory](http://www.cosmo.bnl.gov/www/bmx/drawings/OMT_for_mfg_20161215/),  [zip](http://www.cosmo.bnl.gov/www/bmx/drawings/OMT_for_mfg_20161215.zip)
 
