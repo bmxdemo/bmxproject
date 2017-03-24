@@ -5,8 +5,8 @@ Christopher D. Sheehy
 ### 1 - Introduction
 
 In [a previous posting](../20161215_final_OMT_design.md), I detailed the design of a
-new OMT that was an improvement over the previous OMT design, which I detailed
-in [this posting](../20161025_OMT_measurements.md). The main improvements were
+new OMT that was an improvement over the previous OMT design, which had been characterizied in
+[this posting](../20161025_OMT_measurements.md). The main improvements were
 the substitution of larger diameter, ultra low loss coax, the addition of a
 profiled transition to free space that can directly couple to a feed horn, and a
 compactification of the OMT. Last week I went out to Michigan and
