@@ -13,9 +13,9 @@ Both log magnitude and phase was measured in both direction for each filter (por
 
 #### port 1 to port 2:
 
-Center frequency: 1.31697GHz
-Bandwidth: 422.91MHz
-Q: 3.114
+Center frequency: 1.31697GHz <br>
+Bandwidth: 422.91MHz <br>
+Q: 3.114 <br>
 Loss: -.23dB
 
 [log magnitude csv file](./S21LogMag_Lorch1310Filter_SerialAU1_0kHz-4p8GHz_Port1-2.csv)
@@ -25,9 +25,9 @@ Loss: -.23dB
 
 #### port 2 to port 1:
 
-Center frequency: 1.31697GHz
-Bandwidth: 421.91MHz
-Q: 3.121
+Center frequency: 1.31697GHz <br>
+Bandwidth: 421.91MHz <br>
+Q: 3.121 <br>
 Loss: -.24dB
 
 [log magnitude csv file](./S21LogMag_Lorch1310Filter_SerialAU1_0kHz-4p8GHz_Port2-1.csv)
@@ -40,10 +40,10 @@ Loss: -.24dB
 
 #### port 1 to port 2:
 
-Center frequency: 1.31776GHz
-Bandwidth: 426.49MHz
-Q: 3.090
-Loss: -.25dB
+Center frequency: 1.31776GHz <br>
+Bandwidth: 426.49MHz <br>
+Q: 3.090 <br>
+Loss: -.25dB <br>
 
 [log magnitude csv file](./S21LogMag_Lorch1310Filter_SerialAU2_0kHz-4p8GHz_Port1-2.csv)
 <br>
@@ -52,10 +52,10 @@ Loss: -.25dB
 
 #### port 2 to port 1:
 
-Center frequency: 1.31777GHz
-Bandwidth: 426.53MHz
-Q: 3.089
-Loss: -.26dB
+Center frequency: 1.31777GHz <br>
+Bandwidth: 426.53MHz <br>
+Q: 3.089 <br>
+Loss: -.26dB <br>
 
 [log magnitude csv file](./S21LogMag_Lorch1310Filter_SerialAU2_0kHz-4p8GHz_Port2-1.csv)
 <br>
