@@ -1,5 +1,5 @@
 ## March 28, 2017: Filter Measurements
-Justine Haupt
+posted by Justine Haupt
 
 
 On 3/14 I used a Copper Mountain TR5048 VNA to measure the S<sub>21</sub> parameter (forward gain) of BMX's two Lorch bandpass filters. A two-port calibration was done prior to measurement. The VNA was grounded to the filter chassis.
