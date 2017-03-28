@@ -341,8 +341,8 @@ view for both is shown in **Figure 10**.
 
 With the compact horn, the zenith ray just barely grazes the horn. Also, because
 the edge illumination is low, there's not much power in this part of the
-beam. **Figure 11** shows what happens when you put the aperture plane of the
-pyramidal horn at the focus. The problem is worse for large horn, where you can
+beam. **Figure 11** shows what happens when, instead of the phase center, you put the aperture plane of the
+pyramidal horn at the focus. (For reference, the large/small pyramidal horn's phase center is 32.9"/18.0" from the aperture plane.) The problem is worse for large horn, where you can
 clearly see the double peak. The double peak is not evident at 1 deg
 resolution for the compact pyramidal horn, but comparing to Fig 8b, the main
 beam becomes much more asymmetric.
