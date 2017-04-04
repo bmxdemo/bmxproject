@@ -10,8 +10,8 @@ combinations:
 
 ### plots
 
-![pltr.pdf](./pltr.pdf.png)
-![pltps.pdf](./plps.pdf.png)
+![trace](./pltr.pdf.png)
+![power spec](./pltps.pdf.png)
 
 
 
@@ -63,6 +63,6 @@ except at the very beginning, but that could be the digitizer heating
 up transient. See attached. So better to repeat this replacing hybrid
 with just the coupler as we'll do at the end anyway.
 
-![pltrf.pdf](./pltr.pdf.png)
-![pltpsf.pdf](./plps.pdf.png)
+![trace](./pltrf.pdf.png)
+![power spec](./pltpsf.pdf.png)
 
