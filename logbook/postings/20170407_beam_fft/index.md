@@ -131,7 +131,7 @@ I'm pretty happy that this seems to be working.
 The dashed red line is the same as the solid red line but does not include the effect of
 direct horn/sky or horn/ground coupling, the common name for which is spillover. You can see this makes a pretty big
 difference outside the main beam, especially at phi=0, theta=-50, where it's clear that sipllover dominates 
-the reflected power. This is also evident in Fig 4 as the large -25 dB lobe
+over the reflected power. This is also evident in Fig 4 as the large -25 dB lobe
 at the left end of the plot. Since the way I included the effect of the horn was
 pretty kludgy (for instance, not taking into account reflections or coherent interference
 from path length differences) I expect that much of the beam structure that the
