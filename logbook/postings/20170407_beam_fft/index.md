@@ -76,8 +76,8 @@ decides this on its own so there's not much I can do to decrease it. The surface
 integral beam has no such limitation.
 
 An important note: in the right hand column Figure 2 I added the contribution from direct horn/sky coupling by running
-HFSS with horn and no dish and adding the horn and FFT^2(J) beams as (sqrt(A) +
-sqrt(B))^2. The beams plotted are the "Ludwig third definition" co-polar beam,
+HFSS with the horn but no dish and adding the horn and dish beams as (sqrt(B_horn) +
+sqrt(B_dish))^2. The beams plotted are the "Ludwig third definition" co-polar beam,
 which I compute from the x, y, and z polarized beams. Basically, I have complex Jx, Jy
 and Jz, and from these can compute Bx, By, and Bz. (In the left column, I'm only
 showing Jx.) Bx and By are co and cross
