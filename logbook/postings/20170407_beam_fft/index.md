@@ -41,7 +41,7 @@ For step 4, we can do various things:
 A few things to keep in mind:
 
 - FFTing the surface current does not account for obscuration caused by the
-  horn. The dish is off axis, so the effect should be large, but surely some
+  horn. The dish is off axis, so the effect should not be large, but surely some
   rays are scattered at large angles. (I ran a test with a perfect parabola and
   a downward facing horn, and putting in the effect of the central obscuration
   by zeroing J at r<r_horn made a huge difference.)
