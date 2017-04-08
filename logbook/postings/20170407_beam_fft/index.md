@@ -83,7 +83,7 @@ and Jz, and from these can compute the far field Ex, Ey, and Ez. (In the left co
 showing Jx.) Ex and Ey are the co and cross
 polar E-field near theta=0, but at large theta this is no longer true. For instance, Ez is zero
 at theta=0, but at (theta, phi) = (90,0), Ez is a maximum and Ex is zero. To get
-around this, one then projects Ex, Ey, and Ez onto the theta/phi sherical coordinate unit vectors. 
+around this, one then projects Ex, Ey, and Ez onto the theta/phi spherical coordinate unit vectors. 
 This basis has the advantage of being 2D, which far-field polarization inherently is, but 
 has the drawback that E_theta and E_phi are not aligned
 with the dominant polarization axes at theta=0. Therefore, we use this Ludwig definition thing 
