@@ -153,7 +153,7 @@ academic because we will likely use the directly calculated HFSS beam in any sim
 we use. However, it shows that spilloever is ~-30 dB at >45 degree zenith angles, 
 so we cannot naively apply the HFSS beam to calculate interferometer fringing from sources at these
 angles. We currently plan to make the flat sky approximation
-and use only the main beam down to -30 dB or so, so this will be not be a problem for now, and possibly 
+and use only the main beam (down to -30 dB or so), so this will be not be a problem for now,  possibly 
 forever.
 
 Future work: compute the beam as a function of frequency in HFSS and input into
