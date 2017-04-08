@@ -133,10 +133,10 @@ direct horn/sky or horn/ground coupling, the common name for which is spillover.
 difference outside the main beam, especially at phi=0, theta=-50, where it's clear that sipllover dominates 
 the reflected power. This is also evident in Fig 4 as the large -25 dB lobe
 at the left end of the plot. Since the way I included the effect of the horn was
-pretty kludgy (for instance, not taking into account any coherent interference
+pretty kludgy (for instance, not taking into account reflectrions or coherent interference
 from path length differences) I expect that much of the beam structure that the
 surface integral fails to account for comes from not including the horn
-coupling. (The HFSS beam of course includes this.)
+coupling. (The HFSS beam of course includes all this.)
 
 <center><i>Figure 5 - beam cross sections</i></center>
 
