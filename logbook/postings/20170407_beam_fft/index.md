@@ -128,10 +128,10 @@ line, which is exactly the same as the full surface integral beam, shown as the 
 up to theta = 75 deg. Neither of these is a big improvement over just the first term. Nonetheless,
 I'm pretty happy that this seems to be working.
 
-The dashed red line is the same as the solid red line but does not include the
-direct coupling of the horn to the sky. You can see it makes a pretty big
-difference at all angles, especially at phi=0, theta=-50, where it is required
-to explain the beam. It's clear that the large -25 dB lobe at the left end of
+The dashed red line is the same as the solid red line but does not include the effect of
+direct horn/sky coupling. You can see this makes a pretty big
+difference outside the main beam, especially at phi=0, theta=-50, where it's clear that direct
+horn/sky coupling dominates horn/dish/sky coupling. It's clear that the large -25 dB lobe at the left end of
 Fig 4 is from spillover. Since the way I included the effect of the horn was
 pretty kludgy (for instance, not taking into account any coherent interference
 from path length differences) I expect that much of the beam structure that the
