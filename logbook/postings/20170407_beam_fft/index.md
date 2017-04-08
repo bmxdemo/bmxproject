@@ -118,7 +118,7 @@ beams. HFSS outputs these beams directly (L3X/L3Y).
 
 
 
-Lastly, **Figure 5** shows x and y cross sectional slices (phi=0/90) through all
+Lastly, **Figure 5** shows x and y cross sectional slices (phi=0 and 90 deg) through all
 the beams. The thick blue line is the HFSS "true" beam. The straight FFT is the
 dotted blue line, and isn't terrible, but doesn't get the main beam shape quite
 right. Doing the FFT but accounting for curvature using the first term of the
