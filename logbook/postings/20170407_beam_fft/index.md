@@ -153,7 +153,7 @@ academic because we will likely use the directly calculated HFSS beam in any sim
 we use. However, it shows that spillover dominates reflected power from the horizon to 45 deg  
 in the horn->dish direction, so interferometer fringing from sources at these angles will not be via the 
 baselines established by the dish positions. We currently plan to make the flat sky approximation
-and use only the main beam (down to -30 dB or so), so this will be not be a problem for now,  possibly 
+and use only the main beam (down to -30 dB or so), so this will be not be a problem for now, and possibly 
 forever.
 
 Future work: compute the beam as a function of frequency in HFSS and input into
