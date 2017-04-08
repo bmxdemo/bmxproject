@@ -83,10 +83,14 @@ and Jz, and from these can compute the far field Ex, Ey, and Ez. (In the left co
 showing Jx.) Ex and Ey are the co and cross
 polar E-field near theta=0, but at large theta this is no longer true. For instance, Ez is zero
 at theta=0, but at (theta, phi) = (90,0), Ez is a maximum and Ex is zero. To get
-around this, one then projects the x, y, z E-fields onto the theta/phi spherical
-coordinate unit vectors. This is not a good basis because E_theta and E_phi are not aligned
-with the dominant polarization axes at theta=0, so this Ludwig definition thing (Eq. 14-15), which is equal to Ex and Ey at small theta, is used as the commonly accepted definition of co and cross polar
-beams. 
+around this, one then projects Ex, Ey, and Ez onto the theta/phi sherical coordinate unit vectors. 
+This basis has the advantage of being 2D, which far-field polarization inherently is, but 
+has the drawback that E_theta and E_phi are not aligned
+with the dominant polarization axes at theta=0. Therefore, we use this Ludwig definition thing 
+(Eq. 14-15), wherein E_ludwig_x and E_ludwig_y
+are 2D, orthogonal at all points on the sky, and equal to Ex and Ey at small theta. 
+This seems to be used as the commonly accepted definition of co and cross polar
+beams. HFSS outputs these beams directly (L3X/L3Y).
 
 
 <center><i>Figure 2 - projected surface current and resulting far field beam</i></center>
