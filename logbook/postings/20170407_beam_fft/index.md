@@ -32,9 +32,9 @@ The procedure follows [Rahmat-Samii,
 For step 4, we can do various things:
 1. Compute |FFT(J)|^2 to get the far field beam
 2. Apply Equation 11, which multiplies J by the "surface projection Jacobian" of
-  the parabola and FFTs to account for surface curvature. This is an expansion
-  about small theta, and including higher order terms approximates the beam
-  better. All terms are FFTs of J with different complex prefactors.
+  the parabola and FFTs to account for surface curvature. This is written down as an expansion
+  about small theta, so including higher order terms approximates the beam
+  better. All terms are FFTs of J with different complex prefactors and so are fast to compute.
 3. Directly compute the surface integral in Eq. 4, which should not be an
   approximation. 	   
 
