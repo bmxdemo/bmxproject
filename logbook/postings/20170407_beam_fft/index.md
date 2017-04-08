@@ -64,10 +64,10 @@ A few things to keep in mind:
 **Figure 2** shows the projected surface current in the left panels and the
   resulting beams in the right panel. The top row shows a uniformly illuminated
   circular aperture with no curvature. In rows 2-5, J does not change but I am
-  plotting the abs value and the real part of J_x to reflect how the beam
-  calculation is done. Row 2 shows the straight FFT of abs(J). Rows 3-5 use the
-  equations in the linked paper and put in complex phase factors, and therefore
-  need complex J. Row 3 shows the first term of the approximated beam. Row 4 is
+  sometimes plotting |J| and sometimes plotting Re[J] to reflect how the beam
+  calculation is done. Row 2 shows the straight FFT of |J|. Rows 3-5 use the
+  equations in the linked paper which include complex phase factors multipliying J, and therefore
+  need complex J in the FFT. Row 3 shows the first FFT term of the beam approximation. Row 4 is
   the sum over the first 100 FFT terms, which breaks down as theta->90 deg. Row 5 shows the full numerical
   integration of the surface current.
 
