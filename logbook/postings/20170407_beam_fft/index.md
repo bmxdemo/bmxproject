@@ -124,7 +124,8 @@ dotted blue line, and isn't terrible, but doesn't get the main beam shape quite
 right. Doing the FFT but accounting for curvature using the first term of the
 Rahmat approximation is shown as the dashed cyan line. This captures the main
 beam asymmetry. Including 100 terms in the approximation gets us to dashed black
-line, which is exactly the same as the full surface integral beam up to theta = 75. Neither of these is a big improvement over just the first term. Nonetheless,
+line, which is exactly the same as the full surface integral beam, shown as the solid red line,
+up to theta = 75 deg. Neither of these is a big improvement over just the first term. Nonetheless,
 I'm pretty happy that this seems to be working.
 
 The dashed red line is the same as the solid red line but does not include the
