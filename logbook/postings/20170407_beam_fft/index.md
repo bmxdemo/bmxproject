@@ -147,14 +147,14 @@ coupling. (The HFSS beam of course includes all this.)
 
 ### 4 - Conclusions
 
-FFTing the surface current on the dish and accounting for dish curvature
-captures the directly calculated HFSS beam quite well. This exercise is partly
-academic, because we will use the direct HFSS beam in any simulation pipelines
-we use. However, it shows that the effect of direct horn/sky coupling is at ~-30
-dB effect at 45 degree zenith angles, so we cannot naively apply the HFSS beam
-at these large angles to calculate interferometer fringing from sources at these
-angles. For now (and maybe forever) we plan to make the flat sky approximation
-and use only the mean beam down to -30 dB or so, so this will be fine.
+FFTing the surface current on the dish while accounting for curvature
+reproduces the directly calculated HFSS far-field beam quite well. The exercise is partly
+academic because we will likely use the directly calculated HFSS beam in any simulation pipeline
+we use. However, it shows that spilloever is ~-30 dB at >45 degree zenith angles, 
+so we cannot naively apply the HFSS beam to calculate interferometer fringing from sources at these
+angles. We currently plan to make the flat sky approximation
+and use only the main beam down to -30 dB or so, so this will be not be a problem for now, and possibly 
+forever.
 
 Future work: compute the beam as a function of frequency in HFSS and input into
 BMX pipeline; tile aperture illumination for 4 dishes and compute autocorrelation to get
