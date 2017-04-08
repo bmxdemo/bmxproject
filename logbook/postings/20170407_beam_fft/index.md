@@ -109,9 +109,8 @@ beams. HFSS outputs these beams directly (L3X/L3Y).
 
 
 **Figure 4** shows the 2D gridded co-pol (L3X) beam from HFSS, which I'm regarding at
-  "truth." HFSS outputs on the sphere, so despite the projection distortions
-  here, the beam as a function of (theta,phi) is correct. The full beam goes all
-  the way out to theta=180, but I'm stopping it here.
+  "truth." HFSS outputs on the sphere, so despite the projection distortions, the beam as a function of (theta,phi) is correct. The full beam goes all
+  the way out to theta=180, but I'm stopping it before that for plotting purposes.
 
 <center><i>Figure 4 - HFSS beam</i></center>
 
