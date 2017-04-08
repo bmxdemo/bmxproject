@@ -132,7 +132,7 @@ The dashed red line is the same as the solid red line but does not include the e
 direct horn/sky or horn/ground coupling, the common name for which is spillover. You can see this makes a pretty big
 difference outside the main beam, especially at phi=0, theta=-50, where it's clear that sipllover dominates 
 the reflected power. This is also evident in Fig 4 as the large -25 dB lobe
-at the left end of Fig 4. Since the way I included the effect of the horn was
+at the left end of the plot. Since the way I included the effect of the horn was
 pretty kludgy (for instance, not taking into account any coherent interference
 from path length differences) I expect that much of the beam structure that the
 surface integral fails to account for comes from not including the horn
