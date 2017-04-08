@@ -31,7 +31,7 @@ The procedure follows [Rahmat-Samii,
 
 For step 4, we can do various things:
 1. Compute |FFT(J)|^2 to get the far field beam
-2. Apply Equation 11, which effectively multiplies J by the surface Jacobian of
+2. Apply Equation 11, which multiplies J by the "surface projection Jacobian" of
   the parabola and FFTs to account for surface curvature. This is an expansion
   about small theta, and including higher order terms approximates the beam
   better. All terms are FFTs of J with different complex prefactors.
@@ -45,8 +45,8 @@ A few things to keep in mind:
   rays are scattered at large angles. (I ran a test with a perfect parabola and
   a downward facing horn, and putting in the effect of the central obscuration
   by zeroing J at r<r_horn made a huge difference.)
-- I approximated the surface as a parabola for computing the surface Jacobian
-  and the complex prefactors. This I can improve, and it might make small
+- I approximated the surface as a parabola for computing the surface projection Jacobian
+  and complex prefactors. This I can improve, and it might make small
   differences. 
 
 <hr>
