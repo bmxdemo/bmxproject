@@ -151,9 +151,8 @@ FFTing the surface current on the dish while accounting for curvature
 reproduces the directly calculated HFSS far-field beam quite well. The exercise is partly
 academic because we will likely use the directly calculated HFSS beam in any simulation pipeline
 we use. However, it shows that spillover dominates reflected power from the horizon to 45 deg elevation 
-in the horn->dish direction, 
-so we cannot naively apply the HFSS beam to calculate interferometer fringing from sources at these
-angles. We currently plan to make the flat sky approximation
+in the horn->dish direction, so interferometer fringing from sources at these angles will not be via the 
+baselines established by the dish positions. We currently plan to make the flat sky approximation
 and use only the main beam (down to -30 dB or so), so this will be not be a problem for now,  possibly 
 forever.
 
