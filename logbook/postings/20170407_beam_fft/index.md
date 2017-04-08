@@ -108,7 +108,7 @@ beams. HFSS outputs these beams directly (L3X/L3Y).
 ![](beam_fig3.png)
 
 
-**Figure 4** shows the 2D gridded beam from HFSS, which I'm regarding at
+**Figure 4** shows the 2D gridded co-pol (L3X) beam from HFSS, which I'm regarding at
   "truth." HFSS outputs on the sphere, so despite the projection distortions
   here, the beam as a function of (theta,phi) is correct. The full beam goes all
   the way out to theta=180, but I'm stopping it here.
