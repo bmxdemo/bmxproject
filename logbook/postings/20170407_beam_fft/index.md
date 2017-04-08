@@ -79,7 +79,7 @@ An important note: in the right hand column Figure 2 I added the contribution fr
 HFSS with the horn but no dish and adding the horn and dish beams as (sqrt(B_horn) +
 sqrt(B_dish))^2. The beams plotted are the "Ludwig third definition" co-polar beam,
 which I compute from the x, y, and z polarized beams. Basically, I have complex Jx, Jy
-and Jz, and from these can compute Bx, By, and Bz. (In the left column, I'm only
+and Jz, and from these can compute the far field Ex, Ey, and Ez. (In the left column, I'm only
 showing Jx.) Bx and By are co and cross
 polar near theta=0, but at large theta they break down. For instance, Bz is zero
 at theta=0, but at (theta, phi) = (90,0), Bz is a maximum and Bx is zero. To get
