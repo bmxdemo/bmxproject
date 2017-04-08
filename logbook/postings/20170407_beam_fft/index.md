@@ -80,13 +80,12 @@ HFSS with the horn but no dish and adding the horn and dish beams as (sqrt(B_hor
 sqrt(B_dish))^2. The beams plotted are the "Ludwig third definition" co-polar beam,
 which I compute from the x, y, and z polarized beams. Basically, I have complex Jx, Jy
 and Jz, and from these can compute the far field Ex, Ey, and Ez. (In the left column, I'm only
-showing Jx.) Bx and By are co and cross
-polar near theta=0, but at large theta they break down. For instance, Bz is zero
-at theta=0, but at (theta, phi) = (90,0), Bz is a maximum and Bx is zero. To get
-around this one then projects the x, y, z beams onto the theta and phi spherical
-coordinate unit vectors. This is not a good basis because B_theta and B_phi are not aligned
-with the dominant polarization axes at theta=0, so this Ludwig definition thing
-(Eq. 14-15) is used as the commonly accepted definition of co and cross polar
+showing Jx.) Ex and Ey are the co and cross
+polar E-field near theta=0, but at large theta this is no longer true. For instance, Ez is zero
+at theta=0, but at (theta, phi) = (90,0), Ez is a maximum and Ex is zero. To get
+around this, one then projects the x, y, z E-fields onto the theta/phi spherical
+coordinate unit vectors. This is not a good basis because E_theta and E_phi are not aligned
+with the dominant polarization axes at theta=0, so this Ludwig definition thing (Eq. 14-15), which is equal to Ex and Ey at small theta, is used as the commonly accepted definition of co and cross polar
 beams. 
 
 
