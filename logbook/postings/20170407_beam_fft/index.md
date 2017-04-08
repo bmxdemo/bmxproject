@@ -75,7 +75,7 @@ The max polar latitudinal angle of the FFTed beams is set by the sampling of the
 decides this on its own so there's not much I can do to decrease it. The surface
 integral beam has no such limitation.
 
-An important note: in the right hand column Figure 2 I added the contribution from the horn by running
+An important note: in the right hand column Figure 2 I added the contribution from direct horn/sky coupling by running
 HFSS with horn and no dish and adding the horn and FFT^2(J) beams as (sqrt(A) +
 sqrt(B))^2. The beams plotted are the "Ludwig third definition" co-polar beam,
 which I compute from the x, y, and z polarized beams. Basically, I have complex Jx, Jy
