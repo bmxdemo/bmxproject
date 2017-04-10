@@ -71,9 +71,10 @@ A few things to keep in mind:
   the sum over the first 100 FFT terms, which breaks down as theta->90 deg. Row 5 shows the full numerical
   integration of the surface current.
 
-The max polar latitudinal angle of the FFTed beams is set by the sampling of the x/y plane. HFSS
-decides this on its own so there's not much I can do to decrease it. The surface
-integral beam has no such limitation.
+The max theta of the FFTed beams is set by the sampling of the x/y plane. In binning J to produce
+the left hand column I can choose the bin size, but if I choose too small a bin size I get holes. 
+Since HFSS chooses the native sampling of the surface, I don't think there's much I can do to increase the resolution. 
+The surface integral beam has no such limitation.
 
 An important note: in the right hand column Figure 2 I added the contribution from direct horn/sky coupling by running
 HFSS with the horn but no dish and adding the horn and dish beams as (sqrt(B_horn) +
