@@ -71,7 +71,7 @@ A few things to keep in mind:
   the sum over the first 100 FFT terms, which breaks down as theta->90 deg. Row 5 shows the full numerical
   integration of the surface current.
 
-The max theta of the FFTed beams is set by the sampling of the x/y plane. In binning J to produce
+The max polar angle theta of the FFTed beams is set by the sampling of the x/y plane. In binning J to produce
 the left hand column I can choose the bin size, but if I choose too small a bin size I get holes. 
 Since HFSS chooses the native sampling of the surface, I don't think there's much I can do to increase the resolution. 
 The surface integral beam has no such limitation.
