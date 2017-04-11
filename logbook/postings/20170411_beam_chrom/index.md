@@ -12,7 +12,7 @@ have a look at beam chromaticity.
 
 ### 2 - Results
 
-**Figure 1** shows the beams simulated in HFSS at 0.7, 1.0, and 1.4 GHz. The OMT
+**Figure 1** shows the horn + dish beam simulated in HFSS at 0.7, 1.0, and 1.4 GHz. The OMT
 x-pol coax is excited and the co-polar beam is plotted.
 
 
@@ -61,7 +61,7 @@ and therefore proportional to the E-field not |E|^2. It looks as expected.
 The shelf in the 1.4 GHz illumination is expected given the compact
 pyramidal horn's beam, shown in **Figure 3**. (The dish subtends an angle of
 approximately 65 degrees when viewed from the center of the horn.) We also
-expect a bump in the 1 GHz illumination along the x direction, which we indeed
+expect a bump in the 1 GHz illumination but at a large distance from the peak. We indeed
 see in Figure 2 of [this posting](../20170407_beam_fft/index.md).
 
 <p>
