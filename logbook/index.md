@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Beam chromaticity](postings/20170411_beam_chrom/index.md) - Apr 11, 2017 (CDS)
 * [Beam from aperture plane FFT](postings/20170407_beam_fft/index.md) - Apr 7, 2017 (CDS)
 * [Filter measurements](postings/20170327_LorchFilterMeasurements/index.md) - Mar 28, 2017 (JH)
 * [OMT + dish beam simulations](postings/20170323_beam_sims/index.md) - Mar 23, 2017 (CDS)
