@@ -1,4 +1,4 @@
-## April 21, 2017: Complex response
+## April 21, 2017: Complex beam response
 Christopher D. Sheehy
 <hr>
 
