@@ -1,4 +1,4 @@
-## April 21, 2017: Amplifier chain S-param and noise temperature measurement
+## April 21, 2017: Amplifier chain S-params and noise temperature
 Christopher D. Sheehy
 <hr>
 
