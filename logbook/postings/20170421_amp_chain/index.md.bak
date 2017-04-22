@@ -1,0 +1,460 @@
+## April 21, 2017: Amplifier chain S-param and noise temperature measurement
+Christopher D. Sheehy
+<hr>
+
+### 1 - Introduction
+
+This is a first crack at putting together the amplifier chain and measuring the
+noise temperature.
+
+<hr>
+
+### 2 - S-parameters of individual components
+
+
+The last -30 dB attenuator is because the VNA is overloaded before the 1 dB
+compression point of the system is reached. All the S21 params are therefore -30
+dB. (I checked and it is a very flat -30 dB attenuation.)
+
+Justine previously measured the Lorch filter S-params in [this
+posting](../20170327_LorchFilterMeasurements/index.md). They match the specs. I
+also checked the LNA S-params and they match the [Minicircuits spec
+sheet](https://www.minicircuits.com/pdfs/ZX60-P33ULN+.pdf) 
+exactly, including S21, S11, and 1 dB compression point. I also checked AMP2 and
+it has ~40 dB gain and 1 dB compression point where it's expected. So everything
+seems good. 
+
+The lowpass filter is specified as 1350 MHz, which below our band, but it has a
+very slow roll off and doesn't go to zero until 2400 MHz. See [this plot](lowpass.png) of the
+lowpass S11 and S21.
+
+I measured the S params of the low loss MECA coupler as well. **Figure 1** shows the thru
+S-params, with VNA port 1 at "out" and VNA port 2 and "IN", and the 30 dB port terminated.
+
+
+<p>
+<center>
+<table border="1" cellpadding="0" cellspacing="0">
+<tr><td>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr><th rowspan="2">Fig.&nbsp;1&nbsp;-</th>
+      <th colspan="2">Coupler thru</th>
+  </tr>
+  <tr><td align="center"><b>a. coupler thru configuration </b> </td>
+      <td align="center"><b>b. S-params</b> </td>
+  </tr>
+  <tr><td>&nbsp;</td>
+      <td><a href="vnaphotos/8.jpg"><img src="vnaphotos/8.jpg" width=400></a></td>
+      <td><a href="coupler_B.png"><img src="coupler_B.png" width=500></a></td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</center>
+
+**Figure 2** shows the same measurement but for a thru configuration with no
+  coupler. It has the same adapters, so it measures the loss we expect from the
+  coupler. (Note the adapter in Fig 1a is required between the coupler and LNA
+  because both are male.
+
+<p>
+<center>
+<table border="1" cellpadding="0" cellspacing="0">
+<tr><td>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr><th rowspan="2">Fig.&nbsp;2&nbsp;-</th>
+      <th colspan="2">No coupler thru</th>
+  </tr>
+  <tr><td align="center"><b>a. thru configuration </b> </td>
+      <td align="center"><b>b. S-params</b> </td>
+  </tr>
+  <tr><td>&nbsp;</td>
+      <td><a href="vnaphotos/5.jpg"><img src="vnaphotos/5.jpg" width=400></a></td>
+      <td><a href="thru.png"><img src="thru.png" width=500></a></td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</center>
+
+Opening Fig 1b and Fig 2b in separate tabs and blinking between them shows a
+shift in S21 of ~-0.1 dB caused by the coupler. This is very low loss, and in fact
+is the loss stated in the MECA data sheet (that's why we bought it). It
+corresponds to an added noise temperature of 7 K. I should
+repeat this because (1) I can export the data and plot the difference, and (2) I
+should be able to get less noise in S21. I did a thru calibration, but for some
+reason it refuses to zero S21 better. Obviously, the S21 structure isn't noise
+because it repeats between the two measurements.
+
+**Figure 3** shows the coupler S-params, but now terminating the "out" port and
+  puting VNA port 1 at the 30 dB port. We see a nice, relatively flat -30 dB
+  coupling across the band.
+
+
+<p>
+<center>
+<table border="1" cellpadding="0" cellspacing="0">
+<tr><td>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr><th>Fig.&nbsp;3&nbsp;-</th>
+      <th>Coupler, 30 dB port S-params</th>
+  </tr>
+  <tr><td>&nbsp;</td>
+      <td><a href="coupler_A.png"><img src="coupler_A.png" width=500></a></td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</center>
+
+
+<hr>
+
+### 3 - S-parameters of amplifier chain
+
+Next, I assembled the amplifier chain as in **Figure 4**:
+
+coupler -> LNA -> -3dB -> filter -> AMP2 -> lowpass -> -30 dB
+
+Port 1 of the VNA is at the input to the coupler. Port 2 is the output of the
+chain. The 30 dB port of the coupler is connected to a signal generator which is
+off, which is exactly the same as if it is terminated.
+
+
+<p>
+<center>
+<table border="1" cellpadding="0" cellspacing="0">
+<tr><td>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr><th>Fig.&nbsp;4&nbsp;-</th>
+      <th>Amplifier chain</th>
+  </tr>
+  <tr><td>&nbsp;</td>
+      <td><a href="vnaphotos/7.jpg"><img src="vnaphotos/7.jpg" width=800></a></td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</center>
+
+**Figure 5** shows the resulting S-parameters. S11 matches the LNA S11 from the
+  spec sheet. S21 is 20 dB. Accounting for the -30 dB attenuator, the system has
+  50 dB gain. The LNA has ~17 dB gain and the second stage amp has ~40 dB
+  gain. With the 3 dB attenuator, we expect ~54 dB, so this is about right. 
+
+
+<p>
+<center>
+<table border="1" cellpadding="0" cellspacing="0">
+<tr><td>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr><th rowspan="2">Fig.&nbsp;5&nbsp;-</th>
+      <th colspan="2">Amp chain S-params</th>
+  </tr>
+  <tr><td align="center"><b>a. </b> full range</td>
+      <td align="center"><b>b. </b> zoom</td>
+  </tr>
+  <tr><td>&nbsp;</td>
+      <td><a href="freq_sweep.png"><img src="freq_sweep.png" width=500></a></td>
+      <td><a href="freq_sweep_zoom.png"><img src="freq_sweep_zoom.png" width=500></a></td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</center>
+
+**Figure 6** shows a power sweep of S21 at 1.3 GHz. The system starts to become nonlinear
+  at -44 dBm input, with a 1 dB compression point at -37 dBm input. The 1 dB
+  compression point of the second amp is lower than the LNA, so it is the second
+  amp that is certainly driving it. For reference, 300 K blackbody is -174 dBm /
+  Hz. Over 1 GHz, this is -174 + 90 = -84 dBm, so we are in no danger of
+  non-linearity. We'll have to see what happens with RFI.
+
+<p>
+<center>
+<table border="1" cellpadding="0" cellspacing="0">
+<tr><td>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr><th>Fig.&nbsp;6&nbsp;-</th>
+      <th>Power sweep, S21 at 1.3 GHz</th>
+  </tr>
+  <tr><td>&nbsp;</td>
+      <td><a href="power_sweep.png"><img src="power_sweep.png" width=500></a></td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</center>
+
+
+**Figure 7** shows S-params with the coupler input terminated and port 1 of the
+  VNA at the 30 dB coupled port. S11 is low and S21 is the same as the amp chain
+  S21 but reduced by 30 dB, as hoped for.
+
+<p>
+<center>
+<table border="1" cellpadding="0" cellspacing="0">
+<tr><td>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr><th rowspan="2">Fig.&nbsp;7&nbsp;-</th>
+      <th colspan="2">Coupled port S-params</th>
+  </tr>
+  <tr><td align="center"><b>a. configuration </b> </td>
+      <td align="center"><b>b. S-params</b> </td>
+  </tr>
+  <tr><td>&nbsp;</td>
+      <td><a href="vnaphotos/6.jpg"><img src="vnaphotos/6.jpg" width=400></a></td>
+      <td><a href="coupler.png"><img src="coupler.png" width=500></a></td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</center>
+
+
+<hr>
+
+
+### 4 - Spectrometer data
+
+I then terminated the input of the chain and terminated the coupled port. I
+removed the 30 dB attenuator and connected the output of the chain to channel 1
+of the spectrometer. The spectrometer samples at 1100 MHz, putting our 1100 -
+1650 MHz band in the third nyquist zone, and appearing at 0-550 MHz.  I
+connected a signal generator outputting a tone just above 1100 MHz and connected
+it to port 2 of the spectrometer. I failed to write down the power of the tone,
+but it is ~ -20 dBm. **Figure 8a** shows the result.  The top row
+is channel 1. The **left column** is the spectrum and the x-axis is in MHz. The
+**right column** shows 512 time samples of the raw sampled voltage. We are using
+2 or 3 bits of dynamic range. The bottom row is channel 2, which shows the
+spectrum of a pure tone directly connected to it.
+
+**Figure 8b** shows the same thing but with the input open. Now, instead of 300
+  K going throug the amp chain, the LNA noise is reflected off the open input
+  and amplified. The LNA noise is supposed to be 20 K, which is why the signal
+  goes down.
+
+<p>
+<center>
+<table border="1" cellpadding="0" cellspacing="0">
+<tr><td>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr><th rowspan="2">Fig.&nbsp;8&nbsp;-</th>
+      <th colspan="2">Spectrometer data</th>
+  </tr>
+  <tr><td align="center"><b>a. terminated input </b> </td>
+      <td align="center"><b>b. open input</b> </td>
+  </tr>
+  <tr><td>&nbsp;</td>
+      <td><a href="chain_vs_direct_terminated.png"><img src="chain_vs_direct_terminated.png" width=400></a></td>
+      <td><a href="chain_vs_direct_open.png"><img src="chain_vs_direct_open.png" width=400></a></td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</center>
+
+
+I then hooked a second signal generator up to the input of the chain and tuned
+the power output until it matched the direct spectrum. The power at which this
+occured is -70 dBm, which corresponds to 200 uV p-p. This makes sense given that
+the directly connected signal generator is at -20 dBm and the system gain is
+~50. The spectrometer data is shown in **Figure 9**.
+
+<p>
+<center>
+<table border="1" cellpadding="0" cellspacing="0">
+<tr><td>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr><th>Fig.&nbsp;9&nbsp;-</th>
+      <th>-70 dBm tone at input</th>
+  </tr>
+  <tr><td>&nbsp;</td>
+      <td><a href="chain_vs_direct_-70dBm.png"><img src="chain_vs_direct_-70dBm.png" width=400></a></td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</center>
+
+Lastly, I terminated the amp chain input and hooked the signal generator (still
+outputting -70 dBm) up to the 30 dB coupled port. The result is shown in
+**Figure 10**. The peak is reduced by 30 dBm, as expected. You can now just see
+the thermal noise instead of a line at zero. It's impressive how narrow
+bandwidth the tone is. Even though it dominates the power spectrum, the total
+amount of power appears to still be dominated by the thermal noise.
+
+<p>
+<center>
+<table border="1" cellpadding="0" cellspacing="0">
+<tr><td>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr><th>Fig.&nbsp;10&nbsp;-</th>
+      <th>-70 dBm tone at input</th>
+  </tr>
+  <tr><td>&nbsp;</td>
+      <td><a href="chain_vs_direct_terminated_-70dBmtone.png"><img src="chain_vs_direct_terminated_-70dBmtone.png" width=400></a></td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</center>
+
+
+<hr>
+
+### 5 - Noise temperature measurement
+
+I measured the noise temperature by terminating the input of the amp chain at 50
+ohms and dunking it in liquid nitrogen. The setup is shown in **Figure 11**.
+I connectorized a short length of ultra
+low loss semi-rigid coax, and measured its loss to be <0.1 dB. I connected one
+end to the input of the coupler and the other to a 50 ohm terminator. I need to
+submerge the terminator in LN2 so it needs to face down. I therefore installed a
+right angle connector after the LNA. Because it is after the LNA it should have
+no effect on the noise temperature. I do not use any of the S-parameters from
+the previous sections, so the slight change in setup should not affect anything.
+The 30 dB coupled port is connected to the signal generator, but it is off.
+
+<center>
+<table border="1" cellpadding="0" cellspacing="0">
+<tr><td>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr><th>Fig.&nbsp;11&nbsp;-</th>
+      <th>Noise temperature measurement setup</th>
+  </tr>
+  <tr><td>&nbsp;</td>
+      <td><a href="vnaphotos/3.jpg"><img src="vnaphotos/3.jpg" width=600></a></td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</center>
+
+**Figure 12** shows the results. The **top left** panel shows the power measured
+  in one frequency bin as a function of time. It is a little strange that it
+  doesn't seem to perfectly bottom out at a constant once the resistor gets to
+  77 K. (It definitely stopped boiling.) My theory is that the coax and coupler
+  and LNA slowly cool a bit from the thermal link (the coax is very thick)
+  and the boiloff, and so the noise continues to go down a bit. Nevertheless, it
+  is clear that the terminator is at 77 K. The vertical dashed lines show the
+  windows in which I average the spectra to get the 290 K and 77 K spectrum.
+
+The **top right** panel shows the average room temperature and 77 K spectra. I
+then assume that power (in ADU^2) is linearly proportional to temperature, which is true in
+the Rayleigh–Jeans limit (h nu << kT) which we are certainly in. In each
+frequency bin I calculate the slope of P(T), which gets me the gain of the
+system in ADU^2 / K. I then compute the y-intercept (at T=0) which gives me the
+zero point temperature (i.e. the noise temperature) in ADU^2, which I convert to
+K given the gain. I plot this noise temperature in the **lower left**
+panel. I also plot the noise temperature for a second measurement I made
+removing the coupler and hooking the terminated coax directly to the LNA input. 
+
+The **lower right** panel shows each of the individual spectra during the
+cooldown and warmup (each 100th, actually) now calibrated to temperature
+units. The fact that they are flat at all temperatures is a nice check.
+
+The noise temperature measurements are too high for the LNA specs, which is
+supposed to have 20 K noise. Obviously, the next thing to do is to try another
+LNA, but given that the LNA S-parameters and 1 dB compression were in spec, I'd
+be surprised if ours were broken. I should also try getting rid of the down
+chain amplifier and seeing if there is enough gain to measure the LNA by
+itself.
+
+Nicely, eyballing this plot, we see that the coupler adds ~8K noise. This
+corresponds to 0.11 dB of loss, which is what I measured in Figures 1-2. This
+gives me confidence I'm doing the measurement correctly (I've done it before,
+correctly, also). Unfortunately, it seems that the high noise temperature is
+probably real, too.
+
+
+
+<center>
+<table border="1" cellpadding="0" cellspacing="0">
+<tr><td>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr><th>Fig.&nbsp;12&nbsp;-</th>
+      <th>Noise temperature measurement</th>
+  </tr>
+  <tr><td>&nbsp;</td>
+      <td><a href="fig_tn.png"><img src="fig_tn.png" width=800></a></td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</center>
+
+
+<hr>
+
+### 6 - Conclusions
+
+* The amp chain has 50 dB of gain and 1 dB compression point @ -37 dBm input
+* The S-parameters of all individual components seem to make sense and match specs
+* 300 K takes up 2-3 bits of dynamic range. We want 1-2 bits, but the signal
+  will be smaller on the sky, so this seems about right. We shouldn't need
+  **more** gain, at least.
+* The behavior of the 30 dB coupled port makes sense
+* The noise temperaure is 100-150 K, is supposed to be ~20 K. This is the most
+  urgent issue that needs to be understood. Possibly just bad amp.
+* The coupler adds ~8 K noise temperature, as expected.
+
+
+
+<!--
+
+One panel
+
+<p>
+<center>
+<table border="1" cellpadding="0" cellspacing="0">
+<tr><td>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr><th>Fig.&nbsp;1&nbsp;-</th>
+      <th>Figure title</th>
+  </tr>
+  <tr><td>&nbsp;</td>
+      <td><a href="fig_1.png"><img src="fig_1.png"></a></td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</center>
+
+Two panel
+
+<p>
+<center>
+<table border="1" cellpadding="0" cellspacing="0">
+<tr><td>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr><th rowspan="2">Fig.&nbsp;1&nbsp;-</th>
+      <th colspan="2">Figure title</th>
+  </tr>
+  <tr><td align="center"><b>a. </b> label a</td>
+      <td align="center"><b>b. </b> label b</td>
+  </tr>
+  <tr><td>&nbsp;</td>
+      <td><a href="fig_1.png"><img src="fig_1.png"></a></td>
+      <td><a href="fig_1.png"><img src="fig_2.png"></a></td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</center>
+
+Three panel
+
+<p>
+<b>Fig 1 - Figure title</b>
+<table border="1">
+<tr><th>a - label 1
+<th>b - label 2
+<th>c - label 3
+<tr>
+<td><a href="fig_1.png"><img src="fig_1.png"></a>
+<td><a href="fig_2.png"><img src="fig_2.png"></a>
+<td><a href="fig_3.png"><img src="fig_3.png"></a>
+</table>
+
+-->
