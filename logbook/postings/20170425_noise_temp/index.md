@@ -145,7 +145,7 @@ A few notes about the measurement and various tweaks I tested:
   ambiguity between added noise from the attenuator and aliased noise from
   not having the bandpass last. The difference between Figs 2 and 3 shows that
   the attenuator adds only ~10 K, while switching the bandpass and lowpass and
-  removing the attenuator reduces the noise to 60 K. So I think both are an
+  removing the attenuator reduces the noise by 60 K. So I think both are an
   issue.
 
 <hr>
