@@ -128,7 +128,7 @@ The noise temperature now rocks, in line with the LNA spec sheet.
 
 A few notes about the measurement and various tweaks I tested:
 
-* The LNAs wants +3.0V. The 2nd stage amps want +2.8V. The noise temperature
+* The LNAs want +3.0V. The 2nd stage amps want +2.8V. The noise temperature
   measurement is the same if I give them these voltages or if I give +2.9V to
   each. 
 * Dunking the terminator in LN2, it's possible for the LNA to cool down, which
