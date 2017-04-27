@@ -409,10 +409,10 @@ compute the complex visibility by multiplying it by the windowed fringes in Fig
 
 This all makes sense. The visibility of a cosine is real (1). The visibility of a
 sine (2), or of a cosine but with the fringe shifted by pi/2 (3), is imaginary. 
-There is a decrease in the visibility caused by the beam asymmetry, which will
+~~There is a decrease in the visibility caused by the beam asymmetry, which will
 reduce s/n, but it is
 not large: 19% for the 90 degree rotated beam (4) and 2% for the 180 degree
-rotated beam (5). There is zero sensitivity to a pattern on the sky that does
+rotated beam (5).~~ **Update 20170426:** The sum over the u-v plane is the same in both cases. Therefore, instead of a reduced s/n we just have a little more mode mixing. Not a big deal unless we are cosmic variance limited and need more independent modes/baselines. There is zero sensitivity to a pattern on the sky that does
 not match the fringe period (6).
 
 <hr>
@@ -421,8 +421,8 @@ not match the fringe period (6).
 
 The complex response should be defined w.r.t. the true phase center of the
 dish. Not doing so isn't physically incorrect but is less intuitive. BMX's off
-axis dishes will work as an interferometer, suffering at most a 20% decrease in
-fringe amplitude for dishes rotated 90 degrees from each other.
+axis dishes will work as an interferometer, ~~suffering at most a 20% decrease in
+fringe amplitude for dishes rotated 90 degrees from each other.~~
 
 
 
