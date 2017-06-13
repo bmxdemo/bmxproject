@@ -2,7 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
-* [Rebuilt OMT S-Parameter and loss measurements](postings/20170612_Repaired_OMT/index.md) - Jun 6, 2017 (CC)
+* [Rebuilt OMT S-Parameter measurements pt. 1](postings/20170612_Repaired_OMT/index.md) - Jun 6, 2017 (CC)
 * [Tone stability measurement using two tones + 30db coupler](postings/20170426_tone_stability2/index.md) - Apr 26, 2016 (AS)
 * [Amplifier chain noise temperature II](postings/20170425_noise_temp/index.md) - Apr 25, 2017 (CDS)
 * [Amplifier chain S-params and noise temperature](postings/20170421_amp_chain/index.md) - Apr 21, 2017 (CDS)
