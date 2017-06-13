@@ -1,4 +1,4 @@
-## June 12, 2017: Repaired OMT S-Parameter and loss measurements
+## June 12, 2017: Repaired OMT S-Parameter
 Chandler Conn
 
 ### Introduction
@@ -6,7 +6,7 @@ Continuing in the same vein as [an earlier posting from Chris](../20170321_new_o
 
 | ![alt-text](../20170612_Repaired_OMT/IMG_20170609_154321.jpg "ouch!")|![alt-text](../20170612_Repaired_OMT/IMG_20170609_154324.jpg "not so bad!") |
 |:---|:---|
-| **Figure 1a (noticeable chip damage)! **| **Figure 1b (damage relative to normal)**|
+| **Figure 1a (noticeable chip damage) **| **Figure 1b (damage relative to normal)**|
 
 ---
 
