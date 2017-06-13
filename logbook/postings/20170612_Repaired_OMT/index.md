@@ -24,3 +24,7 @@ Measurements were performed on the VNA in the fast imaging lab, in the same mann
 | Sealed OMT (Figure 2b) | ![alt-text](../20170612_Repaired_OMT/OMT_S11.png "Taped") |
 |:---:|:---:|
 |**Unsealed vs. sealed (Figures 2a, 2b)**| ![alt-text](../20170612_Repaired_OMT/OMT_unsealed.png)|
+
+
+The data appears to be consistent with theory, except in two areas that stand out to me. First, the 1.3GHz xpol behavior is unimodal as opposed to the predicted bimodal (and less intense) behavior. This, however, is consistent with the data taken from the previous setup of OMTs.
+Another point of interest is the 1.2GHz ypol peak-the simulated curve has this peak as a singularity, while the data taken does not indicate this. The number of data points was increased from ~200 to 2048 in an effort to recover this singularity, to no avail. This is somewhat alarming as this behavior is *not* consistent with the [previous OMT S-param results](../20170321_new_omt "Click me! :)"). 
