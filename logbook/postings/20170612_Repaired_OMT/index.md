@@ -16,6 +16,6 @@ Measurements were performed on the VNA in the fast imaging lab, in the same mann
 |**Figure 2a (no aluminum tape)** | **Figure 2b (aluminum tape)**|
 
 #### Data
-| Sealed OMT | ![alt-text](../20170612_Repaired_OMT/OMT_S11.png "Taped") |
-|---|---|
-|**Unsealed vs. sealed**| ![alt-text](../20170612_Repaired_OMT/OMT_unsealed.png)|
+| Sealed OMT (Figure 2b) | ![alt-text](../20170612_Repaired_OMT/OMT_S11.png "Taped") |
+|:---:|:---:|
+|**Unsealed vs. sealed (Figures 2a, 2b)**| ![alt-text](../20170612_Repaired_OMT/OMT_unsealed.png)|
