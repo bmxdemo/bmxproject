@@ -14,6 +14,5 @@ The data gathering methods are exactly the same as they were earlier. Simple pho
 
 #### Results
 
-| S11  | ![alt-text](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20170612_Repaired_OMT/OMT_shorted_S11.png |
-| :---: | :---: |
-| **S21** | ![alt-text](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20170612_Repaired_OMT/OMT_shorted_S21.png |
+![alt-text](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20170612_Repaired_OMT/OMT_shorted_S11.png
+![alt-text](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20170612_Repaired_OMT/OMT_shorted_S21.png
