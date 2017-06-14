@@ -20,3 +20,5 @@ This data is a big mess, in part because of the number of data points we collect
 
 This data looks better. However, some things to note: we have some nulls that were not present in Chris's testing. This might be in part because we added an order of magnitude to the number of data points we collected, but it is still a point of concern. Otherwise this plot resembles the last testing of these OMTs.
 
+#### Loss
+![alt-text](../20170614_OMT_S12Loss/lossms.png)
