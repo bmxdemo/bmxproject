@@ -12,7 +12,11 @@ The data gathering methods are exactly the same as they were earlier. Simple pho
 
 #### Results
 
-![alt-text](../20170614_OMT_S12Loss/OMT_shorted_S11.png
+![alt-text](../20170614_OMT_S12Loss/OMT_shorted_S11.png)
 
-![alt-text](../20170614_OMT_S12Loss/OMT_shorted_S21.png
+This data is a big mess, in part because of the number of data points we collected (prohibiting us from using simple dots or crosses as data points). For the most part it looks great, barring the region from 1.2-1.4GHz. I'm not exactly sure what's going on here-there was this behavior in Chris's testing, but not to this extent it seems.
+
+![alt-text](../20170614_OMT_S12Loss/OMT_shorted_S21.png)
+
+This data looks better. However, some things to note: we have some nulls that were not present in Chris's testing. This might be in part because we added an order of magnitude to the number of data points we collected, but it is still a point of concern. Otherwise this plot resembles the last testing of these OMTs.
 
