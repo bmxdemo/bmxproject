@@ -29,4 +29,4 @@ The data appears to be consistent with theory, except in two areas that stand ou
 
 Another point of interest is the 1.2GHz ypol peak-the simulated curve has this peak as a null, while the data taken does not indicate this. The number of data points was increased from ~200 to 2048 in an effort to recover this null, to no avail. This is somewhat alarming as this behavior is *not* consistent with the [previous OMT S-param results](../20170321_new_omt/index.md "Click me! :)"). However, taking into account the sealed vs. unsealed data, we see that this region of the spectrum is very dependent on proper sealing. Without sealing, there was no null, and adding aluminum tape recovered two of them. The missing one might be because my taping etiquette is different from Chris's.
 
-Next will be the shorting of the two OMTs in order to determine the S21 parameters for loss measurement.
+[Next will be the shorting of the two OMTs in order to determine the S21 parameters for loss measurement.](../20170614_OMT_S12Loss/index.md "clicky click")
