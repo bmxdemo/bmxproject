@@ -12,7 +12,7 @@ The data gathering methods are exactly the same as they were earlier. Simple pho
 
 #### Results
 
-![alt-text](../20170612_Repaired_OMT/OMT_shorted_S11.png
+![alt-text](../20170614_OMT_S21Loss/OMT_shorted_S11.png
 
-![alt-text](../20170612_Repaired_OMT/OMT_shorted_S21.png
+![alt-text](../20170614_OMT_S21Loss/OMT_shorted_S21.png
 
