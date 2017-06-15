@@ -20,7 +20,14 @@ This data is a big mess, in part because of the number of data points we collect
 
 This data looks better. However, some things to note: we have some nulls that were not present in Chris's testing. This might be in part because we added an order of magnitude to the number of data points we collected, but it is still a point of concern. Nulls are very responsive to poor sealing from the aluminum tape, and it is likely that my taping job was not the same as the last iteration as well. Otherwise this plot resembles the last testing of these OMTs.
 
-#### Loss
-![alt-text](../20170614_OMT_S12Loss/lossms.png)
+#### Loss (two trials)
+|Trial 1 (Chandler, both polarizations, one connector) | ![alt-text](../20170614_OMT_S12Loss/lossms.png) |
+|:----: | :----: |
+| **Trial 2 (Chris+Chandler, separate calibration, one polarization, multiple connectors)** | ![alt-text](../20170614_OMT_S12Loss/20170615_loss_meas.png) |
 
-Some notes on why this loss is so much greater than the last testing's: for this measurement we used a new VNA. The cables from this VNA were both male ports, so both needed adapters for the male ports on the OMT. Only one of these adapters was able to be calibrated out during the initial calibration, so a good ~.1dB could be the result of the other adapter. Patterns in the loss seem to point to poor calibration as a potential source of error as well, as typical loss should not be this patterned.
+Some notes:
+ * General trend in my (Chandler) plot hints at poor calibration
+ * Approximately equal magnitudes - good!
+ * Bad testing cables could lead to higher measured loss
+ * Need for an uncalibrated connector (because of the two male jacks on the VMA and two male jacks on the OMT) which adds to the loss
+    * Approximately calculted out in Chris's plot
