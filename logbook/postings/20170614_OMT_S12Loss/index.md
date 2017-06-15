@@ -22,3 +22,5 @@ This data looks better. However, some things to note: we have some nulls that we
 
 #### Loss
 ![alt-text](../20170614_OMT_S12Loss/lossms.png)
+
+Some notes on why this loss is so much greater than the last testing's: for this measurement we used a new VNA. The cables from this VNA were both male ports, so both needed adapters for the male ports on the OMT. Only one of these adapters was able to be calibrated out during the initial calibration, so a good ~.1dB could be the result of the other adapter. 
