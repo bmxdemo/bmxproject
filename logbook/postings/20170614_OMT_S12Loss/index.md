@@ -25,6 +25,9 @@ This data looks better. However, some things to note: we have some nulls that we
 --------------------------------------
 
 ### Loss (two trials)
+
+With the S11 and S21 values from above, I calculated the loss in dB. In order to better understand the effects of the coaxial connector on increasing the loss, Chris and I repeated these measurements with the regular connector as well as with an additional right angle connector, to view the effect of adding a connector to the mechanism. This information is in the second plot. However, the two plots cannot be compared directly, as there was a different calibration between the two, as well as potentially different OMT orientation (as they were moved and replaced prior to recording data the second time).
+
 |Trial 1 (Chandler, both polarizations, one connector) | ![alt-text](../20170614_OMT_S12Loss/lossms.png) |
 |:----: | :----: |
 | **Trial 2 (Chris+Chandler, separate calibration, one polarization, multiple connectors)** | ![alt-text](../20170614_OMT_S12Loss/20170615_loss_meas.png) |
