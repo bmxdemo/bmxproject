@@ -18,7 +18,7 @@ This data is a big mess, in part because of the number of data points we collect
 
 ![alt-text](../20170614_OMT_S12Loss/OMT_shorted_S21.png)
 
-This data looks better. However, some things to note: we have some nulls that were not present in Chris's testing. This might be in part because we added an order of magnitude to the number of data points we collected, but it is still a point of concern. Otherwise this plot resembles the last testing of these OMTs.
+This data looks better. However, some things to note: we have some nulls that were not present in Chris's testing. This might be in part because we added an order of magnitude to the number of data points we collected, but it is still a point of concern. Nulls are very responsive to poor sealing from the aluminum tape, and it is likely that my taping job was not the same as the last iteration as well. Otherwise this plot resembles the last testing of these OMTs.
 
 #### Loss
 ![alt-text](../20170614_OMT_S12Loss/lossms.png)
