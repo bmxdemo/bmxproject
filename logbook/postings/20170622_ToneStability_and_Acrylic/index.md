@@ -12,6 +12,12 @@ One hour of data:
 |----|----|
 |![alt-text](../20170622_ToneStability_and_Acrylic/med_amp.png)|![alt-text](../20170622_ToneStability_and_Acrylic/no_amp.png)|
 
+I noticed 4 distinct regions when zooming in: a high amplitude (high amp) region, a low amp region, a medium amp region, and one with apparently no amplitude. This below plot (Figure 1) should illustrate that concept (this is most likely already known to anyone reading this).
+Packet number on the x-axis is simply the number of the time packet for that amplitude. For example, each dark red region is one "packet" of high amplitude, and each seafoam green horizontal stripe is one "packet" of no amplitude.
+
+|Figure 1|![alt-text](../20170622_ToneStability_and_Acrylic/zoom.png)|
+|:---:|:---:|
+
 
 ### Acrylic Reflection
 ![alt-text](../20170622_ToneStability_and_Acrylic/acrylic.png)
