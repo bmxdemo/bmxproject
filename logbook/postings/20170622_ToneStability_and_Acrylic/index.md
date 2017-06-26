@@ -36,3 +36,5 @@ Sharp peaks are present, and I have a few hypotheses. First, they are still rela
 ![alt-text](../20170622_ToneStability_and_Acrylic/acrylic.png)
 
 As we can see, there is no noticeable reflectivity change due to adding acrylic of any thickness.
+
+I tried plotting the difference between the two plots (with respect to the logarithm, as to do it correctly) and the difference in S11 was on the order of -200 dB for both thicknesses. So, it is fair to say that the acrylic changes nothing.
