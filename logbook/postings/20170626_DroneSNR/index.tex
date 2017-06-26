@@ -20,16 +20,17 @@ beam to -30dB).  Received signal power is given by
 \end{equation}
 
 The noise power is given by sum over system $T_{\rm sys}\approx 50$K
-and sky $T_{\rm sky} \approx 10$K temperatures
+and sky $T_{\rm sky} \approx 10$K temperatures, giving total
+temperature $T_T\approx 60$K
 
 \begin{equation}
-  P_N = 2 k_b (T_{\rm sky} + T_{\rm sys}) \Dnu
+  P_N = 2 k_B T_T \Dnu
 \end{equation}
 We want signal to be always dominated by drone, rather than the
 changing sky background, etc, which implies $P_S \gg P_N$, or 
 
 \begin{equation}
-  \Dnu \ll 6\times 10^{13} {\rm Hz} A \left(\frac{P_e}{\rm 1  mW}\right)
+  \Dnu \ll A \left(\frac{P_e}{\rm 1  mW}\right) \, 6\times 10^{13} {\rm Hz} 
 \end{equation}
 
 So, we are always very safely into this regime up to $A=10^{-4}$
@@ -56,7 +57,7 @@ field'' approximation. So, let's do two calculations:
 
 \subsection*{Broadband signal}
 
-With $\Dnu=500$MHz, $P_N\approx 10^{-12}$W and $P_S=10^{-7}A$W for mW
+With $\Dnu=500$MHz, $P_N\approx 10^{-12}$W and $P_S=A\times10^{-7}$W for mW
 source, giving
 
 \begin{equation}
@@ -68,11 +69,28 @@ give us signal to -30dB.
 
 \subsection*{Narrowband signal}
 
-TODO
-%You want to integrate for less than $t_i$ as the drone will be
-%moving. Say give it a factor of 10, giving $\delta nu=100Hz$. So the
-%noise power would be
+Say you have a narrowband signal, a pure tone with infinite
+precision that goes into a single FFT bin. The signal value in volts
+in that FFT bin after integration $t_i$ is going to be $V=\sqrt{2 P_s
+A  R}$, where $R=50\Omega$ is the line impendance.
 
+At the same time the thermal noise injects $2k_B T_T / t_i$  power
+into it (since the width of the FFT bin is $\sim 1/t_i$), giving rms
+noise contribution of $\sigma(V_n) \sim  \sqrt{2 R k_B T_t /t_i}$
 
+The ratio gives SNR
+\begin{equation}
+  {\rm SNR} = \sqrt{\frac{P_s A}{k_BT_T} t_i} = 4\times 10^8 \sqrt{A}
+  \sqrt{\frac{P_s}{1{\rm mW}}}
+\end{equation}
+
+If this calculation is right, which I'm not sure it is, then the
+scaling is very favorable and and we emit very very small powers and
+still get away with it, even for much decreased $t_i$ and deep into
+small values of $A$.
+
+Note that scaling with $A$ is more favorable. This squares with my
+intuition that if measuring amplitude of a known signal is much easier
+than measuring ``power''.
 
 \end{document}
