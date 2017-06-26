@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{gensymb}
+
+\begin{document}
+
+\title{Drone SNR calculation}
+\author{A Slosar}
+\date{June 26, 2017}
+\maketitle
+
+\newcommand{\Dnu}{\Delta \nu}
+Assume drone flies at heigh $h\approx150$m, emits power $P_e$ into
+bandwidth $\Dnu$ over solid angle
+$\Omega_e\approx 2\pi$, which is received by a dish of radius $r_d=2$
+and is beam suppressed by $A=10^{-3}-1$ (assuming we want to measure
+beam to -30dB).  Received signal power is given by
+
+\begin{equation}
+  P_S = P_e A \frac{\pi r_d^2}{h^2\Omega_e} \approx 10^{-4} P_e A
+\end{equation}
+
+The noise power is given by sum over system $T_{\rm sys}\approx 50$K
+and sky $T_{\rm sky} \approx 10$K temperatures
+
+\begin{equation}
+  P_N = 2 k_b (T_{\rm sky} + T_{\rm sys}) \Dnu
+\end{equation}
+We want signal to be always dominated by drone, rather than the
+changing sky background, etc, which implies $P_S \gg P_N$, or 
+
+\begin{equation}
+  \Dnu \ll 6\times 10^{13} {\rm Hz} A \left(\frac{P_e}{\rm 1  mW}\right)
+\end{equation}
+
+So, we are always very safely into this regime up to $A=10^{-4}$
+
+Now say we want to map a square of $30\degree\times30\degree$
+with resolution $0.1\degree$. This gives $N_{\rm pix} = 10^5$
+pixels. Flying for $T=10$ minutes, this gives integration time
+\begin{equation}
+  t_i = \frac{T}{N_{\rm pix}}\approx 0.4{\rm s}
+\end{equation}
+per resolution element.
+
+Given that we have established that noise never matters, we have SNR
+that is purely ``mode counting''
+
+\begin{equation}
+  {\rm SNR} = \frac{P_S}{(P_S + P_N) / \sqrt{t_i \Dnu }} \approx \sqrt{t_i \Dnu}
+\end{equation}
+
+This is somewhat counter-intuitive, because I would have thought that
+for a delta function $\Dnu$ I should have meausured the amplitude
+perfectly. So I think this indicates breakdown of the ``Gaussian
+field'' approximation. So, let's do two calculations:
+
+\subsection*{Broadband signal}
+
+With $\Dnu=500$MHz, $P_N\approx 10^{-12}$W and $P_S=10^{-7}A$W for mW
+source, giving
+
+\begin{equation}
+  {\rm SNR} = 10^4 \frac{A}{A+10^{-5}}
+\end{equation}
+So essentially a very good SNR down to -50dB. Emitting 10$\mu$W would
+give us signal to -30dB.
+
+
+\subsection*{Narrowband signal}
+
+TODO
+%You want to integrate for less than $t_i$ as the drone will be
+%moving. Say give it a factor of 10, giving $\delta nu=100Hz$. So the
+%noise power would be
+
+
+
+\end{document}
