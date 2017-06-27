@@ -11,7 +11,7 @@ For these following data points, my mode of analysis was simply analyzing the me
 
 One hour of data:
 
-|![alt-text](../20170622_ToneStability_and_Acrylic/nolog_no.png)|![alt-text](../20170622_ToneStability_and_Acrylic/nolog_low.png)|
+|![alt-text](../20170622_ToneStability_and_Acrylic/nolog_none.png)|![alt-text](../20170622_ToneStability_and_Acrylic/nolog_low.png)|
 |----|----|
 |![alt-text](../20170622_ToneStability_and_Acrylic/nolog_med.png)|![alt-text](../20170622_ToneStability_and_Acrylic/nolog_high.png)|
 
