@@ -11,7 +11,7 @@ For these following data points, my mode of analysis was simply analyzing the me
 
 One hour of data:
 
-|![alt-text](../20170622_ToneStability_and_Acrylic/ccnone.png)|![alt-text](../20170622_ToneStability_and_Acrylic/cclow.png)|
+|![alt-text](../20170622_ToneStability_and_Acrylic/ccno.png)|![alt-text](../20170622_ToneStability_and_Acrylic/cclow.png)|
 |----|----|
 |![alt-text](../20170622_ToneStability_and_Acrylic/ccmed.png)|![alt-text](../20170622_ToneStability_and_Acrylic/cchigh.png)|
 
