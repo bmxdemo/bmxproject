@@ -7,7 +7,7 @@ In this posting, I present the tone stability plots for the rebuilt OMTs.
 
 ### Tone Stability
 
-For these following data points, my mode of analysis was simply analyzing the mean (log10) power as a function of time. The breakdown of these plots is explained following their presentation.
+For these following data points, my mode of analysis was simply taking the mean power as a function of time. The breakdown of these plots is explained following their presentation.
 
 One hour of data:
 
