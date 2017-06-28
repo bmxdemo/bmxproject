@@ -8,11 +8,11 @@ To prevent local avian fauna from habitating our experiment, it is likely necess
 
 #### Measurements
 
-| Secured acrylic (holding with two hands tightly to the OMT)| ![alt-text](../20170621_Acrylic/acrylic.png)|
+| Secured acrylic (holding with two hands tightly to the OMT)| ![alt-text](../20170628_Acrylic/acrylic.png)|
 |:----:|:----:|
-|**Unsecured acrylic (holding with one hand, not tightly secured)**|![alt-text](../20170621_Acrylic/acrylic_wobble.png)|
-|**Difference between no acrylic and unsecured acrylic (in dB)**|![alt-text](../20170621_Acrylic/acrylic_diff.png)|
-|**Unsecured acrylic held at 10, 45 degrees (with respect to OMT face)**|![alt-text](../20170621_Acrylic/acrylic_full.png)|
-|**Zoom on one of the peaks of the previous plot**|![alt-text](../20170621_Acrylic/acrylic_zoom.png)|
+|**Unsecured acrylic (holding with one hand, not tightly secured)**|![alt-text](../20170628_Acrylic/acrylic_wobble.png)|
+|**Difference between no acrylic and unsecured acrylic (in dB)**|![alt-text](../20170628_Acrylic/acrylic_diff.png)|
+|**Unsecured acrylic held at 10, 45 degrees (with respect to OMT face)**|![alt-text](../20170628_Acrylic/acrylic_full.png)|
+|**Zoom on one of the peaks of the previous plot**|![alt-text](../20170628_Acrylic/acrylic_full_zoom.png)|
 
 All of these plots seem to indicate that the acrylic would serve as a good physical barrier without affecting the signal transmission in any way. The changes due to adding acrylic are noticeable in some parts (such as the peaks in the full plot) but the extent of this change is almost nothing. I am not sure how much of an effect this would have, but the difference plot seems to suggest that it would be on the order of none.
