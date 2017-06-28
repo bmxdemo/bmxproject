@@ -15,4 +15,6 @@ To prevent local avian fauna from habitating our experiment, it is likely necess
 |**Unsecured acrylic held at 10, 45 degrees (with respect to OMT face)**|![alt-text](../20170628_Acrylic/acrylic_full.png)|
 |**Zoom on ~1.2GHz peak of the previous plot**|![alt-text](../20170628_Acrylic/acrylic_full_zoom.png)|
 
+note: wobbly means that I just held with one hand, so as to simulate small variations or non-flatness in the acrylic.
+
 All of these plots seem to indicate that the acrylic would serve as a good physical barrier without affecting the signal transmission in any way. In many of the plots the plot appears black because of how closely the different measurements are. Even at an extreme angle of 45 degrees, the change due to adding the acrylic is negligable. The changes due to adding acrylic are noticeable in some parts (such as the peaks in the full plot) but the extent of this change is almost nothing. I am not sure how much of an effect this would have, but the difference plot seems to suggest that it would be on the order of none.
