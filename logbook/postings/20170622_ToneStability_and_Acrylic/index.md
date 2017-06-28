@@ -9,7 +9,7 @@ In this posting, I present the tone stability plots for the rebuilt OMTs.
 
 For these following data points, my mode of analysis was simply taking the mean power as a function of time. The breakdown of these plots is explained following their presentation.
 
-One hour of data:
+One hour of data at 100MHz:
 
 |![alt-text](../20170622_ToneStability_and_Acrylic/ccno.png)|![alt-text](../20170622_ToneStability_and_Acrylic/cclow.png)|
 |----|----|
@@ -33,3 +33,5 @@ Next, I updated to work with 8+ hours of data. Here is a plot of the spread of m
 As can be seen, the changes over time are minimal to none. The stability seems very high, but keep in mind this is at log10 scales for data taken on 20170615 by Anze for ~8 hours. If desired I can run this same plot generator over other data sets but I feel this speaks volumes to the stability.
 
 Sharp peaks are present, and I have a few hypotheses. First, they are still relatively small on these scales, so they might be due to a random occurrence in the room. More likely, however, is that my function that separates data clusters into the different amplitudes occasionally misassigns the data to a wrong section. This happens in, what I've found, around 1 part in 4000+-1000. Sharp peaks are most likely data points that were improperly labeled. This idea is preferential in my mind because of how inconsequential these peaks are, as they do not follow any real patterns from the data around them.
+
+If desired, I have the data for 300MHz as well as for many different hours of plotting. I have the code necessary to do these plots if it is so desired, and I could easily make them, but they all present the same relative degree of information.
