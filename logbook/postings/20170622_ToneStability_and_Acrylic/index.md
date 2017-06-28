@@ -1,9 +1,9 @@
-## June 22, 2017 - OMT Tone Stability plots and acrylic reflection (S11) measurements
+## June 22, 2017 - OMT Tone Stability plots
 Chandler Conn
 
 ### Introduction
 
-In this amalgamation, I present two unrelated data sets: the first of these sets is a measurement of the stability of the OMT measurements in response to a tone generator, while the second is a measurement of the reflectiveness of two thicknesses of acrylic when placed in front of the OMT.
+In this posting, I present the tone stability plots for the rebuilt OMTs.
 
 ### Tone Stability
 
@@ -31,10 +31,3 @@ Next, I updated to work with 8+ hours of data. Here is a plot of the spread of m
 As can be seen, the changes over time are minimal to none. The stability seems very high, but keep in mind this is at log10 scales for data taken on 20170615 by Anze for ~8 hours. If desired I can run this same plot generator over other data sets but I feel this speaks volumes to the stability.
 
 Sharp peaks are present, and I have a few hypotheses. First, they are still relatively small on these scales, so they might be due to a random occurrence in the room. More likely, however, is that my function that separates data clusters into the different amplitudes occasionally misassigns the data to a wrong section. This happens in, what I've found, around 1 part in 4000+-1000. Sharp peaks are most likely data points that were improperly labeled. This idea is preferential in my mind because of how inconsequential these peaks are, as they do not follow any real patterns from the data around them.
-
-### Acrylic Reflection
-![alt-text](../20170622_ToneStability_and_Acrylic/acrylic.png)
-
-As we can see, there is no noticeable reflectivity change due to adding acrylic of any thickness.
-
-I tried plotting the difference between the two plots (with respect to the logarithm, as to do it correctly) and the difference in S11 was on the order of -200 dB for both thicknesses. So, it is fair to say that the acrylic changes nothing.
