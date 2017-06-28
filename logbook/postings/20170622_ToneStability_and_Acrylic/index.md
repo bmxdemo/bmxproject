@@ -21,6 +21,8 @@ Packet number on the x-axis is simply the number of the time packet for that amp
 |Figure 1|![alt-text](../20170622_ToneStability_and_Acrylic/zoom.png)|
 |:---:|:---:|
 
+Some things to note immediately in the four-plot breakdown: there are clearly patterns in the "no" and "low" amplitude regions. A repetitive, sinusoidal pattern is found in the "no" region, and an enveloped sine wave is in the "low" region, as seen in the plots. These patterns are not seen in the medium and high regions, which resemble traditional stochastic noise. I am not quite sure what the physical significance of this is.
+
 
 Next, I updated to work with 8+ hours of data. Here is a plot of the spread of measured amplitude (measured-mean)/mean, where the mean is taken to be the mean value in the first hour of collection, so as to see any time-dependent variations in the mean.
 
