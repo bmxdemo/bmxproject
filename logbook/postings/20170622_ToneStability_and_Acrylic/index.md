@@ -9,7 +9,18 @@ In this posting, I present the tone stability plots for the rebuilt OMTs.
 
 #### Better data
 
-For these following data points, my mode of analysis was simply taking the mean power as a function of time. The breakdown of these plots is explained following their presentation.
+I noticed 4 distinct regions when zooming in: a high amplitude (high amp) region, a low amp region, a medium amp region, and one with apparently no amplitude. This below plot (Figure 1) should illustrate that concept (this is most likely already known to anyone reading this).
+Packet number on the x-axis is simply the number of the time packet for that amplitude. For example, each dark red region is one "packet" of high amplitude, and each seafoam green horizontal stripe is one "packet" of no amplitude.
+
+|Figure 1|![alt-text](../20170622_ToneStability_and_Acrylic/zoom.png)|
+|:---:|:---:|
+
+If I break these regions down and group them by their respective amplitudes (*omitting the first and last two points of each 10 time cluster*, because they can vary wildly and are a product of a rapidly changing signal), we get the four following plots: 
+|![alt-text](../20170622_ToneStability_and_Acrylic/no_pattern.png)|![alt-text](../20170622_ToneStability_and_Acrylic/low_pattern.png)|
+|![alt-text](../20170622_ToneStability_and_Acrylic/med_pattern.png)|![alt-text](../20170622_ToneStability_and_Acrylic/high_pattern.png)|
+
+Some things to note immediately in the four-plot breakdown: there are clearly patterns in the "no" and "low" amplitude regions. A repetitive, sinusoidal pattern is found in the "no" region, and an enveloped sine wave is in the "low" region, as seen in the plots. These patterns are not seen in the medium and high regions, which resemble traditional stochastic noise. I am not quite sure what the physical significance of this is.
+For these following data points, my mode of analysis was simply taking the mean power as a function of time. The breakdown of these plots is explained above.
 
 One hour of data at 100MHz:
 
@@ -17,13 +28,7 @@ One hour of data at 100MHz:
 |----|----|
 |![alt-text](../20170622_ToneStability_and_Acrylic/ccmed.png)|![alt-text](../20170622_ToneStability_and_Acrylic/cchigh.png)|
 
-I noticed 4 distinct regions when zooming in: a high amplitude (high amp) region, a low amp region, a medium amp region, and one with apparently no amplitude. This below plot (Figure 1) should illustrate that concept (this is most likely already known to anyone reading this).
-Packet number on the x-axis is simply the number of the time packet for that amplitude. For example, each dark red region is one "packet" of high amplitude, and each seafoam green horizontal stripe is one "packet" of no amplitude.
 
-|Figure 1|![alt-text](../20170622_ToneStability_and_Acrylic/zoom.png)|
-|:---:|:---:|
-
-Some things to note immediately in the four-plot breakdown: there are clearly patterns in the "no" and "low" amplitude regions. A repetitive, sinusoidal pattern is found in the "no" region, and an enveloped sine wave is in the "low" region, as seen in the plots. These patterns are not seen in the medium and high regions, which resemble traditional stochastic noise. I am not quite sure what the physical significance of this is.
 
 #### Less good data (but still illustrative)
 
