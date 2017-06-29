@@ -16,13 +16,16 @@ Packet number on the x-axis is simply the number of the time packet for that amp
 |:---:|:---:|
 
 If I break these regions down and group them by their respective amplitudes (*omitting the first and last two points of each 10 time cluster*, because they can vary wildly and are a product of a rapidly changing signal), we get the four following plots: 
+
+One hour of data at 100MHz:
+
 |![alt-text](../20170622_ToneStability_and_Acrylic/no_pattern.png)|![alt-text](../20170622_ToneStability_and_Acrylic/low_pattern.png)|
 |![alt-text](../20170622_ToneStability_and_Acrylic/med_pattern.png)|![alt-text](../20170622_ToneStability_and_Acrylic/high_pattern.png)|
 
-Some things to note immediately in the four-plot breakdown: there are clearly patterns in the "no" and "low" amplitude regions. A repetitive, sinusoidal pattern is found in the "no" region, and an enveloped sine wave is in the "low" region, as seen in the plots. These patterns are not seen in the medium and high regions, which resemble traditional stochastic noise. I am not quite sure what the physical significance of this is.
-For these following data points, my mode of analysis was simply taking the mean power as a function of time. The breakdown of these plots is explained above.
+The different zooms on the "no" and "low" plots are intended to make them comparable with the plots below. For matching purposes, if you would like to compare a plot above directly with one of them below, take six horizontal points on a plot above for any one point below (this is because the plots below are plotted as successive six-point means). Then, the patterns in the first and second plots should become more visible. 
 
-One hour of data at 100MHz:
+Some things to note immediately in the four-plot breakdown: there are clearly patterns in the "no" and "low" amplitude regions. A repetitive, sinusoidal pattern is found in the "no" region, and an enveloped sine wave is in the "low" region, as seen in the plots. These patterns are not seen in the medium and high regions, which resemble traditional stochastic noise. I am not quite sure what the physical significance of this is, but this is corroborated below.
+For these following data points, my mode of analysis was simply taking the mean power as a function of time. The breakdown of these plots is explained above.
 
 |![alt-text](../20170622_ToneStability_and_Acrylic/ccno.png)|![alt-text](../20170622_ToneStability_and_Acrylic/cclow.png)|
 |----|----|
