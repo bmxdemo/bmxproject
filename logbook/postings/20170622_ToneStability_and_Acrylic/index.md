@@ -5,7 +5,9 @@ Chandler Conn
 
 In this posting, I present the tone stability plots for the rebuilt OMTs.
 
-### Tone Stability
+### Data
+
+#### Better data
 
 For these following data points, my mode of analysis was simply taking the mean power as a function of time. The breakdown of these plots is explained following their presentation.
 
@@ -23,8 +25,9 @@ Packet number on the x-axis is simply the number of the time packet for that amp
 
 Some things to note immediately in the four-plot breakdown: there are clearly patterns in the "no" and "low" amplitude regions. A repetitive, sinusoidal pattern is found in the "no" region, and an enveloped sine wave is in the "low" region, as seen in the plots. These patterns are not seen in the medium and high regions, which resemble traditional stochastic noise. I am not quite sure what the physical significance of this is.
 
+#### Less good data (but still illustrative)
 
-Next, I updated to work with 8+ hours of data. Here is a plot of the spread of measured amplitude (measured-mean)/mean, where the mean is taken to be the mean value in the first hour of collection, so as to see any time-dependent variations in the mean.
+Next, I updated to work with 8+ hours of data. Here is a plot of the spread of measured amplitude (measured-mean)/mean, where the mean is taken to be the mean value in the first hour of collection, so as to see any time-dependent variations in the mean. I realize that this method might not be the best, but I already made these plots gosh darn it so I figured I might as well include them. They by no means encompass as much information as the plots above.
 
 |![alt-text](../20170622_ToneStability_and_Acrylic/high_diffmean.png)|![alt-text](../20170622_ToneStability_and_Acrylic/med_diffmean.png)|
 |:---:|:---:|
