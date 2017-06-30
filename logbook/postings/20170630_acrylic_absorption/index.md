@@ -22,6 +22,8 @@ Some things to note immediately: the shorted OMTs are VERY sensitive to holes an
 
 While this is an important thing to consider, the data still shows relatively clear patterns, such as some significant changes in two regions: the region on which I zoomed in for both plots, as well as around 0.9 GHz. I'm not exactly sure of the significance of this, I am just bringing attention to it.
 
+***NOTE:*** None of the preceding plots were made with an absorber sheet present. I changed this starting at this point.
+
 -----------------------------------------
 
 Now, at this point I realized (or was guided by Chris) that changing the gap width is a bad practice. This next plot involves an unchanged gap size at about 1/2 of an inch, with 1/16th inch acrylic and 1/18th inch acrylic added but the OMTs held still.
