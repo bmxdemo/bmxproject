@@ -12,6 +12,8 @@ The absorption was measured through the S21 parameters. The plot is below, accom
 
 **Note:** The reason why the change in S21 can be interpreted as solely due to the absorption is because we showed in the [last posting](../20170628_Acrylic/index.md) that the reflectivity plays almost no part, so adding acrylic should only change S21 because of absorption.
 
+For this experiment, I "shorted" the two OMTs, by pointing them together but leaving a ~1/2 inch gap between them. This gap length was maintained as a constant for all of the data points, to eliminate any effects that that would have. Because the two shorted OMTs are very sensitive to holes or gaps in their construction, where signal can leak out or in, I surrounded it with as much foam absorbing material as I could that would not get in the way of the acrylic. I collected the S21 measurements with no acrylic first, then with 1/8th inch acrylic, then 1/16th inch acrylic, then I started again to get another round of data (to see if something had changed over time, such as moving the absorbers on accident). I took a bunch of other measurements that aren't shown here that basically confirmed that the experimental setup had not changed (the same measurement at ~10 different points during the course of the experiment). 
+
 |Fig 1 (frequency Hz vs S21 dB)|![alt-text](../20170630_acrylic_absorption/absorption.png)|
 |:---:|:---:|
 
