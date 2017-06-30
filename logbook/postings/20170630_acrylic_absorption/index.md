@@ -4,7 +4,7 @@ Chandler Conn
 
 ### Introduction
 
-In my [last posting](../20170628_Acrylic/index.md) I measured the reflectivity of the acrylic sheet and found it to be essentialyl negligible. However, it came to my attention that the absorption might also play a role in signal reduction, so this post is dedicated to measuring S21 to find the acrylic absorption.
+In my [last posting](../20170628_Acrylic/index.md) I measured the reflectivity of the acrylic sheet and found it to be essentially negligible. However, it came to my attention that the absorption might also play a role in signal reduction, so this post is dedicated to measuring S21 to find the acrylic absorption.
 
 ### Absorption
 
