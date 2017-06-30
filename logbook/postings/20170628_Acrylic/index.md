@@ -21,5 +21,5 @@ There is a slight pattern in the zoomed in plot: increasing thickness of acrylic
 
 All of these reflectivity plots seem to indicate that the acrylic would serve as a good physical barrier (see next paragraph, however) without affecting the signal transmission in any way. In many of the plots the plot appears black because of how closely the different measurements are. Even at an extreme angle of 45 degrees, the change due to adding the acrylic is negligable. The changes due to adding acrylic are noticeable in some parts (such as the peaks in the full plot) but the extent of this change is almost nothing. I am not sure how much of an effect this would have, but the difference plot seems to suggest that it would be on the order of none.
 
-However, this is not the complete information. The absorptivity(??) of the acrylic also needs to be measured.
+However, this is not the complete information. The absorptivity(??) of the acrylic also needs to be measured, and those plots and data can be found [here.](../20170630_acrylic_absorption/index.md)
 
