@@ -26,9 +26,6 @@ While this is an important thing to consider, the data still shows relatively cl
 
 Now, at this point I realized (or was guided by Chris) that changing the gap width is a bad practice. This next plot involves an unchanged gap size at about 1/2 of an inch, with 1/16th inch acrylic and 1/18th inch acrylic added but the OMTs held still.
 
-![alt-text](../20170630_acrylic_absorption/standard_gap.png)
-
-This plot looks more like what should be expected (as it only makes sense that adding the acrylic decreases S21, not increases). Similarly, the S21 decrease for 1/16th inch acrylic is less than for 1/8th acrylic, which is what one would intuitively think. Like I said earlier, it can be reasonably assumed that this effect is due to the absorption and not reflection because of what we found in the last posting.
 
 ### Appendix
 
