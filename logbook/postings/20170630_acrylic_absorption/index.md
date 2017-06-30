@@ -26,7 +26,9 @@ Now, at this point I realized (or was guided by Chris) that changing the gap wid
 
 ![alt-text](../20170630_acrylic_absorption/standard_gap.png)
 
+This plot looks more like what should be expected (as it only makes sense that adding the acrylic decreases S21, not increases). Similarly, the S21 decrease for 1/16th inch acrylic is less than for 1/8th acrylic, which is what one would intuitively think. Like I said earlier, it can be reasonably assumed that this effect is due to the absorption and not reflection because of what we found in the last posting.
 
+### Appendix
 
 |Figure 1a|![alt-text](../20170630_acrylic_absorption/IMG_20170630_130926.jpg)|
 |:---:|:---:|
