@@ -27,7 +27,7 @@ However, this is not the complete information. The absorptivity(??) of the acryl
 
 The absorption was measured through the S12 parameters. The plots are below, accompanied by experimental photos.
 
-In the first plot, the two shorted OMTs were attached as closely as I could get them, but not taped together (Figure 1a). This was compared against the 1/16th and 1/8th inch acrylic inserted between the two OMTs (Figure 1b).
+In the first two plot, the two shorted OMTs were attached as closely as I could get them, but not taped together (Figure 1a). This was compared against the 1/16th and 1/8th inch acrylic inserted between the two OMTs (Figure 1b). In the lower two plots, the same acrylic measurements plotted, but this time they are plotted against a gap of their respective widths, instead of against the two OMTs placed flat against each other.
 
 |Shorted OMT S12 measurement with/without acrylic|Zoom on interest area|
 |:---:|:---:|
