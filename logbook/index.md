@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Tone stability pt. 2 and transient examination](postings/20170705_tonestab/index.md) - Jul 5, 2017 (CC)
 * [Acrylic sheet absorption](postings/20170630_acrylic_absorption/index.md) - Jun 30, 2017 (CC)
 * [Acrylic sheet reflectivity](postings/20170628_Acrylic/index.md) - Jun 28, 2017 (CC)
 * [Drone SNR calculations](postings/20170626_DroneSNR/index.pdf) - Jun 26, 2017 (AS)
