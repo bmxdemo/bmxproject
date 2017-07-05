@@ -33,3 +33,11 @@ In log-scale, here is the plot of the different regions:
 
 Next, I went back to absolute power (not log scale) and picked a random trace (l3 in my case) by which to divide all of the traces. The results are below, where I examine the region very close to 1:
 ![alt-text](../20170705_tonestab/abs1_br.png)
+
+We see a widening of the 300 MHz peak (evident on the cyan trace) implying that we used a bit too much power for what we wanted. The transients, however, are the more important and unusual feature. Overtones are also very prevalent in this plot, as a result of the chosen frequencies (100 and 300 MHz). 
+
+### Interpretation
+
+The behavior of these transients is beyond me. Between our two tone peaks we find transients that are of greater amplitude than the highest amplitude signal, with a pattern typical of noise. Outside of this region, however, the transients are on the order of halfway between the medium and low powers, which qualitatively makes some sense to me (if we interpret the transients as the interpolation of the power when switching regions, then they would have a power characteristic of the average total power). 
+
+Now, the effect from these transients would not be nearly as visible if we weren't changing magnitude so frequently - the transients make up ~40% of the total data points! If we switched power on the second timescale instead of the millisecond tlimescale, they would be almost negligible. 
