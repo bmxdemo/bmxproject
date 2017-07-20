@@ -8,8 +8,7 @@ Put computer in a box together with 1-wire temperature sensors and
 taped it all around to make it as thermaly insulated as possible to
 see how far we can push this. In practice we expect things to be
 ventilated through holes.
-
-|(./p1.jpg)|(./p2.jpg)|
+|![alt-text](../20170717_tempbox/p1.png)|![alt-text](../20170717_tempbox/p2.png)|
 
 
 Sensor 1 was put at the exhaust of computer's fan, Sensor 2 in a
@@ -20,7 +19,7 @@ cased the suddent drop in temperature.
 
 The temperature plot looks as follows:
 
-|(./temp.png)|
+|![alt-text](../20170717_tempbox/temp.png)|
 
 Even though it was cooking, the computer was running just fine with no
 alarams or warnings in the log. Occasionally it pays to buy a server
