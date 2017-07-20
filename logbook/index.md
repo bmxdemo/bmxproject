@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [OMT in the basin](postings/20170720_OMT_in_basin/index.md) - Jul 20, 2017 (AS/CC/HD)
 * [Temperature in a box](postings/20170717_tempbox/index.md) - Jul 17, 2017 (AS)
 * [Tone stability pt. 2 and transient examination](postings/20170705_tonestab/index.md) - Jul 5, 2017 (CC)
 * [Acrylic sheet absorption](postings/20170630_acrylic_absorption/index.md) - Jun 30, 2017 (CC)
