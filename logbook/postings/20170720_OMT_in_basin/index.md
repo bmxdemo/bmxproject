@@ -57,7 +57,8 @@ the second day.
 The first look at the data shows large variations across frequency,
 which could be RFI, but are too broad in my opinion.  Both channels
 give similar results. We seem to clearly see a signal bleeping every
-15s consistent with radar contamination.  Hindy and Chandler will
+15s consistent with radar contamination.  We also see a massive drop in the detected RFI events 
+over night with the bottom at around 2-3AM. Hindy and Chandler will
 update this logbook as the first look analysis progresses.
 
 We also took separate data for measuring acryllic stuff. CC will
