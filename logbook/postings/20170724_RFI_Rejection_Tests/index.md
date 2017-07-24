@@ -11,12 +11,12 @@ The titles are the date and time, followed by the chunk index.
 # 1)
 
 ![trace](170718_2200_57_waveform.png)
-![trace](1701718_2200_57_spectrum.png)
+![trace](170718_2200_57_spectrum.png)
 
 # 2)
 
 ![trace](170718_2300_113_waveform.png)
-![trace](1701718_2300_113_spectrum.png)
+![trace](170718_2300_113_spectrum.png)
 
 # 3)
 
@@ -40,7 +40,9 @@ The titles are the date and time, followed by the chunk index.
 # 7)
 
 ![trace](20_4_170718_2200_111_waveform.png)
-![trace](20_4_170718_2200_111_fft.png)
+![trace](20_4_1701718_2200_111_fft.png)
+
+
 
 
 
