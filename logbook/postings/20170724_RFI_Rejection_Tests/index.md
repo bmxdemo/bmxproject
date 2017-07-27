@@ -13,7 +13,7 @@ The following is a plot of RFI density over 16 hours from 12:00 AM, July 20 - 2:
 
 Taking the FFT of the outlier density data gives the following power spectra. Note that the two timestreams display similar peaks at around 2 and 3.7 Hz.
 
-![trace](RFIFrequency170718_2000-170719_1100_4sigma.png)
+![trace](RFIFrequency170718_2200-170719_1100_4sigma.png)
 ![trace](RFIFrequency170720_0000-170720_1400_5sigma.png)
 
 
