@@ -5,6 +5,7 @@ Data chunks of size 2^20 are flagged as RFI if their variance is an outlier amon
 Test data was collected in the basin between 7/18/17 and 7/20/17. 
 
 The following is a plot of RFI density over 16 hours from 8:00 PM, July 18 - 12:00 PM, July 19
+
 ![trace](RFIDensity170718_2000-170719_1100_4sigma.png)
 
 The following is a plot of RFI density over 16 hours from 12:00 AM, July 20 - 2:00 PM, July 20
