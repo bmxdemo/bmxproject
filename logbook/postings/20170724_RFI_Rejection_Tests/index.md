@@ -2,8 +2,27 @@
 ### RFI Rejection Tests
 
 Data chunks of size 2^20 are flagged as RFI if their variance is an outlier among the variances of neighboring chunks. 
-Test data was collected in the basin between 7/18/17 and 7/20/17 and the following is a randomly selected sample from all the flagged chunks. Displayed are the waveform and power spectrum for each chunk:
+Test data was collected in the basin between 7/18/17 and 7/20/17. 
 
+The following is a plot of RFI density over 16 hours from 8:00 PM, July 18 - 12:00 PM, July 19
+![trace](170718_2200_57_waveform.png)
+
+The following is a plot of RFI density over 16 hours from 12:00 AM, July 20 - 2:00 PM, July 20
+![trace](170718_2200_57_waveform.png)
+
+To check if the density follows any daily patters, I plotted the two timestreams over each other and shifted them over so that the times overlapped correctly
+
+![trace](170718_2200_57_waveform.png)
+
+Taking the FFT of the outlier density data gives the following power spectra. Note that the two timestreams display similar peaks at around 2 and 3.7 Hz.
+
+![trace](170718_2200_57_waveform.png)
+![trace](170718_2200_57_waveform.png)
+
+
+
+
+The following is a randomly selected sample from the flagged chunks. Displayed are the waveform and power spectrum for each chunk:
 The titles are the date and time, followed by the chunk index.
 
 
