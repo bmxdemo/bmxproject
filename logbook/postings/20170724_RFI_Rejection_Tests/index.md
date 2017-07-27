@@ -5,19 +5,19 @@ Data chunks of size 2^20 are flagged as RFI if their variance is an outlier amon
 Test data was collected in the basin between 7/18/17 and 7/20/17. 
 
 The following is a plot of RFI density over 16 hours from 8:00 PM, July 18 - 12:00 PM, July 19
-![trace](170718_2200_57_waveform.png)
+![trace](RFIDensity170718_2000-170719_1100_4sigma.png)
 
 The following is a plot of RFI density over 16 hours from 12:00 AM, July 20 - 2:00 PM, July 20
-![trace](170718_2200_57_waveform.png)
+![trace](RFIDensity170720_0000-170720_1400_5sigma.png)
 
 To check if the density follows any daily patters, I plotted the two timestreams over each other and shifted them over so that the times overlapped correctly
 
-![trace](170718_2200_57_waveform.png)
+![trace]()
 
 Taking the FFT of the outlier density data gives the following power spectra. Note that the two timestreams display similar peaks at around 2 and 3.7 Hz.
 
-![trace](170718_2200_57_waveform.png)
-![trace](170718_2200_57_waveform.png)
+![trace](RFIFrequency170718_2000-170719_1100_4sigma.png)
+![trace](RFIFrequency170720_0000-170720_1400_5sigma.png)
 
 
 
