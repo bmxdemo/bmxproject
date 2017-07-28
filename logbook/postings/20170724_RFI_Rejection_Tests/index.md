@@ -34,10 +34,10 @@ Every 1000 frequencies are binned and averaged together:
 ![trace](RFIFrequency170720_0000-170720_1400_5sigma.png)
 
 No binning:
-![trace](RFIFrequency170720_0000-170720_1400_5sigma_unbinned.png)
+![trace](RFIFrequency170720_0000-170720_1400_5sigma-unbinned.png)
 
 Log scale on the x axis
-![trace](RFIFrequency170720_0000-170720_1400_5sigma_unbinned_logx.png)
+![trace](RFIFrequency170720_0000-170720_1400_5sigma-unbinned_logx.png)
 
 
 
