@@ -17,26 +17,17 @@ Here are the two time streams overlayed on one plot:
 ![trace](RFIOverlayDensity.png)
 
 ### RFI Frequency
-Taking the FFT of the outlier density data gives the following power spectra. Note that the two timestreams display similar peaks at around 2 and 3.7 Hz.
+Taking the FFT of the outlier density data gives the following power spectra. Note that the two timestreams display similar peaks at around 2 and 3.7 Hz. The spectra are shown both binned into bins of 1000 frequencies and unbinned, as well as with log scale on the x axis
 
 ####  8:00 PM, July 18 - 12:00 PM, July 19
-Every 1000 frequencies are binned and averaged together:
 ![trace](RFIFrequency170718_2200-170719_1100_4sigma.png)
-
-No binning:
 ![trace](RFIFrequency170718_2200-170719_1100_4sigma_unbinned.png)
-
-Log scale on the x axis:
 ![trace](RFIFrequency170718_2200-170719_1100_4sigma_unbinned_logx.png)
 
 #### 12:00 AM, July 20 - 3:00 PM, July 20
-Every 1000 frequencies are binned and averaged together:
+
 ![trace](RFIFrequency170720_0000-170720_1400_5sigma.png)
-
-No binning:
 ![trace](RFIFrequency170720_0000-170720_1400_5sigma-unbinned.png)
-
-Log scale on the x axis
 ![trace](RFIFrequency170720_0000-170720_1400_5sigma-unbinned_logx.png)
 
 
