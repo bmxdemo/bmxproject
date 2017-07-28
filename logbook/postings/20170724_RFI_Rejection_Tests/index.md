@@ -1,12 +1,14 @@
 
 ## RFI Rejection Tests
+Hindy Drillick
 
-Data chunks of size 2^20 are flagged as RFI if their variance is an outlier among the variances of neighboring chunks. 
-Test data was collected in the basin between 7/18/17 and 7/20/17. 
+Incoming data packets of 2^27 elements (122ms of data) are split into chunks of size 2^20. Chunks are flagged as RFI if their variance is an outlier among the variances of neighboring chunks. This is done pre-FFT, and the complete signal for the flagged chunks is written to a file. These chunks are then nulled out before the FFT is computed on the entire data packet.
+
+Test data was collected in the basin between 7/18/17 and 7/20/17 in two continuous stretches - 8:00 PM, July 18 - 12:00 PM, July 19 and 12:00 AM, July 20 - 3:00 PM, July 20. The following analysis was performed on the data flagged as RFI. 
 
 
 ### RFI Density
-The following is a plot of RFI density over 16 hours from 8:00 PM, July 18 - 12:00 PM, July 19
+The following is a plot of RFI density over 16 hours from 8:00 PM, July 18 - 12:00 PM, July 19. Shown are the number of RFI chunks flagged per minute.
 
 ![trace](RFIDensity170718_2200-170719_1100_4sigma.png)
 
