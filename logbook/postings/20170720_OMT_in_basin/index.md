@@ -56,17 +56,18 @@ the second day.
 
 # RFI rejection
 
-See * [RFI Rejection Tests](postings/20170724_RFI_Rejection_Tests/index.md) note.
+See [RFI Rejection Tests](..//20170724_RFI_Rejection_Tests/index.md) note.
 
 
 # First look at the data
 
-Waterfall of typical 30 seconds of data for two channels:
+Waterfall of typical 30 seconds of data for two channels, *after the RFI rejection* 
+cuts:
 
 ![wfall](WF30s.png)
  
  We see ticking of the radar every 12s or so. This is investigated in 
- note [Radar detection ](..//20170730_Radar/index.md).
+ note [Radar detection ](../20170730_Radar/index.md).
 
 Spectrum of both channels here, averaged over one hour, filtering
 radar data.
@@ -98,6 +99,6 @@ After dividing by mean and plotting fractional changes, we get:
 Further fourier filtering to keep stuff that is fast varying in
 frequency and slowly varying in time, we get:
 
-![WF](FilteredWF.png)
+![WF](filteredWF.png)
 
 
