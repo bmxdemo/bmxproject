@@ -54,12 +54,50 @@ some daylight data with long interruptions  and then data 9PM - 2PM on
 the second day.
 
 
-The first look at the data shows large variations across frequency,
-which could be RFI, but are too broad in my opinion.  Both channels
-give similar results. We seem to clearly see a signal bleeping every
-15s consistent with radar contamination.  We also see a massive drop in the detected RFI events 
-over night with the bottom at around 2-3AM. Hindy and Chandler will
-update this logbook as the first look analysis progresses.
+# RFI rejection
 
-We also took separate data for measuring acryllic stuff. CC will
-report on that.
+See * [RFI Rejection Tests](postings/20170724_RFI_Rejection_Tests/index.md) note.
+
+
+# First look at the data
+
+Waterfall of typical 30 seconds of data for two channels:
+
+![wfall](WF30s.png)
+ 
+ We see ticking of the radar every 12s or so. This is investigated in 
+ note [Radar detection ](..//20170730_Radar/index.md).
+
+Spectrum of both channels here, averaged over one hour, filtering
+radar data.
+
+![spectrum](spectrum.png)
+
+One can see a few RFI frequencies as tight spikes. But general
+features are shifted between two channels, indicating they are
+response of the system rather than something we pick up. The mystery
+is why is this variation so great and why it is so much greater than
+what we used in the lab.
+
+
+The real and imaginary cross powers are here:
+
+![spectrum](spectrumXI.png)
+
+Note that this is now linear, rather than log scale.
+
+Waterfall plot for full 11 hours:
+
+![WF](PureWF.png)
+
+
+After dividing by mean and plotting fractional changes, we get:
+
+![WF](DeltaWF.png)
+
+Further fourier filtering to keep stuff that is fast varying in
+frequency and slowly varying in time, we get:
+
+![WF](FilteredWF.png)
+
+
