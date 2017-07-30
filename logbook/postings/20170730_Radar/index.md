@@ -16,10 +16,13 @@ and plotted the means.
 
 This doesn't actually look that bad. Next I took the same data, but
 with finer phase spacing, and calculate relative excess wrt to the
-lowest power. The lower to plot show this for two one hour datasets.
+lowest power. The lower teo plot show this for two one hour datasets.
 
 ![trace](dradar1.png)
 ![trace](dradar2.png)
+
+How to interpret this is left as an exercise to the reader.
+
 
 
 
