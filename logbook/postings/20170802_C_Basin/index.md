@@ -29,7 +29,7 @@ One of the blue trials I gathered was fairly noisy or potentially RFI-infected, 
 
 While we see peaks in the same areas, many features are just plain lost. So, it is not as simple as a linear holistic reduction of amplitude.
 
-An important comparison is between this data and [previous noise temp data taken by chris](postings/20170425_noise_temp/index.md). If we examine the green lines in our plot above and compare them with the blue trace in the upper right here by Chris:
+An important comparison is between this data and [previous noise temp data taken by chris](../20170425_noise_temp/index.md). If we examine the green lines in our plot above and compare them with the blue trace in the upper right here by Chris:
 
 ![alt-text](../20170425_noise_temp/fig_tn_3.png)
 
