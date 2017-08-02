@@ -31,7 +31,7 @@ While we see peaks in the same areas, many features are just plain lost. So, it 
 
 An important comparison is between this data and [previous noise temp data taken by chris](postings/20170425_noise_temp/index.md). If we examine the green lines in our plot above and compare them with the blue trace in the upper right here by Chris:
 
-![alt-text](../postings/20170425_noise_temp/fig_tn_3.png)
+![alt-text](../20170425_noise_temp/fig_tn_3.png)
 
 We see a general similarity in the shape. Our OMT in the basin plot has a relatively lower amplitude by about an order of magnitude, and it has some extra features not present in the Chris data. I'm not sure what this is a result of - potentially the heat in the basin effecting the amplifiers (although I'm not sure how much of that is an issue) or the fact that we used a slightly different amp chain than the one Chris used (which seems much more likely). We used attenuators in this recent iteration, whereas Chris did not.
 
