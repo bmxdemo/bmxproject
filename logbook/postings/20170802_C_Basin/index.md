@@ -26,3 +26,5 @@ Unusually, when the 300k absorber load is placed in front of the OMT, we see a d
 |**Slice**|![alt-text](absorber_vs_no.png)|
 
 One of the blue trials I gathered was fairly noisy or potentially RFI-infected, but the general trend still holds. Each color has ~4 plots behind it if I remember correctly, so as to make sure I wasn't getting a bad plot of each.
+
+While we see peaks in the same areas, many features are just plain lost. So, it is not as simple as a linear holistic reduction of amplitude.
