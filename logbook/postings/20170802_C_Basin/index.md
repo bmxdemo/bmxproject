@@ -38,7 +38,7 @@ Fig 2a
 
 ![alt-text](mat_slice.png)
 
-Fig 2b
+Fig 2b (zoom)
 
 ![alt-text](mat_zoom.png)
 
