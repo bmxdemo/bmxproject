@@ -8,7 +8,7 @@ Continuing from [this post](postings/20170720_OMT_in_basin/index.md) I present s
 
 (ignore the colors in the first strip at the top, they are a mistake)
 
-The regions are as follows: 
+The regions are as follows, separated by black strips: 
 
 |Junk|
 |:---:|
