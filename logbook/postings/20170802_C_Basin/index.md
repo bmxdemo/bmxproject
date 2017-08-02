@@ -29,7 +29,7 @@ One of the blue trials I gathered was fairly noisy or potentially RFI-infected, 
 
 While we see peaks in the same areas, many features are just plain lost. So, it is not as simple as a linear holistic reduction of amplitude.
 
-
+-----------------------------
 ### Acrylic & Friends
 
 Continuing my work with trying to find a decent shielding material for bugs and birds, I choose to analyze slices of this basin waterfall plot for the various materials, printed below:
