@@ -6,6 +6,8 @@ Continuing from [this post](postings/20170720_OMT_in_basin/index.md) I present s
 
 ![alt-text](basin_waterfall.png)
 
+(ignore the colors in the first strip at the top, they are a mistake)
+
 The regions are as follows: 
 
 |Junk|
@@ -19,7 +21,7 @@ The regions are as follows:
 |**2'' Acrylic (on a 1/16'' sheet)**|
 |**Open**|
 
-Unusually, when the 300k absorber load is placed in front of the OMT, we see a damping of the signal. Let's examine this in closer detail, by taking some slices from the waterfall plot above:
+Unusually, when the 300k absorber load is placed in front of the OMT, we see a damping of the signal. Let's examine this in closer detail, by taking some slices from the waterfall plot above. The green lines in the waterfall plot for the second and third sections correspond to the traces used below.
 
 ![alt-text](absorber_vs_no.png)
 
@@ -30,7 +32,7 @@ While we see peaks in the same areas, many features are just plain lost. So, it 
 -----------------------------
 ### Acrylic & Friends
 
-Continuing my work with trying to find a decent shielding material for bugs and birds, I choose to analyze slices of this basin waterfall plot for the various materials, printed below:
+Continuing my work with trying to find a decent shielding material for bugs and birds, I choose to analyze slices of this basin waterfall plot for the various materials, printed below. These are the red traces from the waterfall plot.
 
 Fig 2a
 
