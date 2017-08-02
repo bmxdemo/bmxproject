@@ -21,8 +21,8 @@ The regions are as follows:
 
 Unusually, when the 300k absorber load is placed in front of the OMT, we see a damping of the signal. Let's examine this in closer detail:
 
-|Waterfall plot|Slice|
+|Waterfall plot|![alt-text](basin_waterfall.png)|
 |:---:|:---:|
-|![alt-text](basin_waterfall.png)|![alt-text](absorber_vs_no.png)|
+|**Slice**|![alt-text](absorber_vs_no.png)|
 
 One of the blue trials I gathered was fairly noisy or potentially RFI-infected, but the general trend still holds. Each color has ~4 plots behind it if I remember correctly, so as to make sure I wasn't getting a bad plot of each.
