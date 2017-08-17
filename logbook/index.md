@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Basin data with OMT->horn->dish](postings/20170817_basindata/index.md) - Aug 17, 2017 (CDS)
 * [Basin waterfall plot and slices](postings/20170802_C_Basin/index.md) - Aug 2, 2017 (CC)
 * [OMT beam](postings/20170731_OMT_beam/index.md) - Jul 31, 2017 (CDS)
 * [Radar detection](postings/20170730_Radar/index.md) - Jul 30, 2017 (AS)
