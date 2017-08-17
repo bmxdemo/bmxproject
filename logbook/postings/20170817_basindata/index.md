@@ -18,8 +18,11 @@ the amp chain box. Both are good, consistent with
 [before](../20170425_noise_temp/index.md) except maybe ~10 K higher due to loss
 in the new calbes and connectors before the LNA, as expected.
 
-| Chanel 1 (xpol) | Channel 2 (ypol) |
-| ![](fig_1.png) | ![](fig_2.png) |
+####Chanel 1 (xpol)
+![](fig_1.png)
+
+####Channel 2 (ypol) 
+![](fig_2.png) 
 
 
 ### 3 - RFI
