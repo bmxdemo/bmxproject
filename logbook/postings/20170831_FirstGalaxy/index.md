@@ -1,27 +1,26 @@
 
-## Radar effect
+## First light in the 
 Anze Slosar
 
-I implemented radar detection in bmxdata. It very reliably comes back
-every 12s and can flagged by its peaking at 1245MHz.
+Now that grande Sheehy has fixed our RFI issue, here are some results.
 
-I took one hour of data with *OMT in the basin* (i.e. much more
-suceptible that we'd be in reality) at 2AM
-and then at 3AM when the RFI is at its quietest. 
+The first plot shows the 21-cm in our own galaxy. The y axis is
+galactic b and the x axis is offset from nominal frequency. Only CH2
+is working, 21cm is convincingly detected. One can also see velocity
+broadening and faint continuum.
 
-Then I divided data based on phase wrt to the latest radar detection
-and plotted the means.
 
-![radar](RadarPower.png)
+![MW](firstmily.png)
 
-This doesn't actually look that bad. Next I took the same data, but
-with finer phase spacing, and calculate relative excess wrt to the
-lowest power. The lower teo plot show this for two one hour datasets.
+The second plot shows my attempt to catch CygA, lines the same as
+before, but not the way bigger frequency range. We still see our friends
+from last time. This had gentle FFT filtering applied to get rid of
+common mode. If you look at the structure from 1250 to 1300, I think it
+is pretty clear that something is going in and out of deep sidelobes.
 
-![trace](dradar1.png)
-![trace](dradar2.png)
 
-How to interpret this is left as an exercise to the reader.
+![wfall](CygA30.png)
+
 
 
 
