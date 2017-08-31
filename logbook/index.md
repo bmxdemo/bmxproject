@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [First light on the 21cm emission](postings/20170831_FirstGalaxy/index.md) - Aug 31, 2017 (AS)
 * [Radar detection ](postings/20170730_Radar/index.md) - Jul 30, 2017 (AS)
 * [RFI Rejection Tests](postings/20170724_RFI_Rejection_Tests/index.md) - Jul 24, 2017 (HD)
 * [OMT in the basin](postings/20170720_OMT_in_basin/index.md) - Jul 20, 2017 (AS/CC/HD)
