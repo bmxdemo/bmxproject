@@ -3,7 +3,10 @@
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
 * [First light on the 21cm emission](postings/20170831_FirstGalaxy/index.md) - Aug 31, 2017 (AS)
-* [Radar detection ](postings/20170730_Radar/index.md) - Jul 30, 2017 (AS)
+* [Basin data with OMT->horn->dish](postings/20170817_basindata/index.md) - Aug 17, 2017 (CDS)
+* [Basin waterfall plot and slices](postings/20170802_C_Basin/index.md) - Aug 2, 2017 (CC)
+* [OMT beam](postings/20170731_OMT_beam/index.md) - Jul 31, 2017 (CDS)
+* [Radar detection](postings/20170730_Radar/index.md) - Jul 30, 2017 (AS)
 * [RFI Rejection Tests](postings/20170724_RFI_Rejection_Tests/index.md) - Jul 24, 2017 (HD)
 * [OMT in the basin](postings/20170720_OMT_in_basin/index.md) - Jul 20, 2017 (AS/CC/HD)
 * [Temperature in a box](postings/20170717_tempbox/index.md) - Jul 17, 2017 (AS)
