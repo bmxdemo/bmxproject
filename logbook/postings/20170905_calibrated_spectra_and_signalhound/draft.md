@@ -18,7 +18,7 @@ To decrease noise/eliminate some time variability, we took averages over a few
 1.  Spectra from Sky (averaged over the first and second spectra [0,1])
 2.  Spectra with input terminated at 290K (averaged over [19,20.21])
 3.  Spectra with input terminated at 77K in liquid nitrogen ([26,27])
-![spectra](~/SH_spectrum_mW.png)
+![spectra](/bmxproject/logbook/postings/20170905_calibrated_spectra_and_signalhound/SH_spectrum_mW.png)
 
 ### Gain and Noise Floor Calculations:
 
