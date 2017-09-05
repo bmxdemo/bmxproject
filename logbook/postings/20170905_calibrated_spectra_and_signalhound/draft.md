@@ -1,4 +1,5 @@
-##Aug 31, 2017: SignalHound Measurements and Calibration
+
+## Aug 31, 2017: SignalHound Measurements and Calibration
 
 On Aug 24, 2017, Chris and I configured the SignalHound in order to investigate/study the
 broad RFI. Our objective was to obtain Spectra from the sky, as well as with the
