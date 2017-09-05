@@ -30,4 +30,7 @@ segment is the Gain, and the y-int of the "line" is the noise from the system,
 as the Temperature approaches T = 0 K.
 
 In python, Chris helped me do some very simple array operations which calculated
-the gain and noi
+the gain (mW/K), and the Noise (mW). The ratio n/g then yields the Noise
+Temperature in K.
+
+![](SH_Noise_Temp.png)
