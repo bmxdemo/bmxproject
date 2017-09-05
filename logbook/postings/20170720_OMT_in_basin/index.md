@@ -78,7 +78,9 @@ One can see a few RFI frequencies as tight spikes. But general
 features are shifted between two channels, indicating they are
 response of the system rather than something we pick up. The mystery
 is why is this variation so great and why it is so much greater than
-what we used in the lab.
+what we used in the lab. Unfortunately, an scp screw up means we lost
+all of the second night data. 
+
 
 
 The real and imaginary cross powers are here:
@@ -91,14 +93,17 @@ Waterfall plot for full 11 hours:
 
 ![WF](PureWF.png)
 
-
 After dividing by mean and plotting fractional changes, we get:
 
 ![WF](DeltaWF.png)
 
-Further fourier filtering to keep stuff that is fast varying in
+Further Fourier filtering to keep stuff that is fast varying in
 frequency and slowly varying in time, we get:
 
 ![WF](filteredWF.png)
+<<<<<<< HEAD
+=======
 
+>>>>>>> 8cb95110e2ada8ace93063198875f40b94299da6
 
+Clearly, it is all very spiritual at this point.
