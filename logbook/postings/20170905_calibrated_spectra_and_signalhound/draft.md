@@ -33,4 +33,12 @@ In python, Chris helped me do some very simple array operations which calculated
 the gain (mW/K), and the Noise (mW). The ratio n/g then yields the Noise
 Temperature in K.
 
-![](SH_Noise_Temp.png)
+![Temp](SH_Noise_Temp.png)
+
+### Calibrated Spectra:
+
+Utilizing these values, we calibrate the 16 earliest spectra from the
+SignalHound data. The resulting plot of Sky Temperature vs. Frequency can be
+seen below.
+
+![calspec](SH_fig1.png)
