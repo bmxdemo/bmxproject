@@ -47,3 +47,6 @@ the sky versus frequency, and the horizontal lines correspond to the terminated
 spectra at our two temperatures.
 
 ![Temp](PC_Cal_Spec.png)
+
+I believe we are seeing low sky temperaturs (often below the liquid nitrogen
+temperature @ 77K), with sharp narrow RFI peaks. 
