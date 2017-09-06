@@ -10,8 +10,9 @@ Calibrated Spectrum.
 ### Uncalibrated Spectra:
 
 With the SignalHound in place of the spectrometer(PC), we collected 28 spectra
-over the course of about 15 minutes. The .bbr file (CREATE LINK) and the log of changes with loose time-stamps
-can be found in the SignalHound folder on the cluster. (CREATE LINK)
+over the course of about 15 minutes. The .bbr file which contains these data is
+'/gpfs/mnt/gpfs01/astro/workarea/signalhound/2017-08-24 15h36m26s.bbr' and the log of changes with loose time-stamps
+can also be found in the SignalHound folder on the cluster.
 
 To decrease noise/eliminate some time variability, we took averages over a few
  spectra.
