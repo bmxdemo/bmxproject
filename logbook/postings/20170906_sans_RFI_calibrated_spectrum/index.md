@@ -50,3 +50,6 @@ spectra at our two temperatures.
 
 I believe we are seeing low sky temperatures (often below the liquid nitrogen
 temperature @ 77K), with sharp narrow RFI peaks. 
+
+Here is the same plot, viewed in log space.
+![Log](PC_Cal_Spec_Log.png)
