@@ -56,7 +56,7 @@ temperature @ 77K), with sharp narrow RFI peaks.
 Here is the same plot, viewed in log space.
 ![Log](PC_Cal_Spec_Log.png)
 
-Prediction: In the coming days, the dish will be finished and joined. The
-current gaps in the dish may account for up to 5% of its surface area, allowing
+Prediction: In the coming days, the dish will be finished and joined. I would
+estimate that the current gaps in the dish account for 5% of the dish area, allowing
 the T = 300K ground to contaminate our data. When the dish is joined, the
-calibrated spectrum may be reduced by 0.05 * 290K, or 14.5 K.
+calibrated spectrum should decrease in temperature by 0.05 * 290K, or 14.5 K.
