@@ -2,8 +2,8 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
-* [Calibrated Spectrum - Reduced RFI](/postings/20170906_sans_RFI_calibrated_spectrum/index.md) - Sep 06, 2017 (WT)
-* [SignalHound Measurements and Calibration](/postings/20170905_calibrated_spectra_and_signalhound/draft.md) -Sep 05, 2017 (WT)
+* [Calibrated Spectrum - Reduced RFI](postings/20170906_sans_RFI_calibrated_spectrum/index.md) - Sep 06, 2017 (WT)
+* [SignalHound Measurements and Calibration](postings/20170905_calibrated_spectra_and_signalhound/draft.md) -Sep 05, 2017 (WT)
 * [First light on the 21cm emission](postings/20170831_FirstGalaxy/index.md) - Aug 31, 2017 (AS)
 * [Basin data with OMT->horn->dish](postings/20170817_basindata/index.md) - Aug 17, 2017 (CDS)
 * [Basin waterfall plot and slices](postings/20170802_C_Basin/index.md) - Aug 2, 2017 (CC)
