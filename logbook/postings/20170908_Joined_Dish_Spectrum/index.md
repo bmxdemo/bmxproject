@@ -1,6 +1,6 @@
 ## Sep 08, 2017: Joined Dish Calibrated Spectrum
 
-On Sep 07, 2017, Chris, Evan and Paul joined the petals of the dish and sealed
+On Sep 07, 2017, Chris, Evan, and Paul joined the petals of the dish and sealed
 them together with aluminum tape, thereby sealing out signal from the T = 300K ground. With the
 decreased thermal noise from the ground, the sky spectrum saw a significant
 decrease in temperature, as the plots below show. The current configuration of the amp chain is as
@@ -19,6 +19,9 @@ As in the previous posting, I took averages over a suitable range of spectra for
 2.  Spectra with input terminated at 290K
 3.  Spectra with input terminated at 77K in liquid nitrogen
 ![uncalspectra](Joined_Dish_Uncal_Spec.png)
+
+It is clear that the average sky spectra is, in general, below the terminated T
+= 77K spectrum! But let's see how this looks once we calibrate.
 
 ### Gain and Noise Floor Calculations:
 
@@ -46,9 +49,10 @@ noise and dividing by the gain. The plot below is the average physical temperatu
 the sky versus frequency, and the horizontal lines correspond to the terminated
 spectra at our two temperatures, as before.
 
-![Temp](Joined_Dish_Cal_Spec.png)
+![Cal](Joined_Dish_Cal_Spec.png)
 
-Here is the same plot, viewed in log space.
+Here is the same plot, viewed in log space
+.
 ![Log](Joined_Dish_Cal_Spec_Log.png)
 
 ### Comparison: Before and After:
