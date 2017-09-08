@@ -1,18 +1,17 @@
 ## Sep 08, 2017: Joined Dish Calibrated Spectrum
 
-On Sep 07, 2017, Chris, Evan and Paul joined the petals of the dish and sealed
-them together with aluminum tape, thereby sealing out signal from the T = 300K ground. With the
-decreased thermal noise from the ground, the sky spectrum saw a significant
-decrease in temperature, as the plots below show. The current configuration of the amp chain is as
+On Sep 07, 2017, The petals of the dish were fastened together and sealed with
+aluminum tape, thereby sealing out signal from the T = 300K ground. With the
+decreased thermal noise from the ground, the spectrum we collect should be
+comparable to the sky itself. The current configuration of the amp chain is as
 previously stated:
 
 Sky -> LNA -> BP -> LNA -> Low Pass -> AMP2 -> BP -> Spectrometer
 
 ### Uncalibrated Spectra:
 
-These spectra were taken the morning of Sep 08, 2017, over the course of about
-30 minutes. The spectra can be found in the bmxdata folder on the astro cluster:
-('/gpfs/mnt/gpfs01/astro/workarea/bmxdata/170908/170908_1154.data').
+These spectra were taken the morning of Sep 08, 2017. The spectra can be found in the bmxdata folder on the astro cluster:
+('/gpfs/mnt/gpfs01/astro/workarea/bmxdata/________________').
 
 As in the previous posting, I took averages over a suitable range of spectra for the following cases:
 1.  Spectra from sky
@@ -47,6 +46,9 @@ the sky versus frequency, and the horizontal lines correspond to the terminated
 spectra at our two temperatures, as before.
 
 ![Temp](Joined_Dish_Cal_Spec.png)
+
+I believe we are seeing low sky temperatures (often below the liquid nitrogen
+temperature @ 77K), with sharp narrow RFI peaks. 
 
 Here is the same plot, viewed in log space.
 ![Log](Joined_Dish_Cal_Spec_Log.png)
