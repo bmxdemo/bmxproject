@@ -1,6 +1,6 @@
 ## Sep 06, 2017: Calibrated Spectra - Reduced RFI
 
-On Aug 30, 2017, ![Chris had a revelation:](postings/20170817_basindata/index.md) the amps were being driven non-linear
+On Aug 30, 2017, [Chris had a revelation:](postings/20170817_basindata/index.md) the amps were being driven non-linear
 by the out of band RFI. We made several modifications to the amp chain, in order
 to reduce incoming RFI. The crucial change involved moving both band pass
 filters onto the same channel: one after the first amp, to reduce the total
