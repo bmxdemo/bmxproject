@@ -14,7 +14,7 @@ These spectra were taken the morning of Sep 08, 2017, over the course of about
 30 minutes. The spectra can be found in the bmxdata folder on the astro cluster:
 ('/gpfs/mnt/gpfs01/astro/workarea/bmxdata/170908/170908_1154.data').
 
-As in the previous posting, I took averages over a suitable range of spectra for the following cases:
+As in the [previous posting,](../20170906_sans_RFI_calibrated_spectrum/index.md) I took averages over a suitable range of spectra for the following cases:
 1.  Spectra from sky
 2.  Spectra with input terminated at 290K
 3.  Spectra with input terminated at 77K in liquid nitrogen
