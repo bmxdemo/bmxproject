@@ -31,3 +31,13 @@ Again, a higher resolution measurement will likely yield better results.
 
 ![B&A](S11_OMT_Updated.png)
 
+### S21 Measurements
+
+Additionally, the S21 Parameter was measured through the entire amplifier chain,
+with (3+3+3+3+3+3+3+3+3+3+3+3+6+10+10) = 62 dB of attenuation.
+Port 1 was connected to the attenuators, then the low-loss cable.
+Port 2 was connected first at the end of the ~15ft coax that runs to the
+spectrometer, but in the second measurement, the coax was removed.
+
+![S21](S21_Meas.png)
+
