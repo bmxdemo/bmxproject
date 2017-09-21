@@ -16,14 +16,18 @@ In this configuration, Chris positioned a 48"x48" aluminum sheet at various
 positions relative to the dish and the OMT. Conceptually, if the beam of the OMT
 was seeing outside the surface of the dish, changing the geometry of the dish
 would change the reflected power. Control measurements were taken before each
-alteration, 
-
+alteration, and the measurements themselves are labelled in the plot:
 
 ![S11-1](S11_BeforeAfter.png)
 
-### Comparison: Before and After:
+It seems that there is only one line, but this is actually a good
+thing. Regardless of the position of the aluminum sheet, the reflected signal
+was essentially constant. The resolution of this data is not very good, and
+redoing the measurements with a higher resolution may be useful.
 
-Here is a log space plot comparing the data from the previous posting (before
-the dish was joined) and with the current data. 
+Comparing these results to the aforementioned posting, we can see loose overall
+consistency between the previous measurements, and the actual beam in the basin.
+Again, a higher resolution measurement will likely yield better results.
 
 ![B&A](S11_OMT_Updated.png)
+
