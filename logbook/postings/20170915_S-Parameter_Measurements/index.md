@@ -39,5 +39,9 @@ Port 1 was connected to the attenuators, then the low-loss cable.
 Port 2 was connected first at the end of the ~15ft coax that runs to the
 spectrometer, but in the second measurement, the coax was removed.
 
+In the plot below, I added back the 62dB of attenuation at all points:
+
 ![S21](S21_Meas.png)
+
+
 
