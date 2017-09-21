@@ -20,8 +20,8 @@ alteration, and the measurements themselves are labelled in the plot:
 
 ![S11-1](S11_BeforeAfter.png)
 
-It seems that there is only one line, but this is actually a good
-thing. Regardless of the position of the aluminum sheet, the reflected signal
+It seems that there is only one line, but in fact, all the lines are essentially
+identical. Regardless of the position of the aluminum sheet, the reflected signal
 was essentially constant. The resolution of this data is not very good, and
 redoing the measurements with a higher resolution may be useful.
 
