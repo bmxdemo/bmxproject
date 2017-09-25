@@ -10,9 +10,7 @@ problem there.
 Additionally, we speculate that the voltage supplied to the
 amps did not change, because that would not explain the changes in power that we
 saw. We also speculate that the noise diode had not been connected to the OMT
-before this spectrum was finished, for similar reasons. 
-
-As such, the jump in power is still
+before this spectrum was finished, for similar reasons. As such, the jump in power is still
 unexplained.
 
 On Sep. 22, I had to take another round of calibration data, since the gain of
@@ -45,14 +43,21 @@ of the calibration process.
 ### Uncalibrated Spectra:
 
 Here we will first consider the spectra from the 20th.
+Note the obvious increase in power, between the blue and cyan curves.
 
 ![0920](0920raw.png)
+
+Now compare the uncalibrated spectrum for the 22nd.
 
 The spectra can be found here: ('/gpfs/mnt/gpfs01/astro/workarea/bmxdata/incoming/data/170922_1735.data')
 Here is a plot of the uncalibrated spectra, from the sky and with the
 terminators at the two previously stated temperatures.
 
 ![raw](rawspec.png)
+
+We also want to directly compare the two, although this plot is a little
+cluttered...
+![uncalBnA](BnAuncal.png)
 
 ### Calibrated Spectra:
 
