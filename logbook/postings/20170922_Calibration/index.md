@@ -61,10 +61,14 @@ cluttered...
 
 ### Calibrated Spectra:
 
+This is the uncalibrated spectrum from the 22nd:
 This spectra has been calibrated using the same approach as was described in
 previous [posting.](../20170906_sans_RFI_calibrated_spectrum/index.md)
 
 ![log](calspec_log.png)
+
+Here is the before and after, with spectra from the 20th and 22nd.
+![cal2](BnAcal.png)
 
 ### Ratio of the gain measurements:
 
