@@ -1,0 +1,48 @@
+## Sep 22, 2017: Calibration Measurements with Liquid Nitrogen
+
+On Sep. 20, I took calibration spectra with a terminator at 290K and 77K, and
+during my calibration spectrum file, some interesting changes
+occurred. Initially, the power received from the sky was quite low but by the
+end of the test, it had increased by a factor of 3. Further investigation found
+that the cable connections were all secure, that the voltage supplied to the
+amps did not change, and the noise diode had not been connected to the OMT
+before this spectrum was finished. As such, the jump in power is still
+unexplained.
+
+On Sep. 22, I had to take another round of calibration data, since the gain of
+the system had likely changed. The test was performed in ~75 F weather, which
+corresponds to ~297 K. The spectrum was terminated at 297 K and 77 K with liquid
+nitrogen. 
+
+### Uncalibrated Spectra
+
+The spectra can be found here: ('/gpfs/mnt/gpfs01/astro/workarea/bmxdata/incoming/data/170922_1735.data')
+Here is a plot of the uncalibrated spectra, from the sky and with the
+terminators at the two previously stated temperatures.
+![S11-1](S11_BeforeAfter.png)
+
+It seems that there is only one line, but in fact, all the lines are essentially
+identical. Regardless of the position of the aluminum sheet, the reflected signal
+was essentially constant. The resolution of this data is not very good, and
+redoing the measurements with a higher resolution may be useful.
+
+Comparing these results to the aforementioned posting, we can see loose overall
+consistency between the previous measurements, and the actual beam in the basin.
+Again, a higher resolution measurement will likely yield better results.
+
+![B&A](S11_OMT_Updated.png)
+
+### S21 Measurements
+
+Additionally, the S21 Parameter was measured through the entire amplifier chain,
+with (3+3+3+3+3+3+3+3+3+3+3+3+6+10+10) = 62 dB of attenuation.
+Port 1 was connected to the attenuators, then the low-loss cable.
+Port 2 was connected first at the end of the ~15ft coax that runs to the
+spectrometer, but in the second measurement, the coax was removed.
+
+In the plot below, I added back the 62dB of attenuation at all points:
+
+![S21](S21_Meas.png)
+
+
+
