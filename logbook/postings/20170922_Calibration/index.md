@@ -25,7 +25,7 @@ nitrogen.
 In the data from the 20th, we can observe the change in received power. The
 spectra can be found here:  ('/gpfs/mnt/gpfs01/astro/workarea/bmxdata/incoming/data/170920_1553.data')
 
-This plot shows the power received over a single frequency bin for the duration
+This plot shows the power received over a single frequency bin (1300MHz) for the duration
 of the test. Here is the basic description of events in the plot, from left to
 right:
 
@@ -38,8 +38,15 @@ right:
 7) Reconnected low loss cable to OMT+Horn on Sky (2500-2850)
 
 ![timeline](timeline.png)
+
+Notice the factor of 3 change in the sky spectra from the beginning to the end
+of the calibration process. 
  
 ### Uncalibrated Spectra:
+
+Here we will first consider the spectra from the 20th.
+
+![0920](0920raw.png)
 
 The spectra can be found here: ('/gpfs/mnt/gpfs01/astro/workarea/bmxdata/incoming/data/170922_1735.data')
 Here is a plot of the uncalibrated spectra, from the sky and with the
@@ -51,7 +58,6 @@ terminators at the two previously stated temperatures.
 
 This spectra has been calibrated using the same approach as was described in
 previous [posting.](../20170906_sans_RFI_calibrated_spectrum/index.md)
-Here is the plot in log space:
 
 ![log](calspec_log.png)
 
