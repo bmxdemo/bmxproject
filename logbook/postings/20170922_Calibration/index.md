@@ -18,6 +18,12 @@ the system had likely changed. The test was performed in ~75 F weather, which
 corresponds to ~297 K. The spectrum was terminated at 297 K and 77 K with liquid
 nitrogen. 
 
+One possible explanation was a potential change in the DC voltage supplied to
+the amp chain. The voltage on the amplifiers was increased from 2.9V in previous
+tests to 3.0V by accident on 09/22. It was changed back later that day, to try
+to try and deduce if changing the amplifier voltage was what changed the power
+received by the OMT+Horn in the calivration test.
+
 ### Timeline:
 
 In the data from the 20th, we can observe the change in received power. The
@@ -61,7 +67,7 @@ cluttered...
 
 ### Calibrated Spectra:
 
-This is the uncalibrated spectrum from the 22nd:
+This is the calibrated spectrum from the 22nd:
 This spectra has been calibrated using the same approach as was described in
 previous [posting.](../20170906_sans_RFI_calibrated_spectrum/index.md)
 
@@ -69,6 +75,11 @@ previous [posting.](../20170906_sans_RFI_calibrated_spectrum/index.md)
 
 Here is the before and after, with spectra from the 20th and 22nd.
 ![cal2](BnAcal.png)
+
+It is important to point out that the temperature was specified as 297K instead
+of the previous 290K for the data from the 22nd.
+The noise floor increased a little, from the 20th to the 22nd, in part due to
+this temperature change.
 
 ### Ratio of the gain measurements:
 
@@ -79,9 +90,15 @@ which would explain the mystery factor of 3 discussed earlier.
 
 First is a plot of the gain arrays themselves:
 
+Note, the gain is inversely proportional to the temperature difference, however,
+the temperature change (297 instead of 290) from  9/22 data only accounts for
+part of its difference relative to the others.
+
 ![gain](gain.png)
 
 And here is the ratio of these gain arrays:
 
+
 ![ratio](gainratio.png)
+
 
