@@ -4,9 +4,15 @@ On Sep. 20, I took calibration spectra with a terminator at 290K and 77K, and
 during my calibration spectrum file, some interesting changes
 occurred. Initially, the power received from the sky was quite low but by the
 end of the test, it had increased by a factor of 3. Further investigation found
-that the cable connections were all secure, that the voltage supplied to the
-amps did not change, and the noise diode had not been connected to the OMT
-before this spectrum was finished. As such, the jump in power is still
+that the cable connections were all secure, so there didn't seem to be any
+problem there. 
+
+Additionally, we speculate that the voltage supplied to the
+amps did not change, because that would not explain the changes in power that we
+saw. We also speculate that the noise diode had not been connected to the OMT
+before this spectrum was finished, for similar reasons. 
+
+As such, the jump in power is still
 unexplained.
 
 On Sep. 22, I had to take another round of calibration data, since the gain of
@@ -14,6 +20,25 @@ the system had likely changed. The test was performed in ~75 F weather, which
 corresponds to ~297 K. The spectrum was terminated at 297 K and 77 K with liquid
 nitrogen. 
 
+### Timeline:
+
+In the data from the 20th, we can observe the change in received power. The
+spectra can be found here:  ('/gpfs/mnt/gpfs01/astro/workarea/bmxdata/incoming/data/170920_1553.data')
+
+This plot shows the power received over a single frequency bin for the duration
+of the test. Here is the basic description of events in the plot, from left to
+right:
+
+1) OMT+Horn on Sky (0-600)
+2) Disconnected low-loss cable (600-700)
+3) Terminated @ 290K (700-900)
+4) Immersed terminator in LN2 (900-1100)
+5) Removed terminator from LN2 (1100-2450)
+6) Disconnected low-loss cable from terminator (2450-2500)
+7) Reconnected low loss cable to OMT+Horn on Sky (2500-2850)
+
+![timeline](timeline.png)
+ 
 ### Uncalibrated Spectra:
 
 The spectra can be found here: ('/gpfs/mnt/gpfs01/astro/workarea/bmxdata/incoming/data/170922_1735.data')
@@ -26,10 +51,7 @@ terminators at the two previously stated temperatures.
 
 This spectra has been calibrated using the same approach as was described in
 previous [posting.](../20170906_sans_RFI_calibrated_spectrum/index.md)
-
-![cal](calspec.png)
-
-And here is the plot in log space:
+Here is the plot in log space:
 
 ![log](calspec_log.png)
 
