@@ -35,3 +35,16 @@ And here is the plot in log space:
 
 ### Ratio of the gain measurements:
 
+Additionally, Anze was interested in the ratio of the gain for previous
+calibrations. Hypothetically this will tell us how the amplifiers have changed
+over time, and reveal if there is some change in the gain of the amp chain,
+which would explain the mystery factor of 3 discussed earlier.
+
+First is a plot of the gain arrays themselves:
+
+![gain](gain.png)
+
+And here is the ratio of these gain arrays:
+
+![ratio](gainratio.png)
+
