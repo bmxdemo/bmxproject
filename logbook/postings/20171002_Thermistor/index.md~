@@ -1,0 +1,34 @@
+## Oct 2,  2017: Temperature Measurements using a Thermistor
+
+Currently, the noise diode is in thermal contact with a thermistor and attached
+to the Y-polarization calibration port on the OMT. Using the LabJack T7, we wish
+to supply a fixed current of 200uA, and record the DC voltage drop
+across the thermistor. By dividing this voltage measurement by the fixed
+current, we can determine the resistance in the thermistor and hence its temperature.
+
+On Sep. 29, I identified the thermistor in question as a mouser electronics 10K
+NTC (Negative Temperature Coefficient) thermistor, stock number 334-42103. the
+operating specifications for this thermistor can be found at the following url:
+    http://www.mouser.com/ds/2/221/0833184-200694.pdf
+Unfortunately, I was unable to locate this thermistor in their catalog.
+
+### Beta Parameter Equation:
+
+To model the response of the thermistor to variation in temperature, I used the
+Beta Parameter Equation.
+
+This thermistor has a Beta parameter of 4200, and a resistance of 10kOhms at 25
+C. The following plot shows the relationship between Resistance and Temperature:
+
+![RvsT](RvsT.png)
+
+### Temperature variation with time:
+
+To examine the variation in resistance and temperature I first examined a single
+data file, 
+
+
+
+
+
+![timeline](timeline.png)
