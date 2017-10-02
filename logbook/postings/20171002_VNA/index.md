@@ -35,6 +35,6 @@ The data file for this calibration can be found here:
 Additionally, the calibrated spectrum can be produced as in [previous
 postings](../20170922_Calibration/index.md). 
 
-![cal](calspec.png]
+![cal](calspec.png)
 
 The separation between these two curves is about 3-4K, as predicted by Chris.
