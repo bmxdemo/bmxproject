@@ -2,13 +2,13 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
-* [Temperature Measurements via Thermistor](postings/20171002_Thermistor/index.md) - Oct 02, 2017 (WT)
-* [S21 Measurements for Coupling, LN2 Calibration](postings/20171002_VNA/index.md) - Oct 02, 2017 (WT)
+* [Temperature Measurements via Thermistor](postings/20171002_Thermistor/index.md) - Oct 2, 2017 (WT)
+* [S21 Measurements for Coupling, LN2 Calibration](postings/20171002_VNA/index.md) - Oct 2, 2017 (WT)
 * [Calibration Measurements](postings/20170922_Calibration/index.md) - Sep 25, 2017 (WT)
 * [Basin S-Parameter Measurements](postings/20170915_S-Parameter_Measurements/index.md) - Sep 21, 2017 (WT)
-* [Joined Dish - Calibrated Spectrum](postings/20170908_Joined_Dish_Spectrum/index.md) - Sep 08, 2017 (WT)
-* [Calibrated Spectrum - Reduced RFI](postings/20170906_sans_RFI_calibrated_spectrum/index.md) - Sep 06, 2017 (WT)
-* [SignalHound Measurements and Calibration](postings/20170905_calibrated_spectra_and_signalhound/draft.md) -Sep 05, 2017 (WT)
+* [Joined Dish - Calibrated Spectrum](postings/20170908_Joined_Dish_Spectrum/index.md) - Sep 8, 2017 (WT)
+* [Calibrated Spectrum - Reduced RFI](postings/20170906_sans_RFI_calibrated_spectrum/index.md) - Sep 6, 2017 (WT)
+* [SignalHound Measurements and Calibration](postings/20170905_calibrated_spectra_and_signalhound/draft.md) -Sep 5, 2017 (WT)
 * [First light on the 21cm emission](postings/20170831_FirstGalaxy/index.md) - Aug 31, 2017 (AS)
 * [Basin data with OMT->horn->dish](postings/20170817_basindata/index.md) - Aug 17, 2017 (CDS)
 * [Basin waterfall plot and slices](postings/20170802_C_Basin/index.md) - Aug 2, 2017 (CC)
