@@ -3,7 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
 * [Temperature Measurements via Thermistor](postings/20171002_Thermistor/index.md) - Oct 02, 2017 (WT)
-* [S21 Measurements for OMT Ports](postings/20171002_VNA/index.md) - Oct 02, 2017 (WT)
+* [S21 Measurements for Coupling, LN2 Calibration](postings/20171002_VNA/index.md) - Oct 02, 2017 (WT)
 * [Calibration Measurements](postings/20170922_Calibration/index.md) - Sep 25, 2017 (WT)
 * [Basin S-Parameter Measurements](postings/20170915_S-Parameter_Measurements/index.md) - Sep 21, 2017 (WT)
 * [Joined Dish - Calibrated Spectrum](postings/20170908_Joined_Dish_Spectrum/index.md) - Sep 08, 2017 (WT)
