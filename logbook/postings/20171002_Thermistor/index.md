@@ -9,18 +9,26 @@ current, we can determine the resistance in the thermistor and hence its tempera
 On Sep. 29, I identified the thermistor in question as a mouser electronics 10K
 NTC (Negative Temperature Coefficient) thermistor, stock number 334-42103. the
 operating specifications for this thermistor can be found at the following url:
+
     http://www.mouser.com/ds/2/221/0833184-200694.pdf
+
 Unfortunately, I was unable to locate this thermistor in their catalog.
 
 ### Beta Parameter Equation:
 
 To model the response of the thermistor to variation in temperature, I used the
-Beta Parameter Equation.
+Beta Parameter Equation. 
+
+https://en.wikipedia.org/wiki/Thermistor#B_or_.CE.B2_parameter_equation
 
 This thermistor has a Beta parameter of 4200, and a resistance of 10kOhms at 25
 C. The following plot shows the relationship between Resistance and Temperature:
 
 ![RvsT](RvsT.png)
+
+The pred line is the relationship as described in the Beta Parameter Equation.
+The calc dots are verification that my data points in the plot below in fact
+match the values predicted by the equation, and are to be ignored here.
 
 ### Temperature variation with time:
 
@@ -42,5 +50,5 @@ It is clear that the higher temperature data is very closely matched, but the
 lower temperatures are not matched because our system is bottoming out. Chris
 suggested this may be due to the noise floor, and suggested using higher power
 (higher fixed current). Additionally, the thermistor's minimum recommended
-temperature is 670uA, which is a factor of 3 higher than what we are supplying
+current is 670uA, which is a factor of 3 higher than what we are supplying
 with the LabJack. This may pose a problem.

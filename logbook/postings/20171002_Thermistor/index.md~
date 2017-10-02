@@ -25,10 +25,22 @@ C. The following plot shows the relationship between Resistance and Temperature:
 ### Temperature variation with time:
 
 To examine the variation in resistance and temperature I first examined a single
-data file, 
+data file:
+'/gpfs/mnt/gpfs01/astro/workarea/bmxdata/incoming/data/170929_1000.data'
+![Tvst](Tvst.png)
 
+Additionally, it is important to consider what a 24 hour cycle might look
+like. These files come from 20170929 as well, from 00:00 EDT to 23:00 EDT. To
+actually verify these calculations, I compared them to weather underground from
+nearby: 
 
+https://www.wunderground.com/history/airport/KHWV/2017/9/29/DailyHistory.html?req_city=&req_state=&req_statename=&reqdb.zip=&reqdb.magic=&reqdb.wmo=
 
+![24h](Tvst24hrsC.png)
 
-
-![timeline](timeline.png)
+It is clear that the higher temperature data is very closely matched, but the
+lower temperatures are not matched because our system is bottoming out. Chris
+suggested this may be due to the noise floor, and suggested using higher power
+(higher fixed current). Additionally, the thermistor's minimum recommended
+temperature is 670uA, which is a factor of 3 higher than what we are supplying
+with the LabJack. This may pose a problem.
