@@ -120,8 +120,7 @@ and the ratio of pulse height to base power level looks the same. So no change
 there. 
 
 
-**Figure 10 - Before (blue) and after DAQ restart and machine reboot (other
-colors) **
+**Figure 10 - Before (blue) and after DAQ restart and machine reboot (other colors) **
 ![](diode_fig5.png) 
 
 
