@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [State changes](postings/20171004_state_changes/index.md) - Oct 4, 2017 (CDS)
 * [Temperature Measurements via Thermistor](postings/20171002_Thermistor/index.md) - Oct 2, 2017 (WT)
 * [S21 Measurements for Coupling, LN2 Calibration](postings/20171002_VNA/index.md) - Oct 2, 2017 (WT)
 * [Calibration Measurements](postings/20170922_Calibration/index.md) - Sep 25, 2017 (WT)
