@@ -66,13 +66,13 @@ off also went up. This is shown in Figures 6-8. Fig 6 is the waterfall plot. Fig
 of Fig 7.
 
 
-**Figure 6 - waterfall plot showing state changes**
+**Figure 6 - waterfall plot showing state change**
 ![](diode_fig4.png)
 
-**Figure 7 - zoom in of Fig 1**
+**Figure 7 - freq. slice of freq. bin 2000**
 ![](diode_padswitch.png) 
 
-**Figure 8 - freq. slice of freq. bin 2000**
+**Figure 8 - zoom ins of Fig 7**
 ![](diode_padswitch2.png) 
 
 
