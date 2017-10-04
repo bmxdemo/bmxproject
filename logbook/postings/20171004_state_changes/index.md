@@ -36,19 +36,19 @@ channel 1, which was not hooked up to anything. Figure 5 shows a different
 frequency bin of channel 1, which is a strong radar frequency. You can see the
 radar pikcup (directly on the ADC?) and it's amplitude doesn't look like it changes.
 
-####Figure 1 - waterfall plot showing state changes
-n![](diode_fig2.png)
+**Figure 1 - waterfall plot showing state changes**
+![](diode_fig2.png)
 
-####Figure 2 - zoom in of Fig 1
+**Figure 2 - zoom in of Fig 1**
 ![](diode_fig3.png) 
 
-####Figure 3 - freq. slice of freq. bin 2000
+**Figure 3 - freq. slice of freq. bin 2000**
 ![](diode_fig1.png) 
 
-####Figure 4 - freq. slice of freq. bin 2000 on unused spectrometer channel 1
+**Figure 4 - freq. slice of freq. bin 2000 on unused spectrometer channel 1**
 ![](diode_fig1a.png) 
 
-####Figure 5 - freq. slice of freq. bin 1071 on unused spectrometer channel 1
+**Figure 5 - freq. slice of freq. bin 1071 on unused spectrometer channel 1**
 showing radar
 ![](diode_fig1aa.png) 
 
@@ -66,13 +66,13 @@ off also went up. This is shown in Figures 6-8. Fig 6 is the waterfall plot. Fig
 of Fig 7.
 
 
-####Figure 6 - waterfall plot showing state changes
-n![](diode_fig4.png)
+**Figure 6 - waterfall plot showing state changes**
+![](diode_fig4.png)
 
-####Figure 7 - zoom in of Fig 1
+**Figure 7 - zoom in of Fig 1**
 ![](diode_padswitch.png) 
 
-####Figure 8 - freq. slice of freq. bin 2000
+**Figure 8 - freq. slice of freq. bin 2000**
 ![](diode_padswitch2.png) 
 
 
@@ -86,7 +86,7 @@ with the input power, and it went from bad to good at 10:30 am on 9/22 (not
 shown on the PC temp plot) when it would have still been getting hotter. So this
 does not indicate PC temps.
 
-####Figure 9 - PC temperatures
+**Figure 9 - PC temperatures**
 ![](bmxdaq_171004.png) 
 
 
@@ -120,8 +120,8 @@ and the ratio of pulse height to base power level looks the same. So no change
 there. 
 
 
-####Figure 10 - Before (blue) and after DAQ restart and machine reboot (other
-colors) 
+**Figure 10 - Before (blue) and after DAQ restart and machine reboot (other
+colors) **
 ![](diode_fig5.png) 
 
 
