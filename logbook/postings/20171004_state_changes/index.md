@@ -55,7 +55,7 @@ showing radar
 
 After it went into this quiet state, Will went out and measured the noise diode
 temperature at around 1 pm on 9/22. See [last plot
-here](../20171002_VNA/index.md.) It is 3-4 K, like we expect. 
+here](../20171002_VNA/index.md). It is 3-4 K, like we expect. 
 
 Things remained in this quiet state until the photo shoot on 10/2/17. Seeing the
 tiny pulse height, I removed the 10 dB attenuation. This triggered a state
