@@ -1,0 +1,83 @@
+## Sep 22, 2017: Calibration Measurements with Liquid Nitrogen
+
+On Sep. 20, I took calibration spectra with a terminator at 290K and 77K, and
+during my calibration spectrum file, some interesting changes
+occurred. Initially, the power received from the sky was quite low but by the
+end of the test, it had increased by a factor of 3. Further investigation found
+that the cable connections were all secure, so there didn't seem to be any
+problem there. 
+
+Additionally, we speculate that the voltage supplied to the
+amps did not change, because that would not explain the changes in power that we
+saw. We also speculate that the noise diode had not been connected to the OMT
+before this spectrum was finished, for similar reasons. As such, the jump in power is still
+unexplained.
+
+On Sep. 22, I had to take another round of calibration data, since the gain of
+the system had likely changed. The test was performed in ~75 F weather, which
+corresponds to ~297 K. The spectrum was terminated at 297 K and 77 K with liquid
+nitrogen. 
+
+### Timeline:
+
+In the data from the 20th, we can observe the change in received power. The
+spectra can be found here:  ('/gpfs/mnt/gpfs01/astro/workarea/bmxdata/incoming/data/170920_1553.data')
+
+This plot shows the power received over a single frequency bin (1300MHz) for the duration
+of the test. Here is the basic description of events in the plot, from left to
+right:
+
+1) OMT+Horn on Sky (0-600)
+2) Disconnected low-loss cable (600-700)
+3) Terminated @ 290K (700-900)
+4) Immersed terminator in LN2 (900-1100)
+5) Removed terminator from LN2 (1100-2450)
+6) Disconnected low-loss cable from terminator (2450-2500)
+7) Reconnected low loss cable to OMT+Horn on Sky (2500-2850)
+
+![timeline](timeline.png)
+
+Notice the factor of 3 change in the sky spectra from the beginning to the end
+of the calibration process. 
+ 
+### Uncalibrated Spectra:
+
+Here we will first consider the spectra from the 20th.
+Note the obvious increase in power, between the blue and cyan curves.
+
+![0920](0920raw.png)
+
+Now compare the uncalibrated spectrum for the 22nd.
+
+The spectra can be found here: ('/gpfs/mnt/gpfs01/astro/workarea/bmxdata/incoming/data/170922_1735.data')
+Here is a plot of the uncalibrated spectra, from the sky and with the
+terminators at the two previously stated temperatures.
+
+![raw](rawspec.png)
+
+We also want to directly compare the two, although this plot is a little
+cluttered...
+![uncalBnA](BnAuncal.png)
+
+### Calibrated Spectra:
+
+This spectra has been calibrated using the same approach as was described in
+previous [posting.](../20170906_sans_RFI_calibrated_spectrum/index.md)
+
+![log](calspec_log.png)
+
+### Ratio of the gain measurements:
+
+Additionally, Anze was interested in the ratio of the gain for previous
+calibrations. Hypothetically this will tell us how the amplifiers have changed
+over time, and reveal if there is some change in the gain of the amp chain,
+which would explain the mystery factor of 3 discussed earlier.
+
+First is a plot of the gain arrays themselves:
+
+![gain](gain.png)
+
+And here is the ratio of these gain arrays:
+
+![ratio](gainratio.png)
+
