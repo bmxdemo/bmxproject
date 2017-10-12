@@ -1,0 +1,39 @@
+## Oct 12, 2017: Diode Troubleshooting
+
+On Oct 06, Some strange behavior was recognized in the noise diode
+system. Initially, there appeared to be two
+On Oct 09, I
+
+Additionally, we speculate that the voltage supplied to the
+amps did not change, because that would not explain the changes in power that we
+saw. We also speculate that the noise diode had not been connected to the OMT
+before this spectrum was finished, for similar reasons. As such, the jump in power is still
+unexplained.
+
+On Sep. 22, I had to take another round of calibration data, since the gain of
+the system had likely changed. The test was performed in ~75 F weather, which
+corresponds to ~297 K. The spectrum was terminated at 297 K and 77 K with liquid
+nitrogen. 
+
+One possible explanation was a potential change in the DC voltage supplied to
+the amp chain. The voltage on the amplifiers was increased from 2.9V in previous
+tests to 3.0V by accident on 09/22. It was changed back later that day, to try
+to try and deduce if changing the amplifier voltage was what changed the power
+received by the OMT+Horn in the calivration test.
+
+### Timeline:
+
+In the data from the 20th, we can observe the change in received power. The
+spectra can be found here:  ('/gpfs/mnt/gpfs01/astro/workarea/bmxdata/incoming/data/170920_1553.data')
+
+This plot shows the power received over a single frequency bin (1300MHz) for the duration
+of the test. Here is the basic description of events in the plot, from left to
+right:
+
+1) OMT+Horn on Sky (0-600)
+2) Disconnected low-loss cable (600-700)
+3) Terminated @ 290K (700-900)
+4) Immersed terminator in LN2 (900-1100)
+5) Removed terminator from LN2 (1100-2450)
+6) Disconnected low-loss cable from terminator (2450-2500)
+7) Reconnected low loss cable to OMT+Horn on Sky (2500-2850)
