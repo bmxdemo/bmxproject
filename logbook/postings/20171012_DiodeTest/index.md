@@ -191,6 +191,8 @@ measurements. However, even with the -10dB of attenuation and -25dB of
 coupling](../20170915_S-Parameter_Measurements/index.md) the noise diode pulse
 height should still appear in the spectra.
 
+### Varying Attenuation between Diode and Cal-Port:
+
 Chris suggested changing the amount of attenuation between the noise diode and
 the calibration port in order to examine the changing pulse heights, and see if
 perhaps 10dB is too much attenuation to still see the pulse
@@ -203,8 +205,57 @@ still visible for all values of attenuation, even the 10dB attenuators! I also
 tested this with a second 10dB attenuator, labelled in the plot as alternate,
 and with the original 10dB attenuator, labelled in the plot as original.
 
-![Vary](VaryAtten.png)
+![Vary](VaryAttenTimeSeries.png)
+
+In this plot, it doesn't seem like the background level is changing despite
+going from NO ATTENUATOR through a whole gamut of attenuator values.
+I took the average power of the 2000th freq. bin with the diode pulse off, and
+diode pulse on (with extreme care!!) and the following plot happened to tumble
+out: 
+
+![POWER](PowerVSAtten.png)
+
+Indeed, there seems to be a negigable difference in the average background
+power, which we expected for the diode being off. Subtracting off this
+background power, we can see the relative heights of the pulses with the varying
+attenuator values:
+
+![heights](PulseMinusBG.png)
+
+These pulse height changes are visible by eye using plotLive while the data
+acquisition is running, and if they can't be observed by eye, then the problem
+remains. 
+
+There are additional calibration steps that can be taken with this data, and
+this posting will be updated to flesh out more analysis of the changing pulse
+heights and how it relates to the noise temperature/power of the noise diode.
 
 After this test, the (Ypol = channel 2) low loss cable was disconnected from the
 OMT Data port, and was instead connected to the noise diode with 23dB of
-attenuation in between them. I believe this is the current configuration as of 10/12.
+attenuation in between them.
+
+### Blaming the Mantis Religiosa:
+
+There were many alterations to the system, and still we found no smoking
+gun. Perhaps the problems lie with the digitizer? Or perhaps the praying mantis
+was symbolic of a "bug" in the code. Restarting the data acquisition seemed to
+impact the "state" of the system (if such a thing exits, jury still out), so a
+software/spectrometer issue is being advanced as a leading candidate for these
+instability issues. Without altering any of the mechanical/electrical components
+of the system, our testbed becomes restarting and forcibly terminating the data
+acquisition frequently to attempt to sniff out our problem.
+
+For the ominous weekend starting Oct 13, the data acquisition will be running on
+1000 sample runs, with the daq stopping at the end of each 1000 samples and
+restarting itself, as though it were being manually cancelled and
+reset. Hopefully this will give us some indication of the implications of
+stopping and restarting the system as it pertains to state changes and
+stability.
+
+The diode_test_files.ini file is being called by the diode_exec.sh executable,
+which seems to be working as of tonight at 6:30 pm. This creates a new data file
+every ~2 minutes, where the signal on channel 1 is a terminator with no
+band-pass filter, and the signal on channel 2 is the noise diode + 23dB
+attenuation connected to the low loss cable in the configuration at the top of
+this posting. Paul Stankus suggested more rigorous conventions regarding the
+configuration of the amp chain, and it seems like a reasonable and wise request.
