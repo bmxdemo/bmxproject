@@ -1,0 +1,42 @@
+## Oct 12, 2017: Diode Troubleshooting
+
+### Data Acquisition with nSamples = 1000:
+
+In my [previous posting](../20171012_DiodeTest) I left off with a description of
+the data acquisition that ran over the weekend (10/13-10/16). The daq runs for 1000 samples
+(~2 minutes) and then restarts itself. This was specified in the executable file
+by changing the nSamples variable from 0 (infinite samples) to 1000 (stop after
+1000 samples are collected.) The goal was to observe the impact of a hard reset
+on the digitizer level, if all other parameters were held approximately
+constant. The "signal" was the noise diode connected to the low-loss cable, with
+23dB of attenuation, meaning there is no variability due to RFI, the sky,
+etc. This data acquisition ran all weekend, and was stopped on monday around 5:00 PM. 
+
+The system was configured as before:
+
+Noise Diode --> 23dB Atten. --> Low-Loss --> [Amp Chain] --> [Spectrometer]
+
+Analysis of these data files indicated slight variations in power were possible
+by restarting the daq, without changing any other parameters.
+
+### 
+For the ominous weekend starting Oct 13, the data acquisition will be running on
+1000 sample runs, with the daq stopping at the end of each 1000 samples and
+restarting itself, as though it were being manually cancelled and
+reset. Hopefully this will give us some indication of the implications of
+stopping and restarting the system as it pertains to state changes and
+stability.
+
+The diode_test_files.ini file is being called by the diode_exec.sh executable,
+which seems to be working as of tonight at 6:30 pm. This creates a new data file
+every ~2 minutes, where the signal on channel 1 is a terminator with no
+band-pass filter, and the signal on channel 2 is the noise diode + 23dB
+attenuation connected to the low loss cable in the configuration at the top of
+this posting. Paul Stankus suggested more rigorous conventions regarding the
+configuration of the amp chain, and it seems like a reasonable and wise request.
+
+### Attempting to Trigger Loud State Transition:
+
+In a [previous posting](../20171004_state_changes/index.md)
+
+![swap](diodeswap.png)

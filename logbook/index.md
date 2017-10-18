@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Restarting Data Acquisition After 1000 Samples](postings/20171018_1000_Sample_Data/index.md) - Oct 18, 2017 (WT)
 * [Diode Troubleshooting](postings/20171012_DiodeTest/index.md) - Oct 12, 2017 (WT)
 * [State changes](postings/20171004_state_changes/index.md) - Oct 4, 2017 (CDS)
 * [Temperature Measurements via Thermistor](postings/20171002_Thermistor/index.md) - Oct 2, 2017 (WT)
