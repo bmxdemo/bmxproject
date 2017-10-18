@@ -66,9 +66,9 @@ shown here in various colors representing each separate file, for f1300 bin:
 
 ![candidate](TSswitching.png)
 
-Looking at these time series curves, we can imagine the same two-state system we had
-initially suggested at the outset of these diode calibration tests. There
-appears to be a higher energy "loud state" and a lower energy "quiet state". The
+Looking at these time series curves, its possible that we are observing some
+type of two-state system. There appears to be a higher energy "loud state" and a
+lower energy "quiet state", perhaps similar to (though weaker than) before. The
 system is switching between the two for some reason.
 
 When we examine what the spectra look like before and after these power
@@ -149,5 +149,6 @@ points, we can calculate and plot the unitless gain as before:
 
 Here is a plot of the unitless gain as a function of time in mjd:
 
+**Coming Soon!**
 
 
