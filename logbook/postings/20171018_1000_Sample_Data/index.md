@@ -99,12 +99,28 @@ We witness precisely the same bahavior in the diode on spectra:
 
 Again, the same color curves are right on top of each other, in agreement with
 the previous plot. I think this is a good indication that the system is
-switching between two states, and the effects of this state change can be
+switching between two states, and it looks like the effects of this state change can be
 described by changes in two parameters:
 
 1) Gain
 2) Offset Power Level
 
+If this is an accurate depiction of the behavior of the system, then we should
+be able to Calculate the difference between diode on and diode off, and still
+observe a resemblance:
+
+![onminusoff](OnMinusOff.png)
+
+We still see the two families of curves following each other. We can also
+calculate a unitless gain, by taking the diode on - diode off plot, and dividing
+by the diode off power. 
+
+![gains](UnitlessGain.png)
+
+Here we observe the correlation again between the colors. From these curves, it
+is apparent that the gain is switching with the changing power levels observed
+in the time series plots.
+ 
 ### f2000 as Points not Lines
 
 For the f2000 data, Chris tried plotting these data files as points instead of
