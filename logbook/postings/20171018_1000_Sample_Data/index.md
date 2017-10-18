@@ -19,11 +19,16 @@ Noise Diode --> 23dB Atten. --> Low-Loss --> [Amp Chain] --> [Spectrometer]
 Analysis of these data files indicated slight variations in power were possible
 by restarting the daq, without changing any other parameters.
 
-### Time Series of these data:
+### Time Series:
 
 Here is a familiar style of plot of spectrometer power in a given frequency bin
-versus time. The frequency bins selected were f2000 = 1368.62MHz, and f1300 =
-1274.62MHz. Time here is specified in mjd, collected from the data files. 
+versus time. Time here is specified in mjd, collected from the data files. The
+chosen frequency bins are as follows:
+
+1) f1300 = 1274.62MHz
+2) f1500 = 1301.48MHz
+3) f2000 = 1368.62MHz 
+4) f3000 = 1502.89MHz
 
 ![timeseries](Time_Series_1014_1015.png)
 
@@ -38,34 +43,67 @@ file, so lets take a closer look at the first few data files:
 
 ![zoom](ZoomedTS.png)
 
-### Small-Scale Variations in f2000
+With the addition of the f1500 frequency bin, the correlations between files
+becomes very clear. The changes in background level in the f1300 and f1500 bins
+seem to correlate with changes in pulse height (and sometimes background level)
+in the f2000 bin. Stranger still, when we examine the f3000 bin, there is a
+strong anti-correlation to the power changes in the f1300 and f1500 bins...
 
-This plot shows the small-scale variations from the f2000 data, again from the
-beginning of the large data set shown in the first plot. It would be interesting
-to see what the spectra look like from one exposure to the next, when we witness
-the power level changing.
+This seems incredibly strange but the answer lies in the spectra.
 
-Here is the power variation in f2000, now presented with the index on the
-x-axis:
+### Impact of Power Change on Spectra:
 
-![f2000](index5000jump.png)
+Now we shall consider a region of the plot where a power change occurs from one
+file to the next. For each file I will plot the average spectrum with the diode
+off, and the average spectrum with the diode on.
 
-There is a noticable jump in power around index 5000, where the data switches
-from one file to the next. Lets examine the spectra from before and after the
-data acquisition was restarted:
+If we consider the files starting from around 0.03 on the MJD Axis, we can see a
+few power changes that will be good candidates for examining these changes.
+These correspond to the 16th through the 23rd file in our two days of data.
 
-The file before the power change is 171014_0009.data. (low background)
+The files in question are the files shown in the following time series plot,
+shown here in various colors representing each separate file, for f1300 bin:
 
-The file after the power change is 171014_0011.data. (high background)
+![candidate](TSswitching.png)
 
-We will look at the diode off and the diode on spectra for the two
-files:
+Looking at these time series curves, we can imagine the same two-state system we had
+initially suggested at the outset of these diode calibration tests. There
+appears to be a higher energy "loud state" and a lower energy "quiet state". The
+system is switching between the two for some reason.
 
-![B&A](RestartDAQChangeSpectra.png)
+When we examine what the spectra look like before and after these power
+switches, it is clear that the shape of the entire spectrum is changing! Here
+are plots of the average spectrum with the diode off, and the average spectrum
+with the diode on:
 
-There are slight changes in the spectrum between the two curves, but if we
-consider the region of the plot outside the band-pass (f~1500-1650MHz) there are
-power offsets that might indicate a change in spectrometer properties.
+![diodeoff](diodeoffspectrum.png)
+
+If you look closely, the blue, cyan, and purple spectra shown here all lie on
+essentially the same curve. The green, red, yellow, and black curves all follow
+the same line as well. And, these colors and files correpsond to the two
+different power levels observed in the time series plot!
+
+Comparing these two different spectral curves, it appears that there is a change
+in gain from one to another. (i.e. the slope of the spectrum is changing, when
+the system is in either the low or the high state. This is the reason for the
+correlation between power level changes in the f1500 bin relative to the f1300
+bin, and the anticorrelation between power changes in the f3000 bin relative to
+the f1300 bin.) This was essentially unobserved when only considering the f2000
+bin, because that appears to be the point where the changes are minimal, because
+it is near the common point of both spectra. That is also the reason why the
+f2000 and f1300 power changes appeared initially uncorrelated.
+
+We witness precisely the same bahavior in the diode on spectra:
+
+![diodeon](diodeonspectrum.png)
+
+Again, the same color curves are right on top of each other, in agreement with
+the previous plot. I think this is a good indication that the system is
+switching between two states, and the effects of this state change can be
+described by changes in two parameters:
+
+1) Gain
+2) Offset Power Level
 
 ### f2000 as Points not Lines
 
