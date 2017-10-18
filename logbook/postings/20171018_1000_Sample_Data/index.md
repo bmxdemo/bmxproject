@@ -106,14 +106,13 @@ described by changes in two parameters:
 2) Offset Power Level
 
 If this is an accurate depiction of the behavior of the system, then we should
-be able to Calculate the difference between diode on and diode off, and still
+be able to calculate the difference between diode on and diode off, and still
 observe a resemblance:
 
 ![onminusoff](OnMinusOff.png)
 
-We still see the two families of curves following each other. We can also
-calculate a unitless gain, by taking the diode on - diode off plot, and dividing
-by the diode off power. 
+We can also calculate a unitless gain, by taking the diode on - diode off plot,
+and dividing by the diode off power. 
 
 ![gains](UnitlessGain.png)
 
@@ -121,16 +120,34 @@ Here we observe the correlation again between the colors. From these curves, it
 is apparent that the gain is switching with the changing power levels observed
 in the time series plots.
  
-### f2000 as Points not Lines
+### Evolution of the System over Time:
 
-For the f2000 data, Chris tried plotting these data files as points instead of
-lines. This produced the following plot which clearly presents the two populations:
-diode on and diode off.
+To really prove that the system is changing between two states over the course
+of our exposures, it would be beneficial to calculate the change in gain over
+time. If it is merely switching between the two, we should be able to observe a
+binary unitless gain.
 
-![points](f2000DataPoints.png)
+If we plot the power in a given frequency bin as a function of time over all of
+the data files, but use points rather than lines, we see multiple populations of
+points that center around the background and diode pulse values. For frequency
+bins 1300, 1500, and 3000, there are between 3 and 4 groups of points, because
+the background level and the pulse height values change tremendously. However,
+the f2000 bin is relatively well behaved.
 
-To examine the changes over time, it would be interesting to see the time
-evolution of the mean value for each of these populations.
+If we observe the f2000 frequency bin as a function of time, and plot these
+values as points instead of lines, we see two distinct populations of points:
+
+![pops](f2000populations.png)
+
+All points below 1.07e14 are the diode off population (which contains 1,311,750 points), and all points above
+1.07e14 are the diode on population (which contains 61,875 points).
+
+If we take an average value over a small range of mjd for each population of
+points, we can calculate and plot the unitless gain as before:
+ 
+(Diode on - Diode Off) / Diode Off.
+
+Here is a plot of the unitless gain as a function of time in mjd:
 
 
 
