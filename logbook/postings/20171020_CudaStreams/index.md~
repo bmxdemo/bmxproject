@@ -10,7 +10,7 @@ cuda_streams= 2    -->    cuda_streams= 1
 Here are the same plots as before, but now for channel 2 with the new
 cuda_streams parameter...
 
-**Figure 1: Time Series with cuda_streams Change**
+**Figure 14: Time Series with cuda_streams Change**
 ![TSCuda](TimeSeriesCudaStreams.png)
 
 This plot is such a little timespan, that we don't really need to zoom in. The
@@ -21,7 +21,7 @@ daq resumes after the parameter change.
 This seemed to have no effect on the state switching from channel 2, as shown in
 the following plot:
 
-**Figure 2: Time Series Candidates around Cuda Streams Change**
+**Figure 15: Time Series Candidates around Cuda Streams Change**
 ![stillchange](TSCudaStreamsChange.png)
 
 I apologize for the blue color reappearing here, but I don't think it makes much
@@ -30,13 +30,13 @@ cuda streams parameter, and the daq was actually aborted during the alloted time
 for the cyan curve, hence its small size. As we can see, the two-state behavior
 persists on channel 2 even after this change, it seems to have had no effect.
 
-**Figure 3: Diode off Spectra for Cuda Streams Change**
+**Figure 16: Diode off Spectra for Cuda Streams Change**
 ![doff](Cudadiodeoffspec.png)
 
 We still observe the grouping of spectra based on gain/power level, and the
 associated colors still appear together.
 
-**Figure 4: Diode on Spectra for Cuda Streams Change**
+**Figure 17: Diode on Spectra for Cuda Streams Change**
 ![don](Cudadiodeonspec.png)
 
 The same behavior is present here as well: no change from before to after the
