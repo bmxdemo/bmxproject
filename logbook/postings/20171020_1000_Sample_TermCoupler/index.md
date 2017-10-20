@@ -54,7 +54,7 @@ only the small scale oscillation between power levels as seen before.
 This is only the f1300 bin, over the course of seven samples from the beginning
 of the larger plot above:
 
-![switch](TSSwitchingTermCoup.png)
+![switch](TSswitchingTermCoup.png)
 
 Here we have selected 5 high energy data files and two low energy files, so we
 expect to see two spectra bunched together in the low energy configuration, and
