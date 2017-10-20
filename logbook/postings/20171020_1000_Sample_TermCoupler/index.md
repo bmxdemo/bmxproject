@@ -1,4 +1,4 @@
-## Oct 12, 2017: Terminated 30dB Coupler with Noise Diode
+## Oct 20, 2017: Terminated 30dB Coupler with Noise Diode
 
 ### Data Acquisition with nSamples = 1000:
 
