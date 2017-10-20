@@ -37,6 +37,7 @@ chosen frequency bins are as follows:
 3) f2000 = 1368.62MHz 
 4) f3000 = 1502.89MHz
 
+**Figure 1: Time Series of all data**
 ![timeseries](Time_Series_TermCoupler.png)
 
 Here we see more large-scale variations in power over the course of the data
@@ -45,6 +46,7 @@ temperature changes altering the performance of the system.
 
 Again, lets consider a smaller timescale to better observe these changes:
 
+**Figure 2: Time Series (Zoomed)**
 ![zoom](ZoomedTSTermCoupler.png)
 
 And again, lets consider a small region of interest near the beginning of the
@@ -54,6 +56,7 @@ only the small scale oscillation between power levels as seen before.
 This is only the f1300 bin, over the course of seven samples from the beginning
 of the larger plot above:
 
+**Figure 3: Time Series of Power Switching Candidates**
 ![switch](TSswitchingTermCoup.png)
 
 Here we have selected 5 high energy data files and two low energy files, so we
@@ -64,6 +67,7 @@ the other 5 to be bunched together in the high energy spectral shape.
 
 Here are plots of the average spectrum with the diode off:
 
+**Figure 4: Average Diode Off Spectra (Candidates)**
 ![diodeoff](diodeoffspectrumTermCoupler.png)
 
 The five high energy files are indeed bunched together (blue, red, cyan, yellow,
@@ -71,6 +75,7 @@ black) and the two low energy curves (green, purple) also appear together.
 
 We witness precisely the same bahavior in the diode on spectra:
 
+**Figure 5: Average Diode On Spectra (Candidates)**
 ![diodeon](diodeonspectrumTermCoupler.png)
 
 Again, the same color curves are right on top of each other, in agreement with
@@ -80,11 +85,13 @@ digitizer restarts.
 
 Now we consider the difference in power between the diode on and off:
 
+**Figure 6: Diode On minus Diode Off (Candidates)**
 ![onminusoff](OnMinusOffTermCoupler.png)
 
 We can also calculate a unitless gain, by taking the diode on - diode off plot,
 and dividing by the diode off power. 
 
+**Figure 7: Unitless Gain**
 ![gains](UnitlessGainTermCoupler.png)
 
 Here we observe the correlation again between the colors. From these curves, it
@@ -100,6 +107,7 @@ in the f2000 bin, It is going to be more difficult to separate the diode on and
 diode off spectra. The large scale changes in power also serve to obfuscate the
 different spectra. It could be done, in the future if necessary.
 
+**Figure 8: Point Populations for f2000**
 ![f2000pts](f2000pointsTermCoupler.png)
 
 more: **Coming Soon!**
