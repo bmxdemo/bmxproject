@@ -43,6 +43,10 @@ Here we see more large-scale variations in power over the course of the data
 files, which seems to suggest a diurnal behavior. This perhaps has to do with
 temperature changes altering the performance of the system.
 
+Again, lets consider a smaller timescale to better observe these changes:
+
+![zoom](ZoomedTSTermCoupler.png)
+
 And again, lets consider a small region of interest near the beginning of the
 data. It is safe to assume that there are no major state changes occuring, but
 only the small scale oscillation between power levels as seen before.
@@ -50,7 +54,7 @@ only the small scale oscillation between power levels as seen before.
 This is only the f1300 bin, over the course of seven samples from the beginning
 of the larger plot above:
 
-![zoom](ZoomedTSTermCoupler.png)
+![switch](TSSwitchingTermCoup.png)
 
 Here we have selected 5 high energy data files and two low energy files, so we
 expect to see two spectra bunched together in the low energy configuration, and
