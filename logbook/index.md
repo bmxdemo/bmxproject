@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Varying cuda_streams](postings/20171020_CudaStreams/index.md) - Oct 20, 2017 (WT)
 * [1000 Sample Data with 30dB Coupler](postings/20171020_1000_Sample_TermCoupler/index.md) - Oct 20, 2017 (WT)
 * [Restarting Data Acquisition After 1000 Samples](postings/20171018_1000_Sample_Data/index.md) - Oct 18, 2017 (WT)
 * [Diode Troubleshooting](postings/20171012_DiodeTest/index.md) - Oct 12, 2017 (WT)
