@@ -2,7 +2,7 @@
 
 ### Invert the Spectrometer Channels:
 
-In the [last posting](/postings/20171020_1000_Sample_TermCoupler/index.md), we
+In the [last posting](../20171020_1000_Sample_TermCoupler/index.md), we
 found that the signal on channel 2 from the noise diode attached to the 30dB coupler was
 still having the same power switching relationship observed with the diode
 directly connected to the low-loss cable. However, the signal on channel 1
