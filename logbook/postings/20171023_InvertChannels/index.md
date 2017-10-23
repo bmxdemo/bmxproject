@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-## Oct 23, 2017 - Invert Spectrometer Channels:
-=======
 ## Oct 23, 2017 - Invert Spectrometer Channels
 >>>>>>> 0cbaae5a24deabb6513f887b0909f97df862d476
 
