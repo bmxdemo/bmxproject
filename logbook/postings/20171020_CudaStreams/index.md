@@ -1,4 +1,4 @@
-##Oct 20, 2017 - Varying cuda_streams Parameter:
+## Oct 20, 2017 - Varying cuda_streams Parameter:
 
 ### Investigating Cuda Streams Parameter:
 
