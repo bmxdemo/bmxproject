@@ -1,5 +1,4 @@
 ## Oct 23, 2017 - Invert Spectrometer Channels
->>>>>>> 0cbaae5a24deabb6513f887b0909f97df862d476
 
 ### Invert the Spectrometer Channels:
 
@@ -72,6 +71,4 @@ And now lets examine with diode on: see same behavior.
 ![gain](UnitlessGainInvert.png)
 
 Here we see the unitless gain drop in the higher frequencies of the band, as
-expected. 
-=======
->>>>>>> 0cbaae5a24deabb6513f887b0909f97df862d476
+expected.
