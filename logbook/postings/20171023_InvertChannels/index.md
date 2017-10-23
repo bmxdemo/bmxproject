@@ -1,4 +1,4 @@
-##Oct 23, 2017 - Invert Spectrometer Channels:
+##Oct 23, 2017 - Invert Spectrometer Channels:##
 
 ### Invert the Spectrometer Channels:
 
