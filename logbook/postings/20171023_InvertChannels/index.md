@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ## Oct 23, 2017 - Invert Spectrometer Channels:
+=======
+## Oct 23, 2017 - Invert Spectrometer Channels
+>>>>>>> 0cbaae5a24deabb6513f887b0909f97df862d476
 
 ### Invert the Spectrometer Channels:
 
@@ -44,6 +48,7 @@ somewhere in channel 2.
 I am going to familiarize myself with the digitizer manual and see if something
 obvious jumps out at me. It is interesting to say the least that this switching
 behavior only presents itself on channel 2.
+<<<<<<< HEAD
 
 Following the same style of analysis as before, let's take a sample of 7 data
 files and plot their spectra and gain curves. Here is the sample of 7 from near
@@ -71,3 +76,5 @@ And now lets examine with diode on: see same behavior.
 
 Here we see the unitless gain drop in the higher frequencies of the band, as
 expected. 
+=======
+>>>>>>> 0cbaae5a24deabb6513f887b0909f97df862d476
