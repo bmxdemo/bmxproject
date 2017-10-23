@@ -72,3 +72,17 @@ And now lets examine with diode on: see same behavior.
 
 Here we see the unitless gain drop in the higher frequencies of the band, as
 expected.
+
+### Channel 2 Behavior:
+
+Now let's see what the data looks like on channel 2, the x polarization amp
+chain which is currently connected to a terminator.
+
+**Figure 7: Channel 2 Time Series**
+![Chan2](Time_Series_Chan2_Switch.png)
+
+**Figure 8: Channel 2 Zoom**
+![Chan2z](ZoomedChan2TS.png)
+
+It is clear that the switching behavior is a "feature" of channel 2, which
+does not present on channel 1.
