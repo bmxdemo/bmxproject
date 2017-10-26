@@ -25,7 +25,7 @@ observe lightning with the telescope.)
 And here is a closer look:
 
 **Figure 2: Time Series Stable Behavior**
-![Zoom](ZoomedTSInvert.png)
+![Zoom](ZoomedTimeSeriesSky.png)
 
 As we can see, the behaviors are stable for the most part, and the diurnal
 changes have subsided since we aren't looking at the terminator changing
