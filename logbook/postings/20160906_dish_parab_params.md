@@ -20,3 +20,7 @@ The extent along the x axis for the sheet is intended to be from x=+70cm to +470
 The surface is flat along the y direction.  The extent of the surface along y at a given x satisfies the petal occupying a full width of 8 degrees as seen from above, ie
 
 -sin(4 degree) x < y(x) < +sin(4 degree) x
+
+-----------------------
+**Update 10/31/17**
+The vertex of the parabola should be 8.3 cm above the floor.
