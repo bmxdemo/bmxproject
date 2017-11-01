@@ -1,0 +1,50 @@
+## Nov 1, 2017 - Damaged Digitizer Card Ports
+
+### Palantir 2 Channel Card Status:
+
+Some time within the past few weeks, I damaged the SMA connections that are
+soldered to the digitizer card. I clearly failed to properly connect the cables,
+and then damaged the connectors by securing the nuts.
+
+The card is the 2 channel digitizer card, which only had one stable channel (chan1). We
+believe that one of the (chan 2) ADCs is not properly functioning, and is causing the
+gain to fluctuate when we restart the data acquisition.
+
+Only channel 1 is operational for looking at sky data, and data has been
+collected from 10/24/17 to today, 11/1/17. 
+
+### (10/24 - 10/26) 
+
+The data acquisition was as before, taking 1000 samples (2min) of data
+repeatedly, and restarting the data acquisition after each file. We observe that
+the system was relatively stable in the current configuration with the noise
+diode mounted via 30dB coupler.
+
+There are some stability issues observed in this data, around 2.25 to 2.7 on the
+mjd axis. These data show some shifts near the end of this time period, but a more obvious
+example will be discussed later.
+
+**Figure 1: Time Series of Sky Signal on Channel 1**
+![Sky](TimeSeries_1024_1027.png)
+
+### (10/28-10/29)
+
+We wanted to further pin down a faulty ADC as the culprit behind the gain
+switching, but in the process of conducting that test, I noticed the damaged
+ports on the digitizer card. Progress was halted, and the computer was returned
+to the physics building.
+
+This image was sent around by email, and shows the damage to the digitizer card:
+
+**Figure 2: Impacted Ports**
+![1](image1.JPG)
+
+The impacted ports were opened back up using a round tipped set of tweezers, to
+delicately push the petals apart. 
+
+**Figure 3: 'Repaired' Ports**
+![2](image2.JPG)
+
+The gain state here looks like the well behaved state observed in [Chris's
+posting](../20171004_state_changes/index.md). The amplitude differs slightly,
+because the loss from the coupler is 30dB rather than 24dB of the OMT coupler.
