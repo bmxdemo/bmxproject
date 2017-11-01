@@ -2,6 +2,11 @@
 
 ### Palantir 2 Channel Card Status:
 
+In my [last posting](../20171025_SkyWithDiode/index.md) The system appeared to remain
+stable over the course of a few days, with no erratic changes in gain. This
+stable behavior was present despite the fact that the digitizer ports had
+already been impacted as shown in the pictures below.
+
 Some time within the past few weeks, I damaged the SMA connections that are
 soldered to the digitizer card. I clearly failed to properly connect the cables,
 and then damaged the connectors by securing the nuts.
@@ -44,6 +49,11 @@ delicately push the petals apart.
 **Figure 3: 'Repaired' Ports**
 ![2](image2.JPG)
 
+Interestingly enough, you may notice labels indicating the digitizer channels
+(Ch1, and Ch2) on
+the backplate of the digitizer card. These are in fact the OPPOSITE of the data
+streams labelled ['chan1_0'] and ['chan2_0'] that we have in the BMXFile data.
+
 The data acquisition ran for the next few days on hour long samples, and
 appeared relatively stable, but there are still problematic switches that show a
 change in pulse height.
@@ -51,13 +61,20 @@ change in pulse height.
 **Figure 4: Time Series for Hour Samples (10/28-10/29)**
 ![hour](TimeSeries_ch1_1028_1029.png)
 
-And here is the aforementioned pulse height change, from the first noticeable
-change in the power:
+Observe the pulse shortly after 0.5 on the MJD axis. Zooming in, we see the
+fluctuation in received power, and worse still we see an obvious change in the
+pulse height from the noise diode.
 
 **Figure 5: Pulse Height Change**
 ![PH](PHChange_1028.png)
 
-And this is the file in question, from 0900:
+It is visible in the cyan and blue curves most noticably, that the height of the
+diode pulse through the 30dB coupler has changed.
+
+This did not occur at the change from one sample file to another, but happened
+spontanously during a single file, from 9:00 AM.
+
+Plotted here is the time series from the file in question, from 0900:
 
 **Figure 6: Jumping Time Series Power**
 ![jump](TSjump1028.png)
