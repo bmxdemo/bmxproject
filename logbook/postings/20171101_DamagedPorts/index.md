@@ -2,8 +2,8 @@
 
 ### Palantir 2 Channel Card Status:
 
-In my [last posting](../20171025_SkyWithDiode/index.md) The system appeared to remain
-stable over the course of a few days, with no erratic changes in gain. This
+In my [last posting](../20171025_SkyWithDiode/index.md), the system appeared to remain
+stable over the course of ~36 hours, with no erratic changes in gain. This
 stable behavior was present despite the fact that the digitizer ports had
 already been damaged at this time as shown in the pictures below.
 
