@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Resolved Broken Port Issues](postings/20171106_ResolvedPortIssues) - Nov 6, 2017 (WT)
 * [Damaged Digitizer Ports](postings/20171101_DamagedPorts/index.md) - Nov 1, 2017 (WT)
 * [Returning to the Sky](postings/20171025_SkyWithDiode/index.md) - Oct 25, 2017 (WT)
 * [Stable Behavior in Channel 1](postings/20171023_InvertChannels/index.md) - Oct 23, 2017 (WT)
