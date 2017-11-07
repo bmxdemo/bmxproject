@@ -29,16 +29,16 @@ y2=points2[:,2]*1e3
 z1=points1[:,3]*1e3
 z2=points2[:,3]*1e3
 
-print 'The x differences in mm are',np.abs(x1-x2)
-print 'The y differences in mm are',np.abs(y1-y2)
-print 'The z differences in mm are',np.abs(z1-z2)
+print 'The x differences in mm are',x1-x2
+print 'The y differences in mm are',y1-y2
+print 'The z differences in mm are',z1-z2
 
 # Plot some histograms
 
 fig=plt.figure()
 ax=fig.add_subplot(111)
-ax.hist(np.abs(x1-x2))
-ax.set_xlabel('$|x_1-x_2|$ [mm]',fontsize=16)
+ax.hist(x1-x2)
+ax.set_xlabel('$x_1-x_2$ [mm]',fontsize=16)
 ax.set_ylabel('Number of data points', fontsize=16)
 ax.set_title('Differences in $x$ coordinates of the two data sets',fontsize=16)
 plt.savefig('figures/'+str(sys.argv[1])+'-'+str(sys.argv[2])+'_x_differences_histogram.png', format='png', dpi=100)
@@ -46,8 +46,8 @@ plt.show()
 
 fig=plt.figure()
 ax=fig.add_subplot(111)
-ax.hist(np.abs(y1-y2))
-ax.set_xlabel('$|y_1-y_2|$ [mm]',fontsize=16)
+ax.hist(y1-y2)
+ax.set_xlabel('$y_1-y_2$ [mm]',fontsize=16)
 ax.set_ylabel('Number of data points', fontsize=16)
 ax.set_title('Differences in $y$ coordinates of the two data sets',fontsize=16)
 plt.savefig('figures/'+str(sys.argv[1])+'-'+str(sys.argv[2])+'_y_differences_histogram.png', format='png', dpi=100)
@@ -55,8 +55,8 @@ plt.show()
 
 fig=plt.figure()
 ax=fig.add_subplot(111)
-ax.hist(np.abs(z1-z2))
-ax.set_xlabel('$|z_1-z_2|$ [mm]',fontsize=16)
+ax.hist(z1-z2)
+ax.set_xlabel('$z_1-z_2$ [mm]',fontsize=16)
 ax.set_ylabel('Number of data points', fontsize=16)
 ax.set_title('Differences in $z$ coordinates of the two data sets',fontsize=16)
 plt.savefig('figures/'+str(sys.argv[1])+'-'+str(sys.argv[2])+'_z_differences_histogram.png', format='png', dpi=100)
