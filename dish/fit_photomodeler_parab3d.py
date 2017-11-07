@@ -5,10 +5,11 @@ from scipy.optimize import minimize as fmin
 from scipy.optimize import curve_fit
 ion()
 
-# Usage
-# import fit_photomodeler_parab3d
-# x,y,z=getdata('data/20161027_dish_escher_test.txt')
-# pfit=fitparab(x,y,z)
+# Usage:
+# ipython
+# import fit_photomodeler_parab3d as fpp
+# x,y,z=fpp.getdata('data/16Oct2017_dish_surface.txt')
+# pfit=fpp.fitparab(x,y,z)
 
 def getdata(fname):
     # Get data
@@ -30,25 +31,28 @@ def getdata(fname):
         z=zmod((x,y),*p) 
 
     else:
-        # Get some real data
-        dat=loadtxt(fname) 
-        x=dat[:,0]
-        y=dat[:,1]
-        z=dat[:,2]
+        # Get real data from PhotoModeler in meters
+        dat=loadtxt(fname)
+        # First column is the point ID.
+        # Convert to mm
+        x=dat[:,1]*1000 
+        y=dat[:,2]*1000
+        z=dat[:,3]*1000
 
     return x,y,z
 
 def rotmat(x,y,z):
     # Input rotation angles x, y, z should be in degrees, so convert to radians
     x=x*pi/180
-    y=y*pi/180
+    y=y*pi/180 
     z=z*pi/180
 
-    Rx = array([[1,0,0] , [0, cos(x), sin(x)], [0, -sin(x), cos(x)]])
-    Ry=array([[cos(y), 0, -sin(y)], [0,1,0], [sin(y), 0, cos(y)]])
-    Rz=array([[cos(z), sin(z), 0], [-sin(z), cos(z), 0], [0,0,1]])
+    Rx = array([[1,0,0] , [0, cos(x), -sin(x)], [0, sin(x), cos(x)]])
+    Ry = array([[cos(y), 0, sin(y)], [0,1,0], [-sin(y), 0, cos(y)]])
+    Rz = array([[cos(z), -sin(z), 0], [sin(z), cos(z), 0], [0,0,1]])
 
-    return mat(Rx)*mat(Ry)*mat(Rz)
+    return mat(Rz)*mat(Ry)*mat(Rx)
+
 
 def applyrot(R,x,y,z,x0=0,y0=0,z0=0):
     xr=zeros(x.shape)
@@ -75,6 +79,30 @@ def zaxeq(ax,x,y,z):
         ax.plot([xb], [yb], [zb], 'w')
 
 
+#def zmod(data,*p):
+#    """Params are:
+#    p[0], p[1] -        coefficients on x^2 and y^2 (currently p[1]=0 always)
+#    p[2], p[3], p[4] -  x,y,z translations
+#    p[5], p[6], p[7] -  x,y,z rotations in degrees
+#    """
+#    sz=data[0].shape
+#
+#    x=ravel(data[0])
+#    y=ravel(data[1])
+#    # Fit for curvature
+#    z=p[4] + p[0]*(x-p[2])**2 + p[0]*(y-p[3])**2
+#
+#    #Fit for rotation:
+#    R=rotmat(p[5],p[6],p[7]) 
+#
+#    #Don't fit for rotation:
+#    #R=rotmat(0,0,0) 
+#
+#    dum,dum,zrot=applyrot(R,x,y,z,p[2],p[3],p[4])
+#    zrot=reshape(zrot,sz)
+#
+#    return zrot
+
 def zmod(data,*p):
     """Params are:
     p[0], p[1] -        coefficients on x^2 and y^2 (currently p[1]=0 always)
@@ -86,13 +114,23 @@ def zmod(data,*p):
     x=ravel(data[0])
     y=ravel(data[1])
     # Fit for curvature
-    z=p[4] + p[0]*(x-p[2])**2 #+ p[0]*(y-p[3])**2
-    R=rotmat(p[5],p[6],p[7])
-    #R=rotmat(0,0,0) # Don't fit for rotation
-    dum,dum,zrot=applyrot(R,x,y,z,p[2],p[3],p[4])
-    zrot=reshape(zrot,sz)
+    z=p[0]*x**2 + p[0]*y**2
 
-    return zrot
+    #Fit for rotation:
+    R=rotmat(p[5],p[6],p[7]) 
+
+    #Don't fit for rotation:
+    R=rotmat(0,0,0) 
+
+    xrot,yrot,dum=applyrot(R,x,y,z,p[2],p[3],p[4])
+    xrot=reshape(xrot,sz)
+    yrot=reshape(yrot,sz)
+
+    #Fit for translation
+    zrottrans=p[4] + p[0]*(xrot-p[2])**2 + p[0]*(yrot-p[3])**2
+    zrottrans=reshape(zrottrans,sz)
+
+    return zrottrans
 
 def plot3d(x,y,z,*args):    
     gcf()
@@ -102,15 +140,25 @@ def plot3d(x,y,z,*args):
     ax.plot(x,y,z,*args)
 
 
-def fitparab(x,y,z,doplot=True):
+def fitparab(x,y,z,doplot=True,pguess=None):
     """Fit x,y,z photogrammetry data to a 3d parabola"""
 
     #########################
     # Fit data
-    pguess=array([.01, .01, 300, 1, -1000, 0, 0, 0])
-    pfit=curve_fit(zmod,(x,y),z,p0=pguess,method='lm')[0]
-    zfit=zmod((x,y),*pfit)    
+    if pguess is None:
+        pguess = array([1e-4, 1e-4, 0, 0, 0, 0, 0, 0])
+        low = array([0,   0,   0,   -inf, -inf, -30, -30, -30])
+        hi  = array([inf, inf, inf, 0,    inf,  30,  30,  30])
+        #low = array([0,   0,   0,   -inf, -inf, -inf, -inf, -inf])
+        #hi  = array([inf, inf, inf, 0,    inf,  inf,  inf,  inf])
+
+
+    pfit=curve_fit(zmod,(x,y),z,p0=pguess,method='trf',bounds=(low,hi))[0]
+    print pfit
+    zfit=zmod((x,y),*pfit)
+    print ','.join(map(str, zfit))
     resids=z-zfit
+    #print resids
 
     if doplot:
 
@@ -150,7 +198,7 @@ def fitparab(x,y,z,doplot=True):
         ylabel('y (mm)')
         ax.set_zlabel('z-zfit (mm)')
         legend()
-
-        return pfit
+    
+    return pfit
 
 
