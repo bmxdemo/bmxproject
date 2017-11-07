@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Rotation Matrix Demo](postings/20171107_rotation_matrix_demo/index.md) - Nov 7, 2017 (EJA)
 * [PhotoModeler Repeatability](postings/20171106_photomodeler_repeatability/index.md) - Nov 6, 2017 (EJA)
 * [Compare to Previous State Changes](postings/20171106_ExamineInversion/index.md) - Nov 6, 2017 (WT)
 * [Resolved Broken Port Issues](postings/20171106_ResolvedPortIssues/index.md) - Nov 6, 2017 (WT)
