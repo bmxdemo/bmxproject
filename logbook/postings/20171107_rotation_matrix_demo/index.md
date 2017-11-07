@@ -2,7 +2,7 @@
 
 ### The Rotation Matrix and 'U'
 
-If we wish to rotate some matrix U around either the x, y, or z axes -- or all three -- we utilize the three-dimensional rotation matrices
+If we wish to rotate some matrix U around either the x, y, or z axes (in the CCW direction as defined by the right-hand-rule) -- or all three -- we utilize the three-dimensional rotation matrices
 
 
 `R(x) = ([1,0,0] , [0, cos(x), -sin(x)], [0, sin(x), cos(x)])`
