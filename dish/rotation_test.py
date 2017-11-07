@@ -85,7 +85,7 @@ plt.show()
 
 # Test z rotation
 
-#Define a parabola in the x-y plane:
+#Define a parabola in the y-z plane:
 x=np.linspace(0,0,100)
 z=np.linspace(-10,10,100)
 y=x**2+z**2.
@@ -102,7 +102,7 @@ ax.plot(zrot90,yrot90, label='rotated 90$^\circ$')
 ax.plot(zrot180,yrot180, label='rotated 180$^\circ$')
 ax.set_xlabel('$z$',fontsize=16)
 ax.set_ylabel('$y$', fontsize=16)
-ax.set_title('Rotation of $x-y$ parabola in $z$',fontsize=16)
+ax.set_title('Rotation of $y-z$ parabola in $z$',fontsize=16)
 legend=ax.legend(loc='upper right', shadow=True, fontsize=12)
 frame=legend.get_frame()
 plt.savefig('figures/rotation_test_z.png', format='png', dpi=100)
@@ -110,8 +110,30 @@ plt.show()
 
 # Now test rotation in y for a parabola in the z-x plane
 
+x=np.linspace(-10,10,100)
+y=np.linspace(0,0,100)
+z=x**2+y**2.
 
-#Define a parabola in the y-z plane:
+xrot45,dum,zrot45=applyrot(rotmat(0,45,0),x,y,z)
+xrot90,dum,zrot90=applyrot(rotmat(0,90,0),x,y,z)
+xrot180,dum,zrot180=applyrot(rotmat(0,180,0),x,y,z)
+
+fig=plt.figure()
+ax=fig.add_subplot(111)
+ax.plot(x,z, label='non-rotated')
+ax.plot(xrot45,zrot45, label='rotated 45$^\circ$')
+ax.plot(xrot90,zrot90, label='rotated 90$^\circ$')
+ax.plot(xrot180,zrot180, label='rotated 180$^\circ$')
+ax.set_xlabel('$x$',fontsize=16)
+ax.set_ylabel('$z$', fontsize=16)
+ax.set_title('Rotation of $z-x$ parabola in $y$',fontsize=16)
+legend=ax.legend(loc='upper right', shadow=True, fontsize=12)
+frame=legend.get_frame()
+plt.savefig('figures/rotation_test_y_3d.png', format='png', dpi=100)
+plt.show()
+
+"""
+#Define a parabola in the z-x plane:
 x=np.linspace(-10,10,100)
 y=np.linspace(0,0,100)
 z=x**2.+y**2.
@@ -135,6 +157,8 @@ legend=ax.legend(loc='center left', shadow=True, fontsize=12)
 frame=legend.get_frame()
 plt.savefig('figures/rotation_test_y_3d.png', format='png', dpi=100)
 plt.show()
+"""
+
 
 
 
