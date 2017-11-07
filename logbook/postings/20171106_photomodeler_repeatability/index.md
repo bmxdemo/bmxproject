@@ -28,6 +28,10 @@ On 16 Oct 2017, I went out to the basin and took a total of 8 photos of the dish
 
 In order to test how precisely PhotoModeler can generate a point cloud from a set of photos, we will cross-reference these two sets of four photos point-by-point.  The scale and orientation is done in PhotoModeler before exporting the data.  We therefore only need to subtract the x, y, and z coordinates of corresponding data sets.
 
+Now, each RAD target has a unique numerical ID attached to it (there are 999 of these).  In a perfect world, when one exports a .txt list of xyz values, the array would be in increasing order of target ID.  Unfortunately, PhotoModeler has an annoying habit of 'willy-nilliy' exporting the xyz data points.  This is to say that the output array is in no aprticular order.  This would not necessarily be a problem except for the fact that our two different data sets will not have rows that match up with eachother.  So the first row in data set 1 could be for target number 3 while the first row for data set number 2 could be for target number 11.  In order to ameliorate this, I have written a [code](bmxproject/dish/sort_photomodeler_output.py) that sorts the PhotoModeler output.
+
+For simplicity, I have also written another [code](bmxproject/dish/position_differences_photomodeler.py)  that computes the differences in x, y, and z for two data sets and plots histograms.
+
 **Difference in x coordinate**
 
 The x differences in mm are [ 1.472  2.79   3.73   2.378  3.436  3.917  2.198  3.306  4.57   1.998
