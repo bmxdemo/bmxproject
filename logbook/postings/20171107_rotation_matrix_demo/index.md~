@@ -1,0 +1,49 @@
+## 7 November 2017 - Rotation Matrix Demo
+
+### The Rotation Matrix and 'U'
+
+If we wish to rotate some matrix U around either the x, y, or z axes -- or all three -- we utilize the three-dimensional rotation matrices
+
+``
+
+`R(x) = ([1,0,0] , [0, cos(x), -sin(x)], [0, sin(x), cos(x)])`
+
+`R(y) = ([cos(y), 0, np.sin(y)], [0,1,0], [-sin(y), 0, cos(y)])`
+
+`R(z) = ([cos(z), -sin(z), 0], [sin(z), cos(z), 0], [0,0,1])`
+
+Putting it all together, we rotate some matrix U by the operation
+
+`R(z)*R(y)*(Rx)*U`
+
+where * denotes matrix multiplication.
+
+
+### Rotating Some Data
+
+In fitting the PhotoModeler dish-surface-data to a paraboloid to verify the shape of the dish, it became apparent the confusing nature of rotating objects in python and hence the need to verify that we are doing this properly.  I have written a code `bmxproject/dish/rotation_test.py` that takes the rotation functions from our fitting code and rotates a two-dimensional parabola around x, y, and z axess by angles of 45, 90, and 180 degrees.  One can easily see if the parabola is rotated properly by looking at plots.
+
+It is important to note that, for example, `R(z)*R(y)*(Rx)*U` reduces to `I*I*(Rx)*U = R(x)*U` in the case that the z and y rotation angkes are zero.  That is, a rotation matrix becomes the identity matrix when the angle equals zero.  This is why we can simply use the same `rotmat(x,y,z)` function in our code to rotate a two-dimensional parabola by one axis at a time by letting two of the angles equal zero.
+
+![x](rotation_test_x.png)
+
+![y](rotation_test_y.png)
+
+![z](rotation_test_z.png)
+
+
+
+
+![y](16Oct2017_dish_surface_subset1.txt-16Oct2017_dish_surface_subset2.txt_y_differences_histogram.png)
+
+**Difference in z coordinate**
+
+The z differences in mm are [ 0.256  0.962  0.927  0.702  1.342  1.012  0.654  0.736  0.285  0.263
+  1.254  1.575  0.635  0.259  0.078  0.989  1.682  2.22   0.336  0.21
+  0.403  0.189  1.623  2.135  0.469  0.79   2.062  0.05   1.384  0.107
+  0.246  0.159  0.028  0.616]
+
+![z](16Oct2017_dish_surface_subset1.txt-16Oct2017_dish_surface_subset2.txt_z_differences_histogram.png)
+
+
+
