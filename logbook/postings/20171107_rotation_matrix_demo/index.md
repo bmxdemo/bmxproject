@@ -24,11 +24,17 @@ In fitting the PhotoModeler dish-surface-data to a paraboloid to verify the shap
 
 It is important to note that, for example, `R(z)*R(y)*R(x)*U` reduces to `I*I*R(x)*U = R(x)*U` in the case that the z and y rotation angles are zero.  That is, a rotation matrix becomes the identity matrix when the angle equals zero.  This is why we can simply use the same `rotmat(x,y,z)` function in our code to rotate a two-dimensional parabola by one axis at a time by letting two of the angles equal zero.
 
+The first three plots define a parabola in a plane and rotate it about one of the axes in that plane:
+
 ![x](rotation_test_x.png)
 
 ![y](rotation_test_y.png)
 
 ![z](rotation_test_z.png)
+
+This last figure defines a parabola in a plane and rotates it about an axis perpendicular to that plane:
+
+![y3d](rotation_test_y_3d.png)
 
 It is clear from these plots that the rotation functions are working properly.
 
