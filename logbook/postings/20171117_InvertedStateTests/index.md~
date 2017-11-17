@@ -1,0 +1,120 @@
+## Nov 17, 2017 - System Behavior in Inverted State
+
+### Current Configuration:
+
+As before, the OMT+Horn is connected via low-loss cable to the output port of a
+30dB coupler operating in reverse. The noise diode is connected to the 30dB
+port. The input port of the 30dB coupler is connected via low-loss cable to the
+amplifier chain as follows:
+
+BP -> LNA1 -> 3dB -> LNA2 -> LP -> Amp3 -> 3ft Cable -> BP -> Data Cable
+
+This data cable connects to a 3dB attenuator, which is attached to the digitizer
+card port.
+
+### Data Acquisition from 171107 - 171110:
+
+In my [last posting](../20171106_ResolvedPortIssues/index.md) I determined that
+the digitizer card/spectrometer was functioning properly after some initial
+hiccups. I allowed the data acquisition to run over the weekend, and examined
+the data the following wednesday. The time series of this data acquisition seems
+to favor the 'Inverted State', where the collected spectra do not reflect the
+expected signal. In order to examine any correlated changes, I plot both channel
+1 (SKY) and channel 2 (Terminated inside the front-end box).
+
+The plotted frequency bins are:
+
+1) f1300 = 1274.62MHz - (Green)
+2) f1500 = 1301.48MHz - (Red)
+3) f2000 = 1368.62MHz - (Blue)
+4) f3000 = 1502.89MHz - (Cyan)
+
+**Figure 1: Time Series of Spectrometer Acquisitions (11/07) - (11/10)**
+![TSearly](TimeSeries171107_thru_171110.png)
+
+The important plot is the channel 1 behavior, which contains the data from the
+OMT+Horn on sky, with the noise diode. It should be clear that the system is
+predominantly residing in the 'Inverted State', but something interesting
+happened when it made some transitions between states.
+
+Observe the transition from the 'Stable State' to the 'Inverted State' at
+approximately 3.0 on the MJD axis. Zooming in for a closer look:
+
+**Figure 2: Slow System Inversion**
+![slow](SlowInversion.png)
+
+We can see the system inverts slowly, instead of an instantaneous change, as
+typically observed in the past. 
+
+
+
+
+
+
+
+
+
+After restarting data acquisition, I found the shape of the spectra had returned
+to its former glory, and that the total power was reduced by a factor of 2 from
+the initial level from my last posting, due to the added 3dB attenuator. This
+discovery rendered the SignalHound measurements moot, but they indicated that
+the amplifier chain was operating as expected.
+
+### Spectrometer Data Acquisiton from 11/06:
+
+This time series plot shows the data files collected on 11/06 in the process of
+debugging the system:
+
+
+
+I was convinced that I had destroyed the card ports, and I sought to prove
+it by comparing spectra collected with the digitier card to spectra generated
+with the SignalHound. 
+
+The first measurements I took were sky spectra and terminated spectra collected
+with the spectrometer, before altering any other connections.  The first data
+file (LEFT in plot below) starts with the sky spectrum, after which I
+disconnected the OMT+Horn from the 30dB coupler output port, and terminated the
+port instead.
+
+After this test concluded, I disconnected the data cable from the spectrometer
+card, and repeated these measurements using the SignalHound, hence the gap in
+the plot below.
+
+As previously stated, I restarted the data acquisition after I reconnected the
+data cable to the spectrometer, with the attenuator in place. The second data
+file (RIGHT) shows the system operating at much higher power than the initial
+files. I believe this is because the attenuator actually made a connection to
+the digitizer card port, whereas the cable previously must not have been
+adequately connected. 
+
+This power surge led me to believe that the system had returned to the state
+shown in the beginning of the last posting, and that the digitizer card was
+operating as expected. That comparison is difficult to depict, but I have
+attempted to show it here. 
+
+
+
+The 4 curves on the left of the image are the tail end of the data collected on
+10/27, (displaced by 9 days on the MJD axis!!). 
+The 4 curves on the right are the same as the plot shown in figure 1 of
+this posting.
+
+Note that the low power values in the middle of the plot are of comparable
+power. Additionally, note that the final power values (RIGHTMOST) are a factor
+of 2 lower than the (LEFTMOST) initial high power values, due to the addition of
+the 3dB attenuator.
+
+So yes, the cause of much of my anxiety was due to a faulty cable connection... 
+
+### Spectra from 11/06:
+
+Further evidence that this connection was the issue can be observed in the
+spectra from these data files. 
+
+**Figure 3: Spectra from before and after fixing the data cable connection**
+![bna](SpecBnA.png)
+
+The low power spectrum clearly matches the spectra seen from the low power state
+of the previous few days, and the high power spectrum shows the features we
+typically see in our sky spectra.
