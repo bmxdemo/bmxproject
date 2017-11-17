@@ -96,7 +96,7 @@ The power cycling of the amplifiers included 4 voltages:
 The spectrum for these tests is shown here:
 
 **Figure 5: Candidate Region Spectra**
-![spectra](AvgSpectraFromTests.png.png)
+![spectra](AvgSpectraFromTests.png)
 
 Clearly the spectra indicate that the system remained in the 'Inverted State'
 for the duration of the power cycle test, but had different power levels, which
