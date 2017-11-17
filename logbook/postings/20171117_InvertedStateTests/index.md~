@@ -110,3 +110,12 @@ for a comparison:
 
 1) [Joined Dish Calibration](../20170908_Joined_Dish_Spectrum/index.md)
 2) [Calibration from 09/22](../20170922_Calibration/index.md)
+
+### Summary:
+
+In short, despite conducting a number of tests that significantly altered the
+state of the system, I was unable to induce a change from the 'Inverted State'
+to the 'Stable State'. By attaching a terminator to the input instea of the sky
+signal, it initially appeared as though a system change had occurred, but in
+comparing this spectrum with previous terminated spectra, I do not believe this
+to be the case. 

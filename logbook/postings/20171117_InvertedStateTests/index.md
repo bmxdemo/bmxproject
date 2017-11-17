@@ -111,6 +111,14 @@ for a comparison:
 1) [Joined Dish Calibration](../20170908_Joined_Dish_Spectrum/index.md)
 2) [Calibration from 09/22](../20170922_Calibration/index.md)
 
+**Figure 6: Compare Terminated Spectra**
+![comp](CompareTermSpectra.png)
+
+Here is a direct comparison. I still believe this is the spectrum of the
+terminator in the Inverted state, as opposed to a change to the stable state
+when the terminator is applied, and a subsequent change when the sky is
+reconnected.
+
 ### Summary:
 
 In short, despite conducting a number of tests that significantly altered the
@@ -119,3 +127,15 @@ to the 'Stable State'. By attaching a terminator to the input instea of the sky
 signal, it initially appeared as though a system change had occurred, but in
 comparing this spectrum with previous terminated spectra, I do not believe this
 to be the case. 
+
+### Recent Data: Stable State Dominates:
+
+To add to the joys of the unstable system, here is a plot of the data over tthe
+past week, which shows early fluctuation and then the system settling into the
+'Stable State' for several days! I will also post a plot of the state for all
+data combined, with lines separating each data file.
+
+**Figure 7: Time Series from 11/11 - 11/17**
+![comp](TimeSeries_171111_171117.png)
+
+
