@@ -53,8 +53,8 @@ system in the 'Inverted State' to attempt to diagnose this unfortunate
 systematic change.
 
 On Friday Nov 10, I was able to perform several tests on the system in the
-'Inverted State'. These tests took place at 3.6 on the MJD axis in figure
-1. Here is the time series for the tests, and a description of what transpired.
+'Inverted State'. These tests took place at approximately 3.6 on the MJD axis in
+figure 1. Here is the time series for the tests, and a description of what transpired.
 
 **Figure 3: Inverted State Tests**
 ![test](TimeSeriesFromTEST.png)

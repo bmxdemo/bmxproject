@@ -44,77 +44,69 @@ approximately 3.0 on the MJD axis. Zooming in for a closer look:
 ![slow](SlowInversion.png)
 
 We can see the system inverts slowly, instead of an instantaneous change, as
-typically observed in the past. 
+typically observed in the past.
 
+### Probing the System in the Inverted State:
 
+In my discussions with Chris, we outlined several tests we could perform on the
+system in the 'Inverted State' to attempt to diagnose this unfortunate
+systematic change.
 
+On Friday Nov 10, I was able to perform several tests on the system in the
+'Inverted State'. These tests took place at 3.6 on the MJD axis in figure
+1. Here is the time series for the tests, and a description of what transpired.
 
+**Figure 3: Inverted State Tests**
+![test](TimeSeriesFromTEST.png)
 
+Initially, the system was in the 'Inverted State'. I removed the OMT+Horn from
+the 30 dB coupler, and replaced it with a terminator, shown in the first red vertical
+line on the channel 1 plot. I later removed the terminator, and reconnected the
+OMT+Horn to the sky at the second red vertical line in the channel 1 plot. 
 
+The coincident red lines at 0.027 on the MJD axis in both plots indicates the
+time I began power cycling the amplifier chain.
 
+The first vertical line on the channel 2 plot indicates some odd behavior I saw
+in plotLive, but didn't amount to anything.
 
+Around 0.034 on the MJD axis, there is a missing Noise Diode chirp, because the
+data acquisition was restarted after these tests were concluded. The system
+remained in the 'Inverted State' for most of these tests.
 
-After restarting data acquisition, I found the shape of the spectra had returned
-to its former glory, and that the total power was reduced by a factor of 2 from
-the initial level from my last posting, due to the added 3dB attenuator. This
-discovery rendered the SignalHound measurements moot, but they indicated that
-the amplifier chain was operating as expected.
+In this plot, I will show the regions of the plot I chose as candidates for
+spectral analysis, only showing the f1300 curve.
 
-### Spectrometer Data Acquisiton from 11/06:
+**Figure 4: Candidate Regions**
+![cand](CandidateRegionsf1300.png)
 
-This time series plot shows the data files collected on 11/06 in the process of
-debugging the system:
+The regions plotted in black signify selected candidate regions. Additionally, I
+took spectra from the 'Inverted State' behavior before these tests were
+conducted. (The region near the origin, before the first black region.) The
+first region is the terminated spectra, then each power level used when power
+cycling the amplifier chain.
 
+The power cycling of the amplifiers included 4 voltages:
 
+1) 2.9V (Typical Value for our System)
+2) 2.5V
+3) 2.0V
+4) 1.5V (Power is so minimal, I stopped here)
 
-I was convinced that I had destroyed the card ports, and I sought to prove
-it by comparing spectra collected with the digitier card to spectra generated
-with the SignalHound. 
+The spectrum for these tests is shown here:
 
-The first measurements I took were sky spectra and terminated spectra collected
-with the spectrometer, before altering any other connections.  The first data
-file (LEFT in plot below) starts with the sky spectrum, after which I
-disconnected the OMT+Horn from the 30dB coupler output port, and terminated the
-port instead.
+**Figure 5: Candidate Region Spectra**
+![spectra](AvgSpectraFromTests.png.png)
 
-After this test concluded, I disconnected the data cable from the spectrometer
-card, and repeated these measurements using the SignalHound, hence the gap in
-the plot below.
+Clearly the spectra indicate that the system remained in the 'Inverted State'
+for the duration of the power cycle test, but had different power levels, which
+we should expect because we are reducing the gain of the amplifiers by reducing
+the offset voltage. 
 
-As previously stated, I restarted the data acquisition after I reconnected the
-data cable to the spectrometer, with the attenuator in place. The second data
-file (RIGHT) shows the system operating at much higher power than the initial
-files. I believe this is because the attenuator actually made a connection to
-the digitizer card port, whereas the cable previously must not have been
-adequately connected. 
+Additionally, I believe the system remained in the 'Inverted State' when the
+terminator was placed on the input, because the terminated spectrum looks quite
+different when compared to previous terminated spectra. See these other examples
+for a comparison:
 
-This power surge led me to believe that the system had returned to the state
-shown in the beginning of the last posting, and that the digitizer card was
-operating as expected. That comparison is difficult to depict, but I have
-attempted to show it here. 
-
-
-
-The 4 curves on the left of the image are the tail end of the data collected on
-10/27, (displaced by 9 days on the MJD axis!!). 
-The 4 curves on the right are the same as the plot shown in figure 1 of
-this posting.
-
-Note that the low power values in the middle of the plot are of comparable
-power. Additionally, note that the final power values (RIGHTMOST) are a factor
-of 2 lower than the (LEFTMOST) initial high power values, due to the addition of
-the 3dB attenuator.
-
-So yes, the cause of much of my anxiety was due to a faulty cable connection... 
-
-### Spectra from 11/06:
-
-Further evidence that this connection was the issue can be observed in the
-spectra from these data files. 
-
-**Figure 3: Spectra from before and after fixing the data cable connection**
-![bna](SpecBnA.png)
-
-The low power spectrum clearly matches the spectra seen from the low power state
-of the previous few days, and the high power spectrum shows the features we
-typically see in our sky spectra.
+1) [Joined Dish Calibration](../20170908_Joined_Dish_Spectrum/index.md)
+2) [Calibration from 09/22](../20170922_Calibration/index.md)
