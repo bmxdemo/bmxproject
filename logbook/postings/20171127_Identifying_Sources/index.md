@@ -1,7 +1,7 @@
 ## Nov 27, 2017 - Identifying the Blobs
 
 
-###Many of the signals on the waterfall plots in the data browser track with the sidereal rate. Let's see what they are:
+### Many of the signals on the waterfall plots in the data browser track with the sidereal rate. Let's see what they are:
 
 -The hourly "Calibrated, downsampled" waterfall plots (data) were manually browsed for signals with sidereal recurence. Only data from 11/8 to 11/16 was considered. "Exact"  
  times obtained by eying waterfalls.
