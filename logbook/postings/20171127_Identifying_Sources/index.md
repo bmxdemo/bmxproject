@@ -37,7 +37,7 @@ Appears on day / local time:  |   Local Sidereal Time
 
 
 **Sky chart centered on RA 00h 34' 24", Dec 40&deg; 52' 8":**
-<img src="Chart_0h34m24s_M31.png"width="800" height="450">
+<img src="Chart_0h34m24s_M31.png" width="800" height="450">
 
 
 
@@ -62,7 +62,7 @@ Appears on day / local time:  |   Local Sidereal Time
 
 
 **Sky chart centered on RA 20h 06' 36", Dec 40&deg; 52' 8":**
-<img src="Chart_20h6m36s_CygA.png"width="800" height="450">
+<img src="Chart_20h6m36s_CygA.png" width="800" height="450">
 
 
 ###  Unknown source in Lyra:
@@ -85,7 +85,7 @@ Appears on day / local time:  |   Local Sidereal Time
 
 
 **Sky chart centered on RA 19h 02' 25", Dec 40&deg; 52' 8":**
-<img src="Chart_19h02m25s_UnknownLyra.png"width="800" height="450">
+<img src="Chart_19h02m25s_UnknownLyra.png" width="800" height="450">
 
 
 
@@ -108,7 +108,7 @@ Appears on day / local time:  |   Local Sidereal Time
 
 
 **Sky chart centered on RA 16h 36' 01", Dec 40&deg; 52' 8":**
-<img src="Chart_16h36m01s_UnknownHercules.png"width="800" height="450">
+<img src="Chart_16h36m01s_UnknownHercules.png" width="800" height="450">
 
 
 ### Unknown source in Lynx? 
@@ -131,7 +131,7 @@ Appears on day / local time:  |   Local Sidereal Time
 
 
 **Sky chart centered on RA 07h 51' 27", Dec 40&deg; 52' 8":**
-<img src="Chart_07h51m27s_UnknownLynx.png"width="800" height="450">
+<img src="Chart_07h51m27s_UnknownLynx.png" width="800" height="450">
 
 
 ### Galactic plane?
@@ -151,7 +151,7 @@ Appears on day / local time:  |   Local Sidereal Time
 
 
 **Sky chart centered on RA 04h 17' 52", Dec 40&deg; 52' 8":**
-<img src="Chart_04h17m52s_MW.png"width="800" height="450">
+<img src="Chart_04h17m52s_MW.png" width="800" height="450">
 
 
 
@@ -159,8 +159,8 @@ Appears on day / local time:  |   Local Sidereal Time
 
 
 **408MHz Sky from NRAO (thank you POC), source locations shown:**
-<img src="AllSky_408MHz_Annotated.png"width="800" height="450">
+<img src="AllSky_408MHz_Annotated.png" width="800" height="450">
 
 
 **21cm Sky from EBH1S and GASS as compiled by H14P1, M31 shown:**
-<img src="H1AllSkyMap_EBH1S+GASS_viaH14P1_Annotated.png"width="800" height="450">
+<img src="H1AllSkyMap_EBH1S+GASS_viaH14P1_Annotated.png" width="800" height="450">
