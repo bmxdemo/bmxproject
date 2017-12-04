@@ -1,0 +1,21 @@
+## Dec 04, 2017 - Frequency Sweep
+
+### Basin Signal Generator Tests:
+
+On 11/29/17, I repaired the noise diode by removing the indicator LED. After the
+system was back to normal, there was discussion of taking a signal generator out
+to the basin, and attempting to broadcast a tone into the dish to see if we
+could measure a controlled source of RFI.
+
+On 12/01/17, Paul S, Paul O, Justine, and I ventured out into the basin to
+perform these tests, around 9:30 - 11:00 AM. The file in which these tests were
+performed is '171201_1514.data'. The easiest way to interact with this data is
+via the [BMX data browser](http://www.cosmo.bnl.gov/www/bmx/databrowser/).
+
+To view the raw, undownsampled waterfall plot in full resolution, please visit
+[this link](http://www.cosmo.bnl.gov/www/bmx/databrowser/plots//171201_1514_chan1_0_wfraw_nomask.jpg). 
+
+
+**Figure 1: Time Series of Spectrometer Acquisitions (11/07) - (11/10)**
+![TSearly](TimeSeries171107_thru_171110.png)
+

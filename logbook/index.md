@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Frequency Sweep Tests](postings/20171204_FreqSweep/index.md) - Dec 04, 2017 (WT)
 * [Identifying Sources](postings/20171127_Identifying_Sources/index.md) - Nov 27, 2017 (JH)
 * [Inverted State Tests](postings/20171117_InvertedStateTests/index.md) - Nov 17, 2017 (WT)
 * [Dish Surface Shape](postings/20171107_dish_surface_shape/index.md) - Nov 7, 2017 (EJA)
