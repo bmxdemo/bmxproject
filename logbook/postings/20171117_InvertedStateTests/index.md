@@ -103,37 +103,40 @@ for the duration of the power cycle test, but had different power levels, which
 we should expect because we are reducing the gain of the amplifiers by reducing
 the offset voltage. 
 
-Additionally, I believe the system remained in the 'Inverted State' when the
-terminator was placed on the input, because the terminated spectrum looks quite
-different when compared to previous terminated spectra. See these other examples
-for a comparison:
+Additionally, It may be worth comparing this terminated spectrum to those from
+previous postings and calibrations:
 
 1) [Joined Dish Calibration](../20170908_Joined_Dish_Spectrum/index.md)
 2) [Calibration from 09/22](../20170922_Calibration/index.md)
 
 **Figure 6: Compare Terminated Spectra**
-![comp](CompareTermSpectra.png)
+![comp](TermSkySpectra.png)
 
-Here is a direct comparison. I still believe this is the spectrum of the
-terminator in the Inverted state, as opposed to a change to the stable state
-when the terminator is applied, and a subsequent change when the sky is
-reconnected.
+Here is a direct comparison of terminating the amp chain, in the Inverted and
+Non-Inverted states. The data from 11/09 shows the test conducted when the
+system was initially in the Non-Inverted state, and remained in that state after
+replacing the Sky+OMT with the terminator. Conversely, the data from 11/20 shows
+the system is initially in the Inverted state, and returned to the Inverted
+state after the terminator was swapped in and out. 
+
+Note the striking similarity in the shape of the terminated spectrum, regardless
+of overall system state. This seems to suggest that the state is determined by
+signal coming in from the sky, rather than a problem that exists strictly within
+the amp-chain. This idea will be studied in the future by trying to examine
+transiting radio sources in both states, and by trying to identify some periodic
+behavior in the state inversion.
 
 ### Summary:
 
 In short, despite conducting a number of tests that significantly altered the
 state of the system, I was unable to induce a change from the 'Inverted State'
-to the 'Stable State'. By attaching a terminator to the input instea of the sky
-signal, it initially appeared as though a system change had occurred, but in
-comparing this spectrum with previous terminated spectra, I do not believe this
-to be the case. 
+to the 'Non-Inverted State'.
 
-### Recent Data: Stable State Dominates:
+### Recent Data: Non-Inverted State Dominates:
 
-To add to the joys of the unstable system, here is a plot of the data over tthe
+To add to the joys of the unstable system, here is a plot of the data over the
 past week, which shows early fluctuation and then the system settling into the
-'Stable State' for several days! I will also post a plot of the state for all
-data combined, with lines separating each data file.
+'Non-Inverted State' for several days!
 
 **Figure 7: Time Series from 11/11 - 11/17**
 ![comp](TimeSeries_171111_171117.png)
