@@ -9,7 +9,7 @@ The data browser mean filter is plotted on a +/- 1 K color scale. When a source
 crosses the beam, the filter drags all the other time ordered data in that
 frequency range below the saturation limit of the color scale. Here I look at
 the galactic plane crossing of 171115_1600 and expand the color scale. I also
-did a median filter instead of a mean filter. This is shown in Figure 1.
+did a median filter instead of a mean filter. This is shown in **Figure 1**.
 
 **Figure 1: Galactic plane crossing on different color scale**
 ![](171115_1600_galplane_crossing.png)
@@ -22,8 +22,10 @@ median filter also reduces the effect of the point source on the galactic synch
 after the filter. I also
 
 I then re-did this plot but excluding t<30 min data so that the
-point source does not affect the filter at all. This is shown in Figure 2, and
-the structure looks the same.  
+point source does not affect the filter at all. This is shown in **Figure 2**, and
+the structure looks the same. 
+
+**Figure 2: Same as Figure 1 but only using t>30 min**
 ![](171115_1600_galplane_crossing_lasthalf.png)
 
 We can assume that, at least at this level, galactic synchrotron is a smooth
