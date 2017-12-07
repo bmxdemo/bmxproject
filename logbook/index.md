@@ -2,7 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
-* [Frequency seep tone amplitude](postings/20171207_tone_amplitude/index.md) - Dec 04, 2017 (CDS)
+* [Frequency sweep tone amplitude](postings/20171207_tone_amplitude/index.md) - Dec 04, 2017 (CDS)
 * [Galactic plane crossing](postings/20171204_galplane_crossing/index.md) - Dec 04, 2017 (CDS)
 * [Frequency Sweep Tests](postings/20171204_FreqSweep/index.md) - Dec 04, 2017 (WT)
 * [Identifying Sources](postings/20171127_Identifying_Sources/index.md) - Nov 27, 2017 (JH)
