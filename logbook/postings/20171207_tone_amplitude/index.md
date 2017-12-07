@@ -10,9 +10,9 @@ the data. See [this posting](../20171204_galplane_crossing/index.md). In
 particular, there are two bands at 1200 +/- 25 MHz where point sources appear
 very bright. What's more, the galactic synchrotron also looks weird in this
 region, and even oscillates in time. I have hypothesized a multipath fringing. I
-am investiaging in HFSS  (so far, putting in a reflective sheet beneath the dish
-and tower does not do anything to the beam at 1175 MHz) and will continue. In
-the maentime, it seems that we might be able to see something in the tone sweep
+am investiaging in HFSS and will continue. (So far, putting in a reflective sheet 
+beneath the dish+tower does nothing to the beam at 1175 MHz.) In
+the meantime, it seems that we might be able to see something in the tone sweep
 data that we have.
 
 Paul, Paul, and Will went out to the basin and broadcast a tone sweep using a
@@ -43,10 +43,10 @@ posting](../20171204_FreqSweep/index.md).
 
 ### 2 - Results
 I loaded in this data and
-plotted it. (I computed tone on - off, but this makes amost no difference
+plotted it. (I computed tone on minus off, but this makes almost no difference
 because the tone is so bright.) The noise diode was operating, so I computed the gain using the
-bmxreduce pipeline code, interpolated it to the frequeucny comb, and calibrated
-the tone amplitudes from ADU^2 -> K. The results are shown in **Figure 3**. 
+bmxreduce pipeline code, interpolated it to the frequency comb, and calibrated
+the tone amplitudes (ADU^2 -> K). The results are shown in **Figure 3**. 
 
 **Figure 3: Tone sweep amplitude**
 
@@ -54,7 +54,9 @@ the tone amplitudes from ADU^2 -> K. The results are shown in **Figure 3**.
 
 There is an inflection point at 1200 MHz, but I don't see anything particularly
 funny about 1175 MHz or 1225 MHz. There is an order of magnitude variation in
-the calibrated temperature of the tone. The noise diode does not calibrate the
+the calibrated temperature of the tone which we do not see in calibrated on sky 
+data when there is no obvious source in the beam (i.e. calibrated LNA noise temperature). 
+The noise diode does not calibrate the
 horn throughput, but HFSS does not predict significant S11 for the horn, and
 [measurements of the OMT + horn S11 bear this
 out](../20170915_S-Parameter_Measurements/index.md). It could be multipath
