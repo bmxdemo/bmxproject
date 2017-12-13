@@ -1,0 +1,134 @@
+## Dec 13, 2017 - Thermistor Update
+
+### Previous Measurements:
+
+The thermistor was installed and tested on Sep. 29, 2017, further discussion of
+the thermistor and these initial tests can be found in the [initial
+posting.](../20171002_Thermistor/index.md) The important takeaway from this
+posting was that the voltage read across the thermistor was equal to the product
+of the fixed current source (200UA) and the resistance of the thermistor, which
+decreased as the temperature increased (NTC - Negative Temperature
+Coefficient). The voltage measured by the labjack would reach some critical DC
+level and saturate, meaning we could not resolve the temperature below around
+15C without reducing the resistance or the current. The plot below shows the
+temperature as a function of time, for the day of installation. (This plot
+appeared in the previous posting:)
+
+**Figure 1: Sep. 29, 2017: Temperature Measured via Thermistor Resistance**
+![old](Tvst24hrsC.png)
+
+The temperatures are matched fairly well, except when the outside temperature
+drops below the saturation limit of the labjack for measuring DC voltage.
+
+### Changing Fixed Current:
+
+On Dec. 12, 2017, I reduced the measured DC voltage by reducing the fixed current
+source, from 200UA to 10UA (both of these ports are present on the labjack.)
+This reduced the measured voltage as expected, but may have introduced some other
+problems. The measured voltage has a typical level, and sharp negative and
+positive spikes which occur routinely (correlated with the diode?)
+
+**Figure 1: Dec. 12, 2017: Measured Voltage vs Time**
+![v1](VvsMJD.png)
+
+
+
+
+
+
+
+
+
+
+    MJD.append(mjd[0])
+    R = V / I
+    RkO = V / I / 1000
+    TArray = (4200 / np.log(R/(10000 * np.e ** (-14)))) - 273
+    plot(mjd,TArray,'b.')
+    xlabel('mjd')
+    ylabel('Temperature, $C$')
+
+for fname in filenames[29:]:
+    dat = BMXFile(DataDirectory+fname)
+
+## Produce the Voltage array:
+    V = dat.data['lj_voltage'] #Volts
+    I = 1e-5 #Amps
+    mjd = dat.data['mjd']
+    MJD.append(mjd[0])
+    R = V / I
+    RkO = V / I / 1000
+    TArray = (4200 / np.log(R/(10000 * np.e ** (-14)))) - 273
+    plot(mjd,TArray,'b.')
+    xlabel('mjd')
+    ylabel('Temperature, $C$')
+
+#clf()
+
+## Compare to known forecast: 12/12
+
+y = (5.0/9.0)*((np.array([45,46.9,48.9,50,51.1,52.0,53.1,52.0,52,52,52,45,23,21.9,21.9,23,23]))-32.0)
+                        
+plot(MJD,y,'rx-')
+savefig('TempVSTime.png')
+
+
+
+
+
+
+
+
+
+
+
+On 11/29/17, I repaired the noise diode by removing the indicator LED. After the
+system was back to normal, there was discussion of taking a signal generator out
+to the basin, and attempting to broadcast a tone into the dish to see if we
+could measure a controlled source of RFI.
+
+On 12/01/17, Paul S, Paul O, Justine, and I ventured out into the basin to
+perform these tests, around 9:30 - 11:00 AM. The file in which these tests were
+performed is '171201_1514.data'. The easiest way to interact with this data is
+via the [BMX data browser](http://www.cosmo.bnl.gov/www/bmx/databrowser/).
+
+Before this data was uploaded, Paul S. and I had a brief discussion of the
+waterfall plot, and were able to see the diagonal line of the fine frequency
+sweep. Unfortunately, on my waterfall plot it was difficult to locate the coarse
+frequency sweep.
+
+
+
+Here it is visible, but nothing compares to the resolution of the images on the
+data browser, which I will take several screenshots of, and include below.
+
+To view the raw, undownsampled waterfall plot in full resolution, please visit
+[this link](http://www.cosmo.bnl.gov/www/bmx/databrowser/plots//171201_1514_chan1_0_wfraw_nomask.jpg). 
+
+**Figure 2: BMX Data Browser Fine Frequency Sweep**
+![browser](fine1300x30.png)
+
+This fine frequency sweep begins just before 25 minutes into the data file, and
+ends just before 40 minutes. It is clear that the sweep appears as a perfect
+diagonal line cutting through the data. The top left corner of this image is the
+intersection of the f = 1300MHz gridline, and the t = 30 minute gridline.
+
+**Figure 3: Coarse Frequency Sweep**
+![coarse](coarse1400x40.png)
+
+It is still somewhat difficult to find the coarse sweep at first glance, but it
+occurs shortly after 40 minutes into the data file. The frequency ticks align
+perfectly with the spectrometer bin, as Chris stated via Email. This top left
+corner here is the intersection of the f = 1400MHz gridline, and the t = 40
+minute gridline.
+
+### Summary:
+
+To conclude, the spectrometer detected the emitted signal in real-time, while we
+were present in the basin! The system appears to be working as intended, and
+moreover,  the digitizer is accurately detecting signals in the proper frequency
+bin as demonstrated by the coarse frequency sweep.
+
+To give credit where it is due, Chris's data browser is truly a wonderful
+resource, and includes incredibly high resolution pngs of the waterfall plots,
+for those inclined.
