@@ -30,4 +30,4 @@ Cosmo data vs subtracted data
 
 ![cosmo_subpoly](cosmo_subpoly.png)
 
-The two curves are almost the same except for the glitch. The glitch is also visible at the same x location in the all field plot.
+All field data minus polynomial fit gets the subpoly data normalized to zero, while the mean value of cosmo data is not zero. I add a bias value to the subpoly data, which is equal to the median value of the difference. Note that the bias value is unknown in a real environment.
