@@ -21,7 +21,8 @@ I went to the SDSS DR10 webpage and generated a catalog of galaxies with the
 following SQL query:
 
 ```
-SELECT count(*)
+SELECT ALL
+ra, dec, z, zErr, psfMag_u, psfMag_g, psfMag_r, psfMag_i, psfMag_z
 FROM SpecPhoto
 WHERE
 dec>35 AND dec<45 AND
