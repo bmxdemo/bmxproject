@@ -49,7 +49,8 @@ There is clearly a lot of structure here we can correlate with.
 Next I binned in "pixels" of delta RA = 1 and delta z =
 0.001, which corresponds to about 1 MHz. This is shown in **Figure 2**. Lastly,
 I approximated beam convolution by convolving each row of this image with a 4
-deg FWHM Gaussian. This is shown in **Figure 3**. In reality, we will properly convolve
+deg FWHM Gaussian (and of course remembering to use degrees on sky, not coordinate degrees.)
+This is shown in **Figure 3**. In reality, we will properly convolve
 with the 2D beam without first collapsing the galaxies in declination, but this
 should be a good approximation.
 
