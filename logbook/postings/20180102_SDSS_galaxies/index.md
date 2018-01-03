@@ -44,8 +44,8 @@ and transverse physical scale 100 h^-1 Mpc (so divide this number by 0.7).
 
 ![](SDSS_galaxies.png)
 
-There is clearly a lot of structure here we can correlate with, even at
-frequencies above 1300. Next I binned in "pixels" of delta RA = 1 and delta z =
+There is clearly a lot of structure here we can correlate with. 
+Next I binned in "pixels" of delta RA = 1 and delta z =
 0.001, which corresponds to about 1 MHz. This is shown in **Figure 2**. Lastly,
 I approximated beam convolution by convolving each row of this image with a 4
 deg FWHM Gaussian. This is shown in **Figure 3**. In reality, we will properly convolve
