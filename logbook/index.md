@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Cosmo field extraction with neural network](posting/20180109_Simulation_Neural_Network/index.md) - Jan 9, 2018 (GZ)
 * [SDSS Galaxies in BMX Stripe](postings/20180102_SDSS_galaxies/index.md) - Jan 2, 2018 (CDS)
 * [Simulation Data](postings/20171215_simulation/index.md) - Dec 15, 2017 (GZ)
 * [Broadband Signal Tests](postings/20171215_Yagi_Diode/index.md) - Dec 15, 2017 (WT)
