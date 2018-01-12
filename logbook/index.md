@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Simulation output with sdss correlation](posting/20180112_simulation_sdss_correlation/index.md) - Jan 12, 2018 (GZ)
 * [ptso and gsync correlation](postings/20180110_ptso_gsync_correlation/index.md) - Jan 10, 2018 (GZ)
 * [Running CRIME/CoLoRe](postings/20180110_CrimeColore/index.md) - Jan 10, 2018 (AS)
 * [Cosmo field extraction with neural network](postings/20180109_Simulation_Neural_Network/index.md) - Jan 9, 2018 (GZ)
