@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [ptso and gsync correlation](postings/20180110_ptso_gsync_correlation/index.md) - Jan 10, 2018 (GZ)
 * [Running CRIME/CoLoRe](postings/20180110_CrimeColore/index.md) - Jan 10, 2018 (AS)
 * [Cosmo field extraction with neural network](postings/20180109_Simulation_Neural_Network/index.md) - Jan 9, 2018 (GZ)
 * [SDSS Galaxies in BMX Stripe](postings/20180102_SDSS_galaxies/index.md) - Jan 2, 2018 (CDS)
