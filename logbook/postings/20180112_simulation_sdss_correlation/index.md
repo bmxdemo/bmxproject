@@ -26,10 +26,12 @@ Figure 3. CoLoRe maps with new RNG seed
 
 ![sdss_corr](sdss_corr_colore2.png)
 
-This plot is generated using the same script with Figure 1 and new CoLoRe maps. This looks completely different from Figure 1. In my humble opinion, the CoLoRe maps are influenced by RNG seed, so it is not comparable with SDSS data.
+This plot is generated using the same script with Figure 1 and new CoLoRe maps.
 
-## CRIME comparasion
+## CRIME comparison
 
 Figure 4. Generated with CRIME and gnomonic projector
 
 ![sdss_crime](sdss_corr_crime.png)
+
+From this figure we can find that CRIME maps have different feature with CoLoRe maps.
