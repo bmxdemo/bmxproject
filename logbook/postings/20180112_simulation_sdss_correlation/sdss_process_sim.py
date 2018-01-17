@@ -7,6 +7,8 @@ import cPickle
 with open("cosmo_sdss.pickle", "rb") as f:
     maplist = cPickle.load(f).streams[0]
 
+maplist = np.flipud(maplist)
+
 z_list = [(1420 - i) / i for i in np.arange(1100.25, 1420.25, 0.5)]
 
 split_list = []
@@ -33,4 +35,5 @@ plot.imshow(new_maplist, cmap="gray_r", interpolation="nearest", aspect="auto", 
 plot.xlabel("RA")
 plot.ylabel("z")
 plot.title("12-hour simulation output")
-plot.savefig("sdss_corr.png")
+plot.colorbar()
+plot.savefig("sdss_corr_colore_sim.png")
