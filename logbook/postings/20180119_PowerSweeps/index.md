@@ -149,9 +149,8 @@ tested.
 These measurements were replicated for the amp-chain in the basin, which appear
 below in figure 2. Port 1 of the VNA was connected to the -30 dB port of the 30
 dB directional coupler, with 15 dB of attenuation. The same 12 dB attenuator
-setup was connected after the output port of the front end box, inserted ahead
-of the band pass filter. This was where the second port of the VNA was
-attached. 
+setup was connected after the output port of the front end box, inserted in place of the band pass filter.
+This was where the second port of the VNA was attached. 
 
 **Figure 2: 1 dB Compression Points, Measured in the Basin:**
 ![basin](1dBCompPointsBasin.png)
