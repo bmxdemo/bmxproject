@@ -4,9 +4,9 @@
 Below is a list of components, in order of appearance in the front end of the
 experiment:
 
->-------------------------
->Sky
->OMT+HORN
+%-------------------------
+Sky
+OMT+HORN
 >-------------------------
 >Low Loss Cable 1 
 >30dB Coupler
