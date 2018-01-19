@@ -3,7 +3,7 @@
 
 Below is a list of components, in order of appearance in the front end of the
 experiment:
-
+~~~
   -------------------------
   Sky
   OMT+HORN
@@ -29,7 +29,7 @@ experiment:
   Band Pass Filter 2
   156in Data Cable
   -------------------------
-
+~~~
 ### Bench Amp Chain Configuration:
 
 Chris suspected that the amplifier chain in the basin was being driven
