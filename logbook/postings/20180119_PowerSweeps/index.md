@@ -40,7 +40,7 @@ that the stage 3 Amplifier would be the first to approach nonlinearity, due
 to its maximum accepted input power of -15dBm, whereas the LNAs accept +20dBm.
 
 The amplifier chain I constructed on tuesday Jan 16, 2018 was as follows:
-
+~~~
   -------------------------
   Terminator (or Open)
   LNA#1
@@ -51,7 +51,7 @@ The amplifier chain I constructed on tuesday Jan 16, 2018 was as follows:
   Low Pass Filter (VLF-1400+)
   Stage 3 Amplifier
   -------------------------
-
+~~~
 Unfortunately, the low-pass filter used on the bench is not the same filter used
 in the front-end box, and there were no band-pass filters to use. 
 
@@ -66,7 +66,7 @@ the amplifier chain on the bench. The power meter has a recommended range from
 
 For the 8GHz bandwidth, I calculated that a 300K Terminator should emit roughly
 -74.9 dBm of power, which will not be read by the meter. 
-
+~~~
   -------------------------
   Terminator (or Open)		--> power too low
   LNA#1	       			--> power too low
@@ -77,7 +77,7 @@ For the 8GHz bandwidth, I calculated that a 300K Terminator should emit roughly
   Low Pass Filter (VLF-1400+)	--> power = -42.50 dBm
   Stage 3 Amplifier		--> power = - 9.58 dBm
   -------------------------
-
+~~~
 This indicated that the gain of the LNAs is approximately 15 dB, while the gain
 of the stage 3 Amplifier is roughly 33 dB. This gives a total system gain in the
 neighborhood of 60 dB, which motivated my choice of attenuators for the
@@ -87,7 +87,7 @@ subsequent power sweep tests with the VNA.
 
 I repeated these measurements for the amp chain on the functioning channel in
 the basin on Wednesay, Jan 17, 2018. The results are shown below:
-
+~~~
   -------------------------
   Sky
   OMT+HORN
@@ -113,7 +113,7 @@ the basin on Wednesay, Jan 17, 2018. The results are shown below:
   Band Pass Filter 2	--> -26.67 dBm
   156in Data Cable
   -------------------------
-
+~~~
 The results of this test indicated that the input power from the sky, after the
 intense filtration is substantially reduced relative to the amplifier chain on
 the bench. So, this eliminated the likelihood of saturation, because the total
