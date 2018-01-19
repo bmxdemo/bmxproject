@@ -4,31 +4,31 @@
 Below is a list of components, in order of appearance in the front end of the
 experiment:
 
->-------------------------
->Sky
->OMT+HORN
->-------------------------
->Low Loss Cable 1 
->30dB Coupler
->Barrel
->Low Loss Cable 2
->Front End SMA Input Port
->Band Pass Filter 1 
->Barrel
->LNA#1 	
->3dB Attenuator
->Barrel
->LNA#2
->Barrel		
->Low Pass Filter	(VLFX-1350)
->Stage 3 Amplifier
->36in Data Cable
->-------------------------
->Front End SMA Output Port
->Barrel
->Band Pass Filter 2
->156in Data Cable
->-------------------------
+  -------------------------
+  Sky
+  OMT+HORN
+  -------------------------
+  Low Loss Cable 1 
+  30dB Coupler
+  Barrel
+  Low Loss Cable 2
+  Front End SMA Input Port
+  Band Pass Filter 1 
+  Barrel
+  LNA#1 	
+  3dB Attenuator
+  Barrel
+  LNA#2
+  Barrel		
+  Low Pass Filter	(VLFX-1350)
+  Stage 3 Amplifier
+  36in Data Cable
+  -------------------------
+  Front End SMA Output Port
+  Barrel
+  Band Pass Filter 2
+  156in Data Cable
+  -------------------------
 
 ### Bench Amp Chain Configuration:
 
@@ -41,16 +41,16 @@ to its maximum accepted input power of -15dBm, whereas the LNAs accept +20dBm.
 
 The amplifier chain I constructed on tuesday Jan 16, 2018 was as follows:
 
->-------------------------
->Terminator (or Open)
->LNA#1
->Barrel
->3dB Attenuator
->LNA#2
->Barrel
->Low Pass Filter (VLF-1400+)
->Stage 3 Amplifier
->-------------------------
+  -------------------------
+  Terminator (or Open)
+  LNA#1
+  Barrel
+  3dB Attenuator
+  LNA#2
+  Barrel
+  Low Pass Filter (VLF-1400+)
+  Stage 3 Amplifier
+  -------------------------
 
 Unfortunately, the low-pass filter used on the bench is not the same filter used
 in the front-end box, and there were no band-pass filters to use. 
@@ -67,16 +67,16 @@ the amplifier chain on the bench. The power meter has a recommended range from
 For the 8GHz bandwidth, I calculated that a 300K Terminator should emit roughly
 -74.9 dBm of power, which will not be read by the meter. 
 
->-------------------------
->Terminator (or Open)		--> power too low
->LNA#1	       			--> power too low
->Barrel			
->3dB Attenuator			--> power too low
->LNA#2				--> power = -42.24 dBm
->Barrel				
->Low Pass Filter (VLF-1400+)	--> power = -42.50 dBm
->Stage 3 Amplifier		--> power = - 9.58 dBm
->-------------------------
+  -------------------------
+  Terminator (or Open)		--> power too low
+  LNA#1	       			--> power too low
+  Barrel			
+  3dB Attenuator			--> power too low
+  LNA#2				--> power = -42.24 dBm
+  Barrel				
+  Low Pass Filter (VLF-1400+)	--> power = -42.50 dBm
+  Stage 3 Amplifier		--> power = - 9.58 dBm
+  -------------------------
 
 This indicated that the gain of the LNAs is approximately 15 dB, while the gain
 of the stage 3 Amplifier is roughly 33 dB. This gives a total system gain in the
@@ -88,31 +88,31 @@ subsequent power sweep tests with the VNA.
 I repeated these measurements for the amp chain on the functioning channel in
 the basin on Wednesay, Jan 17, 2018. The results are shown below:
 
->-------------------------
->Sky
->OMT+HORN
->-------------------------
->Low Loss Cable 1 	--> Power Too Low
->30dB Coupler
->Barrel
->Low Loss Cable 2
->Front End SMA Input Port
->Band Pass Filter 1 	--> Power Too Low
->Barrel
->LNA#1 			--> Power Too Low
->3dB Attenuator
->Barrel
->LNA#2
->Barrel			--> Power Too Low
->Low Pass Filter	--> Power Too Low
->Stage 3 Amplifier	--> -15.92 dBm
->36in Data Cable
->-------------------------
->Front End SMA Output Port
->Barrel
->Band Pass Filter 2	--> -26.67 dBm
->156in Data Cable
->-------------------------
+  -------------------------
+  Sky
+  OMT+HORN
+  -------------------------
+  Low Loss Cable 1 	--> Power Too Low
+  30dB Coupler
+  Barrel
+  Low Loss Cable 2
+  Front End SMA Input Port
+  Band Pass Filter 1 	--> Power Too Low
+  Barrel
+  LNA#1 			--> Power Too Low
+  3dB Attenuator
+  Barrel
+  LNA#2
+  Barrel			--> Power Too Low
+  Low Pass Filter	--> Power Too Low
+  Stage 3 Amplifier	--> -15.92 dBm
+  36in Data Cable
+  -------------------------
+  Front End SMA Output Port
+  Barrel
+  Band Pass Filter 2	--> -26.67 dBm
+  156in Data Cable
+  -------------------------
 
 The results of this test indicated that the input power from the sky, after the
 intense filtration is substantially reduced relative to the amplifier chain on
