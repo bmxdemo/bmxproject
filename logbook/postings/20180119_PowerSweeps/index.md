@@ -162,4 +162,4 @@ in order to reach the 1 dB compression point and drive the amp chain non-linear,
 we would need substantial power beyond what was introduced through the horn at
 the time of this test. In my opinion, this suggests that the amp chain is not
 the source of our non-physical temperature measurements from transiting sources,
-but should be operating comfortably within its designed performance level.
+but that the amp chain should be operating comfortably.
