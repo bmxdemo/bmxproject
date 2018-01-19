@@ -2,6 +2,7 @@
 
 Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [VNA Power Sweep Tests](postings/20180119_PowerSweeps/index.md) - Jan 19, 2018 (WT)
 * [Simulation output with sdss correlation](postings/20180112_simulation_sdss_correlation/index.md) - Jan 12, 2018 (GZ)
 * [ptso and gsync correlation](postings/20180110_ptso_gsync_correlation/index.md) - Jan 10, 2018 (GZ)
 * [Running CRIME/CoLoRe](postings/20180110_CrimeColore/index.md) - Jan 10, 2018 (AS)
