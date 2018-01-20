@@ -144,6 +144,10 @@ GHz curve, as suggested by the legend. I had to vary the power range of the
 sweep to actually find the 1 dB compression point for the higher frequencies
 tested.
 
+The 1 dB compression point for the amplifier chain suggests that the 3rd amplifier is the first to go nonlinear. For instance, for the 1.0 GHz frequency, the 1 dB compression point occurs when the VNA output power (X-axis) is -55 dBm. This is amplified by the gain S21 (Y-axis) of 70 dB, which yields a 1 dB compression point of +15 dBm referenced to the output of the stage 3 amplifier.
+
+https://www.minicircuits.com/pdfs/ZX6…
+
 #### Basin 1/19/18:
 
 These measurements were replicated for the amp-chain in the basin, which appear
