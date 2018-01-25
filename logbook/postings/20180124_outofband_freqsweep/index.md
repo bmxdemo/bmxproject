@@ -15,7 +15,7 @@ swept the frequency in 5 MHz steps from 25 MHz - 1100 MHz.
 
 ### 2 - Results
 
-There is clear out of band power. Figure 1 shows the results with the log period
+There is clear power showing up both in and out of band. Figure 1 shows the results with the log period
 antenna broadcasting. The dotted green lines show y=x/n, where n=1,2,3,...
 You can just see the y=x tones starting to make it through the bandpass filter at
 1100 MHz. These tones are spaced 5 MHz apart. The other lines intersect clear
