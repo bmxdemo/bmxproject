@@ -38,6 +38,11 @@ know. Is the bandpass filter non-linear? In
 little non-linearity, there was no bandpass filter. His posting did show a
 little non-linearity, though, maybe 0.1 dB. Can that amount explain this?
 
+Also, I note that 550 MHz seems to be a magic number in these figures. This is 1/2 the ROACH ADC sample rate. There is
+also a lot of ROACH magic with phase shifting and interleaving the input 2200 MHz clock to get a 4400 MHz sample rate. Is the
+ADC clock messing us up?
+
+
 **Figure 2: Frequency sweep directly into amp chain**
 
 ![](freq_sweep_direct.png)
