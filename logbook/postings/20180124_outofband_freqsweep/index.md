@@ -26,7 +26,7 @@ I do not know.
 
 **Figure 1: Frequency sweep broadcast through log-periodic**
 
-![](freq_sweep_logperiodic)
+![](freq_sweep_logperiodic.png)
 
 Figure 2 shows the same thing but with the signal generator hooked directly into
 the amp chain. We see very similar behavior, indicating some sort of
