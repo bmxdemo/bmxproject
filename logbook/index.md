@@ -1,7 +1,9 @@
 ## BMX Logbook
 
-Please post relative links reverse chronologically. Write ups should go in the "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
+Please post relative links reverse chronologically. Write ups should go in the
+"[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Intermodulation Tests via Broadcasting](postings/20180210_Intermodulation_Hunting/index.md) - Feb 11, 2018 (WT)
 * [Out of band frequency sweep](postings/20180124_outofband_freqsweep/index.md) - Jan 22, 2018 (CDS)
 * [Observations with ROACH spectrometer](postings/20180122_roach_observations/index.md) - Jan 22, 2018 (CDS)
 * [VNA Power Sweep Tests](postings/20180119_PowerSweeps/index.md) - Jan 19, 2018 (WT)

@@ -1,0 +1,65 @@
+## Feb 10, 2018 - Hunting for Intermodulation Products via Broadcast Tests
+### Current Configuration of Front-End Components (2 Channels, once again!):
+
+On Feb 6, 2018, I conducted the first in a long series of broadcast tests, but
+failed to acquired data because BMXDAQ had been offline. While I was there, I
+figured it would be a worthwhile investment of time to reconnect the second
+polarization, now that the custom band pass filters had arrived. The only major
+difference in the two chains is the position of the first band pass filter. Due
+to geometric constraints of the breadboard supports, I couldn't fit the bandpass
+inside the front end box for the Y-polarization, and it had to be attached
+immediately after the 30dB coupler. Additionally, I didn't have another noise
+diode ready to go, so there is a terminator attached to the 30dB port on said 30
+dB coupler. We have been acquiring data for the past several days on BMXDAQ.
+
+####Channel 1: X-Pol (Vertical SMA Output Port on OMT):
+
+~~~
+  -------------------------
+  Sky
+  OMT+HORN
+  -------------------------
+  Low Loss Cable 1 
+  30dB Coupler + Noise Diode
+  Low Loss Cable 2
+  Band Pass Filter 1 
+  LNA 1 	
+  3dB Attenuator
+  LNA 2		
+  Low Pass Filter (VLFX-1350)
+  Stage 3 Amplifier
+  36in Data Cable
+  SMA Output Port
+  _________________________
+  Band Pass Filter 2
+  156in Data Cable
+  -------------------------
+  Power Divider (Splits 50%/50%)
+  50% --> Terminator / Roach Board
+  50% --> Channel 1 on Digitizer Card
+ 
+~~~
+
+####Channel 2: Y-Pol (Horizontal SMA Output Port on OMT):
+
+~~~
+  -------------------------
+  Sky
+  OMT+HORN
+  -------------------------
+  Low Loss Cable 1 
+  30dB Coupler + Terminator
+  Band Pass Filter 1
+  Low Loss Cable 2
+  LNA 1 	
+  3dB Attenuator
+  LNA 2	
+  Low Pass Filter (VLFX-1350)
+  Stage 3 Amplifier
+  36in Data Cable
+  SMA Output Port
+  _________________________
+  Band Pass Filter 2
+  156in Data Cable
+  -------------------------
+~~~
