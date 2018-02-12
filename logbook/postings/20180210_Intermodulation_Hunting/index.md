@@ -328,3 +328,34 @@ effect. I will look into this further.
 I also want to analyze the data acquired with BMXDAQ, but this has been a large
 investment of time already, that didn't seem to suggest the production of
 intermodulation products. 
+
+### Observing a Transiting Source while in the Basin:
+
+Between the 3r and 4th tests from 120210, I recognized the typical spectral
+profile of the transiting source. During this transit I wanted to test a few
+things and try to understand what could be responsible for this behavior. The
+first thing I did was power down and remove the signal generator and
+antenna. The smearing at the typical frequencies persisted.
+
+**Figure 9: 180210 Observing a Transiting Source and Power Cycling Amp Chain:**
+![PCycle](180210_Transiting_Source.png)
+
+Additionally, in plotLive I saw a lot of very bright and sharp RFI Hash from
+1100-1150 MHz, which seemed to accompany the smearing at first. 
+
+Because we have observed these sources advancing by 4 minutes per day with the
+stars, the source of the signal seems to be something unrelated to our
+experiment, but I tried to examine things as they occurred to me anyway. It was cloudy,
+so I couldn't see any airplanes/helicopters. There were no data files being
+transferred from BMXDAQ to the cluster, as far as I could tell. My cellphone was
+on airplane and none of the laptops had wifi enabled. 
+
+The next thing I thought to do was to power cycle the amplifiers, and see if
+this behavior would correct itself immediately. When I returned power to the
+amplifiers, they seemed completely unchanged, and the smearing appeared just as
+it had before I attempted the power cycle. This can be clearly identified
+as a black bar on the following waterfall plot, which shows both channels from
+BMXDAQ responding to the transiting source. 
+
+
+This data file can be found here: /bmxdata/incoming/data/180210_1934.data 

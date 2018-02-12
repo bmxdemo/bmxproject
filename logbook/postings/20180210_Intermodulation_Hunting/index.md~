@@ -12,7 +12,7 @@ immediately after the 30dB coupler. Additionally, I didn't have another noise
 diode ready to go, so there is a terminator attached to the 30dB port on said 30
 dB coupler. We have been acquiring data for the past several days on BMXDAQ.
 
-####Channel 1: X-Pol (Vertical SMA Output Port on OMT):
+#### Channel 1: X-Pol (Vertical SMA Output Port on OMT):
 
 ~~~
   -------------------------
@@ -40,7 +40,7 @@ dB coupler. We have been acquiring data for the past several days on BMXDAQ.
  
 ~~~
 
-####Channel 2: Y-Pol (Horizontal SMA Output Port on OMT):
+#### Channel 2: Y-Pol (Horizontal SMA Output Port on OMT):
 
 ~~~
   -------------------------
@@ -64,7 +64,7 @@ dB coupler. We have been acquiring data for the past several days on BMXDAQ.
   -------------------------
 ~~~
 
-###Motivation for Broadcast & Injection Tests:
+### Motivation for Broadcast & Injection Tests:
 
 As previously discussed, the response of our telescope to transiting sources
 features non-physical temperatures (T > 400 K) around 1225MHz +/- 10 MHz, and
@@ -88,7 +88,7 @@ signals, causing these effects? If this is the case, then by performing a
 frequency sweep across a range of low frequencies, should we  expect to
 reproduce some intermodulation products at a range of frequencies?
 
-###180206 Broadcast Tests: (Antenna --> OMT+Amplifier Chain (on Bench))
+### 180206 Broadcast Tests: (Antenna --> OMT+Amplifier Chain (on Bench))
 
 In order to examine the expected response to these frequency sweep tests, I used
 the spartant signal generator with the log periodic antenna to perform a
@@ -123,7 +123,7 @@ cyan line) over the full 20 minute acquisition. The only difference being the
 number of low pass filters on the output of the signal generator.
 
 **Figure 1: 180206 Indoor Broadcast Frequency Sweep Test (1 x LP Filter):**
-![1LP]('180206_10dBm_Bench_Power_Mixing_FreqSweep_Waterfall.png')
+![1LP](180206_10dBm_Bench_Power_Mixing_FreqSweep_Waterfall.png)
 
 Test 1: Frequency Sweep (25MHz-600MHz, @ 10Bm)
 Broadcast Equipment: Spartant --> LP (~600MHz cutoff) --> Log Periodic Antenna
@@ -148,7 +148,7 @@ point, but a similar feature appears in the following plot at an unrelated sweep
 frequency, and I believe it isn't a response to the frequency sweep test. 
 
 **Figure 2: 180206 Indoor Broadcast Frequency Sweep Test (2 x LP Filter):**
-![2LP]('180206_10dBm_Bench_Power_Mixing_FreqSweep_2LP_Waterfall.png')
+![2LP](180206_10dBm_Bench_Power_Mixing_FreqSweep_2LP_Waterfall.png)
 
 Test 2: Repeat with 2 x LP Filters
 Broadcast Equipment: Spartant --> LP (~600) --> LP (~600) --> Log Periodic Antenna
@@ -167,7 +167,7 @@ to the low frequency is almost negligible. However, in order to test that idea
 further, this must be replicated in the basin, which is exactly what I did
 next. 
 
-###180208 Broadcast Tests in Basin (ROACH data)
+### 180208 Broadcast Tests in Basin (ROACH data)
 
 These tests were conducted on Thursday Feb 8, 2018, in the basin with Paul
 Stankus. Using the spartant signal generator, we performed frequency sweeps
@@ -184,7 +184,7 @@ Vertical OMT Port) and this is the data which appears in the waterfall plots
 below. 
 
 **Figure 3: 180208 Basin Broadcast Frequency Sweep Test (Under Horn @13dBm):**
-![U13]('180208_Basin_Under_Horn_13dBm_Waterfall.png')
+![U13](180208_Basin_Under_Horn_13dBm_Waterfall.png)
 
 Test 1: Broadcast from directly beneath the horn (45deg polarization), a
 frequency sweep from 25MHz to 600MHz @13dBm for a duration of 10 minutes. 
@@ -213,7 +213,7 @@ harmonics from the signal generator. Luckily, we also performed this same test
 with a lower power.
 
 **Figure 4: 180208 Basin Broadcast Frequency Sweep Test (Under Horn @10dBm):**
-![U10]('180208_Basin_Under_Horn_13dBm_Waterfall.png')
+![U10](180208_Basin_Under_Horn_13dBm_Waterfall.png)
 
 Test 2: Broadcast from directly beneath the horn (45deg polarization), a
 frequency sweep from 25MHz to 600MHz @10dBm for a duration of 10 minutes. 
@@ -243,7 +243,7 @@ replicate is explained by a previously documented signal moving forward with the
 celestial sphere.
 
 **Figure 5: 180208 Basin Broadcast Frequency Sweep Test (Behind Horn @10dBm):**
-![B13]('180208_Basin_Behind_Horn_13dBm_Waterfall.png')
+![B13](180208_Basin_Behind_Horn_13dBm_Waterfall.png)
 
 Test 3: Broadcast from behind the horn (45deg polarization) at the rim of the
 basin, performing a frequency sweep from 25MHz to 600MHz @13Bm for a duration of
@@ -263,7 +263,7 @@ see frequency mixing/intermodulation products from our broadcast tests, and the
 faint in band signals we were able to see are likely best explained as harmonics
 from the signal generator.
 
-###180210 Broadcast & Injection Tests in Basin (ROACH data)
+### 180210 Broadcast & Injection Tests in Basin (ROACH data)
 
 A final suggestion was to repeat these tests with a broadcast as well as with a
 direct injection of the frequency sweep into the amplifier chain. I elected to
@@ -279,7 +279,7 @@ polarizations by BMXDAQ for all sweep tests, but to acquire with the ROACH on
 both polarizations, the power divider had to be switched.
 
 **Figure 6: 180210 Basin Injection Frequency Sweep Test XPOL (@13dBm):**
-![INJX]('180210_Freq_Sweep_thru_AmpChain_CH1XPOL_Waterfall.png')
+![INJX](180210_Freq_Sweep_thru_AmpChain_CH1XPOL_Waterfall.png)
 
 This frequency sweep at 13dBm was injected into channel 1 (X-pol, Vertical SMA
 Port). The frequency sweep was also acquired on BMXDAQ for both
@@ -295,7 +295,7 @@ the beginning and end of the test, which occurred when the frequency sweep was
 stopped with the antenna broadcasting at 25MHz. 
 
 **Figure 7: 180210 Basin Injection Frequency Sweep Test YPOL (@13dBm):**
-![INJY]('180210_Freq_Sweep_thru_AmpChain_CH2YPOL_Waterfall.png')
+![INJY](180210_Freq_Sweep_thru_AmpChain_CH2YPOL_Waterfall.png)
 
 This test is the same as the previous test, as shown in figure 6, but the amp
 chain and channel has been switched to the Y-Polarization on channel 2. Again,
@@ -309,14 +309,14 @@ another round of frequency sweep tests. I reconnected the OMT to the Sky, and
 set up the broadcast antenna, with the roach still connected to YPOL.
 
 **Figure 8: 180210 Basin Broadcast Frequency Sweep Test YPOL (@13dBm):**
-![ANTY]('180210_Freq_Sweep_thru_Antenna_CH2YPOL_Waterfall.png')
+![ANTY](180210_Freq_Sweep_thru_Antenna_CH2YPOL_Waterfall.png)
 
 This frequency sweep was broadcast into the horn, the same way as the tests from
 120208. Unfortunately, these results are not consistent with the previous
 broadcast tests! The fundamental is visible, but the in band harmonics are not.
 
 **Figure 8: 180210 Basin Broadcast Frequency Sweep Test XPOL (@13dBm):**
-![ANTX]('180210_Freq_Sweep_thru_Antenna_CH1XPOL_Waterfall.png')
+![ANTX](180210_Freq_Sweep_thru_Antenna_CH1XPOL_Waterfall.png)
 
 The final test was a broadcast through the X-polarization (all cables/amp chains
 configured as they were before the test!). This test also showed the fundamental
