@@ -1,0 +1,41 @@
+## Feb 15, 2018 - Direct Comparison of Bench & Basin RFI Environments
+### Motivation: Too Many Unstable Parameters!
+
+Over the past several weeks, I have attempted to perform frequency sweep tests
+both on the bench and in the basin, and the results have been rather
+inconsistent. The goal was to examine the response of our OMT/Amplifiers/Filters
+to a low frequency sweep at high power, specifically looking for power mixing
+and intermodulation products appearing within the band. 
+
+### Experimental Configuration:
+
+These frequency sweeps were all performed using the Spartant signal generator
+(with 2 Low Pass filters on the RF output, to attenuate high frequency harmonics
+by ~80dB,) locked to the 10MHz signal output by a lab signal generator  which
+also clocked the ROACH FPGA. The frequency sweeps were all performed from 25MHz
+- 600MHz with a 1MHz step, at a power of +13dBm. To keep our system consistent,
+I performed these tests using the amp chain I constructed on the bench, with a
+2.9V supply. The amp chain is arranged as it has been in the past, and is
+identical to the amp chain on the bench:
+
+~~~
+  -------------------------
+  OMT/Terminator/Spartant+2LP
+  -------------------------
+  Band Pass Filter 1
+  LNA 1 	
+  3dB Attenuator
+  LNA 2	
+  Low Pass Filter (VLFX-1350)
+  Stage 3 Amplifier
+  [**When OMT, attach 10dB Attenuator**]
+  _________________________
+  ROACH FPGA
+  -------------------------
+~~~
+
+
+The difference between these tests were
+limited to the  physical location (and hence RFI environment)
+
+
