@@ -3,11 +3,8 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
-<<<<<<< HEAD
 * [Direct Comparison: Intermodulation Tests](postings/20180215_Direct_Comp_Sweeps/index.md) - Feb 15, 2018 (WT)
-=======
 * [Intermodulation is Fringing](postings/20180212_IMFringing/index.md) - Feb 12, 2018 (AS)
->>>>>>> d5706710f20b851c8a8ac51a534557abd941d35b
 * [Intermodulation Tests via Broadcasting](postings/20180210_Intermodulation_Hunting/index.md) - Feb 11, 2018 (WT)
 * [Out of band frequency sweep](postings/20180124_outofband_freqsweep/index.md) - Jan 22, 2018 (CDS)
 * [Observations with ROACH spectrometer](postings/20180122_roach_observations/index.md) - Jan 22, 2018 (CDS)
