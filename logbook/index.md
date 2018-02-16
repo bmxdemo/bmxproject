@@ -3,6 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Fits to galactic HI crossing](postings/20180216_hifit/index.md) - Feb 16, 2018 (CDS)
 * [Direct Comparison: Intermodulation Tests](postings/20180215_Direct_Comp_Sweeps/index.md) - Feb 15, 2018 (WT)
 * [Intermodulation is Fringing](postings/20180212_IMFringing/index.md) - Feb 12, 2018 (AS)
 * [Intermodulation Tests via Broadcasting](postings/20180210_Intermodulation_Hunting/index.md) - Feb 11, 2018 (WT)
