@@ -34,8 +34,55 @@ identical to the amp chain on the bench:
   -------------------------
 ~~~
 
+These tests were first conducted on the bench, and then in the basin. The
+fundamental setup was the same. First, I performed a direct injection of the
+frequency sweep from the signal generator directly into the amp chain. Second, I
+terminated the amp chain and broadcast the frequency sweep through the log
+periodic, looking for direct coupling to the amp chain components. Finally, I
+connected the OMT (from the lab) into the amp chain, and broadcast the frequency
+sweep directly into the OMT.
 
-The difference between these tests were
-limited to the  physical location (and hence RFI environment)
+**Figure 1: 180215 Experimental Configuration in Basin:**
+![setup](IMG-3033.JPG)
 
+The difference between these tests were limited to the physical location (and
+hence RFI environment,) and the receiver. 
+
+### Test Results: Waterfall Plots
+
+**Figure 2: 180215 Bench Injection Test:**
+![BeI](180215_Bench_Injection.png)
+
+**Figure 3: 180215 Bench Terminated Broadcast Test:**
+![BeT](180215_Bench_Terminated_Broadcast.png)
+
+**Figure 4: 180215 Bench OMT Broadcast Test:**
+![BeO](180215_Bench_OMT_Broadcast.png)
+
+**Figure 5: 180215 Basin Injection Test:**
+![BaI](180215_Basin_Injection.png)
+
+**Figure 6: 180215 Basin Terminated Broadcast Test:**
+![BaT](180215_Basin_Terminated_Broadcast.png)
+
+**Figure 7: 180215 Basin OMT Broadcast Test:**
+![BaO](180215_Basin_OMT_Broadcast.png)
+
+### Summary:
+
+~~~
+180215 BENCH INJECTION	—> mild fundamental, in band visible 2nd and 3rd Harmonics (5e7,1e9)
+180215 BENCH TERMINATED	—> Low frequencies: fund, 2nd, 3rd, 4th, 5th harmonics
+			   In Band, no response
+			   High frequencies: power reduction, black lines mirroring low freq
+180215 BENCH OMT	—> Junk at t~0 and t~700 is from me entering and leaving the room
+			   Fundamental and 2nd harmonic in low frequency range
+			   No features evident in band?? (1e9,1e11)
+180215 BASIN INJECTION	—> mild fundamental, in band visible 2nd and 3rd Harmonics (5e7,1e9)
+180215 BASIN TERMINATED	—> Low frequencies: fund, 2nd harmonics
+			   In Band, no response to broadcast signal (1e8,5e9)
+			   High frequencies: very faint black mirror of fund (5e5,1e8)
+180215 BASIN OMT	—> strong fundamental, visible 2nd harmonic below band
+			   In band: visible 1st, 2nd, 3rd, …, 9th? Harmonic visble
+~~~
 
