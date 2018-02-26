@@ -130,6 +130,6 @@ This is modeled as a vector of white noise averaged over 100 iterations where le
 ### 9. What this suggests about the real data
 
 **Comparison to raw spectrum from 2/25/18 at 0800 with notes**
-<img src="TestCaseComparison.png" width="800" height="200">
+<img src="TestCaseComparison.png" width="800" height="700">
 
 
