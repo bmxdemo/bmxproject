@@ -6,11 +6,14 @@
 Outline of code:
 1. Read in the S21 data for Lorch filters (labeled AU1 and AU2)
 2. Model mission sources:
-
 The sky
+
 RFI background
+
 TV stations + harmonics
+
 Cygnus A
+
 Thermal noise (amp chain)
 
 3. Model OMT output signal
