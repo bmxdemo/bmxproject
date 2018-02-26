@@ -60,12 +60,12 @@ Set consant at 100Jy (guess, starting point)
 
 6 TV stations + harmonics were modeled as 7MHz FWHM gaussians. From POC the stations are:
 
-524.328MHz: -61dbm [= 7.94e16 Jy]
-615.99MHz: -83dbm [= 5.012e14 Jy]
-671.67MHz: -75dbm [= 3.2e15 Jy]
-770.01MHz: -81dbm [= 7.943e14 Jy]
-867.73MHz: -85dbm [= 3.162e14 Jy]
-1.00GHz: -83dbm [= 5.012e14 Jy]
+   * 524.328MHz: -61dbm [= 7.94e16 Jy]
+   * 615.99MHz: -83dbm [= 5.012e14 Jy]
+   * 671.67MHz: -75dbm [= 3.2e15 Jy]
+   * 770.01MHz: -81dbm [= 7.943e14 Jy]
+   * 867.73MHz: -85dbm [= 3.162e14 Jy]
+   * 1.00GHz: -83dbm [= 5.012e14 Jy]
 
 Wasn't sure what to use for the power spillover into the harmonics. By experimentation I found a law that makes the output look like some of the RFI in our actual spectrometer output: The harmonics all get I/n^50, where I is the intensity of the fundamental and n is the harmonic number. 4 harmonics are modeled for each station.
 
