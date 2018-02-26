@@ -16,7 +16,8 @@ Outline of code:
 5. Model amp chain output signal
 6. Model output filter output signal
 7. Model aliasing
-8. Results (simulated spectrometer output) for various test cases, compare with data browser data
+8. Results (simulated spectrometer output) for various test cases
+9. What this suggests about the real data
 
 ### 1. Read in the S21 data for Lorch filters from VNA
 
@@ -126,8 +127,9 @@ This is modeled as a vector of white noise averaged over 100 iterations where le
 **Simulated spectrometer output: NO Cygnus A, input filter = Lorch AU1, output filter = Lorch AU2, Nyquist zones 6 and 7 SUPPRESSED**
 <img src="SpectOut_NoSource.png" width="800" height="200">
 
+### 9. What this suggests about the real data
 
-
-
+**Comparison to raw spectrum from 2/25/18 at 0800 with notes**
+<img src="SpectOut_NoSource.png" width="800" height="200">
 
 
