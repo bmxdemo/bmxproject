@@ -111,6 +111,23 @@ This is modeled as a vector of white noise averaged over 100 iterations where le
 
 ### 8. Sum of Nyquist zones (simulated spectrometer output) for different test cases
 
+**Simulated spectrometer output: WITH Cygnus A, input filter=Lorch AU1, output filter = Lorch AU2**
+<img src="SpectOut_CygA.png" width="800" height="200">
+
+**Simulated spectrometer output: NO Cygnus A, input filter = Lorch AU1, output filter = Lorch AU2**
+<img src="SpectOut_NoSource.png" width="800" height="200">
+
+**Simulated spectrometer output: NO Cygnus A, input AND output filter = Lorch AU1**
+<img src="SpectOut_NoSource_2xAU1.png" width="800" height="200">
+
+**Simulated spectrometer output: NO Cygnus A, input AND output filter = Lorch AU2**
+<img src="SpectOut_NoSource_2xAU2.png" width="800" height="200">
+
+**Simulated spectrometer output: NO Cygnus A, input filter = Lorch AU1, output filter = Lorch AU2, Nyquist zones 6 and 7 SUPPRESSED**
+<img src="SpectOut_NoSource.png" width="800" height="200">
+
+
+
 
 
 
