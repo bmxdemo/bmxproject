@@ -18,12 +18,6 @@ Outline of code:
 7. Model aliasing
 8. Results (simulated spectrometer output) for various test cases, compare with data browser data
 
-
-    -The sky: constant @ 9K.[16Jy]
-  -RFI background: consant at 100Jy
-  -6 TV stations + harmonics: gaussians at 524.328MHz
-
-
 ### 1. Read in the S21 data for Lorch filters (labeled AU1 and AU2)
 
 **Lorch filter "AU1" passband (dB):**
@@ -40,3 +34,11 @@ Outline of code:
 
 
 ### 2. Model emission sources
+
+Cygnus A: Refer to this spectrum: http://www.cv.nrao.edu/course/astr534/images/CygAspectrum.gif 
+
+Considering the Lorch passband starts at 1GHz I approximate the emssion with a line. It goes from 2200Jy [= 2.2e-13mW] at 1GHz to 470Jy [= 4.7e-14mW] at 4GHz. My freuqncy axesSo 1730Jy/3000000KHz = -.000577Jy/KHz. Y intercept is 2777Jy [= 2.77e-13mW]
+
+-The sky: constant @ 9K.[16Jy]
+  -RFI background: consant at 100Jy
+  -6 TV stations + harmonics: gaussians at 524.328MHz
