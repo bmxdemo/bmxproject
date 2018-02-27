@@ -67,7 +67,7 @@ Set consant at 100Jy (guess, starting point)
    * 867.73MHz: -85dbm [= 3.162e14 Jy]
    * 1.00GHz: -83dbm [= 5.012e14 Jy]
 
-Wasn't sure what to use for the power spillover into the harmonics. By experimentation I found a law that makes the output look like some of the RFI in our actual spectrometer output: The harmonics scale with I/n^50, where I is the intensity of the fundamental and n is the harmonic number. 4 harmonics are modeled for each station.
+Wasn't sure how to model the intensity of the harmonics. I started with a 1/n^x relation and by experimentation came to I/n^50, where I is the intensity of the fundamental and n is the harmonic number. It seems a reasonable starting point but one TV station in the final output is definitely too bright. 4 harmonics are modeled for each station.
 
 **TV stations (only the fundamentals are visible at this scaling):**
 <img src="TVStations_Jy.png" width="800" height="200">
