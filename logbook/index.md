@@ -3,6 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Interferometry Configuration](postings/20180227_Interferometry/index.md) - Feb 27, 2018 (WT)
 * [Modeling the spectrum](postings/20180226_Spectrometer_Modeling/index.md) - Feb 26, 2018 (JH)
 * [Fits to galactic HI crossing](postings/20180216_hifit/index.md) - Feb 16, 2018 (CDS)
 * [Direct Comparison: Intermodulation Tests](postings/20180215_Direct_Comp_Sweeps/index.md) - Feb 15, 2018 (WT)
