@@ -6,7 +6,7 @@
 Outline of code:
 1. Read in the S21 data for Lorch filters (labeled AU1 and AU2)
 2. Model emission sources:
-  * Sky 
+   * Sky 
    * RFI background
    * TV stations + harmonics
    * Cygnus A
@@ -17,12 +17,12 @@ Outline of code:
 5. Model amp chain output signal
 6. Model output filter output signal
 7. Model aliasing
-8. Results (simulated spectrometer output) for various test cases
+8. Results (simulated spectrometer output) for a few test cases
 9. Conclusion
 
 ### 1. Read in the S21 data for Lorch filters from VNA
 
-The VNA scan was taken from 20kHz to 4.8GHz (20 - 4800000kHz)). These scans are taken as the bandpass function further down the model. The dataset contains 10008 points. A 10008 element vector ranging from 20 to 4800000 provides a frequency axis.
+The [VNA scan](postings/20170327_LorchFilterMeasurements/index.md) was taken from 20kHz to 4.8GHz (20 - 4800000kHz)). These scans are taken as the bandpass function further down the model. The dataset contains 10008 points. A 10008 element vector ranging from 20 to 4800000 provides a frequency axis.
 
 **Lorch filter "AU1" passband (dB):**
 <img src="AU1Passband_dB.png" width="800" height="200">
@@ -41,16 +41,16 @@ The VNA scan was taken from 20kHz to 4.8GHz (20 - 4800000kHz)). These scans are 
 
 ## Cygnus A
 
-Refer to this spectrum: http://www.cv.nrao.edu/course/astr534/images/CygAspectrum.gif 
+Referring to this spectrum: http://www.cv.nrao.edu/course/astr534/images/CygAspectrum.gif 
 
-Considering the Lorch passband starts at 1GHz I approximate the emssion with a line. It goes from 2200Jy [= 2.2e-13mW] at 1GHz to 470Jy [= 4.7e-14mW] at 4GHz. With the frequency axis in KHz I have 1730Jy/3000000KHz = -.000577Jy/KHz. Y intercept is 2777Jy [= 2.77e-13mW], so the crude "synchrotron" line looks like:
+Considering the Lorch passband starts at 1GHz I approximate the emission with a line. It goes from 2200Jy [= 2.2e-13mW] at 1GHz to 470Jy [= 4.7e-14mW] at 4GHz. With the frequency axis in KHz I have 1730Jy/3000000KHz = -.000577Jy/KHz. Y intercept is 2777Jy [= 2.77e-13mW], so the crude "synchrotron" line looks like:
 
 **Cygnus A emission model (Jy):**
 <img src="CygAEmissionModel.png" width="800" height="200">
 
 ## Sky
 
-Set constant with frequency @ 9K.[16Jy] (assumed lambda=21cm and .5deg beamwidth using https://science.nrao.edu/facilities/vla/proposing/TBconv.)
+Set constant over frequency @ 9K.[16Jy] (assumed lambda=21cm and .5deg beamwidth using https://science.nrao.edu/facilities/vla/proposing/TBconv.)
 
 ## RFI Background hum
 
@@ -67,7 +67,7 @@ Set consant at 100Jy (guess, starting point)
    * 867.73MHz: -85dbm [= 3.162e14 Jy]
    * 1.00GHz: -83dbm [= 5.012e14 Jy]
 
-Wasn't sure what to use for the power spillover into the harmonics. By experimentation I found a law that makes the output look like some of the RFI in our actual spectrometer output: The harmonics all get I/n^50, where I is the intensity of the fundamental and n is the harmonic number. 4 harmonics are modeled for each station.
+Wasn't sure what to use for the power spillover into the harmonics. By experimentation I found a law that makes the output look like some of the RFI in our actual spectrometer output: The harmonics scale with I/n^50, where I is the intensity of the fundamental and n is the harmonic number. 4 harmonics are modeled for each station.
 
 **TV stations (only the fundamentals are visible at this scaling):**
 <img src="TVStations_Jy.png" width="800" height="200">
@@ -132,15 +132,14 @@ This is modeled as a vector of white noise averaged over 100 iterations where le
 
 What does this suggest about the spectrometer output we're seeing?
    * The wavy character of the spectrum is a direct result of the filter passband shape (as measured in this [previous posting](postings/20170327_LorchFilterMeasurements/index.md)
-   * There should be noticiable variation in this structure from one Lorch filter to the other
+   * There should be noticeable variation in this structure from one Lorch filter to the other
    * Some minor features of the spectrum are being aliased from the the Lorch filters' ~4GHz passband
-   * Clearly the strange frequency binning of a source passing is not reproduced. 
+   * Clearly the strange frequency binning of a source passing is not reproduced.
+   * If intermodulation is at play the wavy passband is likely complicating it.
 
 **Comparison to raw spectrum from 2/25/18 at 0800 with notes**
 <img src="TestCaseComparison.png" width="800" height="600">
 
 Possible additional work:
   * Improve the interaction in the amp chain (section 5) by simulating intermodulation 
-  * Replace guesswork w.r.t. source intensities (RFI background, thermal noise), and replace linear approximation of synchrotron emission with actual synchrotron function (bessel functions were too much work for this pass)
-  
-  
+  * Replace guesswork w.r.t. source intensities (RFI background, thermal noise), and replace linear approximation of synchrotron emission with actual synchrotron function (Bessel functions were too much work for this pass)
