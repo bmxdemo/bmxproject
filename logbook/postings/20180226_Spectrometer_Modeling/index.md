@@ -39,7 +39,7 @@ The [VNA scan](postings/20170327_LorchFilterMeasurements/index.md) was taken fro
 
 ### 2. Model emission sources
 
-## Cygnus A
+#### Cygnus A
 
 Referring to this spectrum: http://www.cv.nrao.edu/course/astr534/images/CygAspectrum.gif 
 
@@ -48,15 +48,15 @@ Considering the Lorch passband starts at 1GHz I approximate the emission with a 
 **Cygnus A emission model (Jy):**
 <img src="CygAEmissionModel.png" width="800" height="200">
 
-## Sky
+#### Sky
 
 Set constant over frequency @ 9K.[16Jy] (assumed lambda=21cm and .5deg beamwidth using https://science.nrao.edu/facilities/vla/proposing/TBconv.)
 
-## RFI Background hum
+#### RFI Background hum
 
 Set consant at 100Jy (guess, starting point)
 
-## TV Stations
+#### TV Stations
 
 6 TV stations + harmonics were modeled as 7MHz FWHM gaussians. From POC the stations are:
 
@@ -72,7 +72,7 @@ Wasn't sure how to model the intensity of the harmonics. I started with a 1/n^x 
 **TV stations (only the fundamentals are visible at this scaling):**
 <img src="TVStations_Jy.png" width="800" height="200">
 
-## Thermal noise within amplifier chain
+#### Thermal noise within amplifier chain
 
 This is modeled as a vector of white noise averaged over 100 iterations where length = frequency vector length (10008 elements) from 20KHz to 4.8GHz. The 0-1 random numbers are scaled to 20 Jy (wild guess, starting point).
 
