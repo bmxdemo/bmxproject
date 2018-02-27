@@ -5,7 +5,8 @@
 
 Outline of code:
 1. Read in the S21 data for Lorch filters (labeled AU1 and AU2)
-2. Model emission sources:  * Sky 
+2. Model emission sources:
+  * Sky 
    * RFI background
    * TV stations + harmonics
    * Cygnus A
