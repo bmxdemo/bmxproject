@@ -131,7 +131,7 @@ This is modeled as a vector of white noise averaged over 100 iterations where le
 ### 9. Conclusion
 
 What does this suggest about the spectrometer output we're seeing?
-   * The wavy character of the spectrum is a direct result of the filter passband shape (as measured in this [previous posting](postings/20170327_LorchFilterMeasurements/index.md)
+   * The wavy character of the spectrum is a direct result of the filter passband shape (as measured in this [previous posting](postings/20170327_LorchFilterMeasurements/index.md))
    * There should be noticeable variation in this structure from one Lorch filter to the other
    * Some minor features of the spectrum are being aliased from the the Lorch filters' ~4GHz passband
    * Clearly the strange frequency binning of a source passing is not reproduced.
