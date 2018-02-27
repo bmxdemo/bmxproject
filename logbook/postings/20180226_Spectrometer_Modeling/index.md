@@ -6,11 +6,11 @@
 Outline of code:
 1. Read in the S21 data for Lorch filters (labeled AU1 and AU2)
 2. Model mission sources:
-    * The sky
-    * RFI background
-    * TV stations + harmonics
-    * Cygnus A
-    * Thermal noise (amp chain)
+   * The sky
+   * RFI background
+   * TV stations + harmonics
+   * Cygnus A
+   * Thermal noise (amp chain)
 
 3. Model OMT output signal
 4. Model input filter output signal
@@ -18,7 +18,7 @@ Outline of code:
 6. Model output filter output signal
 7. Model aliasing
 8. Results (simulated spectrometer output) for various test cases
-9. What this suggests about the real data
+9. Conclusion
 
 ### 1. Read in the S21 data for Lorch filters from VNA
 
@@ -78,13 +78,13 @@ This is modeled as a vector of white noise averaged over 100 iterations where le
 
 ### 3. Model output from OMT by summing the modeled emission for Cygnus A, the sky, the RFI background, and the TV stations
 
-### 4. Multiply the above by the input filter passband 
+### 4. Model output from input filter by multiplying the above by the input filter passband 
 
-### 5. Add thermal noise to the above
+### 5. Model the output from the amplifier chain by add thermal noise to the above (no intermod yet)
 
-### 6. Multiply the above by the output filter passband
+### 6. Model the output from the output filter by multiplying the above by the output filter passband
 
-### 7. Divde the complete dataset into component Nyquist zones
+### 7. Model the spectrometer output by divde the complete dataset into component Nyquist zones and summing:
 
 **Nyq. 1 = 0-550MHz:**
 <img src="NoSource_Nyq1.png" width="800" height="200">
@@ -125,12 +125,22 @@ This is modeled as a vector of white noise averaged over 100 iterations where le
 **Simulated spectrometer output: NO Cygnus A, input AND output filter = Lorch AU2**
 <img src="SpectOut_NoSource_2xAU2.png" width="800" height="200">
 
-**Simulated spectrometer output: NO Cygnus A, input filter = Lorch AU1, output filter = Lorch AU2, Nyquist zones 6 and 7 SUPPRESSED**
+**Simulated spectrometer output: NO Cygnus A, input filter = Lorch AU1, output filter = Lorch AU2, Nyquist zones 6 and 7 suppressed**
 <img src="SpectOut_NoSource.png" width="800" height="200">
 
-### 9. What this suggests about the real data
+### 9. Conclusion
+
+What does this suggest about the spectrometer output we're seeing?
+   * The wavy character of the spectrum is a direct result of the filter passband shape (as measured in this [previous posting](postings/20170327_LorchFilterMeasurements/index.md)
+   * There should be noticiable variation in this structure from one Lorch filter to the other
+   * Some minor features of the spectrum are being aliased from the the Lorch filters' ~4GHz passband
+   * Clearly the strange frequency binning of a source passing is not reproduced. 
 
 **Comparison to raw spectrum from 2/25/18 at 0800 with notes**
 <img src="TestCaseComparison.png" width="800" height="600">
 
-
+Possible additional work:
+  * Improve the interaction in the amp chain (section 5) by simulating intermodulation 
+  * Replace guesswork w.r.t. source intensities (RFI background, thermal noise), and replace linear approximation of synchrotron emission with actual synchrotron function (bessel functions were too much work for this pass)
+  
+  
