@@ -17,6 +17,7 @@ t0 auto/cross [s] : 1616.71 1609.5
 sigma auto/cross [s] auto/cross [deg] : 245.86 268.322 0.78475 0.856445
 phi: 2.79548 
 omega omega_t ratio: 0.0212665 0.00617375 3.44466 /s 
+
 fmin / fmax : 1215.01 1239.72 
 fce : 1227.29 
 t0 auto/cross [s] : 1607.03 1597.84
@@ -26,7 +27,14 @@ omega omega_t ratio: 0.0219562 0.00644377 3.40736 /s
 
 ```
 
+A few things to note: FWHM for the sigma above is 1.83 degrees, almost
+half the expected size for our nominal wavelengths. This is sigma for
+auto, when fitting for cross we multiplied it by sqrt(2) so that
+agreement is actually pretty good. The fringe rate is too fast and
+seemingly so by a factor >2. Assumed baseline length here was 4.5m.
+
 Here are the results for N-S baseline on `180227_1800`:
+
 ```
 fmin / fmax : 1167.07 1184.8 
 fce : 1175.87 
@@ -43,7 +51,9 @@ phi: -2.93219
 omega omega_t ratio: 0.00143263 0.00644377 0.222328 /s 
 ```
 
-And here are the corresponding plots for auto and cross on both days
+
+
+Below are the corresponding plots with data and fits for auto and cross on both days
 
 `180214_1900`:
 
@@ -59,3 +69,5 @@ And here are the corresponding plots for auto and cross on both days
 ![cr](./cn1_cross.png)
 ![cr](./cn2_auto.png)
 ![cr](./cn2_cross.png)
+
+
