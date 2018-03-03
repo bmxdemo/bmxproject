@@ -22,7 +22,7 @@ Pulse modulated with period of 500 ms and duty factor of 1\
 I then locate the position of the rising edges for both cards and compare. I ran DAQ in this way 1000 times, and plotted the results.
 
 
-![trace](Hist_delays_122_ms.png)
+![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_Delays_122_ms.png)
 
 mean: -7.64221984374
 std: 7.37008751626
