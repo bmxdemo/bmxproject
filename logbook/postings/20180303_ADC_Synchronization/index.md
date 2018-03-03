@@ -1,5 +1,5 @@
 ## ADC Synchronization
-Hindy Drillick
+Hindy Drillick\
 March 2, 2018
 
 
@@ -30,3 +30,5 @@ max: 19.894790909 ms
 
 To check that I am actually detecting the beginning edge of each pulse, I also plotted the time delay between subsequent pulses for each card. 
 
+
+### Test 2 - Buffer size: 2^23 samples (7.62 ms)
