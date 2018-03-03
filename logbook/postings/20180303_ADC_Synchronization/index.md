@@ -1,0 +1,30 @@
+### ADC Synchronization
+Hindy Drillick
+March 2, 2018
+
+
+Palantir2 can currently handle data acquisition for four channels, using two digitizer cards. 
+We want to measure the delay in the signal between the two cards, as the cards might not start at the exact same time. 
+To test this, I sent the same pulse modulated signal to both cards. I then checked the raw digitizer output and
+compared the positions of the pulse edges for both cards.
+
+## Test 1 - Buffer size: 2^27 samples (122 ms)
+The buffer size here refers to the number of samples per FFT. The data is received from the digitizer in chunks of that size.
+To perform the the synchronization test, DAQ is run for 10 of these chunks - 1.22 s, and the raw digitizer data is dunped to a file (before
+taking its FFT or doing any kind of data reduction). The signal was sent to the second channel on each card. 
+
+Signal information:\
+Frequency: 1 MHz \
+Amplitude: 0 dBm\
+Pulse modulated with period of 500 ms and duty factor of 1\
+
+
+I then locate the position of the rising edges for both cards and compare. I ran DAQ in this way 1000 times, and plotted the results.
+
+
+![trace](Hist_delays_122_ms.png)
+
+mean: -7.64221984374
+std: 7.37008751626
+min: -27.001950909
+max: 19.894790909
