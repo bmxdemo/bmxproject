@@ -15,18 +15,20 @@ taking its FFT or doing any kind of data reduction). The signal was sent to the 
 
 Signal information:\
 Frequency: 1 MHz \
-Amplitude: 0 dBm\
+Amplitude: -6 dBm\
 Pulse modulated with period of 500 ms and duty factor of 1
 
 I then locate the positions of the rising edges for both cards and subtract to get the delay. I ran DAQ in this way 1000 times, and plotted the results.
 
-Histogram of delays between the cards: (Although the pulse appears 2-3 times per 1.22 s trial, I only plotted one of the delays)
+Histogram of delays between the cards: 
+(Although the pulse appears 2-3 times per 1.22 s trial, I only plotted one of the delays)
+
 ![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_delays_122_ms_0305.png)
 
 mean: -6.20161839239 ms \
 std: 6.91247066538 \
 min: -24.046652728 ms\
-max: 18.9160409091 \
+max: 18.9160409091 
 
 To check that I am actually detecting the beginning edge of each pulse, I also plotted the time delay between subsequent pulses for each card. 
 
