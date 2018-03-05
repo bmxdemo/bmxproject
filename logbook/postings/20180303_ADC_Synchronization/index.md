@@ -18,7 +18,7 @@ Frequency: 1 MHz \
 Amplitude: -6 dBm\
 Pulse modulated with period of 500 ms and duty factor of 1
 
-I then locate the positions of the rising edges for both cards and subtract to get the delay. I ran DAQ in this way 1000 times, and plotted the results.
+I then locate the positions of the rising edges for both cards and subtract to get the delay. I ran DAQ in this way 1000 times, and plotted the results. 
 
 Histogram of delays between the cards: 
 (Although the pulse appears 2-3 times per 1.22 s trial, I only plotted one of the delays)
@@ -32,20 +32,47 @@ max: 18.9160409091
 
 To check that I am actually detecting the beginning edge of each pulse, I also plotted the time delay between subsequent pulses for each card. 
 
-![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_peak_dist_card1_127_ms_0305.png)
+![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_peak_dist_card1_122_ms_0305.png)
 
 mean: 496.428267745 ms\
 std: 49.3797379964 \
 min: 11.93553 ms \
 max: 511.935527273 ms
 
-![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_peak_dist_card2_127_ms_0305.png)
+![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_peak_dist_card2_122_ms_0305.png)
 
 mean: 499.994508796 ms\
 std: 0.485631669499 \
 min: 495.048052727 ms\
 max: 511.935526364 ms
 
-The outliers are all either 511 or 11 ms, leading me to belive there may be some bug in the way I was detecting the edges, which I will try to fix. Aside from those outliers, the other values are all within 10^-3 ms of 500 ms.
+The outliers are all either 511 or 11 ms, leading me to belive there may be some bug in the way I was detecting the edges, which I will try to fix. Aside from those outliers, the other values are all within 10^-3 ms of 500 ms. 
 
 ### Test 2 - Buffer size: 2^23 samples (7.62 ms)
+This is the same test as above with the only differences being a smaller buffer size.
+
+Histogram of delays between the cards: 
+(Although the pulse appears 2-3 times per 1.22 s trial, I only plotted one of the delays)
+
+![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_delays_7_ms_0305.png)
+
+mean: -8.26455389065 ms\
+std: 5.46180647921 \
+min: -20.005491818 ms\
+max: 13.986045454 ms 
+
+To check that I am actually detecting the beginning edge of each pulse, I also plotted the time delay between subsequent pulses for each card. 
+
+![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_peak_dist_card1_7_ms_0305.png)
+
+mean: 499.319101873 ms\
+std: 4.53549959434 \
+min: 466.585023637 ms\
+max: 499.999997276 ms
+
+![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_peak_dist_card2_7_ms_0305.png)
+
+mean: 499.863178255 ms\
+std: 2.03467239052 \
+min: 464.531023637 ms\
+max: 499.999997273 ms
