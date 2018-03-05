@@ -61,7 +61,7 @@ std: 5.46180647921 \
 min: -20.005491818 ms\
 max: 13.986045454 ms 
 
-To check that I am actually detecting the beginning edge of each pulse, I also plotted the time delay between subsequent pulses for each card. 
+Delays between subsequent pulses:
 
 ![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_peak_dist_card1_7_ms_0305.png)
 
