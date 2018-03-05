@@ -21,7 +21,7 @@ Pulse modulated with period of 500 ms and duty factor of 1
 I then locate the positions of the rising edges for both cards and subtract to get the delay. I ran DAQ in this way 1000 times, and plotted the results.
 
 Histogram of delays between the cards: (Although the pulse appears 2-3 times per 1.22 s trial, I only plotted one of the delays)
-![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_Delays_122_ms_0305.png)
+![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_delays_122_ms_0305.png)
 
 mean: -6.20161839239 ms \
 std: 6.91247066538 \
@@ -30,14 +30,14 @@ max: 18.9160409091 \
 
 To check that I am actually detecting the beginning edge of each pulse, I also plotted the time delay between subsequent pulses for each card. 
 
-![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_peak_dist__card1_122_ms_0305.png)
+![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_peak_dist_card1_127_ms_0305.png)
 
 mean: 496.428267745 ms\
 std: 49.3797379964 \
 min: 11.93553 ms \
 max: 511.935527273 ms
 
-![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_peak_dist__card2_122_ms_0305.png)
+![Image](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20180303_ADC_Synchronization/Hist_peak_dist_card2_127_ms_0305.png)
 
 mean: 499.994508796 ms\
 std: 0.485631669499 \
