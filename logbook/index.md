@@ -3,6 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Satellite SEDs](postings/20180319_satsed/index.md) - Mar 19, 2018 (CDS)
 * [Fringe fitting](postings/20180301_fringefit/index.md) - Mar 1, 2018 (AS)
 * [Interferometry Configuration](postings/20180227_Interferometry/index.md) - Feb 27, 2018 (WT)
 * [Modeling the spectrum](postings/20180226_Spectrometer_Modeling/index.md) - Feb 26, 2018 (JH)
