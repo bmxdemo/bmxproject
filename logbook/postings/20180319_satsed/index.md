@@ -32,7 +32,7 @@ tag containing the event.) Unlike the calibrated plots in the data browser,
 which sometimes flags satellites, I don't do any masking. **Figure 1** shows the
 results. 
 
-**Figure 2: Every blobby transit in 24 hours **
+**Figure 2: Every blobby transit in 24 hours**
 
 ![](satsed.png)
 
