@@ -3,6 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Coupled Port Problems](20180330_Coupled_Port_Issues/index.md) - Apr 2, 2018 (WT)
 * [Configuration Changes](postings/20180320_Amplification_Hardware_Updates/index.md) - Mar 22, 2018 (WT)
 * [Satellite SEDs](postings/20180319_satsed/index.md) - Mar 19, 2018 (CDS)
 * [Fringe fitting](postings/20180301_fringefit/index.md) - Mar 1, 2018 (AS)
