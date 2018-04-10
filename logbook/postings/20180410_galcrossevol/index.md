@@ -20,7 +20,7 @@ comparable shift in the GPS satellite center frequency, though it would probably
 be very difficult to tell from this plot
 
 **Figure 1: Galaxy crossing and GPS satellite movie**
-![](GPSanimated.gif)
+![](GPSgalcrossanimated.gif)
 
 *** 3 - Plot over time
 
