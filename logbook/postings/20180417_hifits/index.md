@@ -52,6 +52,9 @@ simultaneous to all the frequency bins shown. The x axis is time index, but the
 data are binned such that each time index is a delta RA of 1 degree.
 
 
+**Figure 1: Best fit to 171201 crossing**
+![](hifit_171201.png)
+
 Figure 2 shows the best fit if I do not fit a constant offset and linear drift
 term. The fit is still quite good, and the fit parameters do not change too
 much. 
