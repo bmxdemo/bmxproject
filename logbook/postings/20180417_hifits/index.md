@@ -57,7 +57,9 @@ data are binned such that each time index is a delta RA of 1 degree.
 
 Figure 2 shows the best fit if I do not fit a constant offset and linear drift
 term. The fit is still quite good, and the fit parameters do not change too
-much. 
+much. The has in the model curve in the lowest bin is a result of the velocity correction 
+changing and the template moving to including/dropping next HI4PI bin. I could interpolate
+to make this smooth, but I actually like seeing it. And it does not seem to affect the fit.
 
 **Figure 2: Best fit to 171201 crossing with no constant/linear terms**
 ![](hifit_nolinearterm_171201.png)
