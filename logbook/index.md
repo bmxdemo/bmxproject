@@ -3,6 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Polyphase filterbank vs large FFT responses / optimality](postings/20180422_PFBtheory/index.md) - Apr 22, 2018 (AS)
 * [S21 Amp Chains, New Y-Pol Amps](postings/20180410_New_Amps_S21/index.md) - Apr 18, 2018 (WT)
 * [Galactic HI fits with velocity corrections](postings/20180417_hifits/index.md) - Apr 17, 2018 (CDS)
 * [CPM filtering](postings/20180410_cpm/index.md) - Apr 10, 2018 (CDS)
