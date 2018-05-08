@@ -1,0 +1,274 @@
+This .txt file which will contain changes to the BMX configuration:
+
+170801	  BMX Demonstrator is operating in the basin with LargeDishPetals
+	  CH1: OMT -> low-loss -> LNA1 -> LNA2 -> LP -> Amp3 -> BP
+	  CH2: OMT -> low-loss -> LNA1 -> LNA2 -> LP -> Amp3 -> BP
+
+170830	  Basin tests indicate high RFI environment, desire filtration up-front
+
+170831	  BMX Demonstrator is operating in the basin with Unjoined Dish
+	  CH2: Sky -> LNA -> BP -> LNA -> Low Pass -> AMP3 -> BP -> Spectrometer
+
+170907	  BMX Demonstrator is operating in the basin with Joined Dish
+	  Calibrated spectra before/after joining dish show improvement
+	  CH2: Sky -> LNA -> BP -> LNA -> Low Pass -> AMP3 -> BP -> Spectrometer
+
+170920	  BMX Demonstrator is operating in the basin with Joined Dish
+	  Addition of noise diode and thermistor on OMT calibration port
+	  S21 Measurements for cal port indicate -25 dB coupling
+	  Noise diode was emitting very high power, despite this coupling
+
+171002	  Comparison to weather reports suggest thermistor working properly
+
+171004	  First 'discovery' of state changes: Noise diode pulse height changing abruptly 
+
+171009	  BMX Demonstrator is operating in the basin with Joined Dish
+	  To reduce state changes, we insert padding (3dB atten) into amp chain
+	  To exclude possible RFI, put filter in front of first amp:
+	  CH2: Noise Diode on cal port with/without 10dB attenuator
+	  CH2: OMT+Horn -> low-loss -> BP -> LNA1 -> 3dB -> LNA2 -> LP -> Amp3 -> BP
+	  CH1: Terminator -> LNA -> LNA -> LP -> Amp3
+
+171012	  Noise Diode is not properly functioning, occasionally disappears
+	  Removal of 10dB attenuator improved diode performance
+	  pulse height of diode varies as expected with different atten. values
+	  Likely due to coupling problem with calport? (WT 180424)
+	  Found that restarting daq could change background power level
+	  6:30PM - run daq with 1000 samples (2 minute acquisitions?)
+
+171016	  Running data acquisition looking @ terminator through 30dB coupler
+	  CH2: term -> 30dBCoupler(+NoiseDiode) -> low-loss -> BP -> LNA1 -> 3dB -> LNA2 -> LP -> Amp3 -> BP
+	  CH1: Terminator -> LNA -> LNA -> LP -> Amp3
+
+171020	  Suspecting the digitizer as the source of background fluctuation, we switch channels
+	  CH1: term -> 30dBCoupler(+NoiseDiode) -> low-loss -> BP -> LNA1 -> 3dB -> LNA2 -> LP -> Amp3 -> BP
+	  CH2: Terminator -> LNA -> LNA -> LP -> Amp3
+	  This revealed that CH2 has faulty background level that is inconsistent?
+
+171027	  BMX is now back on sky
+	  CH1 = YPOL at this time!
+	  CH1: OMT -> low-loss ->  30dBCoupler(+ND) -> low-loss -> BP -> LNA1 -> 3dB -> LNA2 -> LP -> Amp3 -> BP
+	  Digitizer ports are damaged at this time
+
+171101	  Damaged ports are 'fixed' and we return to observations on sky
+	  Improper cable connection at the PC makes data from this period useless
+
+171106	  BMX is back online after previous cable connection issues
+	  Added 3dB attenuator at digitizer card port to minimize connections at PC
+	  CH1: YPOL: OMT+Horn -> low-loss -> Coupler+Diode -> low-loss ->
+	  BP -> LNA1 -> 3dB -> LNA2 -> LP -> Amp3 -> 3ft Cable -> BP -> Data Cable -> 3dB Atten
+	  Data acquired at this time shows expected power level with added 3dB attenuator
+	  State changes (normal vs wiggly state) appear here
+	  These state changes are not like those seen previously
+	  Stable diode pulse height (30dB coupler in use at this time)
+
+171117	  Probing the system in the wiggly and normal state shows same terminated spectrum
+	  Noticed slow change from normal to wiggly behavior in CH1 data
+
+171119	  BMX Demonstrator is now operating in the regulated PC enclosure
+
+171207	  Weird response to transiting sources is first noted
+	  We know now that they are satellites, but many tests were made...
+
+180119	  Listing of experimental configuration with power meter measurements:
+	  Channel 1, Ypol shown below:
+	  bench tests indicate we are operating at safe levels for amps
+	  OMT -> low-loss -> 30dBcoupler(+ND) -> low-loss -> BP -> LNA1 -> 3db -> LNA2 -> LP -> Amp3 -> BP
+
+180206	  Arrival of new Lorch Band Pass Filters --> can run both chans simultaneously
+
+180210	  In order to hunt for RFI intermodulation, we use ROACH and BMXDAQ
+	  Both channels are operational in the following configuration:
+
+Chan1/XPol/VerticalOMTPort:
+
+  -------------------------
+  Sky
+  OMT+HORN
+  -------------------------
+  Low Loss Cable 1 
+  30dB Coupler + Noise Diode
+  Low Loss Cable 2
+  Band Pass Filter 1 
+  LNA 1 	
+  3dB Attenuator
+  LNA 2		
+  Low Pass Filter (VLFX-1350)
+  Stage 3 Amplifier
+  36in Data Cable
+  SMA Output Port
+  _________________________
+  Band Pass Filter 2
+  156in Data Cable
+  -------------------------
+  Power Divider (Splits 50%/50%)
+  50% --> Terminator / Roach Board
+  50% --> Channel 1 on Digitizer Card
+
+Chan2/YPol/HorizontalOMTPort:
+  -------------------------
+  Sky
+  OMT+HORN
+  -------------------------
+  Low Loss Cable 1 
+  30dB Coupler + Terminator
+  Band Pass Filter 1
+  Low Loss Cable 2
+  LNA 1 	
+  3dB Attenuator
+  LNA 2	
+  Low Pass Filter (VLFX-1350)
+  Stage 3 Amplifier
+  36in Data Cable
+  SMA Output Port
+  _________________________
+  Band Pass Filter 2
+  156in Data Cable
+  -------------------------
+
+180210	While in this configuration, many broadcast tests were performed
+	These tests indicated that there is minimal intermodulation products
+
+180227	BMX is briefly used as an interferometer: NS Baseline Configuration
+	CH1: XPol on OMT imaging the dish, in present location (North)
+	CH2: Log-Periodic Antenna in XPol, placed 222in (South)
+	Both amp chains have 2 BP filters in front of first amplifier
+	At some point, we switched to EW configuration by moving Log-Periodic
+
+180308	Satellite Revelation
+
+180314	End of Interferometric configuration tests, return to both OMT ports
+	Two noise diodes now connected to coupled OMT ports!
+	No more 30dB Coupler and 1 low-loss cable on both channels
+
+Channel 1 - X-pol - Vetical
+  -------------------------
+  OMT+Horn
+  -------------------------
+  Low-Loss Cable
+  LNA 1
+  Band Pass Filter 1	
+  3dB Attenuator
+  LNA 2	
+  Low Pass Filter (VLFX-1350)
+  Stage 3 Amplifier
+  Front End Output Port
+  _________________________
+  Band Pass Filter 2
+  Data Cable
+  -------------------------
+
+Channel 2 - Y-pol - Horizontal
+  -------------------------
+  OMT+Horn
+  -------------------------
+  Low-Loss Cable
+  LNA 1	
+  3dB Attenuator
+  LNA 2	
+  Band Pass Filter 1
+  Low Pass Filter (VLFX-1350)
+  Stage 3 Amplifier
+  Front End Output Port
+  _________________________
+  Band Pass Filter 2
+  Data Cable
+  -------------------------
+
+180320	Switch to 'poor man's band pass filter' - combination HP+LP
+	Removed 3dB of padding from amp chain, significantly increasing gain
+	Recall: *3dB of attenuation on digitizer card port*
+	Unstable coupling was present when using the OMT coupled ports
+
+Both Channels:
+  -------------------------
+  OMT+Horn
+  -------------------------
+  Low-Loss Cable
+  LNA 1
+  High Pass FIlter (VHF-1080+)
+  Low Pass Filter (VLF-1400+)
+  LNA 2	
+  Low Pass Filter (VLFX-1350)
+  Stage 3 Amplifier
+  Band Pass Filter
+  Front End Output Port
+  _________________________
+  Data Cable
+  -------------------------
+
+180327	Adjustment of depth of coupled port coaxial cables on OMT
+	Target was approximately -30dB of coupling across OMT ports
+	This coupling proved to be unstable earlier, and this didn't fix the problems
+	Unstable calibrated spectrum (K) at this time
+
+180330	Usage of coupled ports was not suitable for acquiring data
+	Return to use of 2 low-loss cables with 30dB coupler for cal signal
+	Configuration as follows:
+
+Channel 1 - X-pol - Vetical
+  -------------------------
+  OMT+Horn
+  -------------------------
+  Low-Loss Cable
+  30dB coupler + ND
+  Low-Loss Cable
+  LNA 1
+  Band Pass Filter 1	
+  3dB Attenuator
+  LNA 2	
+  Low Pass Filter (VLFX-1350)
+  Stage 3 Amplifier
+  Front End Output Port
+  _________________________
+  Band Pass Filter 2
+  Data Cable
+  -------------------------
+
+Channel 2 - Y-pol - Horizontal
+  -------------------------
+  OMT+Horn
+  -------------------------
+  Low-Loss Cable
+  30dB coupler + ND
+  Low-Loss Cable
+  LNA 1	
+  3dB Attenuator
+  LNA 2	
+  Band Pass Filter 1
+  Low Pass Filter (VLFX-1350)
+  Stage 3 Amplifier
+  Front End Output Port
+  _________________________
+  Band Pass Filter 2
+  Data Cable
+  -------------------------
+
+180410	First attention paid to unstable noise floor on channel 2/YPol data
+	Believing a faulty amplifier to be responsible prompted their replacement
+	S21 remained consistent across CH2/YPol after replacing amps on Ypol
+	S21 largely consistent across both channels
+
+180417	The unstable noise floor on channel 2 / Ypol of OMT persists
+	Debugging strategy is to rule out digitization as a potential source
+	Switched CH1 and CH2 data cables at PC enclosure
+
+180419	The noise floor instability moved to channel 1/Ypol
+	Thus the problem is not with the digitizer
+	Changes reverted at this time: CH1 = XPol, CH2 = YPol as usual again
+	
+180423	Anze has changed the sampling method for data acquisition:
+	We place a window around the Galactic HI signal:
+	The cut is 120 bins between 1420 and 1420MHz.
+	It starts with this file: 180423_2053.data
+
+180424	In an effort to identify the unstable noise floor, leads changed at OMT
+	CH1 = YPol, CH2 = XPol, only switch was at OMT Output port
+	This should indicate whether or not RFI or amp chain is causing problems
+
+180501	Looking at the data browser, the instability is now on CH1
+	The problem isn't the amps, but either the sky or the OMT
+	Tests indicated that calibration port coax was in contact with data coax
+	This was responsible for unstable noise floor
+	Backing this coax out by ~1cm removed the instability
+	Return to CH1 = XPol, CH2 = YPol
