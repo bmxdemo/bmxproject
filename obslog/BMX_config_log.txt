@@ -76,8 +76,6 @@ This .txt file which will contain changes to the BMX configuration:
 	  OMT -> low-loss -> 30dBcoupler(+ND) -> low-loss -> BP -> LNA1 -> 3db -> LNA2 -> LP -> Amp3 -> BP
 
 180206	  Arrival of new Lorch Band Pass Filters --> can run both chans simultaneously
-
-180210	  In order to hunt for RFI intermodulation, we use ROACH and BMXDAQ
 	  Both channels are operational in the following configuration:
 
 Chan1/XPol/VerticalOMTPort:
@@ -126,7 +124,8 @@ Chan2/YPol/HorizontalOMTPort:
   156in Data Cable
   -------------------------
 
-180210	While in this configuration, many broadcast tests were performed
+180210	In order to hunt for RFI intermodulation, we use ROACH and BMXDAQ
+	While in this configuration, many broadcast tests were performed
 	These tests indicated that there is minimal intermodulation products
 
 180227	BMX is briefly used as an interferometer: NS Baseline Configuration
