@@ -271,3 +271,7 @@ Channel 2 - Y-pol - Horizontal
 	This was responsible for unstable noise floor
 	Backing this coax out by ~1cm removed the instability
 	Return to CH1 = XPol, CH2 = YPol
+	
+180515	Will kills wasps that are nesting on the tower platforms and toolbox
+	
+180517	Will removes the OMT coupled ports entirely (~6:20PM)
