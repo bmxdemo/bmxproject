@@ -29,8 +29,7 @@ The following is a histogram of delays between the two cards obtained from runni
 DAQ 1000 times with a pulse modulated signal. I then calculated the time difference 
 between pulse edges in the digitizer output for both cards.
 
-![Image]
-(../delays_hist.png)
+![Image](delays_hist.png)
 
 mean: 0.77120848601 \
 std: 2.95830176192 \
@@ -40,8 +39,7 @@ max: 11.964425455
 Since most of the delays cluster around zero, the following is a zoomed in plot of
 just those values.
 
-![Image]
-(../delays_hist_cropped.png)
+![Image](delays_hist_cropped.png)
 
 ## Conclusion: 
 It seems that the two cards are synchronized within .1 ms of each other.                                                                                      
