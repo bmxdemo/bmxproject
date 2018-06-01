@@ -31,10 +31,10 @@ between pulse edges in the digitizer output for both cards.
 
 ![Image](delays_hist.png)
 
-mean: 0.77120848601 \
-std: 2.95830176192 \
-min: -0.095977273 \
-max: 11.964425455
+mean: 0.77 \
+std: 2.96 \
+min: -0.10 \
+max: 11.97
 
 Since most of the delays cluster around zero, the following is a zoomed in plot of
 just those values.
