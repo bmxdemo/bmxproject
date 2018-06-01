@@ -1,6 +1,6 @@
 ### ADC Synchronization part 2:
 
-Hindy Drillick\
+Hindy Drillick \
 
 In my [last post](../20180303_ADC_Synchronization/index.md), we were seeing a 
 wide range of delays from -20 to 20 ms between the signal received by each of the two cards. 
@@ -32,10 +32,10 @@ between pulse edges in the digitizer output for both cards.
 ![Image]
 (../delays_hist.png)
 
-mean: 0.77120848601
-std: 2.95830176192
-min: -0.095977273
-max: 11.964425455
+mean: 0.77120848601 \
+std: 2.95830176192 \
+min: -0.095977273 \
+max: 11.964425455 \
 
 Since most of the delays cluster around zero, the following is a zoomed in plot of
 just those values.
