@@ -79,30 +79,6 @@ def zaxeq(ax,x,y,z):
         ax.plot([xb], [yb], [zb], 'w')
 
 
-#def zmod(data,*p):
-#    """Params are:
-#    p[0], p[1] -        coefficients on x^2 and y^2 (currently p[1]=0 always)
-#    p[2], p[3], p[4] -  x,y,z translations
-#    p[5], p[6], p[7] -  x,y,z rotations in degrees
-#    """
-#    sz=data[0].shape
-#
-#    x=ravel(data[0])
-#    y=ravel(data[1])
-#    # Fit for curvature
-#    z=p[4] + p[0]*(x-p[2])**2 + p[0]*(y-p[3])**2
-#
-#    #Fit for rotation:
-#    R=rotmat(p[5],p[6],p[7]) 
-#
-#    #Don't fit for rotation:
-#    #R=rotmat(0,0,0) 
-#
-#    dum,dum,zrot=applyrot(R,x,y,z,p[2],p[3],p[4])
-#    zrot=reshape(zrot,sz)
-#
-#    return zrot
-
 def zmod(data,*p):
     """Params are:
     p[0], p[1] -        coefficients on x^2 and y^2 (currently p[1]=0 always)
@@ -114,23 +90,47 @@ def zmod(data,*p):
     x=ravel(data[0])
     y=ravel(data[1])
     # Fit for curvature
-    z=p[0]*x**2 + p[0]*y**2
+    z=p[4] + p[0]*(x-p[2])**2 + p[0]*(y-p[3])**2
 
     #Fit for rotation:
-    R=rotmat(p[5],p[6],p[7]) 
+    #R=rotmat(p[5],p[6],p[7]) 
 
     #Don't fit for rotation:
     R=rotmat(0,0,0) 
 
-    xrot,yrot,dum=applyrot(R,x,y,z,p[2],p[3],p[4])
-    xrot=reshape(xrot,sz)
-    yrot=reshape(yrot,sz)
+    dum,dum,zrot=applyrot(R,x,y,z,p[2],p[3],p[4])
+    zrot=reshape(zrot,sz)
 
-    #Fit for translation
-    zrottrans=p[4] + p[0]*(xrot-p[2])**2 + p[0]*(yrot-p[3])**2
-    zrottrans=reshape(zrottrans,sz)
+    return zrot
 
-    return zrottrans
+#def zmod(data,*p):
+#    """Params are:
+#    p[0], p[1] -        coefficients on x^2 and y^2 (currently p[1]=0 always)
+#    p[2], p[3], p[4] -  x,y,z translations
+#    p[5], p[6], p[7] -  x,y,z rotations in degrees
+#    """
+#    sz=data[0].shape
+#
+#    x=ravel(data[0])
+#    y=ravel(data[1])
+#    # Fit for curvature
+#    z=p[0]*x**2 + p[0]*y**2
+#
+#    #Fit for rotation:
+#    R=rotmat(p[5],p[6],p[7])
+#
+#    #Don't fit for rotation:
+#    R=rotmat(0,0,0) 
+#
+#    xrot,yrot,dum=applyrot(R,x,y,z,p[2],p[3],p[4])
+#    xrot=reshape(xrot,sz)
+#    yrot=reshape(yrot,sz)
+#
+#    #Fit for translation
+#    zrottrans=p[4] + p[0]*(xrot-p[2])**2 + p[0]*(yrot-p[3])**2
+#    zrottrans=reshape(zrottrans,sz)
+#
+#    return zrottrans
 
 def plot3d(x,y,z,*args):    
     gcf()
@@ -146,17 +146,15 @@ def fitparab(x,y,z,doplot=True,pguess=None):
     #########################
     # Fit data
     if pguess is None:
-        pguess = array([1e-4, 1e-4, 0, 0, 0, 0, 0, 0])
-        low = array([0,   0,   0,   -inf, -inf, -30, -30, -30])
-        hi  = array([inf, inf, inf, 0,    inf,  30,  30,  30])
-        #low = array([0,   0,   0,   -inf, -inf, -inf, -inf, -inf])
-        #hi  = array([inf, inf, inf, 0,    inf,  inf,  inf,  inf])
-
+        pguess = array([8.6e-5, 0, 0, 0, 0, 0, 0, 0])
+        low = array([0,   0,   -inf, -inf, -inf, -30, -30, -30])
+        hi  = array([inf, inf,  inf,  inf,  inf,  30,  30,  30])
 
     pfit=curve_fit(zmod,(x,y),z,p0=pguess,method='trf',bounds=(low,hi))[0]
+    #pfit=curve_fit(zmod,(x,y),z,p0=pguess,method='lm')[0]
     print pfit
     zfit=zmod((x,y),*pfit)
-    print ','.join(map(str, zfit))
+    #print ','.join(map(str, zfit))
     resids=z-zfit
     #print resids
 
