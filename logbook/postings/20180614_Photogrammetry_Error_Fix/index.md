@@ -18,6 +18,6 @@ Where each parameter represents an array of x,y,z scaling, translation, and rota
 ### Plotting the Residuals
 When plotted, the residuals now are all within about a 2 mm range and have a relatively Gaussian distribution. The standard deviations were also substantially reduced in the process. This is the comparison of the optimized data to the raw data:
 
-![scatter](photo_residuals_scatter.png)
+![scatter](photo_residuals_scatter_bigger.png)
 
-![histogram](photo_residuals_histogram.png)
+![histogram](photo_residuals_histogram_bigger.png)
