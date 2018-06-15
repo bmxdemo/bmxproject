@@ -3,6 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Testing new OMTs](postings/20180614_OMT_S11_Measurements/index.md) - June 14th, 2018 (LB)
 * [BMX map coadd](postings/20180611_maps_pager/index.md) - June 11, 2018 (CDS)
 * [Fixed Noise Floor Instability](postings/20180501_Noise_Temperature_Debugging/index.md) - May 01, 2018 (WT)
 * [Polyphase filterbank vs large FFT responses / optimality](postings/20180422_PFBtheory/index.md) - Apr 22, 2018 (AS)
