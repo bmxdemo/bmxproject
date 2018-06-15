@@ -7,15 +7,11 @@ When looking at the residuals between the two subsets of data produced by the Ph
 ### Optimizing the Parameters
 The parameters that we used to modify the second subset of data were scaling, translation, and rotation. Using the minimize function, we were given the most optimal parameters. These parameters were:
 
-`[9.99816139e-01, 1.00110130e+00, 1.00085827e+00, 1.92439869e-03, 1.88916851e-03, -6.51510685e-04, -4.72766367e-02, 1.43395276e-02, 2.52038822e-02]`
+x-scaling: 9.99816139e-01, y-scaling: 1.00110130e+00, z-scaling: 1.00085827e+00
+x-translation: 1.92439869e-03 m, y-translation- 1.88916851e-03 m, z translation: -6.51510685e-04 m
+x-rotation: -4.72766367e-02 degrees, y-rotation: 1.43395276e-02 degrees, z-rotation: 2.52038822e-02 degrees
 
-where each parameter represents an array of x,y,z scaling, translation, and rotation, in that order. This was applied to the data using these equations and functions, given previously in our best fit for the parabola. 
-
-`xopt=(distmin.x[0])*(x2-distmin.x[3])
-yopt=(distmin.x[1])*(y2-distmin.x[4])
-zopt=(distmin.x[2])*(z2-distmin.x[5])
-R=rotmat(distmin.x[6],distmin.x[7],distmin.x[8])
-xrot,yrot,zrot=applyrot(R,xopt,yopt,zopt,distmin.x[3],distmin.x[4],distmin.x[5])`
+where each parameter represents an array of x,y,z scaling, translation, and rotation, in that order.
 
 ### Plotting the Residuals
 When plotted, the residuals now are all within about a 2 mm range and have a relatively Gaussian distribution. The standard deviations were also substantially reduced in the process. This is the comparison of the optimized data to the raw data:
