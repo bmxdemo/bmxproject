@@ -17,7 +17,7 @@ zopt=(distmin.x[2])*(z2-distmin.x[5])
 R=rotmat(distmin.x[6],distmin.x[7],distmin.x[8])
 xrot,yrot,zrot=applyrot(R,xopt,yopt,zopt,distmin.x[3],distmin.x[4],distmin.x[5])`
 
-###Plotting the Residuals
+### Plotting the Residuals
 When plotted, the residuals now are all within about a 2 mm range and have a relatively Gaussian distribution. The standard deviations were also substantially reduced in the process. This is the comparison of the optimized data to the raw data:
 
 ![scatter](photo_residuals_scatter.png)
