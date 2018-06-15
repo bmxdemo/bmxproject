@@ -1,0 +1,12 @@
+## June 14, 2018
+
+### Photomodeler Residuals
+
+When looking at the residuals between the two subsets of data produced by the Photomodeler, we found that despite being set to measure within the millimeter range, the residuals were almost reaching an order of centimeters. In order to eliminate this great of differences, we wrote a function in order to fit the second subset of data to the first. 
+
+### Optimizing the Parameters
+The parameters that we used to modify the second subset of data were scaling, translation, and rotation. Using the minimize function, we were given the most optimal parameters and applied it to the data. When plotted, the residuals now are all within about a 2 mm range and have a relatively Gaussian distribution. The standard deviations were also substantially reduced in the process. This is the comparison of the optimized data to the raw data:
+
+![scatter](photo_residuals_scatter.png)
+
+![histogram](photo_residuals_histogram.png)
