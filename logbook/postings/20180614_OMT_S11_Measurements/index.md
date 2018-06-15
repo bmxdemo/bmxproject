@@ -11,6 +11,10 @@ pieces in transit.
 ### S11 Measurements
 
 ![Picture](IMG_5766.jpg)
+OMT testing setup
+
+![Picture 2](IMG_5769.jpg)
+Damage sustained to OMT
 
 The OMT was positioned in the lab pointed into the absorber box, and connected
 to the VNA through Channel 1, using first the X polarization connector and then
