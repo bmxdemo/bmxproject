@@ -275,3 +275,6 @@ Channel 2 - Y-pol - Horizontal
 180515	Will kills wasps that are nesting on the tower platforms and toolbox
 	
 180517	Will removes the OMT coupled ports entirely (~6:20PM)
+
+180619  Switch to terminated inputs on both channels for stability test
+	Replaced faulty chan2/YPol noise diode, returned original for testing
