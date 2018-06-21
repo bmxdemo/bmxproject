@@ -276,5 +276,14 @@ Channel 2 - Y-pol - Horizontal
 	
 180517	Will removes the OMT coupled ports entirely (~6:20PM)
 
+180522	Will trips the GFCI while spraying power outlet for wasp nest
+	Power outage in the basin stops data acquisition and all processes
+	prior to this outage all is working properly
+	
+180524	Power is returned to the basin by reseting the GFCI
+	Channel 1 is working as intended
+	Channel 2 has different properties at high frequencies in reduced data
+	Possible explanation is malfunctioning noise diode, but not conclusive
+
 180619  Switch to terminated inputs on both channels for stability test
-	Replaced faulty chan2/YPol noise diode, returned original for testing
+	Replaced faulty(?) chan2/YPol noise diode, returned original for testing
