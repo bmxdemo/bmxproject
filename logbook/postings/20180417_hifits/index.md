@@ -11,7 +11,8 @@ a result of redshifing and blueshifing due to the earth's motion. In this
 posting I account for this velocity correction and re-fit the galactic plane
 crossing data.
 
-##Update##
+##Update
+
 See update at the end. The fit templates were generated -10 degrees offset in dec from
 where I thought they were. The inadvertantly blinded fits therefore found something close
 to zenith.
