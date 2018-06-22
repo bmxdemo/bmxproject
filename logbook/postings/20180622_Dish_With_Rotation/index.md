@@ -33,6 +33,7 @@ x-rot: 3.66400859e-01 deg, y-rot: 1.13808669e-01 deg, z-rot: -1.39459345e+01 deg
 These all marked the vertex of the parabola as being around the middle of the platform with respect to the x axis, about one meter in front of the dish, and about 8 cm off of the platform, all of which was previously predicted. The rotation angles indicate that the dish is still pointed roughly at zenith since the x and y rotations are small.
 
 ###Fitting the Data
+
 Once the parameters were found, the next step was to fit each set of data individually and find the residuals between the original and fitted data. All of the sets of data were within an error of 2 mm within each other, which adhered to the errors found in the linked posting above. All three sets are within 10 mm with each of its residuals and are similar to each other in each of the coordinate axes. These findings are reflected in the graphs below.
 
 ![residuals](residuals_all_datasets.png)
