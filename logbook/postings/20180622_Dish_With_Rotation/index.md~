@@ -1,0 +1,40 @@
+##June 22nd, 2018: Dish With Rotation
+
+###Parameters with Rotation
+
+In order to fit each set of data we had for the dish, we had to minimize the parameters in the same process described in my [previous posting](../20180614_Photogrammetry_Error_Fix/index.md). These parameters now took into account the rotation about each axis. These parameters were: 
+
+Subset 1 parameters-
+
+x-scaling: 8.30356283e-05
+
+x-trans: 2.21841033e+03 mm, y-trans: -8.43286354e+02 mm, z-trans: 7.69775065e+01 mm
+
+x-rot: 7.85753502e-01 deg, y-rot: 9.31693904e-01 deg, z-rot: -1.66534188e+01 deg
+
+
+Subset 2 parameters-
+
+x-scaling: 8.28964248e-05
+
+x-trans: 2.33019959e+03 mm, y-trans: -8.64569615e+02 mm, z-trans: 7.21124615e+01 mm
+
+x-rot: 4.21380145e-01 deg, y-rot: 1.97986838e-02 deg, z-rot: -5.20624236e+00 deg
+
+
+Other Data parameters-
+
+x-scaling: 8.30230470e-05
+
+x-trans: 2.31942438e+03 mm, y-trans: -8.60543778e+02 mm, z-trans: 7.36536954e+01 mm
+
+x-rot: 3.66400859e-01 deg, y-rot: 1.13808669e-01 deg, z-rot: -1.39459345e+01 deg
+
+These all marked the vertex of the parabola as being around the middle of the platform with respect to the x axis, about one meter in front of the dish, and about 8 cm off of the platform, all of which was previously predicted. The rotation angles indicate that the dish is still pointed roughly at zenith since the x and y rotations are small.
+
+###Fitting the Data
+Once the parameters were found, the next step was to fit each set of data individually and finding the residuals between the original and fitted data. All of the sets of data were within an error of 2 mm within each other, which adhered to the errors found in the linked posting above. All three sets are within 10 mm with each of its residuals and are similar to each other in each of the coordinate axes. These findings are reflected in the graphs below.
+
+![residuals](residuals_all_datasets.png)
+
+
