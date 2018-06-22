@@ -4,7 +4,7 @@
 
 In order to fit each set of data we had for the dish, we had to minimize the parameters in the same process described in my [previous posting](../20180614_Photogrammetry_Error_Fix/index.md). These parameters now took into account the rotation about each axis. These parameters were: 
 
-Subset 1 parameters-
+#### Subset 1 parameters-
 
 x-scaling: 8.30356283e-05
 
@@ -13,7 +13,7 @@ x-trans: 2.21841033e+03 mm, y-trans: -8.43286354e+02 mm, z-trans: 7.69775065e+01
 x-rot: 7.85753502e-01 deg, y-rot: 9.31693904e-01 deg, z-rot: -1.66534188e+01 deg
 
 
-Subset 2 parameters-
+#### Subset 2 parameters-
 
 x-scaling: 8.28964248e-05
 
@@ -22,7 +22,7 @@ x-trans: 2.33019959e+03 mm, y-trans: -8.64569615e+02 mm, z-trans: 7.21124615e+01
 x-rot: 4.21380145e-01 deg, y-rot: 1.97986838e-02 deg, z-rot: -5.20624236e+00 deg
 
 
-Other Data parameters-
+#### Other Data parameters-
 
 x-scaling: 8.30230470e-05
 
