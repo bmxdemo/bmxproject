@@ -14,7 +14,7 @@ We can compare these measurements to
 The data looks to be consistent with what we would expect of the amplifier
 chains, and indicated that they are working as expected. 
 
-### S11 Measurements
+### S21 Measurements
 
 ![Picture](Amptest.png)
 
