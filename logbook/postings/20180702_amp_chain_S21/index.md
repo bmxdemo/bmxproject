@@ -16,7 +16,7 @@ chains, and indicated that they are working as expected.
 
 ### S11 Measurements
 
-![Picture](Amptest.png){:height="36px" width="36px"}
+![Picture](Amptest.png)
 
 
 
