@@ -2,15 +2,19 @@
 
 ### Rotation Matrices Using Fixed Axes
 
-In the previous iterations of rotating the photogrammetry data, we discovered that the matrices we were using were rotating with respect to local axes that were dependent upon the order of multiplication. This would cause a problem in which rotations about the z axis were completely arbitrary due to the symmetry of the parent paraboloid. In order to solve this problem, we had to find a way to modify the rotation matrices so that each successive rotation would use a global frame of reference containing fixed axes. This would require the use of quaternions to derive a static rotation matrix.
+In the [previous iterations](../20180622_Dish_With_Rotation/index.md) of rotating the photogrammetry data, we discovered that the matrices we were using were rotating with respect to a local frame of reference. This would cause a problem in which rotations about the z axis were completely arbitrary no matter the order of rotation due to the symmetry of the parent paraboloid. In order to solve this problem, we had to find a way to modify the rotation matrices so that each successive rotation would use a global frame of reference containing fixed axes. This would require the use of quaternions.
 
 ### Using Quaternions for Rotation
 
-A normal vector contains three elements that each represent a coordinate within three dimensions. A quaternion used for rotation is a way to represent a vector by using four elements instead of three. The standard form of a quaternions follows the format of (cos(θ/2), xsin(θ/2), ysin(θ/2), zsin(θ/2)). The three coordinates are any arbitrary vector that you wish to rotate around and θ is the angle of rotation. The best way to use this for our purposes was to convert the quaternions into a rotation matrix. The given vectors would be the x,y, and z unit vectors and the angles of rotation would be what the function would optimize. The rotation matrix using quaternions can be found in [this link](http://www.euclideanspace.com/maths/geometry/rotations/conversions/quaternionToMatrix/index.htm).
+A normal vector contains three elements that each represent a coordinate within three dimensions. A quaternion used for rotation is a way to represent a vector by using four elements instead of three. The standard form of a quaternions follows the format of (cos(θ/2), x(sin(θ/2)), y(sin(θ/2)), z(sin(θ/2))). The three coordinates are any arbitrary vector that you wish to rotate around and θ is the angle of rotation. The best way to use this for our purposes was to convert the quaternions into a rotation matrix. The given vectors would be the x,y, and z unit vectors and the angles of rotation would be what the function would optimize. The rotation matrix using quaternions can be found in [this link](http://www.euclideanspace.com/maths/geometry/rotations/conversions/quaternionToMatrix/index.htm).
 
 ### Parameters of Different Rotation Combinations
 
-The first thing that we had to figure out is what each angle that would be given would do to change the graph. It was found that a positive angle would result in a counterclockwise rotation about the chosen axis and a negative angle would represent a clockwise rotation. The rotations we were most interested in were around the x and z axes, which represented altitude and azimuth respectively. We also tried out different combinations of rotations to see if there was a significant difference in the final position of the parabola and to see if there would be a large amount of degeneracy in the parameters. The parameters are given below.
+The first thing that we had to figure out is what each angle that would be given would do to change the graph. It was found that a positive angle would result in a counterclockwise rotation about the chosen axis and a negative angle would represent a clockwise rotation, as shown in the drawing below.
+
+![drawing](Dish_Rotation.png)
+
+The rotations we were most interested in were around the x and z axes, which represented altitude and azimuth respectively. We also tried out different combinations of rotations to see if there was a significant difference in the final position of the parabola and to see if there would be a large amount of degeneracy in the parameters. The parameters are given below.
 
 #### XZ Rotation
 
@@ -18,7 +22,7 @@ The first thing that we had to figure out is what each angle that would be given
 |:--------:|--------------|---------|----------|---------|----------|-------|-----------|
 | Subset 1 | 3011 mm      | 2336 mm | -857 mm  | 75.7 mm | 0.35 deg | 0 deg | -8.42 deg |
 | Subset 2 | 3016 mm      | 2348 mm | -865 mm  | 72.1 mm | 0.43 deg | 0 deg | 14.8 deg  |
-| Subset 3 | 3011 mm      | 2336 mm | -8.57 mm | 73.6 mm | 0.36 deg | 0 deg | -5.97 deg |
+| Subset 3 | 3011 mm      | 2336 mm | -857 mm  | 73.6 mm | 0.36 deg | 0 deg | -5.97 deg |
 
 #### XY Rotation
 
