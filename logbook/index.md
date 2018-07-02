@@ -3,6 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Photogrammetry Fitting with Fixed Axes](postings/20180702_Photogrammetry_Fitting_Fixed_Axes/index.md) - July 2, 2018 (ESKL)
 * [Dish With Rotation](postings/20180622_Dish_With_Rotation/index.md) - June 22, 2018 (ESKL)
 * [Photogrammetry Error Fix](postings/20180614_Photogrammetry_Error_Fix/index.md) - June 14th, 2018 (ESKL)
 * [Testing new OMTs](postings/20180614_OMT_S11_Measurements/index.md) - June 14th, 2018 (LB)
