@@ -3,6 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Satellite Spectra](postings/20180708_Satellite_Spectra/index.md) - July 8, 2018 (WT)
 * [S21 Amplifier Chain Measurements](postings/20180702_amp_chain_S21/index.md) - July 2, 2018 (LB)
 * [Photogrammetry Fitting with Fixed Axes](postings/20180702_Photogrammetry_Fitting_Fixed_Axes/index.md) - July 2, 2018 (ESKL)
 * [Dish With Rotation](postings/20180622_Dish_With_Rotation/index.md) - June 22, 2018 (ESKL)
