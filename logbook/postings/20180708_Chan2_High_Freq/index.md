@@ -90,10 +90,10 @@ on channel 2, and the problem corrected itself. I will keep tabs on this
 problem, and try to resolve it if it crops up again. 
 
 Here is a rough timeline of events in this saga:
-'180522_1400.data' Spray wasps
-'180524_1547.data' High frequency response has slope
-'180625_2248.data' Replace Noise Diode on Channel 2
-'180628_2227.data' S21 Test of system, restart daq and problem is gone...?
+1) '180522_1400.data' Spray wasps
+2) '180524_1547.data' High frequency response has slope
+3) '180625_2248.data' Replace Noise Diode on Channel 2
+4) '180628_2227.data' S21 Test of system, restart daq and problem is gone...?
 
 While working on the satellite spectra plots, I kept encountering a problem with
 channel 2 data, it resolved itself and I was unable to confirm the cause. Have a
