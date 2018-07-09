@@ -264,5 +264,5 @@ the course of analysis, per recommendations/discussion:
 1) Maximum elevation angle of satellite transits considered for selection?
 2) Time buffer on either side of the transit for selection?
 3) Range of spectra to include in weighted sum?
-4a) Ranges of data to use in background average spectra?
-4b) Percentile to use in synthetic background spectra?
+4) Ranges of data to use in background average spectra?
+5) Percentile to use in synthetic background spectra?
