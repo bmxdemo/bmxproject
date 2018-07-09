@@ -11,12 +11,17 @@ chain and with a supplying DC voltage of 3 volts.
 
 We can compare these measurements to 
 [Amplifier S21 data previously collected ](../20180410_New_Amps_S21/index.md). 
-The data looks to be consistent with what we would expect of the amplifier
-chains, and indicated that they are working as expected. 
+~~The data looks to be consistent with what we would expect of the amplifier
+chains, and indicated that they are working as expected.~~
+The original data had a few more DBs than expected, but this was solved by
+realizing that I did not calibrate the VNA before taking the original data. We
+were originally concerned that the data was not centered at 0, but we realized
+that it was just the differnce in the noise floor and was likely a red
+herring. The updated data is below.
 
 ### S21 Measurements
 
-![Picture](Amptest.png)
+![Picture](Amptest2018.png)
 
 
 
