@@ -1,0 +1,48 @@
+## July 08, 2018 - High Frequency Slope on Channel 2
+
+### Introduction and Problem:
+
+Shortly after the opening salvo in my ongoing war with the wasps, I realized
+that I had left a survivor alive. A small hive was clinging to life inside the
+electrical outlet cover. I dispatched their dwelling with a foaming liquid
+spray, but this victory was not without consequence. The liquid justice tripped
+the ground fault circuit interruptor, rendering the BMX instrument without power
+for approximately 3 days, after which the system began to display odd behavior
+on channel 2 in response to transiting satellites. 
+
+This behavior began on May 24, 2018 when the system was restarted. The first
+data file where this behavior begins is '180524_1547.data', though it may be a
+coincidence that this happened after killing the daq with wasp spray. It seemed
+like things were fine for quite some time, but consulting my satellite script I
+found the received power at high frequencies was higher than it should have
+been. Here is one example, from June 5th.
+
+** Figure 1: 180605 Temperature Calibrated Spectra **
+![tempspec](180605_0400_GPSBIIRM-4_PRN15_tempspectra.png) 
+
+The top row of plots shows the satellite transit spectra in blue, and the
+spectra in the absence of signal in green. The system appears to have normal
+levels of power at high frequency in the absence of a satellite, but there is an
+unusual response to the satellite. This is more apparent in the following plots,
+which are the subtracted satellite signal, shown in the bottom panels of this
+figure.
+
+** Figure 2: 180605 Temperature Calibrated Spectra (paper bounds)**
+![pspec](180605_0400_GPSBIIRM-4_PRN15_paperspectra_K.png) 
+
+The bottom panel of this plot shows the data in log-space, where it is clear
+that the added power at high frequencies is an order of magnitude higher than
+the power seen on channel 1. At first I thought it was a problem with my
+summation methods, but turning to the data browser I verified that the satellite
+transit had this appearance on channel 2, but not channel 1.
+
+
+Here is a rough timeline of events in this saga:
+'180522_1400.data' Spray wasps
+'180524_1547.data' High frequency response has slope
+'180628_2227.data' S21 Test of system, restart daq and problem is gone...?
+
+While working on the satellite spectra plots, I kept encountering a problem with
+channel 2 data.
+
+
