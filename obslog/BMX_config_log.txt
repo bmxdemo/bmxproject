@@ -298,9 +298,13 @@ Channel 2 - Y-pol - Horizontal
 	High frequency slope is absent following 180628_2227.data file
 	
 180703	Change polarization of cable leads at the digitizer to study low-freq hash
+	Chan1 port outside enclosure connects to Chan2 of digitizer card
+	Chan2 port outside enclosure connects to Chan1 of digitizer card
 	Xpol is channel 2, Ypol is channel 1
 	Low frequency periodic RFI/hash has been present on channel 2 persistently
 	Swapping the leads may suggest a cause/origin for this contamination
+	low-frequency hash moved to channel 1 with Ypol data
+	this suggests problem not originating in the digitizer
 	
 180705	LN2 cal and diode cal on palantir2 on bench for comparison with basin data
 	
@@ -308,3 +312,6 @@ Channel 2 - Y-pol - Horizontal
 	Carpenters are beginning their work and wanted the existing experiment out of the way
 	All cables & front end enclosure removed entirely from the tower
 	PC enclosure and horn/OMT remain in place
+	Return internal cables to original positions, undoing 180703 changes
+	Chan1 port outside enclosure connects to Chan1 of digitizer card
+	Chan2 port outside enclosure connects to Chan2 of digitizer card
