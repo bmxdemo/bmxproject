@@ -287,3 +287,24 @@ Channel 2 - Y-pol - Horizontal
 
 180619  Switch to terminated inputs on both channels for stability test
 	Replaced faulty(?) chan2/YPol noise diode, returned original for testing
+	Terminated data acquisition runs until 180625_1400.data
+
+180625	Return to data acquisition on sky starting with 180625_1827.data
+	Performed LN2 Calibration in basin to study calibration methods
+	terminated data from past week has not been 290K, or flat as expected...
+	
+180628	Perform second LN2 Calibration in basin
+	Perform amp chain S21 measurement (fixes high frequency slope on chan2)
+	High frequency slope is absent following 180628_2227.data file
+	
+180703	Change polarization of cable leads at the digitizer to study low-freq hash
+	Xpol is channel 2, Ypol is channel 1
+	Low frequency periodic RFI/hash has been present on channel 2 persistently
+	Swapping the leads may suggest a cause/origin for this contamination
+	
+180705	LN2 cal and diode cal on palantir2 on bench for comparison with basin data
+	
+180710	Complete disassembly of front-end electronics on BMX demonstrator in the basin
+	Carpenters are beginning their work and wanted the existing experiment out of the way
+	All cables & front end enclosure removed entirely from the tower
+	PC enclosure and horn/OMT remain in place
