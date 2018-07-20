@@ -70,7 +70,7 @@ July 10th.
 ![spc](GPSBIIRM-4_PRN15_180503_0600_paperspectra_K_CoR.png)
 
 ** Figure 4: 180503 GPS Transit (after CoR correction) **
-![CoR](GPSBIIRM-4_PRN15_180503_0600_paperspectra_K_.png)
+![CoR](GPSBIIRM-4_PRN15_180503_0600_paperspectra_K.png)
 
 Figures 5 and 6 show a transit from July, shortly before the S11 measurements
 were acquired.
