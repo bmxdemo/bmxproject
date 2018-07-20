@@ -36,13 +36,13 @@ the reflected and transmitted power should be 1. Subtracting these coefficients
 from 1 yields the reflection coefficient, which is shown in the bottom panels of
 figures 1 and 2.
 
-** Figure 1: 180710 S11 and Coefficient of Reflectivity (full VNA band) **
+**Figure 1: 180710 S11 and Coefficient of Reflectivity (full VNA band)**
 ![full](180710_S11_CoR_Full.png)
 
 In this figure, the full band of the VNA is featured, using 5001 points, or 5000
 frequency bins.
 
-** Figure 2: 180710 S11 and Coefficient of Reflectivity (BMX data band) **
+**Figure 2: 180710 S11 and Coefficient of Reflectivity (BMX data band)**
 ![zoom](180710_S11_CoR_Zoom.png)
 
 This plot is the same data above, trimmed to match the data recorded using the
@@ -66,19 +66,19 @@ effect on the appearance of the plots.
 
 Figures 3 and 4 show a transit from May, with the OMT correction as measured on
 July 10th.
-** Figure 3: 180503 GPS Transit (no CoR correction) **
+**Figure 3: 180503 GPS Transit (no CoR correction)**
 ![spc](GPSBIIRM-4_PRN15_180503_0600_paperspectra_K_CoR.png)
 
-** Figure 4: 180503 GPS Transit (after CoR correction) **
+**Figure 4: 180503 GPS Transit (after CoR correction)**
 ![CoR](GPSBIIRM-4_PRN15_180503_0600_paperspectra_K.png)
 
 Figures 5 and 6 show a transit from July, shortly before the S11 measurements
 were acquired.
 
-** Figure 5: 180702 Galileo Transit (no CoR correction) **
+**Figure 5: 180702 Galileo Transit (no CoR correction)**
 ![sat2](GSAT0211_PRNE02_180702_0800_paperspectra_K.png)
 
-** Figure 6: 180702 Galileo Transit (after CoR correction) **
+**Figure 6: 180702 Galileo Transit (after CoR correction)**
 ![sat2_Cor](GSAT0211_PRNE02_180702_0800_paperspectra_K_CoR.png)
 
 Clearly the coefficient multiplication makes little difference in accounting for
