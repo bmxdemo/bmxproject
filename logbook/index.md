@@ -3,6 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [OMT Reflection Coefficient](postings/20180720_OMT_Reflectivity/index.md) - July 20, 2018 (WT) 
 * [Channel 2 Frequency Slope](postings/20180708_Chan2_High_Freq/index.md) - July 8, 2018 (WT)
 * [Satellite Spectra](postings/20180708_Satellite_Spectra/index.md) - July 8, 2018 (WT)
 * [S21 Amplifier Chain Measurements](postings/20180702_amp_chain_S21/index.md) - July 2, 2018 (LB)

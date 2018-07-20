@@ -1,0 +1,23 @@
+## July 20, 2018 - Measurements of OMT Transmission/Reflectivity
+
+### Introduction and Motivation:
+
+
+
+In making progress toward the satellite transit analysis, another step is to
+calibrate out the transmission/reflectivity effects of the OMT+Horn. On Tuesday,
+July 10th 2018, during the process of dissassembling the front-end components of
+the BMX single dish, I acquired S11 measurements on both polarizations of the
+OMT. These S11 measurements were acquired with the VNA connected to the data
+ports of the OMT, and they represent the amount of power reflected back into the
+VNA (i.e., the power that isn't broadcast out of the OMT+Horn and into free
+space). This is equivalent to the frequency dependent transmission/reflectivity
+of the OMT in response to signals entering the OMT+Horn.
+
+
+** Figure 1: 180710 S11 and Coefficient of Reflectivity (full VNA band) **
+![full](180710_S11_CoR_Full.png)
+
+
+** Figure 2: 180710 S11 and Coefficient of Reflectivity (BMX data band) **
+![zoom](180710_S11_CoR_Zoom.png)
