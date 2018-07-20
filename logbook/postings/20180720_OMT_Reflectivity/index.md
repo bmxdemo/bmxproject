@@ -76,10 +76,10 @@ Figures 5 and 6 show a transit from July, shortly before the S11 measurements
 were acquired.
 
 ** Figure 5: 180702 Galileo Transit (no CoR correction) **
-GSAT0211_PRNE02_180702_0800_paperspectra_K.png
+![sat2](GSAT0211_PRNE02_180702_0800_paperspectra_K.png)
 
 ** Figure 6: 180702 Galileo Transit (after CoR correction) **
-GSAT0211_PRNE02_180702_0800_paperspectra_K_CoR.png
+![sat2_Cor](GSAT0211_PRNE02_180702_0800_paperspectra_K_CoR.png)
 
 Clearly the coefficient multiplication makes little difference in accounting for
 the high-frequency structure shown in these plots. I am of the opinion that any
