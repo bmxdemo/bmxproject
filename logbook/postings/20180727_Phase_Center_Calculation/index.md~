@@ -1,0 +1,5 @@
+## July 27, 2018: Phase Center Calculation
+
+### Photos of the Horn
+
+In order to find the position of both the horn and the phase center, it would require another set of photos to be analyzed that had the targets on the horn included. Once these were taken, I used the set of photos from [October](../20171106_photomodeler_repeatability/index.md) as a baseline for defining a coordinate system and scaling. The problem that you run into when using the pictures of just the dish and the horn is that there is no defined coordinate system, so the software makes an arbitrary origin according to the orientation of the given photo. Once this was done. I could use the positions of the horn targets to calculate the phase center.
