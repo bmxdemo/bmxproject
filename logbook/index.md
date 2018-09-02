@@ -3,6 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Data Acquisition Issues](postings/20180902_Interleaving_DAQ/index.md) - September 02, 2018 (LB)
 * [Phase Center Calculation](postings/20180727_Phase_Center_Calculation/index.md) - July 27, 2018 (ESKL)
 * [Photomodeler Processing](postings/20180724_Photomodeler_Processing/index.md) - July 24, 2018 (ESKL)
 * [OMT Reflection Coefficient](postings/20180720_OMT_Reflectivity/index.md) - July 20, 2018 (WT) 
