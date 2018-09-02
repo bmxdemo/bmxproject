@@ -4,11 +4,11 @@ Upon an attempt to start the data aquisition in the 2nd floor lab, Will and I no
 ### Diagnosing the issue 
 The first thing I did was input the signal from a terminated amplifier chain to channel 2 and restart the daq until we saw the issue again. The input here for channel 1 is a sine wave from a signal generator of 1.104 GHz, with a clock signal of 1.1 GHz. 
 This is what a normal input for this state looks like:
-![Picture](good.png)
+![Picture](Normal.png)
 And a bad initilization:
-![Picture2](badstate.png)
+![Picture2](Bad_start.png)
 Then, I switched the two channels, so the sine wave was input to channel two while it was in this bad state. Low and behold, an apparent interleaving problem appears, with some evidence for "out of ordering" on the sine wave. 
-![Picture3](badstatesine.png)
+![Picture3](Channelswitch.png)
 However, the evidence was not entirely convincing yet, as we know we are driving the digitizer out of its normal range of operation, so Anže asked for some more tests with different clock and signal freqencies. 
 Here is the data on a 1.2 Ghz clock frequency and a 1.204 signal input:
 ![Picture4](goodwave1_2.png)
