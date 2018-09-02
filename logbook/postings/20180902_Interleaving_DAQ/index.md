@@ -11,8 +11,8 @@ Then, I switched the two channels, so the sine wave was input to channel two whi
 ![Picture3](Channelswitch.png)
 However, the evidence was not entirely convincing yet, as we know we are driving the digitizer out of its normal range of operation, so Anže asked for some more tests with different clock and signal freqencies. 
 Here is the data on a 1.2 Ghz clock frequency and a 1.204 signal input:
-![Picture4](goodwave1_2.png)
-![Picture5](badstate1_2.png)
+![Picture4](good_wave_1_2.png)
+![Picture5](bad_wave_1_2.png)
 So we still see the issue. Upon further zooming done, however, the possible interleaving issue becomes more confusing. There seems to be no particular order to the reordering of the data, and it seems "random", so it is not clear that the issue is in fact in the interleaving.
 ![Picture6](plt1.png)
 ![Picture7](plt2.png)
