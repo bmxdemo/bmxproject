@@ -23,28 +23,27 @@ that intra-card timing is about 0.1ms.
 ![Image](delays_hist_cropped.png)
 
 So, it i seems that as long as our samples are longer than 10ms, we
-should be fine. 
+should be fine, incurring less than percent increase in noise.
 
 ## Intra-machine synchronization
 
 This is more difficult as we want to synchronize them to roughly the
 same accuracy. NTP offers sub-ms synchronization, but I really think
-there are simple solutions that should work.
+there are simpler solutions that should work.
 
-When full array mode, one machine will be leader, the other follower. 
-I suggest the following algorither:
- * On follower machine, the daq start will open socket and wait for signal from leader
+When in the full array mode, one machine will be the leader, the other the  follower. 
+
+I suggest the following algorithm:
+ * On the follower machine, the daq start will open socket and wait for a signal from leader
  * The leader will signal master that it has come online and both will initialize their cards (this is the time consuming step)
  * the master will first exchange 10 packets with the follower, measuring the round-trip time (i.e follower waits for the packet and sends one back as soon as it comes)
- * Then the master will send a start-gun packet, wait for half the round trip time and start data aquisition
- * Follower will wait for the start-gun packet and stard data acquisition immediately.
+ * Then the master will send a start-gun packet, sleep for half the round trip time and then start data aquisition
+ * Follower will wait for the start-gun packet and start data acquisition immediately.
 
 I do think that this should lead to a pretty good synchronization, but
 this is something we want to check. 
 
 
-
 ## Conclusion:
 
-
-It seems that the two cards are synchronized within .1 ms of each other.                                                                                      
+It seems it should work without killing ourselves.
