@@ -3,7 +3,8 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
-* [Digitizer Sync Thoughts](postings/2018010_Digisync/index.md) - October 11, 2018 (AS)
+* [ADC Issue Investigation](postings/20181013_DAQ_CH2_Freq/index.md) - October 13, 2018 (AS/WT)
+* [Digitizer Sync Thoughts](postings/20181011_Digisync/index.md) - October 11, 2018 (AS)
 * [Temperature Controller Update](postings/20180902_temp_controller_update/index.md) - September 02, 2018 (LB)
 * [Data Acquisition Issues](postings/20180902_Interleaving_DAQ/index.md) - September 02, 2018 (LB)
 * [Phase Center Calculation](postings/20180727_Phase_Center_Calculation/index.md) - July 27, 2018 (ESKL)
