@@ -31,6 +31,10 @@ It really does seem binary, either it is good or it is bad, it is never somethin
 
 ## Observations
 
+We have found identical behavior on both cards in
+palantir 2. Combining with palantir 1, it seems it is absolutely
+generic issue. 
+
 The most important observation is that this behavior is not reproduce
 if the digitizer is driven at its specified frequency of 1250MHz. We
 have tried this 25 times with internal clock and 25 times with
@@ -45,16 +49,28 @@ to the brick.
 We have noticed that it does not seem to be cured by either lower and
 raising the Vpp voltage of the clock, from 1.1V to 2.0V.
 
-
-## TODO
+Update 10/15:
 
 From Wilma's email:
 
-Can you please create 2 driver log files. Here you find a description
+```Can you please create 2 driver log files. Here you find a description
 how to create them:
 https://spectrum-instrumentation.com/en/spcm-enable-driver-debug-logging
 Create one log file when your application runs fine and another log
 file when the application acquired the bad signal.
+```
+
+I have generated these two files working remotely (luckily we left sig
+gen attached when I left for Europe) , and they are
+attached:
+
+* [spcmdrv_debug_bad.txt](./spcmdrv_debug_bad.txt)
+* [spcmdrv_debug_good.txt](./spcmdrv_debug_good.txt)
+
+I don't see any difference in them. 
+
+
+
 
 
 
