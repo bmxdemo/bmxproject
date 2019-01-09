@@ -3,6 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [S21 VNA Amp Chain Measurements](postings/20190109_S21_Amp_Meas/index.md) - January 09, 2019 (DZ/JW)
 * [ADC Issue Investigation](postings/20181013_DAQ_CH2_Freq/index.md) - October 13, 2018 (AS/WT)
 * [Digitizer Sync Thoughts](postings/20181011_Digisync/index.md) - October 11, 2018 (AS)
 * [Temperature Controller Update](postings/20180902_temp_controller_update/index.md) - September 02, 2018 (LB)
