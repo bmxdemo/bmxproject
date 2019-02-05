@@ -315,3 +315,6 @@ Channel 2 - Y-pol - Horizontal
 	Return internal cables to original positions, undoing 180703 changes
 	Chan1 port outside enclosure connects to Chan1 of digitizer card
 	Chan2 port outside enclosure connects to Chan2 of digitizer card
+
+190205	Distribution box temporarily removed to test new voltage regulator
+	Box replaced with male/female BNC splitters to keep BMX running
