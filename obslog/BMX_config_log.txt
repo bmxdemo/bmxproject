@@ -315,3 +315,17 @@ Channel 2 - Y-pol - Horizontal
 	Return internal cables to original positions, undoing 180703 changes
 	Chan1 port outside enclosure connects to Chan1 of digitizer card
 	Chan2 port outside enclosure connects to Chan2 of digitizer card
+	
+190131  Junction box removed for new regulator install.	
+
+190201  Junction box reinstalled. Switched to regulated power.
+
+190203  Switched back to unregulated power. Something's wrong with the new regulator.
+
+190205	Distribution box temporarily removed to test new voltage regulator
+	Box replaced with male/female BNC splitters to keep BMX running
+	
+190205  Increased unregulated supply to 3.86V (as seen on supply display) resulting in 3.1V at the terminal blocks.
+	Messed with the supply between 1pm and 3pm (EST) as I took measurements, so don't use this data.
+	
+190207  New regulator supplying a load of ~4 Ohms without external one applied. 
