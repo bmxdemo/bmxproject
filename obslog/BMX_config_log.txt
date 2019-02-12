@@ -6,14 +6,15 @@ All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 190205  Increased unregulated supply to 3.86V (as seen on supply display) resulting in 3.1V at the terminal blocks.
 	Messed with the supply between 1pm and 3pm (EST) as I took measurements, so don't use this data.
 
-190205	Distribution box temporarily removed to test new voltage regulator
+190205	Distribution box temporarily removed to test new voltage regulator (2:30 PM EST)
 	Box replaced with male/female BNC splitters to keep BMX running
 	
-190203  Switched back to unregulated power. Something's wrong with the new regulator.
+190203  Switched back to unregulated power. Something's wrong with the new regulator. ~12:30 PM EST
 
-190201  Junction box reinstalled. Switched to regulated power.
+190201  Junction box reinstalled. Switched to regulated power. ~2:00 PM EST
 
-190131  Junction box removed for new regulator install.	
+190131  Junction box removed for new regulator install.	~11:00 AM EST
+
 
 
 
