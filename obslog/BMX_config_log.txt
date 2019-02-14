@@ -1,6 +1,8 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+
+190214  9:45 AM EST, restart with delay calibration and n_sigma_null = 5 again (AS)
 190211  11:45 AM EST, turned off RFI rejection by setting n_sigma_null = 99999 (CDS)
 
 190205  Increased unregulated supply to 3.86V (as seen on supply display) resulting in 3.1V at the terminal blocks.
