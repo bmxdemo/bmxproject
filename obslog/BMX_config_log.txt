@@ -2,6 +2,12 @@ This .txt file which will contain changes to the BMX configuration.
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
 
+190222  11:30AM-1:45PM EST, north Y-pol OMT cable replaced
+	2:10-4:30PM EST, Y-pol back to old cable, switched X and Y connections at the north OMT
+	4:40PM EST, Back to nominal setup (DZ)
+
+190219  2:30-4:00 PM EST, north amps disconnected for S21 measurements (DZ/JW)
+
 190214  9:45 AM EST, restart with delay calibration and n_sigma_null = 5 again (AS)
 
 190211  11:45 AM EST, turned off RFI rejection by setting n_sigma_null = 99999 (CDS)
