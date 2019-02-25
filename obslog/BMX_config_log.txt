@@ -1,7 +1,7 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
-190225	1:30-3:00 PM EST, reinstalled junction box and operating with regulated supply, measured 2.7V at regulator output,
+190225	1:30-3:00 PM EST, reinstalled junction box and operating with regulated supply, measured 2.7V at regulator output
 	3:00-3:30 PM EST, switched back to unregulated supply with BNC T's (JW)
 
 190222  11:30AM-1:45PM EST, north Y-pol OMT cable replaced
