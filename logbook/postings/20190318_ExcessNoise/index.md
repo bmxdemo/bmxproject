@@ -59,4 +59,11 @@ Plot below show:
 
 I think these data demonstrate that the issue is neither RFI rejection nor averaging, but some other settings in the daq.  As we went to smaller samples, I changed a number of other settings like number of GPU threads, buffer multipliers, etc. The fact that it works on CH1, but not on CH2 has likely to do with the fact that CH1 is the first one, not that it is terminated. 
 
+The main culprint is is likely one of those (new broken value -> old working value)
+ * `buf_mult= 8 -> 4` : how many full size buffers to we have in the computer?
+ * `print_every= 10->8` : controls how often we put something on screen, very unlikely
+ * `cuda_streams= 6 -> 2` : number of concurrent cuda processes we allow
+ * `ringbuffer_size= 64 -> 0` : are we keeping a ringbuffer for dumpting to disk?
+
+
 
