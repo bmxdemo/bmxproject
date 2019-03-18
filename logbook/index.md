@@ -3,6 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [Excess noise](postings/postings/20190318_ExcessNoise/index.md) - March 18, 2019 (AS)
 * [Reading RFI Data](postings/20190207_Reading_RFI/index.md) - February 07, 2019 (DZ)
 * [S21 VNA Amp Chain Measurements](postings/20190109_S21_Amp_Meas/index.md) - January 09, 2019 (DZ/JW)
 * [ADC Issue Investigation](postings/20181013_DAQ_CH2_Freq/index.md) - October 13, 2018 (AS/WT)
