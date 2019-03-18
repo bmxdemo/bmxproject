@@ -1,8 +1,8 @@
-##Reading RFI Data
+## Reading RFI Data
 
 Dana Zimmer, Feb 07, 2019
 
-###How to read in RFI files
+### How to read in RFI files
 
 I've written a new method in bmxdata.py to read in this data. Use it like this:
 
@@ -20,7 +20,7 @@ Use `r.d.rfi['chan1_0']` to get data from the desired channel.
 You can reconstruct the data as if there were no RFI rejection by doing:
 `((128-r.d.rfinumbad[chn])*r.d.data[chn]+(r.d.rfinumbad[chn]*r.d.rfi[chn]))/128`
 
-###First look at RFI data
+### First look at RFI data
 
 The data shown below is on-sky data from tag 190120_1000, channel 1. I've included the clean data with RFI rejection in Figure 1 for comparison. Figure 2 shows the data reconstructed as if RFI rejection was not applied. Figure 3 shows purely the RFI data saved in `r.d.rfi`.
 
