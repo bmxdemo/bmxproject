@@ -65,5 +65,4 @@ The main culprint is is likely one of those (new broken value -> old working val
  * `cuda_streams= 6 -> 2` : number of concurrent cuda processes we allow
  * `ringbuffer_size= 64 -> 0` : are we keeping a ringbuffer for dumpting to disk?
 
-
-
+In addition, FFT size power is different (from 27 (122ms) and 25 (30ms)) and FFT averaging (from 16384 to 8192). 
