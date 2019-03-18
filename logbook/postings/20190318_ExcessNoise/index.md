@@ -17,6 +17,7 @@ We took three files:
  * Case 2: New integration, 2048 freq samples @ 33ms * 128 average, RFI rejection off, Neff=8192*128
  * Case 3: Old integration, 4096 freq samples @ 122ms, no average, no RFI, Neff=16384
 
+During these data, CH1 was terminated, CH2 was on sky
 
 Plot below show:
 
@@ -24,16 +25,38 @@ Plot below show:
  * The residuals after linear regression has been divided out
 
 
-**Figure: Ch1, Case 1 **
+#### Figure: Ch1, Case 1:
+
 ![rfi](ch1std_effN.png)
 ![rfi](ch1std_2d.png)
 
-**Figure: Ch1, case 2 **
+#### Figure: Ch1, case 2:
+
 ![rfi](ch1norfi_effN.png)
 ![rfi](ch1norfi_2d.png)
 
-**Figure: Ch1, Case 3 **
+#### Figure: Ch1, Case 3:
+
 ![rfi](ch1old_effN.png)
 ![rfi](ch1old_2d.png)
+
+#### Figure: Ch2, Case 1:
+
+![rfi](ch2std_effN.png)
+![rfi](ch2std_2d.png)
+
+#### Figure: Ch2, case 2:
+
+![rfi](ch2norfi_effN.png)
+![rfi](ch2norfi_2d.png)
+
+#### Figure: Ch2, Case 3:
+
+![rfi](ch2old_effN.png)
+![rfi](ch2old_2d.png)
+
+### Conclusions
+
+I think these data demonstrate that the issue is neither RFI rejection nor averaging, but some other settings in the daq.  As we went to smaller samples, I changed a number of other settings like number of GPU threads, buffer multipliers, etc. The fact that it works on CH1, but not on CH2 has likely to do with the fact that CH1 is the first one, not that it is terminated. 
 
 
