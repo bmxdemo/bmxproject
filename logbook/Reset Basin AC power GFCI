@@ -1,0 +1,8 @@
+Tom found the cause of the power loss at BMX after Thursday night's rain: GFCI breaker at the hut was reset. We waited until today to let the wiring dry out. 
+At 9:53 AM today I opened both enclosures. Both appear dry inside. 
+I shut off power to each computer and the two analog power supplies, opened the GFCI box at the hut
+and both green and red LEDs were on and the reset button is popped. Pressed the reset button and the red light went off. 
+The fans in both enclosures came on immediately. Lab Jack LEDs came on. 
+Powered up the 28 V supply by just switching it on, verified the output voltage is 27.9 and current reading on the meter is less than 10 mA. The LED on the lab Jack is now off (is this an issue?)
+For the low-voltage supply, I first unplugged the output cable then switched the supply on to check the output voltage setting (3.9 V).
+I then set the front panel voltage to zero, reattach the coax to the  distribution boxe and gradually cranked up the voltage 3.9 V where it reads 2.25 A at the power supply. At this point I closed up the enclosures and taped over the exposed USB ports on the rear of the DEQ to box to keep the weather and insects out.
