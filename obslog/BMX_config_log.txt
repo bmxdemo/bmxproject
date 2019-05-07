@@ -45,6 +45,8 @@ All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
 190201  Junction box reinstalled. Switched to regulated power. ~2:00 PM EST
 
+190119 17:00 UTC - Return to observing on sky with new 4 dish configuration
+
 190131  Junction box removed for new regulator install.	~11:00 AM EST
 
 
