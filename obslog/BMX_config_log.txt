@@ -1,6 +1,8 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+200128 4:40 PM EST, adjusted lab supply supplying power to DC dist. box (regulators) up from 3.2v to 4.2v. Forgot to do this yesterday when the regulators were installed. Output to amps as measured is 3.34V.
+
 200127  4:30PM EST (approx. time),reinstalled DC distribution box with four TPS7A54EVM-006 low noise voltage regulators for outputs to amp chains.
 
 200127 11:00 AM EST (approx. time), disconnected DC distribution box which had been configured to power the amp chains directly from the lab suppy.
