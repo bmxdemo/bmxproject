@@ -1,6 +1,10 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+200127  4:30PM EST (approx. time),reinstalled DC distribution box with four TPS7A54EVM-006 low noise voltage regulators for outputs to amp chains.
+
+200127 11:00 AM EST (approx. time), disconnected DC distribution box which had been configured to power the amp chains directly from the lab suppy.
+
 190409  08.05 EST, restarted with a second cut centered on galactic 21cm
 
 190408  09.20 EST, stopped writing, calibrated delay, restarted synchronized writing
