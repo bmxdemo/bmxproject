@@ -1,6 +1,8 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+200407 6.45 AM AS, stopped DAQ, fixed MJD stamping, restarted and calibrated delay and restart writing.
+
 200313 4.00 PM SM, reinstalled front end regulators with a new custom board designed by Shree Murthy
 
 200214 1:20 PM ES, removed front end regulators again and connected lab supply directly. Voltage on supply set to 3.3v.
