@@ -1,6 +1,6 @@
 Jesse Osborn, July 7th, 2020
 
-#**DAQ Speed Testing**
+# **DAQ Speed Testing**
 
 From June 15th to July 7th, Dr. Slosar and I have been investigating the speed at which the BMX data can be processed for various different parameters using mock 
 data. We have also experimented with two different kinds of mock input data: input data as real and imaginary components and input data as mplitude and phase 
