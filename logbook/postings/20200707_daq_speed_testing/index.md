@@ -12,7 +12,7 @@ called ampPhase.cpp. Both of these prograams are located in daqspeed/src, and th
 
 In this report, I have attached series of images of the tables of average packet processing times vs numerous parameters that resulted from this investigation. The chief result is that it appeaars that it is **faster** to handle the input data as **real** and **imaginary** components than as amplitude and phase components. 
 
-**For input data as real and imaginary components:**
+## **For input data as real and imaginary components:**
 
 ![realImag-Input_Type](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20200707_daq_speed_testing/realImag-Input_Type.png)
 ![realImag-Output_Type](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20200707_daq_speed_testing/realImag-Output_Type.png)
@@ -20,7 +20,7 @@ In this report, I have attached series of images of the tables of average packet
 ![realImag-NCHAN](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20200707_daq_speed_testing/realImag-NCHAN.png)
 ![realImag-Omp_Num_Lines](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20200707_daq_speed_testing/realImag-Omp_Num_Lines.png)
 
-**For input data as amplitude and phase components:**
+## **For input data as amplitude and phase components:**
 
 ![ampPhase-FFTSIZE](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20200707_daq_speed_testing/ampPhase-FFTSIZE.png)
 ![ampPhase-NCHAN](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20200707_daq_speed_testing/ampPhase-NCHAN.png)
