@@ -10,4 +10,7 @@ In this posting directory, I have attached series of images of the tables of ave
 investigation. The chief result is that it appeaars that it is **faster** to handle the input data as **real** and **imaginary** components than as amplitude and phase 
 components. 
 
+![realImag-FFTSIZZE](https://github.com/bmxdemo/bmxproject/blob/master/logbook/postings/20200707_daq_speed_testing/realImag-FFTSIZE.png)
+
+
 Jesse Osborn - July 7th, 2020
