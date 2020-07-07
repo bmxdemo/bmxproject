@@ -3,6 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
+* [DAQ Speed Testing](postings/20200707_daq_speed_testing/index.md) - July 7th, 2020 (JO)
 * [Noise estimation with Differencing](postings/20190923_Differencing/index.md) - September 23, 2019 (AS)
 * [Excess noise](postings/20190318_ExcessNoise/index.md) - March 18, 2019 (AS)
 * [Reading RFI Data](postings/20190207_Reading_RFI/index.md) - February 07, 2019 (DZ)
