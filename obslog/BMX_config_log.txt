@@ -1,6 +1,8 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+200903 6AM AS, restarted after summmer, low voltage, new PS without voltage regulator
+
 200424 7AM AS, restarted with sample counter in each file header to ease alignment.
 
 200421 12-3pm  POC,PS, moved dishes back in place 
