@@ -3,9 +3,17 @@ All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
 200924 16:40 EST (BRS): Reconnected power to north and south horns.
 
-200923 12:27pm EST (BRS): Disconnected 3V power to north and south horns, reconnected power to east and west horns.
+200923 12:27 EST (BRS): Disconnected 3V power to north and south horns, reconnected power to east and west horns.
 
-200922 12:25pm EST (BRS): Disconnected 3V power to east and west horns.
+200922 12:25 EST (BRS): Disconnected 3V power to east and west horns.
+
+200910 18:39 EST (BRS): Went to power cycle low voltage power supplies, observedwater inside tent. Power supplies left off.
+
+200910 17:00 EST (BRS): GFCI reset after rain.
+
+200909 17:50 EST (JH): WY terminated w/ 50 Ohms. Regulators showing symptoms of overload. 2.8V with one cable disconnected, 3.05V with two, 3.3V with three, and 3.31V with four.
+
+200909 16:15 EST (POC): Tent stable, door clips intact, fan running, LEDs on, nosign of moisure on tent floor.
 
 200903 6AM AS, restarted after summmer, low voltage, new PS without voltage regulator
 
