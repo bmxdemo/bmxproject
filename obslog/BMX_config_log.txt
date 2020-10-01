@@ -1,6 +1,12 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+200930 17:35 EST (BRS): 3V power connected, tent closed, Labjack now monitoring voltage on 3V line at junction box on top of tower.
+
+200930 15:22 EST (BRS): 3V power to horns disconnected.
+
+200930 15:15 EST (BRS): Tent open. Do we see increase in RFI when this happens?
+
 200924 16:40 EST (BRS): Reconnected power to north and south horns.
 
 200923 12:27 EST (BRS): Disconnected 3V power to north and south horns, reconnected power to east and west horns.
