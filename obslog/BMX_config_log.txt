@@ -1,6 +1,26 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+" 16:29 Tent closed.
+
+" 16:20 4.5V 2.450A at PS, 3.5V at JB (Will be more voltage drop before amps, set for high end of 3.3-3.5V range at JB. Concerned current draw still low. Sign still not enough V at amps?)
+
+" 16:16 4.4V 2.414A at PS, 3.4V at JB
+
+" 16:10 3.8V 2.184A at PS, 2.9V at JB
+
+" 16:05 N,S,E,W horns on. 3.3V 1.987A at PS, 2.5V at JB
+
+" 15:59 N,S,E horns on. 3.3V 1.551A at PS, 2.7V at JB
+
+" 15:55 N,S horns on. 3.3V 1.079A at PS, 2.8V at JB
+
+" 15:51 Agilent E3633A PS on. North horn powered on. 3.3V 0.572A at PS, 3.0V at junction box
+
+" 15:15 3V power supply off 
+
+200930 15:14 EST (BRS): Tent open
+
 200930 17:35 EST (BRS): 3V power connected, tent closed, Labjack now monitoring voltage on 3V line at junction box on top of tower.
 
 200930 15:22 EST (BRS): 3V power to horns disconnected.
