@@ -1,6 +1,10 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+" ~16:30 Tent closed
+
+201007 ~15:15 (BRS, POC, JK) Tent open. Labjack voltage does not agree with DMM, POC thinks software error. JK removed regulator board from junction box for testing. 3V power connected through terminal block connector without regulator board, PS at 4.5V 2.45A, voltage 3.4V at JB.
+
 " 16:29 Tent closed.
 
 " 16:20 4.5V 2.450A at PS, 3.5V at JB (Will be more voltage drop before amps, set for high end of 3.3-3.5V range at JB. Concerned current draw still low. Sign still not enough V at amps?)
