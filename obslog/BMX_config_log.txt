@@ -4,6 +4,8 @@ All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 " ~16:30 Tent closed
 
 201007 ~15:15 (BRS, POC, JK) Tent open. Labjack voltage does not agree with DMM, POC thinks software error. JK removed regulator board from junction box for testing. 3V power connected through terminal block connector without regulator board, PS at 4.5V 2.45A, voltage 3.4V at JB.
+ 
+201007 14.00-16.00 : hacked bmxdaq and now have version 10: recording 4 voltages, 12 temperatures and synching diode with write cycle
 
 " 16:29 Tent closed.
 
