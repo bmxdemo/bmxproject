@@ -1,6 +1,14 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+" 15:20 Tent closed
+
+" 15:19 bmxdaq1 and 2 on, PS output on, set at 4.5V 2.47A
+
+" 15:04 Tent open 
+
+201124 15:02 (BRS) GFCI reset
+
 " ~16:30 Tent closed
 
 201007 ~15:15 (BRS, POC, JK) Tent open. Labjack voltage does not agree with DMM, POC thinks software error. JK removed regulator board from junction box for testing. 3V power connected through terminal block connector without regulator board, PS at 4.5V 2.45A, voltage 3.4V at JB.
