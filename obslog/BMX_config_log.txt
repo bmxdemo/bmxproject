@@ -1,6 +1,12 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+" 15:23 Keysight E3620A turned on. Display dead and overload LEDs on. Putting out 0.4V. Attempted to turn up to 25V. No change in output voltage. Turned off, voltage spiked to above 10V, then decayed down to 0V. Actually dead now, or some internal overload switch needs to be reset?
+
+" 15:20 Agilent PS set to 4.5V 2.39A
+
+210112 15:18 (BRS) Tent open
+
 " 15:20 Tent closed
 
 " 15:19 bmxdaq1 and 2 on, PS output on, set at 4.5V 2.47A
