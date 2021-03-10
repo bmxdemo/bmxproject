@@ -1,6 +1,10 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+" 14:50 RF Enc fan on, door closed.
+
+210310 14:47 (BRS) bmxdaq machines set up in RF enclosure in lab 1-127 in building 510. bmxdaq1 has both panels on, bmxdaq2 has left panel off. Ethernet temp probes located at front and back bottom of RF Enc and middle center (on top of PCs). Door of RF Enc open and fan off until now. 
+
 " 15:23 Keysight E3620A turned on. Display dead and overload LEDs on. Putting out 0.4V. Attempted to turn up to 25V. No change in output voltage. Turned off, voltage spiked to above 10V, then decayed down to 0V. Actually dead now, or some internal overload switch needs to be reset?
 
 " 15:20 Agilent PS set to 4.5V 2.39A
