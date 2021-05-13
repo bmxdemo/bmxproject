@@ -1,6 +1,44 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+" ~12:40 RF enclosure closed
+
+" 12:31 daq machines on
+
+" 12:09 bmxdaq machines shutting off
+
+" 12:06 RF enclosure open
+
+210513 (BRS) Switching power over to network controllable power strip.
+
+Locations:
+
+bmxdaq1: outlet 1
+bmxdaq2: outlet 2
+fan: outlet 3
+monitor: outlet 4
+linksys router: "always on" outlet
+
+Powerstrip IP address is 130.199.44.29
+
+210512 (BRS) New RF shielded enclosure and weather enclosure installed. Daq machines powered up and on network. Data cables from telescope connected, but clock source unpowered. Temperature monitors online.
+
+Ordering of coax cables on RF enclosure bulkhead, when viewing from outside:
+
+N-X N-Y
+E-X E-Y
+S-X S-Y
+W-X W-Y
+
+Locations of temperature monitors:
+
+bmxdaq1 sensor 1: taped to front of bmxdaq2 (lower back right of box)
+bmxdaq1 sensor 2: on top of monitor (highest location in box I could reach)
+bmxdaq2 sensor 0: lower front left (in front of fan)
+bmxdaq2 sensor 1: lower front right
+bmxdaq2 sensor 2: on top of PCs
+bmxdaq2 sensor 3: lower back left
+
 " 14:50 RF Enc fan on, door closed.
 
 210310 14:47 (BRS) bmxdaq machines set up in RF enclosure in lab 1-127 in building 510. bmxdaq1 has both panels on, bmxdaq2 has left panel off. Ethernet temp probes located at front and back bottom of RF Enc and middle center (on top of PCs). Door of RF Enc open and fan off until now. 
