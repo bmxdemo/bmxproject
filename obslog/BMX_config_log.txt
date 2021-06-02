@@ -1,6 +1,40 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+" 15:43 RFE closed
+
+" 15:32 RFE open to check on overheated digitizer. Problem digitizer is on bmxdaq1, which has jammed panel, and is in back of RFE. Will need to move things around, or maybe into lab, to open panel and replace digitizer.
+
+210527 (BRS) Doing dish alignment measurements.
+
+" 17:09 RFE and WXE closed
+
+" 17:08 Rerouted, all cable connections check out (by unplugging cable at amp box and checking which channel goes dead on daq machines). 
+
+210525 15:45 (BRS) WXE and RFE open. Rerouting cables to correct WXE bulkhead and daq machine ports.
+
+" 16:00 3.8V at junction box
+
+210524 15:47 (BRS) WXE and RFE open. Low V PS at 4.5V 2.52A. 28V PS off.
+
+" 14:56 daq machines shut down for RFI testing. Powered on later in day after I left.
+
+" 14:56 28V noise diode PS shut down
+
+210521 13:04 (BRS) Channel 2 on both BMX daq machines (E dish) reading dead, as if no power to amps. N and E dish data cables swapped to distinguish between problem with amps and cables/daq machines. 
+
+210520 12:54 (BRS) Checking voltages at junction box. 3.8V on N,S,E,W dish lines.
+
+" 17:03 WXE closed
+
+" 17:01 RFE closed
+
+" 13:02 4.5V 2.517A at PS, 3.6V measured after junction box. 5V on BNC 1 port in RFE, 28V on BNC 2 port. Low V PS on outlet 5 of remote switchable power strip. High V PS on outlet 6. Keysight 25V PS dead. 
+
+" 12:20 Weather enclosure (WXE) + RF enclosures (RFE) open
+
+210519 (BRS) Checking power to amplifiers
+
 " ~12:40 RF enclosure closed
 
 " 12:31 daq machines on
