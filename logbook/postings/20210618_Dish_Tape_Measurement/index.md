@@ -1,7 +1,7 @@
 Dr. Slosar and I have been working on the geometry fitting for the BMX telescope. I fitted for several values and angles with the dish parameters being fixed and 
 with the parameters being relaxed. I also plotted the residuals of the actual measurement versus the predicted measurements, and plotted what each dish looks like 
 along with a red dot for the center and a blue dot for the projection of the horn onto the dish. The projection of the horn uses the fit results from the 
-fixed dish.
+fixed dish results.
 
 ### North Dish
 **Results** \
