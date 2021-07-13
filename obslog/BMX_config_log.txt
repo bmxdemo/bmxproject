@@ -1,6 +1,8 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+210713 03:32 (AS) Restarted DAQ after recalibrating delays
+
 " 15:43 RFE closed
 
 " 15:32 RFE open to check on overheated digitizer. Problem digitizer is on bmxdaq1, which has jammed panel, and is in back of RFE. Will need to move things around, or maybe into lab, to open panel and replace digitizer.
