@@ -1,6 +1,14 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+17:24 RFE and WXE closed. 
+
+17:16 RFE open. Exhaust air from BMXDAQ2 significantly hotter. Higher heat load, or more efficient coupling to air?
+
+16:58 Cable reconnected to horn. Continuing to tighten SMA connections. N-X especially loose at RFE outer bulkhead.
+
+210728 16:56 (BRS) 50 Ohm terminator removed from West Dish
+
 " 15:43 RFE closed
 
 " 15:32 RFE open to check on overheated digitizer. Problem digitizer is on bmxdaq1, which has jammed panel, and is in back of RFE. Will need to move things around, or maybe into lab, to open panel and replace digitizer.
