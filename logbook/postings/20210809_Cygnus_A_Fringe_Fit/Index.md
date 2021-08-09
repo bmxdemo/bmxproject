@@ -11,14 +11,18 @@ B | 4.39	4.37	| 0.0202	0.818	| -4.26	4.23	| 4.404	4.38	| -0.114	0.601 | -0.114	4
 
 ## Fringe Fit Plots
 **These are only two of the 16 days as an example**
+
 ![cyg A 1105](https://user-images.githubusercontent.com/85521958/128782891-95bd266f-3409-402b-90c8-f143699f710e.png)
+
 ![cyg A 1450](https://user-images.githubusercontent.com/85521958/128782905-309b8509-f3ca-4ced-9de2-2fce31dc3ae5.png)
 
 
 ## Parameter Plots
 ![param plots 1105](https://user-images.githubusercontent.com/85521958/128737842-0b9190f5-47c7-420c-8bfe-22bf85d8c8d0.jpeg)
+
 ![param plots 1450](https://user-images.githubusercontent.com/85521958/128737802-60b941a9-fd2d-481a-9c77-7a84e371929c.jpeg)
 
 ## Omega Plots
 ![omega plots 1105](https://user-images.githubusercontent.com/85521958/128737396-d99cfdb3-d371-4f97-b872-602cf66c38d2.jpeg)
+
 ![omega plots 1450](https://user-images.githubusercontent.com/85521958/128737663-2955131b-d711-425a-8b38-93e37f33e3f1.jpeg)
