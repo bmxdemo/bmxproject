@@ -3,7 +3,7 @@
 Please post relative links reverse chronologically. Write ups should go in the
 "[postings/](postings/)" folder and adhere to the yyyymmdd_name convention.
 
-* [Cygnus A Fringe Fits](postings/20210809_Cygnus_A_Fringe_Fit/index.md) - August 9th, 2021 (NC)
+* [Cygnus A Fringe Fits](postings/20210809_Cygnus_A_Fringe_Fit/Index.md) - August 9th, 2021 (NC)
 * [Dish Tape Measurement](postings/20210618_Dish_Tape_Measurement/index.md) - June 18th, 2021 (NC)
 * [RFI Noise Analysis](postings/20200818_RFI_noise_analysis/index.md) - August 18th, 2020 (JO)
 * [DAQ Speed Testing](postings/20200707_daq_speed_testing/index.md) - July 7th, 2020 (JO)
