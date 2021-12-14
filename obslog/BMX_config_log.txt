@@ -1,6 +1,10 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+" ~10:41 Case closed.
+
+211210 10:31 (BRS, POC, AS) BMX down after power loss. Enclosures open. Powersupply already on, needs to have output turned on, voltage set. Voltage set at 4.50V, current draw at 2.52A.
+
 " 17:24 RFE and WXE closed. 
 
 " 17:16 RFE open. Exhaust air from BMXDAQ2 significantly hotter. Higher heat load, or more efficient coupling to air?
