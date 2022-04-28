@@ -1,6 +1,7 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+
 " 15:53 RFE and WXE closed.
 
 20220428 15:30 (BRS) Enclosures opened, new fan installed. Attached to remote switchable outlet #6. BMXDAQ1 and 2 turned on.
