@@ -1,6 +1,10 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+" 15:53 RFE and WXE closed.
+
+20220428 15:30 (BRS) Enclosures opened, new fan installed. Attached to remote switchable outlet #6. BMXDAQ1 and 2 turned on.
+
 " ~10:41 Case closed.
 
 211210 10:31 (BRS, POC, AS) BMX down after power loss. Enclosures open. Powersupply already on, needs to have output turned on, voltage set. Voltage set at 4.50V, current draw at 2.52A.
