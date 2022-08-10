@@ -1,6 +1,13 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+" 14:10 RFE and WXE closed.
+
+Pine pollen throughout enclosure, should install new air filter.
+
+For AC installation: AC measures 12" high x 10" wide x 20.5" long. Needs to discharge condensation. However! Bottom of air inlet waveguide is 9.25" below enclosure ceiling. Also, waveguide hole diam is 0.19". Would need tubing of smaller diam.
+
+20220810 14:01 (BRS) Enclosures opened, new fans installed, directed at open PC. Powered from remote switchable outlet #3.
 
 " 15:53 RFE and WXE closed.
 
