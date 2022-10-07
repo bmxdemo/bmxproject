@@ -1,6 +1,8 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+" 18:24 AC condensation hose RTV'd and re-installed. Extra duct tape added to seal hot exhaust hose. Enclosures closed. 
+
 " AC has made lots of condensation! Tub under condensation tube is half full after 9 days operation. Joint with smaller tubes that run through waveguide is leaking. Took back in to lab to re-RTV. Tray under AC is also collecting water. AC leaking through screw holes, not all water draining through outlet. Not tipped up at high enough angle? Added 2x4 under front end of AC to increase angle, improve drainage.
 
 " ~13:45 BMXdaq1 turned on (remote switchable outlet #1)
