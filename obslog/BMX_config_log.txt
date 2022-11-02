@@ -1,6 +1,8 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+20221102 17:03 AC removed and original ventilation fan installed. New bank of 3 PC fans installed facing GPU of BMXDAQ2. Ventilation fan is on remote-switchable outlet #6, new BMXDAQ2 fans on outlet #3. Enclosures closed.
+
 " 18:24 AC condensation hose RTV'd and re-installed. Extra duct tape added to seal hot exhaust hose. Enclosures closed. 
 
 " AC has made lots of condensation! Tub under condensation tube is half full after 9 days operation. Joint with smaller tubes that run through waveguide is leaking. Took back in to lab to re-RTV. Tray under AC is also collecting water. AC leaking through screw holes, not all water draining through outlet. Not tipped up at high enough angle? Added 2x4 under front end of AC to increase angle, improve drainage.
