@@ -1,7 +1,9 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
-20221102 17:03 AC removed and original ventilation fan installed. New bank of 3 PC fans installed facing GPU of BMXDAQ2. Ventilation fan is on remote-switchable outlet #6, new BMXDAQ2 fans on outlet #3. Enclosures closed.
+20230823 15:00 (BRS) New PCs installed, with new t-slot shelves. Much easier to see sma connections with clear shelves. More space to work, hopefully for air ventillation as well. Power strip error. Switches read as on, but no power. Network error. bmxdaq machines can see each other through switch, but not outside network. Tom Throwe wroking on both issues. All power currently through non-switchable outlet #8. 4.5V 2.5A on power supply.
+
+20221102 17:03 (BRS) AC removed and original ventilation fan installed. New bank of 3 PC fans installed facing GPU of BMXDAQ2. Ventilation fan is on remote-switchable outlet #6, new BMXDAQ2 fans on outlet #3. Enclosures closed.
 
 " 18:24 AC condensation hose RTV'd and re-installed. Extra duct tape added to seal hot exhaust hose. Enclosures closed. 
 
@@ -11,11 +13,11 @@ All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
 " 13:34 Agilent PS switched on (remote switchable outlet #5)
 
-20221007 13:17 Enclosures open.
+20221007 13:17 (BRS) Enclosures open.
 
 " 18:20 AC on, powered from remote switchable outlet #3. Enclosures closed.
 
-20220928 ~16:00 Enclosures open. Installing foam duct-work to ensure hot exaust air from AC is vented directly out of RFE and WXE, and that cool air is drawn in directly from outside.
+20220928 ~16:00 (BRS) Enclosures open. Installing foam duct-work to ensure hot exaust air from AC is vented directly out of RFE and WXE, and that cool air is drawn in directly from outside.
 
 " 14:10 RFE and WXE closed.
 
