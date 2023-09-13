@@ -1,6 +1,8 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+20230913 16:00 (BRS) Clock signal from Spartant brick was missing. Thought programming needed to be reset after being inactive. When retrieved Spartant from BMX, noticed nut holding sma bulkhead connector into fram was loose. Tightened connector. Took back to lab, and verified internal settings were still correct. Output freq 1.1GHz, output power +13dBm, reference freq 40MHz. Plugged output into scope, verified 1.1GHz signal output, 1.5V amplitude. Returned to BMX, and Anze restarted data taking. BMX back online! Problem was likely connection.
+
 20230823 15:00 (BRS) New PCs installed, with new t-slot shelves. Much easier to see sma connections with clear shelves. More space to work, hopefully for air ventillation as well. Power strip error. Switches read as on, but no power. Network error. bmxdaq machines can see each other through switch, but not outside network. Tom Throwe wroking on both issues. All power currently through non-switchable outlet #8. 4.5V 2.5A on power supply.
 
 20221102 17:03 (BRS) AC removed and original ventilation fan installed. New bank of 3 PC fans installed facing GPU of BMXDAQ2. Ventilation fan is on remote-switchable outlet #6, new BMXDAQ2 fans on outlet #3. Enclosures closed.
