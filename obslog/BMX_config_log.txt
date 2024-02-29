@@ -1,6 +1,8 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+20240229 13:30 (BRS) BRS and LP opened up RFE to check on 5V PS. Problems with data the last week, possibly caused by power to preamps. PS shows 4.5V 2.5A, as expected. Checked voltage at junction box on top of tower, shows 3.7V as expected. All power restored and RFE closed at 14:00.
+
 20230913 16:00 (BRS) Clock signal from Spartant brick was missing. Thought programming needed to be reset after being inactive. When retrieved Spartant from BMX, noticed nut holding sma bulkhead connector into fram was loose. Tightened connector. Took back to lab, and verified internal settings were still correct. Output freq 1.1GHz, output power +13dBm, reference freq 40MHz. Plugged output into scope, verified 1.1GHz signal output, 1.5V amplitude. Returned to BMX, and Anze restarted data taking. BMX back online! Problem was likely connection.
 
 20230823 15:00 (BRS) New PCs installed, with new t-slot shelves. Much easier to see sma connections with clear shelves. More space to work, hopefully for air ventillation as well. Power strip error. Switches read as on, but no power. Network error. bmxdaq machines can see each other through switch, but not outside network. Tom Throwe wroking on both issues. All power currently through non-switchable outlet #8. 4.5V 2.5A on power supply.
