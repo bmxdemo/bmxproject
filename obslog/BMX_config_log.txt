@@ -1,6 +1,12 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+20240425 15:48 (BRS) The amps died again after the wiring repairs, so we are moving on to testing the PS. POC supplied a new PS. 15:48 enclosure open and old supply off.
+
+" 16:00 New Won supply powered on, supplying 4.5V, amps drawing 2.5A. Enclosure closed.
+
+" 17:48 DAQ restarted, gains calibrated, writing to disk. 
+
 " 16:21 (BRS) Junction box repaired, 5V power back on. Power reading 4.5V 2.4A. All enclosures closed.
 
 20240329 15:22 (BRS) Enclosures open and 5V PS powered down for maintainance. We've been having repeated events where all four amps go squirrely simultaneously. Power cycling seems to fix it, but we suspect a fault in the wiring at the junction box, common to all amps, may be responsible. 
