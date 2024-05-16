@@ -1,6 +1,8 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+20240516 09:55 (BRS) Continuing debugging for BMX amps. Disconnected power to N and S horns at junction box. Trying to pin down if there is one bad channel setting off others. N and S BNC connectors attached to empty bulkheads in junction box to keep them well grounded, and prevent shorting to anything.
+
 20240425 15:48 (BRS) The amps died again after the wiring repairs, so we are moving on to testing the PS. POC supplied a new PS. 15:48 enclosure open and old supply off.
 
 " 16:00 New Won supply powered on, supplying 4.5V, amps drawing 2.5A. Enclosure closed.
