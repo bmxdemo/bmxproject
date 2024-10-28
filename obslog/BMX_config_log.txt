@@ -1,6 +1,8 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+20241028 18:00 (BRS) DAQ has been offline for sometime, first machine repairs and upgrades, then clock error. Error found to be result of low power output from Spartant clock. +13dBm programmed at Spartant should have been 1Vrms, output power only 50mV. New Spartant installed, set to +7dBm. Should have been 250mV RMS at clock input, after 4-way splitter. Due to cable losses, ~225mV RMS measured. This was the lowest power that the DAQ was able to lock onto.
+
 20240703 16:47 (BRS) Switched to N and S horns powered at junction box, E and W disconnected. Power on at 4.5V, 1.34A.
 
 20240523 18:00 (BRS) All channels appereared powered off after disconnecting N and S horns. Found PS output off. Power cycled? Hit some current protection limit? Moved power to old PS, set for 4.5V. Drawing 1.3A, a bit more than half of 4 amp draw. Verified on bmxdaq1 and bmxdaq2 that CH1 and CH3 show zero RMS, CH2 and CH4 now show zero mean, 5-6 RMS. Looks like it's back in action.
