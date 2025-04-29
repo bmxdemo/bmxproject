@@ -1,6 +1,14 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+20250424 ~11:15 Enclosure opened for tour.
+
+" 16:06 Start disconnecting cables from front end for RFSoC backend testing. Took spectrum on VNA.
+
+" 16:36 Enclosure power lost, restarted.
+
+" 18:45 Cables re-attached, enclosure closed. 
+
 20241028 18:00 (BRS) DAQ has been offline for sometime, first machine repairs and upgrades, then clock error. Error found to be result of low power output from Spartant clock. +13dBm programmed at Spartant should have been 1Vrms, output power only 50mV. New Spartant installed, set to +7dBm. Should have been 250mV RMS at clock input, after 4-way splitter. Due to cable losses, ~225mV RMS measured. This was the lowest power that the DAQ was able to lock onto.
 
 20240703 16:47 (BRS) Switched to N and S horns powered at junction box, E and W disconnected. Power on at 4.5V, 1.34A.
