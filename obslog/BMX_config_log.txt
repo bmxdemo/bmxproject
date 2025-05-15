@@ -1,7 +1,11 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
-20250424 ~11:15 Enclosure opened for tour.
+20250515 16:00 (BRS and TT) New laptop installed to control RTK GPS units for beam mapping w/ Shronim at McGill U. N dish Y pol (N-S on sky) connected to ublox labeled F1100047456, connected to laptop on port COM 9. E dish X pol (N-S on sky) connected to ublox labeled F1100056545, connected to laptop on port COM 10.
+
+Digitizers removed from BMXDAQ2 for assessment. Frequently overheating, want to check if issue with fans or heatsinking.
+
+20250424 (BRS and LP) ~11:15 Enclosure opened for tour.
 
 " 16:06 Start disconnecting cables from front end for RFSoC backend testing. Took spectrum on VNA.
 
