@@ -1,6 +1,10 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+20250605 13:10 (BRS) N-Y channel on RTK connected to COM 9 switched to N-X channel. (Sufficient GNSS data recorded on N-Y channel, moving to calibrate N-X.)
+
+E-X channel unplugged from RTK connected to COM 10 and re-plugged, RTK powercycled. (Data was bad, trying the ol' power cycle.)
+
 20250515 16:00 (BRS and TT) New laptop installed to control RTK GPS units for beam mapping w/ Shronim at McGill U. N dish Y pol (N-S on sky) connected to ublox labeled F1100047456, connected to laptop on port COM 9. E dish X pol (N-S on sky) connected to ublox labeled F1100056545, connected to laptop on port COM 10.
 
 Digitizers removed from BMXDAQ2 for assessment. Frequently overheating, want to check if issue with fans or heatsinking.
