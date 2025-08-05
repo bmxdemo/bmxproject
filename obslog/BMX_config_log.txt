@@ -1,5 +1,6 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
+20250805 12:10 (BRS) N-X channel on ublox serial 56545, COM 10. E-Y channel on ublox serial 47456, COM 9.
 
 20250605 13:10 (BRS) N-Y channel on RTK connected to COM 9 switched to N-X channel. (Sufficient GNSS data recorded on N-Y channel, moving to calibrate N-X.)
 
