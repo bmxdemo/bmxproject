@@ -1,6 +1,12 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+20251014 (BRS) Ben and Liju remove RFSoC backend, switch back to cal obs. On BMXDAQ1: NX and WY on 180deg hybrid coupler, sum on SPCM0 Ch1, Diff on SPCM1 Ch2. EY on SPCM0 Ch2, SX on SPCM1 Ch1 so DAQ1 will be full for ease of data processing.
+
+NY and WX on Ublox. Sum on Ublox serial 47456, Diff on Ublox serial 56545. Computer rebooted, needs Symantec password. Unknown which Ublox is which COM port now.
+
+20251010 (BRS) Liju installed RFSoC backend to take data on 8 channels simultaneously.
+
 20250910 17:20 (BRS) N-Y and E-x on same 180deg hybrid coupler as previously (SN 14070400117), but now connected to spectrometer on DAQ1, SPCM0. Sum on Ch1 and Diff on Ch2. N-X and S-X attached to second 180deg hybrid coupler (SN14070400116), with outputs to Ublox GNSS receivers. Sum on Ublox serial 47456 (COM 9), Diff on Ublox serial 56545 (COM 10).
 
 20250809 18:00 (BRS) Realized had connected N-X and E-X to hybrid coupler, differnet polarizations on sky. Switched to N-Y and E-X.
