@@ -1,6 +1,16 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+20260218 (BRS) With 40dB attenuation not seeing as many satellites locking at higher GNSS frequencies. (Lower Tx amplitude?) Also not seeing as much S/N in sidelobes at high freq. Switching back to EY and WY and reducing attenuation to try to get additional satellites to lock, get better S/N. 
+
+EY on ublox 47456, WY on ublox 56545. 0dB attenuation on EY, 20dB attenuation on WY.  
+
+20260123 (BRS) SX on ublox 47456, NY on ublox 56545. 40dB of attenuation on both channels.
+
+20251203 (BRS) EY on ublox 47456, WY on ublox 56545. 40dB of attenuation on both channels.  
+
+20251119 (BRS) WX on ublox 47456, SY on ublox 56545.
+
 20251014 (BRS) Ben and Liju remove RFSoC backend, switch back to cal obs. On BMXDAQ1: NX and WY on 180deg hybrid coupler, sum on SPCM0 Ch1, Diff on SPCM1 Ch2. EY on SPCM0 Ch2, SX on SPCM1 Ch1 so DAQ1 will be full for ease of data processing.
 
 NY and WX on Ublox. Sum on Ublox serial 47456, Diff on Ublox serial 56545. Computer rebooted, needs Symantec password. Unknown which Ublox is which COM port now.
