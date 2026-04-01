@@ -1,6 +1,8 @@
 This .txt file which will contain changes to the BMX configuration. 
 All entries after Jan 1, 2019 shall be REVERSE CHRONOLOGICAL
 
+20260401 (BRS) Changing attenuations on EY and WY, both channels remain on same ublox receivers. EY on ublox 47456, WY on ublox 56545. 23dB attenuation on EY, 0dB attenuation on WY.
+
 20260218 (BRS) With 40dB attenuation not seeing as many satellites locking at higher GNSS frequencies. (Lower Tx amplitude?) Also not seeing as much S/N in sidelobes at high freq. Switching back to EY and WY and reducing attenuation to try to get additional satellites to lock, get better S/N. 
 
 EY on ublox 47456, WY on ublox 56545. 0dB attenuation on EY, 20dB attenuation on WY.  
